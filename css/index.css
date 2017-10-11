@@ -1,0 +1,443 @@
+/* banner */
+
+.banner_btn {
+    height: 60px;
+    width: 1200px;
+    bottom: 118px;
+    position: absolute;
+}
+
+.banner_btn>li {
+    float: left;
+    width: 291px;
+    height: 60px;
+    background: #000;
+    margin: 0 12px 118px 0px;
+}
+
+.banner_btn>li:last-child {
+    margin-right: 0px;
+}
+
+.banner_btn>li {
+    color: #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.banner_active {
+    opacity: 0.2;
+}
+
+.banner_unactive {
+    opacity: 0.1;
+}
+
+
+/* 四大特色 */
+
+.feature_ul {
+    bottom: -190px;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px #f7f3ec;
+}
+
+.feature_ul>li {
+    float: left;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #fff;
+}
+
+.feature_text {
+    margin: 40px 0 10px 0;
+}
+
+.feature_text>p {
+    color: #666;
+    font-size: 14px;
+}
+
+.feature_text>span {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* 鑫手专享 */
+
+.novice {
+    height: 400px;
+    margin-top: 130px;
+}
+
+.novice>p,
+.invest>p,
+.message>p,
+.cooperate>p {
+    width: 85px;
+    margin: 0 auto;
+    color: #666;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.novice>p,
+.message>p,
+.cooperate>p {
+    padding: 100px 0 60px 0;
+}
+
+.invest>p {
+    padding: 90px 0 60px 0;
+}
+
+.novice_ul>li {
+    float: left;
+    height: 220px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 10px 20px #f7f3ec;
+}
+
+.novice_register {
+    width: 300px;
+    background: #fdedca;
+}
+
+.novice_series {
+    width: 520px;
+    margin: 0 40px;
+    background: #fff;
+    position: relative;
+}
+
+.novice_gulde {
+    width: 300px;
+    background: #fff;
+    box-shadow: 0px 10px 20px #f7f3ec;
+}
+
+.novice_btn {
+    width: 220px;
+    height: 40px;
+    display: block;
+    color: #3d4042;
+    border-radius: 50px;
+    background: #ffa21a;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.series_text{
+    top: 27px;
+    left: 45px;
+    color: #6b6b6b;
+    position: absolute;
+}
+
+.series_mark{
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.series_middle{
+    display: flex;
+    margin: 35px 40px;
+}
+
+.series_middle_p1,
+.series_middle_p2,
+.series_middle_p3{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.series_middle_p4{
+    color: #666;
+}
+
+.series_middle_p1{
+    color: #fce0a8;
+}
+
+.series_middle_p1::after{
+    content: "%";
+    font-size: 14px;
+    margin-left: 2px;
+}
+
+.series_middle_p2,
+.series_middle_p3{
+    color: #666;
+}
+
+.series_middle_p2::after{
+    content: "月";
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.series_middle_p3::after{
+    content: "起投";
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.gulde_text {
+    color: #282d33;
+    font-weight: bold;
+    margin: 40px 0 0 0;
+}
+
+
+/* 投资专区 */
+
+.invest {
+    height: 550px;
+}
+
+.invest_ul>li {
+    float: left;
+    width: 285px;
+    height: 380px;
+    border-radius: 5px;
+    margin-right: 20px;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 10px 20px #f7f3ec;
+}
+
+.invest_ul>li:last-child {
+    margin-right: 0;
+}
+
+.invest_top {
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    border-bottom: 1px solid #e7e3de;
+}
+
+.invest_top>p {
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.invest_img_01,
+.invest_img_02{
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.invest_img_02{
+    display: none;
+}
+
+.invest_middle {
+    height: 235px;
+    border-bottom: 1px solid #e7e3de;
+}
+
+.invest_loading {
+    height: 180px;
+    line-height: 180px;
+}
+
+.invest_sold {
+    width: 30px;
+    font-size: 14px;
+    color: #959595;
+    margin: 60px 0 0 125px;
+    position: absolute;
+}
+
+.invest_middle_per {
+    font-size: 30px;
+    position: absolute;
+    margin: 80px 0 0 120px;
+}
+
+.invest_middle_per::after {
+    top: 5px;
+    content: "%";
+    font-size: 20px;
+    margin-left: 2px;
+    position: absolute;
+}
+
+.invest_bottom_per {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.invest_bottom_per::after {
+    content: "%";
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+.invest_text {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 40px;
+}
+
+.invest_bottom_text {
+    font-size: 12px
+}
+
+
+/* 资讯报道 */
+
+.message {
+    height: 560px;
+}
+
+.message_div_01,
+.message_div_02 {
+    display: flex;
+}
+
+.message_div_01,
+.message_div_02,
+.message_div_03,
+.message_div_04 {
+    height: 380px;
+}
+
+.message_div_02 {
+    width: 910px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.message_div_03 {
+    width: 550px;
+    border-right: 1px solid #e7e3de;
+}
+
+.message_div_04,
+.message_div_05 {
+    width: 360px;
+}
+
+.message_div_05 {
+    height: 55px;
+    line-height: 55px;
+    border-bottom: 1px solid #e7e3de;
+}
+
+.message_div_05>p {
+    float: right;
+    margin-right: 20px;
+}
+
+.message_div_ul {
+    margin: 20px 20px;
+}
+
+.message_div_ul>li {
+    width: 320px;
+    overflow: hidden;
+    line-height: 40px;
+    white-space: nowrap;
+    font-size: 13px;
+    text-overflow: ellipsis;
+}
+
+.message_div_ul>li>a>span:first-child {
+    margin-right: 40px;
+}
+
+.message_ul>li {
+    width: 280px;
+    height: 120px;
+    color: #666;
+    line-height: 120px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 10px 10px 0;
+}
+
+.message_ul>.message_active {
+    color: #ffa21a;
+    border-left: 8px solid #ffa21a;
+}
+
+.message_ul>li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* 战略合作 */
+
+.cooperate {
+    height: 385px;
+    /* overflow: hidden; */
+}
+
+.coo_sec {
+    width: 2200px;
+    float: left;
+    display: flex;
+}
+
+.coo_friends {
+    width: 1100px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.friends_ul {
+    width: 1020px;
+    overflow: hidden;
+    margin: 0 40px;
+}
+
+.friends_ul>li {
+    float: left;
+    width: 240px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    line-height: 60px;
+    border: 1px solid #f5eee5;
+}
+
+.friends_ul>li:last-child {
+    margin-right: 0;
+}
+
+.l_btn {
+    position: absolute;
+    top: 30%;
+}
+
+.r_btn {
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
