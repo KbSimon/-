@@ -37,3 +37,17 @@
     margin: 0;
     padding: 70px 40px 40px 40px;
 }
+
+.content_top_left_bottom{
+    height: 125px;
+    padding: 30px 150px 40px 40px;
+}
+
+.content_ul_01{
+    height: 20px;
+}
+.content_ul_01>li{
+    float: left;
+    color: #666;
+    font-size: 12px;
+}

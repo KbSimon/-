@@ -24,7 +24,7 @@
             <div class="content_top_left">
                 <div style="height:175px;border-bottom:1px solid #e4e4e4;">
                     <p class="series_text">鑫火稳健</p>
-                    <img src="images/series_mark.png" class="series_mark">
+                    <img src="images/content_top.png" class="series_mark">
                     <div class="series_middle">
                         <div>
                             <p class="series_middle_p1">13.00</p>
@@ -40,6 +40,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="content_top_left_bottom">
+                   <ul class="content_ul_01">
+                       <li>还款方式：到期还本付息</li>
+                       <li style="margin:0 100px">发布日期：2017-09-30</li>
+                       <li>起息时间：满标计算</li>
+                   </ul><br>
+                   <ul class="content_ul_01">
+                       <li>交易进度：</li>
+                       <li style="margin:0 10px"><img src="images/content_top_loading.png" alt=""></li>
+                       <li>已售80%</li>
+                   </ul>
+                </div>
             </div>
             <div class="content_top_right"></div>
         </div>
@@ -54,4 +66,17 @@
 <script>
     $("header").load("head.html")
     $("footer").load("footer.html")
+
+    // 鑫火稳健
+    $('.content_top_left').hover(function () {
+        $(".series_mark").attr("src", "images/content_top_01.png");
+        $(this).css('box-shadow', '0 15px 30px rgba(0,0,0,0.1)').stop().animate({
+            top: -10
+        }, 300);
+    }, function () {
+        $(".series_mark").attr("src", "images/content_top.png");
+        $(this).css('box-shadow', '0 10px 20px #f7f3ec').stop().animate({
+            top: 0
+        }, 300);
+    });
 </script>
