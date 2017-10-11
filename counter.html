@@ -42,7 +42,7 @@
                 </div>
                 <div>
                     <label for="">投资周期：</label>
-                    <input type="text" class="date">
+                    <input type="text" class="date" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
                     <span>天</span>
                     <span class="warning_date">请输入投资时间(天)</span>
                 </div>
@@ -114,7 +114,7 @@
         var rate = $(".rate").val();
         var date = $(".date").val();
 
-        // 判断投资金额输入必须为数字
+        // 判断投资金额
         if (money == 0) {
             $(".warning_money").show();
             return false;
