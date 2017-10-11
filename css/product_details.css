@@ -1,0 +1,28 @@
+.content{
+    width: 1200px;
+    margin: 0  auto;    
+    padding: 40px 0;
+}
+
+.content_top,
+.content_top_left,
+.content_top_right{
+    height: 300px;
+}
+
+.content_top_left,
+.content_top_right{
+    float: left;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px #f7f3ec;
+}
+
+.content_top_left{
+    width: 760px;
+    margin-right: 20px;
+}
+
+.content_top_right{
+    width: 420px;
+}
