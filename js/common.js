@@ -1,5 +1,6 @@
- // 右侧悬浮
- window.onscroll = function () {
+
+// 右侧悬浮
+window.onscroll = function () {
     var t = document.documentElement.scrollTop || document.body.scrollTop;
     if (t >= $(window).height()) {
         $('.up').fadeIn();
