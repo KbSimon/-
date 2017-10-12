@@ -17,9 +17,9 @@ $(".right_nav>li").eq(0).hover(function () {
     $(this).children("img").attr("src", "images/download.png");
 });
 $(".right_nav>li").eq(1).hover(function () {
-    $(this).children("img").attr("src", "images/jisuanqi_01.png");
+    $(this).find("img").attr("src", "images/jisuanqi_01.png");
 }, function () {
-    $(this).children("img").attr("src", "images/jisuanqi.png");
+    $(this).find("img").attr("src", "images/jisuanqi.png");
 });
 $(".right_nav>li").eq(2).hover(function () {
     $(this).children(".kefu_num").css("right", "50px");
