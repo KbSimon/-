@@ -157,12 +157,18 @@
                     <p style="line-height:3;">第二还款来源：借款人亲属及好友等协助还款；</p>
                     <p style="line-height:3;">第三还款来源：资金担保方还款。</p>
                 </div>
+                <!-- 安全保障 -->
                 <div class="prooject_details05_title">
                     <i></i>
                     <a>安全保障</a>
                 </div>
                 <div class="prooject_details05_text">
-
+                    <ul class="prooject_details05_textul clearfloat">
+                        <li>银行存管</li>
+                        <li>小额分散</li>
+                        <li>雄厚实力</li>
+                        <li>专业风控</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -170,6 +176,28 @@
 
     <!-- 尾部 -->
     <footer></footer>
+
+    <!-- 遮罩层 -->
+    <div class="mask"></div>
+    <!-- 登录弹窗 -->
+    <div class="login_mask">
+        <div class="login_mask_top  clearfloat">
+            <p>登录注册</p>
+            <span class="close_btn">×</span>
+        </div>
+        <p>您还未登录！</p>
+        <button>立即登录</button>
+    </div>
+    <!-- 未实名认证弹窗 -->
+    <div class="approve_mask">
+        <div class="approve_mask_top  clearfloat">
+            <p>实名认证消息</p>
+            <span class="close_btn">×</span>
+        </div>
+        <p>您还未实名认证！</p>
+        <a>用户需认证绑定银行卡后才可投资</a>
+        <button>立即认证</button>
+    </div>
 </body>
 
 </html>
@@ -191,4 +219,10 @@
             top: 0
         }, 300);
     });
+
+    $(".close_btn").click(function () {
+        $(".mask").hide();
+        $(".approve_mask").hide();
+        $(".login_mask").hide();
+    })
 </script>
