@@ -138,6 +138,9 @@ header {
     border-right: 1px solid #ccc;
 }
 
+.box_shadow{
+    box-shadow: 0 10px 20px #f7f3ec;
+}
 
 /* 导航栏底部 */
 
