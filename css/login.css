@@ -1,0 +1,97 @@
+.login_img{
+    width: 100%;
+    height: 535px;
+    min-width: 1200px;
+    max-width: 1920px;
+    background: url("../images/login_bg.png") center no-repeat;
+}
+
+.login_main{
+    width: 1200px;
+    height: 535px;
+    margin: 0 auto;
+    padding-top: 50px;
+    border-radius: 5px;
+    padding-bottom: 135px;
+}
+
+.login_div{
+    width: 430px;
+    height: 350px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    box-shadow: 0px 10px 20px #f7f3ec;
+}
+
+.login_title{
+    text-align: center;
+}
+
+.login_title>p{
+    color: #666;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 40px 175px;
+}
+
+form{
+    margin: 0 35px;
+}
+
+input{
+   width: 300px;
+   height: 100%;
+   float: left;
+   border: 0;
+   outline: none;
+}
+
+.username,
+.password{
+    margin-bottom: 20px;
+    border: 1px solid #e4e4e4;
+}
+
+.active{
+    border: 1px solid #fd9c1c;
+}
+
+input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    letter-spacing: 5px;
+    background: #fd9c1c;
+    border: 1px solid #fd9c1c;
+}
+
+.username_img,
+.password_img{
+    width: 30px;
+    height: 25px;
+    float: left;
+    margin: 10px;
+    border-right: 1px solid #e4e4e4;
+}
+
+.username_img{
+    background: url("../images/username.png") no-repeat;
+}
+.password_img{
+    background: url("../images/password.png") no-repeat;
+}
+
+.login_ul>li,
+input[type="button"]{
+    width: 360px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.login_bottom{
+    float: right;
+    font-size: 12px;
+    margin: 10px auto;
+}
