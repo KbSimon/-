@@ -60,10 +60,78 @@ main{
 }
 
 .help_bottom{
+    padding-top: 40px;
+    padding-bottom: 145px;
     background: #fcfaf7;
 }
 
 .helpCenter_02{
     width: 1200px;
     margin: 0 auto;
+}
+
+.helpCenter_02_title,
+.helpCenter_02_text{
+    float: left;
+}
+
+.helpCenter_02_title{
+    width: 170px;
+    height: 465px;
+    border-radius: 5px;
+    border: 1px solid #eae5e2;
+}
+
+.helpCenter_02_title_ul{
+    padding: 12px;
+    cursor: pointer;
+}
+
+.helpCenter_02_title_ul>li{
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.helpCenter_02_title_active{
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #eae5e2 !important;
+}
+
+.helpCenter_02_text{
+    width: 1010px;
+    background: #fff;
+    margin-left: 20px;
+    border-radius: 5px;
+    min-height: 1000px;
+}
+
+.helpCenter_02_text_ul>li{
+    letter-spacing: 1px;
+    margin: 40px 70px 0 40px;
+}
+
+.helpCenter_02_text_ul>li:last-child{
+    padding-bottom: 40px;
+}
+
+.helpCenter_02_text_p{
+    color: #ffaf44;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+.helpCenter_02_text_a{
+    color: #999;
+    /* text-indent: 35px; */
+    line-height: 25px;
+    margin-left: 40px;
+    /* text-align: justify; */
+}
+
+.close_ul{
+    display: none;
 }
