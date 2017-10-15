@@ -3,6 +3,7 @@
     height: 535px;
     min-width: 1200px;
     max-width: 1920px;
+    margin: 0 auto;
     background: url("../images/login_bg.png") center no-repeat;
 }
 
