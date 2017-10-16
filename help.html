@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/help.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/xinlu-icon.ico">
 </head>
 
 <body>
@@ -24,7 +25,7 @@
             <div class="helpCenter_01">
                 <p>帮助中心</p>
                 <div class="helpCenter_find clearfloat">
-                    <input type="text" class="search_input">
+                    <input type="text" class="search_input" placeholder="输入问题关键词">
                     <div class="search_btn"></div>
                     <div class="helpCenter_a">
                         <a href="javascript:;">提现</a>
@@ -85,7 +86,7 @@
                         </li>
                     </ul>
                     <!-- 认证绑卡 -->
-                    <ul class="helpCenter_02_text_ul close_ul">
+                    <ul class="helpCenter_02_text_ul">
                         <li class="jcorgFilterTextParent">
                             <div class="helpCenter_02_text_p">为什么要实名认证？</div>
                             <div class="helpCenter_02_text_a jcorgFilterTextChild">为了提高账户安全等级，保障资金的安全性和合同的有效性，用户需在首次充值/投资前完成实名认证，平台承诺会对所有用户资料严格保密。</div>
@@ -115,7 +116,7 @@
                         </li>
                     </ul>
                     <!-- 充值体现 -->
-                    <ul class="helpCenter_02_text_ul close_ul">
+                    <ul class="helpCenter_02_text_ul ">
                         <li class="jcorgFilterTextParent">
                             <div class="helpCenter_02_text_p">如何充值？</div>
                             <div class="helpCenter_02_text_a jcorgFilterTextChild">1.登录你的鑫路金融账户-进入“我的账号”-点击“充值”；</div>
@@ -156,7 +157,7 @@
                         </li>
                     </ul>
                     <!-- 投资回款 -->
-                    <ul class="helpCenter_02_text_ul close_ul">
+                    <ul class="helpCenter_02_text_ul ">
                         <li class="jcorgFilterTextParent">
                             <div class="helpCenter_02_text_p">何时取得本息？</div>
                             <div class="helpCenter_02_text_a jcorgFilterTextChild">项目采取一次性“还本付息”的还款方式。项目到期后，即返还投资人本息。</div>
@@ -187,7 +188,7 @@
                         </li>
                     </ul>
                     <!-- 红包福利 -->
-                    <ul class="helpCenter_02_text_ul close_ul">
+                    <ul class="helpCenter_02_text_ul">
                         <li class="jcorgFilterTextParent">
                             <div class="helpCenter_02_text_p">什么是红包？</div>
                             <div class="helpCenter_02_text_a jcorgFilterTextChild">红包是由平台回馈奖励用户的投资代金券，可抵扣同等额度的投资金额，投资红包不能直接提现，投资之后可提现。</div>
@@ -216,7 +217,7 @@
                         </li>
                     </ul>
                     <!-- 银行存管 -->
-                    <ul class="helpCenter_02_text_ul close_ul">
+                    <ul class="helpCenter_02_text_ul">
                         <li class="jcorgFilterTextParent">
                             <div class="helpCenter_02_text_p">什么是银行存管？</div>
                             <div class="helpCenter_02_text_a jcorgFilterTextChild">银行存管是指由银行管理资金，平台管理交易，做到资金与交易的分离，使得平台无法直接接触资金，避免客户资金被挪用。</div>
@@ -235,7 +236,7 @@
                     </ul>
                 </div>
                 <!-- 关键字部分 -->
-                <div class="helpCenter_03_text">
+                <!-- <div class="helpCenter_03_text">
                     <ul class="helpCenter_03_text_ul">
                         <li>
                             <div class="helpCenter_02_text_"></div>
@@ -266,7 +267,7 @@
                             <div class="helpCenter_02_text_"></div>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </main>
@@ -286,9 +287,11 @@
     })
 
     // 搜索功能
-    $(".search_btn").click(function () {
-        $(".jcorgFilterTextParent").css("display", "block");
-    })
+    // $(".search_btn").click(function () {
+    //     // $(".helpCenter_02_text>ul").removeClass("close_ul");
+    //     $(".jcorgFilterTextParent").css("display", "block");
+    // })
+    
     jQuery(document).ready(function () {
         jQuery(".search_input").jcOnPageFilter({
             animateHideNShow: true,

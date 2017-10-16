@@ -114,14 +114,13 @@ main{
     /* min-height: 1000px; */
 }
 
-.helpCenter_02_text_ul{
-    padding-bottom: 40px;
-}
 
 .helpCenter_02_text_ul>li{
     letter-spacing: 1px;
-    margin: 20px 70px 0 40px;
+    margin: 15px 70px 15px 40px;
 }
+
+
 
 .helpCenter_02_text_p{
     color: #ffaf44;
