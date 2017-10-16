@@ -278,18 +278,21 @@ header {
     border-top: 0;
 }
 
-.about_us:hover {
+.about_us:hover,
+.safety:hover{
     color: #fff;
     background: #ffa219;
 }
 
-.about_us:hover>.about_us_ul {
+.about_us:hover>.about_us_ul,
+.safety:hover>.safety_ul {
     color: #333;
     display: block;
     background: #fff;
 }
 
-.about_us_ul {
+.about_us_ul,
+.safety_ul {
     display: none;
     position: absolute;
     height: 172px;
@@ -298,12 +301,14 @@ header {
     text-align: center;
 }
 
-.about_us_ul>li {
+.about_us_ul>li,
+.safety_ul>li {
     height: 43px;
     line-height: 43px;
 }
 
-.about_us_ul>li:hover {
+.about_us_ul>li:hover,
+.safety_ul>li:hover {
     color: #fff;
     background: #ffa219;
 }
