@@ -1,0 +1,26 @@
+.helpCenter_02_text_ul>div{
+    margin: 20px;
+    width: 970px;
+    height: 150px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.intro{
+    background: url("../images/aboutUs/abou_us.png") no-repeat;
+}
+
+.introduce{
+    background: url("../images/aboutUs/introduce.png");
+}
+
+.news{
+    background: url("../images/aboutUs/news.png");
+}
+
+.call_us{
+    background: url("../images/aboutUs/call_us.png");
+}

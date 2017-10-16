@@ -4,6 +4,8 @@
     width: 100%;
     height: 680px;
     min-width: 1200px;
+    max-width: 1920px;
+    margin: 0 auto;
     background: url("../images/safety/banner.png") center no-repeat;
 }
 
