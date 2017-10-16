@@ -1,0 +1,253 @@
+
+.us_bg01{
+    width: 1200px;
+    height: 620px;
+    float: right;
+    background: #fcf6ec;
+    margin-top: 60px;
+    margin-bottom: 190px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width:1600px){
+    .us_bg01{
+        width: 1400px;
+    }
+}
+.us_bg02{
+    width: 230px;
+    height: 765px;
+    background: #ffd08c;
+    position: absolute;
+    right:80px;
+}
+
+.us_content{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.us_text{
+    width: 545px;
+    color: #666;
+    position: absolute;
+    margin-top: 260px;
+}
+
+.us_img{
+    width: 335px;
+    height: 640px;
+    position: absolute;
+    right: 205px;
+    margin-top: 100px;
+    background: url("../images/newbie/us_bg.png") center no-repeat;
+}
+
+/* 我们的业务模式 */
+.business{
+    height: 475px;
+    width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px #f7f3ec;
+}
+
+.business_top{
+    width: 320px;
+    height: 70px;
+    margin: 0 auto;
+    top: -35px;
+    position: relative;
+    line-height: 70px;
+    text-align: center;
+    background: #fcf6ec;
+    border-radius: 5px;
+}
+
+.business_img{
+    width: 850px;
+    height: 230px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: url("../images/newbie/business.png") center no-repeat;
+}
+
+.business_img>p{
+    top: 260px;
+    color: #666;
+    line-height: 2;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.new_part03{
+    position: relative;
+    margin-bottom: 145px;
+}
+
+.part3_top{
+    width: 100%;
+    height: 325px;
+    margin: 100px 0;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    background: #8eD3DA;
+}
+
+.part3_middle{
+    height: 250px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.part3_ul{
+    top: 195px;
+    position: absolute;
+}
+
+.part3_ul>li{
+    float: left;
+    width: 345px;
+    height: 415px;
+    background: #fff;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 1px #f7f3ec;
+}
+
+.part3_ul>li:nth-child(2){
+    margin: 0 82.5px;
+}
+
+.register_img,
+.approve_img,
+.pay_img{
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    margin: 40px auto;
+    position: relative;
+}
+
+.register_img{
+    background: url("../images/newbie/register.png") 30% 20%;
+}
+
+.approve_img{
+    background: url("../images/newbie/approve.png") 80% 52%;
+}
+
+.pay_img{
+    background: url("../images/newbie/pay.png") 45% 20%;
+}
+
+.register_img>span,
+.approve_img>span,
+.pay_img>span{
+    bottom: -10px;
+    left: 43%;
+    width: 24px;
+    height: 24px;
+    display: block;
+    color: #ffae32;
+    line-height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    text-align: center;
+    border: 3px solid #ffae32;
+}
+
+.part3_bottom{
+    width: 400px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+button{
+    width: 400px;
+    outline: none;
+    font-size: 18px;
+    color: #8ed3da;
+    line-height: 60px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #8ed3da;
+}
+
+.part04_top{
+    width: 100%;
+    background: #ffe3bb;
+    text-align: center;
+}
+
+.part04_bottom{
+    width: 1200px;
+    margin: 0 auto;
+    height: 925px;
+    /* float: left; */
+}
+
+.part04_bottom>ul{
+    width: 550px;
+    float: left;
+}
+
+.question{
+    margin-top: 40px;
+}
+
+.question>li,
+.answer>li{
+    width: 550px;
+    /* height: 60px; */
+    float: left;
+}
+
+.question_div01,
+.answer_div01{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #e4e4e4;
+}
+
+.question_div01{
+    float: left;
+    color: #8ed3da; 
+}
+
+.answer_div01{
+    float: right;
+    color: #ffa21a;
+}
+
+.answer_div02{
+    float: left;
+    width: 460px;
+    color: #666;
+    text-align: justify;
+    padding: 20px 40px;
+    border-radius: 5px;
+    background: #fff9f1;
+}
+
+.question_div02{
+    width: 461px;
+    height: 44px;
+    float: right;
+    margin: 10px 0;
+    line-height: 44px;
+    background: url("../images/newbie/question_bg.png")
+}
+
+.question_div02>p{
+    color: #666;
+    padding-left: 25px;
+}
