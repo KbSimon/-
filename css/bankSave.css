@@ -40,6 +40,12 @@
     margin-left: 125px;
 }
 
+.intro_left>img{
+    float: left;
+    margin-left: -3.9px;
+    margin-right: 35px;
+}
+
 .intro_right {
     float: right;
     width: 358px;
@@ -52,6 +58,7 @@
     width: 175px;
     margin-right: 35px;
     float: left;
+    text-align: right;
 }
 
 .good_ul {
@@ -62,7 +69,7 @@
 .good_text {
     color: #666;
     font-size: 40px;
-    padding: 130px 0 40px 0;
+    padding: 120px 0 40px 0;
 }
 
 .good_ul>li {
@@ -93,8 +100,10 @@
 }
 
 .process_left{
-    width: 210px;
+    width: 175px;
     float: left;
+    margin-right: 35px;
+    text-align: right;
 }
 
 .process_right{

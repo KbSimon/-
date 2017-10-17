@@ -309,10 +309,14 @@ header {
 
 .about_us_ul>li:hover,
 .safety_ul>li:hover {
-    color: #fff;
+   
     background: #ffa219;
 }
 
+.about_us_ul>li>a:hover,
+.safety_ul>li>a:hover{
+    color: #fff;
+}
 
 /* 底部 */
 
