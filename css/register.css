@@ -1,0 +1,225 @@
+.register_content {
+    width: 1200px;
+    height: 650px;
+    margin: 0 auto;
+}
+
+.register_top {
+    width: 766px;
+    height: 160px;
+    margin: 0 auto;
+    line-height: 160px;
+}
+
+.register_step{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+form {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px #f7f3ec;
+}
+
+.register_ul01,
+.register_ul02 {
+    position: relative;
+    padding: 30px 40px;
+}
+
+.register_ul01>li,
+.register_ul02>li {
+    width: 320px;
+    height: 45px;
+    float: left;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #e4e4e4;
+}
+
+.register_ul02>li:nth-child(4){
+    border: none;
+}
+
+select{
+    width: 320px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #e4e4e4;
+}
+
+.pwd,
+.user,
+.code,
+.phone,
+.id_card,
+.real_user,
+.pwd_again,
+.bank_card {
+    width: 30px;
+    height: 25px;
+    float: left;
+    margin: 10px 15px;
+    border-right: 1px solid #e4e4e4;
+}
+
+.phone {
+    background: url("../images/register/phone.png") no-repeat;
+}
+
+.code {
+    background: url("../images/register/code.png") -10% no-repeat;
+}
+
+.pwd {
+    background: url("../images/register/password_01.png") no-repeat;
+}
+
+.pwd_again {
+    background: url("../images/register/password_02.png") no-repeat;
+}
+
+.real_user{
+    background: url("../images/register/real_user.png") no-repeat;
+}
+
+.id_card{
+    background: url("../images/register/id_card.png") no-repeat;
+}
+
+.bank_card{
+    background: url("../images/register/bank_card.png") no-repeat;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 250px;
+    height: 100%;
+    float: left;
+    border: none;
+    outline: none;
+}
+
+.register_ul01>li>input:nth-child(2),
+.register_ul02>li:nth-child(5)>input {
+    width: 100px;
+}
+
+.register_ul01>li:nth-child(2),
+.register_ul02>li:nth-child(5){
+    width: 180px;
+}
+
+.register_ul01>li:last-child,
+.register_ul02>li:nth-child(5){
+    margin-bottom: 0;
+}
+
+.code_div01,
+.code_div02 {
+    right: 40px;
+    width: 120px;
+    height: 45px;
+    border-radius: 5px;
+    background: #e7e3de;
+    line-height: 45px;
+    text-align: center;
+    position: absolute;
+}
+
+.code_div01{
+    top: 95px;
+}
+
+.code_div02{
+    bottom: 30px;
+}
+
+#active {
+    border: 1px solid #fe9c1c;
+}
+
+.get,
+.next,
+.gift_btn{
+    width: 340px;
+    height: 45px;
+    color: #fff;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    line-height: 45px;
+    background: #fe9c1c;
+    border-radius: 5px;
+}
+
+.get{
+    margin-top: 290px;
+}
+.register_btn{
+    height: 105px;
+    text-align: center;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.deal>input:checked+label{
+    border: 1px solid #fe9c1c;
+}
+
+.deal>input+label{
+    top: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #e4e4e4;
+}
+
+.deal>input:checked+label::after{
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 20px;
+    font-size: 18px;
+    color: #fe9c1c;
+    content: "\2713";
+    position: absolute;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+.register_part02{
+    width: 794px;
+    height: 310px;
+    margin: 0 auto;
+    text-align: center;
+    background: url("../images/register/packet.png") center no-repeat;
+}
+
+.register_part02,
+.register_part03{
+    display: none;
+}
+
+.register_part03{
+    height: 440px;
+}
+
+select{
+    color: #666;
+    padding-left: 10px;
+}
+
+.register_end{
+    height: 80px;
+    text-align: center;
+}

@@ -4,5 +4,5 @@
  $("footer").load("footer.html");
 
  $(".login_ul>li").click(function(){
-     $(this).addClass("active").siblings().removeClass("active")
+     $(".login_ul>li").addClass("active").siblings().removeClass("active")
  });
