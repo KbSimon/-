@@ -138,9 +138,10 @@ header {
     border-right: 1px solid #ccc;
 }
 
-.box_shadow{
+.box_shadow {
     box-shadow: 0 10px 20px #f7f3ec;
 }
+
 
 /* 导航栏底部 */
 
@@ -239,7 +240,7 @@ header {
     border: 1px solid #e4e1d3;
 }
 
-.down_div{
+.down_div {
     top: 0;
     width: 80px;
     height: 80px;
@@ -253,7 +254,7 @@ header {
     border: 1px solid #e4e1d3;
 }
 
-.kefu_num{
+.kefu_num {
     top: 80px;
     right: -160px;
     width: 130px;
@@ -265,7 +266,7 @@ header {
     border: 1px solid #e4e1d3;
 }
 
-.kefu_num>p{
+.kefu_num>p {
     color: #666;
 }
 
@@ -279,7 +280,7 @@ header {
 }
 
 .about_us:hover,
-.safety:hover{
+.safety:hover {
     color: #fff;
     background: #ffa219;
 }
@@ -309,14 +310,14 @@ header {
 
 .about_us_ul>li:hover,
 .safety_ul>li:hover {
-   
     background: #ffa219;
 }
 
 .about_us_ul>li>a:hover,
-.safety_ul>li>a:hover{
+.safety_ul>li>a:hover {
     color: #fff;
 }
+
 
 /* 底部 */
 
@@ -359,7 +360,7 @@ footer {
     text-align: center;
 }
 
-.app>img{
+.app>img {
     display: block;
     position: relative;
 }
@@ -389,4 +390,93 @@ footer {
 
 .footer_bottom_ul>li:last-child {
     margin-right: 0;
+}
+
+
+/* 表单格式 */
+
+.register_ul01>li,
+.register_ul02>li,
+.forget_ul01>li,
+.forget_ul02>li {
+    width: 320px;
+    height: 45px;
+    float: left;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #e4e4e4;
+}
+
+.pwd,
+.user,
+.code,
+.phone,
+.id_card,
+.real_user,
+.pwd_again,
+.bank_card {
+    width: 30px;
+    height: 25px;
+    float: left;
+    margin: 10px 15px;
+    border-right: 1px solid #e4e4e4;
+}
+
+.phone {
+    background: url("../images/register/phone.png") no-repeat;
+}
+
+.code {
+    background: url("../images/register/code.png") -10% no-repeat;
+}
+
+.code_div01,
+.code_div02 {
+    right: 40px;
+    width: 120px;
+    height: 45px;
+    border-radius: 5px;
+    background: #e7e3de;
+    line-height: 45px;
+    text-align: center;
+    position: absolute;
+}
+
+.register_ul01>li>input:nth-child(2),
+.forget_ul01>li>input:nth-child(2),
+.register_ul02>li:nth-child(5)>input {
+    width: 100px;
+}
+
+.forget_ul01>li:nth-child(2),
+.register_ul01>li:nth-child(2),
+.register_ul02>li:nth-child(5) {
+    width: 180px;
+}
+
+.forget_ul01>li:nth-child(2),
+.forget_ul02>li:nth-child(2),
+.register_ul01>li:last-child,
+.register_ul02>li:nth-child(5) {
+    margin-bottom: 0;
+}
+
+.get,
+.next,
+.gift_btn,
+.to_login_btn {
+    width: 340px;
+    height: 45px;
+    color: #fff;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    line-height: 45px;
+    background: #fe9c1c;
+    border-radius: 5px;
+}
+
+#active {
+    border: 1px solid #fe9c1c;
 }

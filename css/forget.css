@@ -1,0 +1,92 @@
+.forget_content{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.forget_top{
+    width: 766px;
+    height: 160px;
+    margin: 0 auto;
+    line-height: 160px;
+}
+
+.forget_step{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 130px;
+    box-shadow: 0px 10px 20px #f7f3ec;
+}
+
+.forget_part01{
+    width: 400px;
+    height: 230px;
+}
+
+.forget_part02{
+    width: 400px;
+    height: 295px;
+    display: none;
+}
+
+.forget_ul01,
+.forget_ul02{
+    position: relative;
+    padding: 25px 40px;
+}
+
+.forget_ul01>li,
+.forget_ul02>li{
+    width: 320px;
+    height: 45px;
+    float: left;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #e4e4e4;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 250px;
+    height: 100%;
+    float: left;
+    border: none;
+    outline: none;
+}
+
+.code_div01{
+    top: 90px;
+}
+
+.forget_btn{
+    text-align: center;
+}
+
+.pwd {
+    background: url("../images/register/password_01.png") no-repeat;
+}
+
+.pwd_again {
+    background: url("../images/register/password_02.png") no-repeat;
+}
+
+.to_index{
+        width: 340px;
+        height: 45px;
+        color: #fe9c1c;
+        outline: none;
+        border: none;
+        margin-bottom: 10px;
+        line-height: 45px;
+        background: #fff;
+        border-radius: 5px;
+        margin-top: 10px;
+        border: 1px solid #fe9c1c;
+}
