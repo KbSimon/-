@@ -1,0 +1,278 @@
+main{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 265px;
+}
+
+/* 个人中心左侧(开始) */
+.personal_center_left{
+    width: 240px;
+    height: 905px;
+    float: left;
+    background: #fff;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px #f7f3ec;
+}
+
+/* 认证 */
+.person_message{
+    height: 290px;
+}
+
+.person_message>img{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.verify>img{
+    margin: 15px 17px;
+}
+
+.approve_load{
+    width: 186px;
+    height: 6px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: #eee;
+}
+
+.loading{
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background: #fbd585;
+}
+
+.data_progress{
+    margin-top: 10px;
+}
+
+/* 左侧选项卡 */
+.personal_left_ul>li{
+    width: 100%;
+    float: left;
+    height: 55px;
+    line-height: 55px;
+}
+
+/* 个人中心左侧(结束) */
+/* 个人中心右侧 */
+.personal_center_right{
+    height: 100%;
+    width: 920px;
+    float: right;
+    margin: 0 20px; 
+}
+
+/* 账户总额 头部 */
+.account_page_top,
+.rechargr_page_top{
+    height: 150px;
+    border-radius: 5px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 10px 20px #f7f3ec;
+}
+
+.account_page_top_left,
+.rechargr_page_top_left{
+    width: 210px;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #e4e4e4;
+}
+
+/* 总资产 */
+.total_money{
+    padding-top: 45px;
+    font-size: 30px;
+    color: #ffa21a;
+    font-weight: bold;
+    margin-left: -40px;
+}
+
+.total_img{
+    margin-top: -12px;
+}
+
+.account_page_top_right,
+.rechargr_page_top_right{
+    float: right;
+    width: 710px;
+    height: 100%;
+}
+
+.account_page_top_right>div,
+.rechargr_page_top_right>div{
+    float: left;
+}
+
+.income01,
+.income02,
+.balance01,
+.balance02{
+    margin: 40px 90px;
+}
+
+.income01>p:first-child,
+.income02>p:first-child,
+.balance01>p:first-child,
+.balance02>p:first-child,
+.lay_money>p:first-child,
+.earnings_money>p:first-child{
+    color: #666;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+/* 充值提现 按钮 */
+.rechargr_withdraw01,
+.rechargr_withdraw02{
+    margin: 25px 35px;
+}
+
+.rechargr_btn01,
+.rechargr_btn02,
+.withdraw_btn01,
+.withdraw_btn02{
+    width: 138px;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 45px;
+    line-height: 45px;
+    position: relative;
+}
+
+.rechargr_btn01,
+.rechargr_btn02{
+    color: #fff;
+    background: #ffc776;
+}
+
+.withdraw_btn01,
+.withdraw_btn02{
+    color: #ffc776;
+    margin-top: 10px;
+    background: #fff;
+    border: 1px solid #ffc776;
+}
+
+.rechargr_btn01>p,
+.rechargr_btn02>p{
+    margin-left: 20px;
+    position: absolute;
+}
+
+.withdraw_btn01>p,
+.withdraw_btn02>p{
+    margin-left: 88px;
+    position: absolute;
+}
+
+.arrows_01,
+.arrows_02{
+    top: 6px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.arrows_01{
+    right: 10px;
+    background: #ffa21a url("../images/personal/arrows_01.png") center no-repeat;
+}
+
+.arrows_02{
+    left: 10px;
+    border: 1px solid #ffc776;
+    background: #fff url("../images/personal/arrows_02.png") center no-repeat; 
+}
+
+/* 账户总览中间 */
+.account_page_middle{
+   width: 920px;
+   height: 280px;
+   margin: 20px 0;
+}
+
+.assets_left{
+    width: 290px;
+    height: 100%;
+    float: left;
+    margin-right: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px #f7f3ec;
+}
+
+.assets_right{
+    width: 610px;
+    height: 100%;
+    float: right;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px #f7f3ec;
+}
+
+.assets_right_top{
+    height: 95px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.lay_money,
+.earnings_money{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.assest_ul>li{
+    width: 50%;
+    height: 95px;
+    float: left;
+    line-height: 95px;
+    text-align: center;
+}
+
+.assest_ul>li>img{
+    margin-top: -2px;
+    margin-right: 2px;
+}
+
+/* 充值提现页面 */
+.rechargr_page{
+    display: none;
+}
+.all_money{
+    margin: 45px 50px 40px 90px;
+}
+
+.all_money>p:first-child{
+    color: #ffa21a;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.confirm_message,
+.recharge_money{
+    height: 285px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 10px 20px #f7f3ec;
+}
+
+.confirm_message{
+    float: left;
+    width: 525px;
+    margin-right: 20px;
+}
+
+.recharge_money{
+    width: 375px;
+    float: right;
+}
