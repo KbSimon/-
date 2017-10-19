@@ -1,0 +1,132 @@
+/* 资产记录顶部 */
+
+.property_top {
+    width: 920px;
+    height: 155px;
+    color: #666;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px #f7f3ec;
+}
+
+.property_top_ul>li {
+    float: left;
+    width: 25%;
+    height: 155px;
+    text-align: center;
+}
+
+.property_top_ul>li>p:first-child {
+    font-size: 30px;
+    margin-top: 45px;
+}
+
+.property_bottom {
+    margin-top: 20px;
+}
+
+.property_bottom_ul {
+    height: 65px;
+    line-height: 65px;
+}
+
+.property_bottom_ul>li {
+    width: 450px;
+    float: left;
+    height: 65px;
+    font-size: 16px;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px #f7f3ec
+}
+
+.property_bottom_ul>li:first-child {
+    margin-right: 20px;
+}
+
+.active_01 {
+    color: #ffa21a;
+    font-weight: bold;
+    border-top: 5px solid #ffa21a;
+}
+
+.property_bottom_content_01,
+.property_bottom_content_02{
+    height: 620px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px #f7f3ec;
+}
+
+.property_bottom_content_02{
+    display: none;
+}
+
+.property_bottom_content_top {
+    height: 80px;
+    /* line-height: 80px; */
+}
+
+.property_bottom_content_ul {
+    top: 40px;
+    width: 140px;
+    height: 25px;
+    /* border-radius: 5px; */
+    margin-left: 20px;
+    position: relative;
+    /* border: 1px solid #ffd08c; */
+}
+
+.property_bottom_content_ul>li {
+    width: 50%;
+    float: left;
+    line-height: 25px;
+    text-align: center;
+    color: #ffd08c;
+    border: 1px solid #ffd08c;
+}
+
+.property_bottom_content_ul>li:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.property_bottom_content_ul>li:last-of-type{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.active_02{
+    color: #fff !important;
+    background: #ffd08c;
+    border-top: 1px solid #ffd08c;
+    border-bottom: 1px solid #ffd08c;
+}
+
+.property_table{
+    width: 880px;
+    height: 444px;
+    margin: 20px;
+    color: #666;
+    border-radius: 5px;
+    text-align: center;
+    border-collapse:collapse;
+    border: 1px solid #e4e4e4;
+}
+
+.property_table tr{
+    height: 74px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.property_table td{
+    width: 146px;
+}
+
+#laypages,
+#laypages_02{
+    text-align: center;
+}

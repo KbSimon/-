@@ -392,6 +392,10 @@ footer {
     margin-right: 0;
 }
 
+/* 关闭选项 */
+.close_ul{
+    display: none;
+}
 
 /* 表单格式 */
 
@@ -548,4 +552,10 @@ footer {
     width: 920px;
     float: right;
     margin: 0 20px; 
+}
+
+.personal_left_ul_active{
+    background: #fcfaf7;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
 }

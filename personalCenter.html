@@ -12,7 +12,9 @@
     <title>个人中心-鑫路金融官网</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/accountPage.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/property.css">
+    <link rel="stylesheet" href="plugins/layui/css/layui.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/xinlu-icon.ico">
 </head>
 
@@ -43,7 +45,7 @@
             <!-- 左侧选项卡 -->
             <div>
                 <ul class="personal_left_ul clearfloat">
-                    <li>账户总览</li>
+                    <li class="personal_left_ul_active">账户总览</li>
                     <li>资产记录</li>
                     <li>个人资料</li>
                     <li>我的红包</li>
@@ -246,7 +248,158 @@
                     </div>
                 </li>
             </ul>
-            <ul></ul>
+            <ul class="property close_ul">
+                <li class="property_top">
+                    <ul class="property_top_ul clearfloat">
+                        <li>
+                            <p>0.00</p>
+                            <p>待回本金(元)</p>
+                        </li>
+                        <li>
+                            <p>0.00</p>
+                            <p>代收利息</p>
+                        </li>
+                        <li>
+                            <p>0.00</p>
+                            <p>累计投资</p>
+                        </li>
+                        <li>
+                            <p>0.00</p>
+                            <p>累计收益</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="property_bottom">
+                    <ul class="property_bottom_ul">
+                        <li class="active_01 ">理财计划</li>
+                        <li>充值提现</li>
+                    </ul>
+                    <!-- 理财计划部分 -->
+                    <div class="property_bottom_content_01">
+                        <div class="property_bottom_content_top">
+                            <ul class="property_bottom_content_ul">
+                                <li class="active_02">持有中</li>
+                                <li>以回款</li>
+                            </ul>
+
+                        </div>
+                        <table class="property_table">
+                            <tr style="background:#fff6e8;border:none;">
+                                <td>标的名称</td>
+                                <td>投资金额(元)</td>
+                                <td>年化(%)</td>
+                                <td>应收利息(元)</td>
+                                <td>投资时间</td>
+                                <td>回款时间</td>
+                            </tr>
+                            <tr>
+                                <td>鑫手XX期</td>
+                                <td>1000元</td>
+                                <td>13%</td>
+                                <td>33.3元</td>
+                                <td>2017-11-11</td>
+                                <td>2017-12-12</td>
+                            </tr>
+                            <tr>
+                                <td>鑫手XX期</td>
+                                <td>1000元</td>
+                                <td>13%</td>
+                                <td>33.3元</td>
+                                <td>2017-11-11</td>
+                                <td>2017-12-12</td>
+                            </tr>
+                            <tr>
+                                <td>鑫手XX期</td>
+                                <td>1000元</td>
+                                <td>13%</td>
+                                <td>33.3元</td>
+                                <td>2017-11-11</td>
+                                <td>2017-12-12</td>
+                            </tr>
+                            <tr>
+                                <td>鑫手XX期</td>
+                                <td>1000元</td>
+                                <td>13%</td>
+                                <td>33.3元</td>
+                                <td>2017-11-11</td>
+                                <td>2017-12-12</td>
+                            </tr>
+                            <tr>
+                                <td>鑫手XX期</td>
+                                <td>1000元</td>
+                                <td>13%</td>
+                                <td>33.3元</td>
+                                <td>2017-11-11</td>
+                                <td>2017-12-12</td>
+                            </tr>
+                        </table>
+
+                        <div id="laypages"></div>
+                    </div>
+                    <!-- 充值提现部分 -->
+                    <div class="property_bottom_content_02">
+                        <div class="property_bottom_content_top">
+                            <ul class="property_bottom_content_ul">
+                                <li class="active_02">充值记录</li>
+                                <li>提现记录</li>
+                            </ul>
+
+                        </div>
+                        <table class="property_table">
+                            <tr style="background:#fff6e8;border:none;">
+                                <td>标的名称</td>
+                                <td>投资金额(元)</td>
+                                <td>年化(%)</td>
+                                <td>应收利息(元)</td>
+                                <td>投资时间</td>
+                                <td>回款时间</td>
+                            </tr>
+                            <tr>
+                                <td>鑫手XX期</td>
+                                <td>1000元</td>
+                                <td>13%</td>
+                                <td>33.3元</td>
+                                <td>2017-11-11</td>
+                                <td>2017-12-12</td>
+                            </tr>
+                            <tr>
+                                <td>鑫手XX期</td>
+                                <td>1000元</td>
+                                <td>13%</td>
+                                <td>33.3元</td>
+                                <td>2017-11-11</td>
+                                <td>2017-12-12</td>
+                            </tr>
+                            <tr>
+                                <td>鑫手XX期</td>
+                                <td>1000元</td>
+                                <td>13%</td>
+                                <td>33.3元</td>
+                                <td>2017-11-11</td>
+                                <td>2017-12-12</td>
+                            </tr>
+                            <tr>
+                                <td>鑫手XX期</td>
+                                <td>1000元</td>
+                                <td>13%</td>
+                                <td>33.3元</td>
+                                <td>2017-11-11</td>
+                                <td>2017-12-12</td>
+                            </tr>
+                            <tr>
+                                <td>鑫手XX期</td>
+                                <td>1000元</td>
+                                <td>13%</td>
+                                <td>33.3元</td>
+                                <td>2017-11-11</td>
+                                <td>2017-12-12</td>
+                            </tr>
+                        </table>
+
+                        <div id="laypages_02"></div>
+                    </div>
+                </li>
+            </ul>
             <ul></ul>
             <ul></ul>
             <ul></ul>
@@ -260,9 +413,34 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/common.js"></script>
 <script src="plugins/echarts.min.js"></script>
+<script src="plugins/layui/layui.js"></script>
 <script type="text/javascript">
     $("header").load("head.html");
     $("footer").load("footer.html");
+
+    // 选项卡效果
+    $(".personal_left_ul>li").click(function () {
+        $(this).addClass("personal_left_ul_active").siblings().removeClass("personal_left_ul_active")
+        $(".personal_center_right>ul").eq($(this).index()).removeClass("close_ul").siblings().addClass(
+            "close_ul")
+    });
+
+    // 资产记录页面效果
+    $(".property_bottom_ul>li").eq(0).click(function () {
+        $(".property_bottom_content_01").show();
+        $(".property_bottom_content_02").hide();
+        $(this).addClass("active_01").siblings().removeClass("active_01");
+    });
+
+    $(".property_bottom_ul>li").eq(1).click(function () {
+        $(".property_bottom_content_01").hide();
+        $(".property_bottom_content_02").show();
+        $(this).addClass("active_01").siblings().removeClass("active_01");
+    });
+
+    $(".property_bottom_content_ul>li").click(function () {
+        $(this).addClass("active_02").siblings().removeClass("active_02");
+    });
 
     // 图表
     var myChart = echarts.init(document.getElementById('main'));
@@ -351,5 +529,32 @@
         $(".account_page").show();
         $(".rechargr_page").hide();
         $(".withdraw_page").hide();
+    })
+
+
+    // 分页效果
+    layui.use(['laypage', 'layer'], function () {
+        var laypage = layui.laypage,
+            layer = layui.layer;
+        //完整功能
+        laypage.render({
+            elem: 'laypages',
+            count: 100,
+            theme: "#ffa21a",
+            layout: ['count', 'prev', 'page', 'next', 'limit', 'skip'],
+            // jump: function (obj) {
+            //     console.log(obj)
+            // }
+        });
+
+        laypage.render({
+            elem: 'laypages_02',
+            count: 100,
+            theme: "#ffa21a",
+            layout: ['count', 'prev', 'page', 'next', 'limit', 'skip'],
+            // jump: function (obj) {
+            //     console.log(obj)
+            // }
+        });
     })
 </script>
