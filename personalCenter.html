@@ -12,15 +12,14 @@
     <title>个人中心-鑫路金融官网</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/aboutUs.css">
-    <link rel="stylesheet" href="css/personalCenter.css">
+    <link rel="stylesheet" href="css/accountPage.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/xinlu-icon.ico">
 </head>
 
 <body>
     <!-- 头部 -->
     <header></header>
-    <main class="clearfloat">
+    <main class="personal_center clearfloat">
         <!-- 个人中心左侧 -->
         <div class="personal_center_left">
             <!-- 认证 -->
@@ -76,11 +75,11 @@
                                 <p>可用余额</p>
                             </div>
                             <div class="rechargr_withdraw01">
-                                <div class="rechargr_btn01">
+                                <div class="rechargr_btn">
                                     <p>充值</p>
                                     <div class="arrows_01"></div>
                                 </div>
-                                <div class="withdraw_btn01">
+                                <div class="withdraw_btn tx_btn">
                                     <p>提现</p>
                                     <div class="arrows_02"></div>
                                 </div>
@@ -130,16 +129,16 @@
                         <div id="calendar2"></div> -->
                     </div>
                 </li>
-                <!-- 提现页面 -->
+                <!-- 充值页面 -->
                 <li class="rechargr_page">
                     <div class="rechargr_page_top clearfloat">
                         <div class="rechargr_page_top_left">
                             <div class="rechargr_withdraw02">
-                                <div class="rechargr_btn02">
+                                <div class="rechargr_btn tx_btn">
                                     <p>提现</p>
                                     <div class="arrows_01"></div>
                                 </div>
-                                <div class="withdraw_btn02">
+                                <div class="call_back">
                                     <p>返回</p>
                                     <div class="arrows_02"></div>
                                 </div>
@@ -161,11 +160,91 @@
                         </div>
                     </div>
                     <div class="rechargr_page_bottom clearfloat">
-                        <div class="confirm_message"></div>
-                        <div class="recharge_money"></div>
+                        <div class="confirm_message">
+                            <p>确认信息</p>
+                            <div class="confirm_message01">
+                                <span>身份信息</span>
+                                <span>*双（3308******236）</span>
+                                <br>
+                            </div>
+                            <div class="bank_mask">
+                                <span>银行卡号</span>
+                                <div class="bank_message">
+                                    <div class="bank_img"></div>
+                                    <div class="id_card_message">
+                                        <span>**** **** **** 2766</span>
+                                        <span>储蓄卡</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recharge_money">
+                            <form action="" class="recharge_money_form">
+                                <p>充值金额</p>
+                                <input type="text" placeholder="请输入充值金额">
+                                <input type="button" value="立即充值">
+                            </form>
+                        </div>
                     </div>
                 </li>
-                <li class="withdraw_page"></li>
+                <!-- 提现页面 -->
+                <li class="withdraw_page">
+                    <div class="withdraw_page_top clearfloat">
+                        <div class="withdraw_page_top_left">
+                            <div class="rechargr_withdraw03">
+                                <div class="rechargr_btn">
+                                    <p>充值</p>
+                                    <div class="arrows_01"></div>
+                                </div>
+                                <div class="call_back">
+                                    <p>返回</p>
+                                    <div class="arrows_02"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="withdraw_page_top_right clearfloat">
+                            <div class="all_money">
+                                <p>0.00</p>
+                                <p>总资产</p>
+                            </div>
+                            <div class="income02">
+                                <p>0.00</p>
+                                <p>累计收益</p>
+                            </div>
+                            <div class="balance02">
+                                <p>0.00</p>
+                                <p>可用余额</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rechargr_page_bottom clearfloat">
+                        <div class="confirm_message">
+                            <p>确认提现信息</p>
+                            <div class="confirm_message02">
+                                <span>身份信息</span>
+                                <span>*双（3308******236）</span>
+                                <br>
+                            </div>
+                            <div class="bank_mask02">
+                                <span>提现到银行卡</span>
+                                <div class="bank_message">
+                                    <div class="bank_img"></div>
+                                    <div class="id_card_message">
+                                        <span>**** **** **** 2766</span>
+                                        <span>储蓄卡</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recharge_money">
+                            <form action="" class="withdraw_money_form">
+                                <p>提现金额</p>
+                                <input type="text" placeholder="请输入提现金额">
+                                <input type="button" value="立即提现">
+                            </form>
+                        </div>
+                    </div>
+                </li>
             </ul>
             <ul></ul>
             <ul></ul>
@@ -253,13 +332,22 @@
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
 
-    // 充值页显示
-    $(".rechargr_btn01").click(function(){
+    // 点击充值按钮
+    $(".rechargr_btn").click(function () {
+        $(".rechargr_page").show();
         $(".account_page").hide();
         $(".withdraw_page").hide();
-        $(".rechargr_page").show();
     })
-    $(".withdraw_btn02").click(function(){
+
+    // 点击提现按钮
+    $(".tx_btn").click(function () {
+        $(".withdraw_page").show();
+        $(".account_page").hide();
+        $(".rechargr_page").hide();
+    })
+
+    // 点击返回按钮
+    $(".call_back").click(function () {
         $(".account_page").show();
         $(".rechargr_page").hide();
         $(".withdraw_page").hide();

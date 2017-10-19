@@ -1,74 +1,7 @@
-main{
-    width: 1200px;
-    margin: 0 auto;
-    padding-top: 60px;
-    padding-bottom: 265px;
-}
-
-/* 个人中心左侧(开始) */
-.personal_center_left{
-    width: 240px;
-    height: 905px;
-    float: left;
-    background: #fff;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 10px 20px #f7f3ec;
-}
-
-/* 认证 */
-.person_message{
-    height: 290px;
-}
-
-.person_message>img{
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-
-.verify>img{
-    margin: 15px 17px;
-}
-
-.approve_load{
-    width: 186px;
-    height: 6px;
-    margin: 0 auto;
-    border-radius: 5px;
-    background: #eee;
-}
-
-.loading{
-    width: 100%;
-    height: 6px;
-    border-radius: 5px;
-    background: #fbd585;
-}
-
-.data_progress{
-    margin-top: 10px;
-}
-
-/* 左侧选项卡 */
-.personal_left_ul>li{
-    width: 100%;
-    float: left;
-    height: 55px;
-    line-height: 55px;
-}
-
-/* 个人中心左侧(结束) */
-/* 个人中心右侧 */
-.personal_center_right{
-    height: 100%;
-    width: 920px;
-    float: right;
-    margin: 0 20px; 
-}
-
 /* 账户总额 头部 */
 .account_page_top,
-.rechargr_page_top{
+.rechargr_page_top,
+.withdraw_page_top{
     height: 150px;
     border-radius: 5px;
     text-align: center;
@@ -76,8 +9,10 @@ main{
     box-shadow: 0 10px 20px #f7f3ec;
 }
 
+/* 左侧 */
 .account_page_top_left,
-.rechargr_page_top_left{
+.rechargr_page_top_left,
+.withdraw_page_top_left{
     width: 210px;
     height: 100%;
     float: left;
@@ -97,15 +32,18 @@ main{
     margin-top: -12px;
 }
 
+/* 右侧 */
 .account_page_top_right,
-.rechargr_page_top_right{
+.rechargr_page_top_right,
+.withdraw_page_top_right{
     float: right;
     width: 710px;
     height: 100%;
 }
 
 .account_page_top_right>div,
-.rechargr_page_top_right>div{
+.rechargr_page_top_right>div,
+.withdraw_page_top_right>div{
     float: left;
 }
 
@@ -129,14 +67,14 @@ main{
 
 /* 充值提现 按钮 */
 .rechargr_withdraw01,
-.rechargr_withdraw02{
+.rechargr_withdraw02,
+.rechargr_withdraw03{
     margin: 25px 35px;
 }
 
-.rechargr_btn01,
-.rechargr_btn02,
-.withdraw_btn01,
-.withdraw_btn02{
+.call_back,
+.rechargr_btn,
+.withdraw_btn{
     width: 138px;
     height: 45px;
     font-size: 16px;
@@ -145,28 +83,25 @@ main{
     position: relative;
 }
 
-.rechargr_btn01,
-.rechargr_btn02{
+.rechargr_btn{
     color: #fff;
     background: #ffc776;
 }
 
-.withdraw_btn01,
-.withdraw_btn02{
+.call_back,
+.withdraw_btn{
     color: #ffc776;
     margin-top: 10px;
     background: #fff;
     border: 1px solid #ffc776;
 }
 
-.rechargr_btn01>p,
-.rechargr_btn02>p{
+.rechargr_btn>p{
     margin-left: 20px;
     position: absolute;
 }
 
-.withdraw_btn01>p,
-.withdraw_btn02>p{
+.withdraw_btn01>p{
     margin-left: 88px;
     position: absolute;
 }
@@ -244,7 +179,8 @@ main{
 }
 
 /* 充值提现页面 */
-.rechargr_page{
+.rechargr_page,
+.withdraw_page{
     display: none;
 }
 .all_money{
@@ -269,10 +205,94 @@ main{
 .confirm_message{
     float: left;
     width: 525px;
+    color: #666;
+    text-align: center;
     margin-right: 20px;
 }
 
 .recharge_money{
     width: 375px;
     float: right;
+    color: #666;
+    text-align: center;
+}
+
+.confirm_message>p:first-child,
+.recharge_money_form>p:first-child,
+.withdraw_money_form>p:first-child{
+    margin-top: 25px;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+.confirm_message01{
+    margin-left: -100px;
+    margin-bottom: 20px;
+}
+
+.confirm_message02{
+    margin-left: -90px;
+    margin-bottom: 20px;
+}
+
+.confirm_message01>span:last-of-type{
+    margin-left: 20px;
+}
+
+.confirm_message02>span:first-child{
+    margin-right: 20px;
+}
+
+.bank_mask{
+    width: 320px;
+    margin: 0 auto;
+}
+
+.bank_mask02{
+    width: 350px;
+    margin: 0 auto;
+}
+
+.bank_message{
+    width: 240px;
+    height: 100px;
+    float: right;
+    margin-top: 5px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 1px solid #fdaa3d;
+}
+
+.bank_img{
+    height: 67px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.id_card_message{
+    display: flex;
+    line-height: 33px;
+    justify-content: space-around;
+}
+
+.recharge_money_form>input,
+.withdraw_money_form>input{
+    width: 320px;
+    height: 45px;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.recharge_money_form>input[type="text"],
+.withdraw_money_form>input[type="text"]{
+    padding-left: 10px;
+    border: 1px solid #e4e4e4;
+}
+
+.recharge_money_form>input[type="button"],
+.withdraw_money_form>input[type="button"]{
+    color: #fff;
+    font-size: 16px;
+    background: #fdaa3d;
+    border: 1px solid #fdaa3d;
 }
