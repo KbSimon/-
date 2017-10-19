@@ -1,0 +1,102 @@
+.friends_top {
+    height: 230px;
+}
+
+.friends_top_left {
+    width: 265px;
+    float: left;
+    height: 100%;
+    margin-right: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px #f7f3ec;
+}
+
+.friends_top_right {
+    float: right;
+    height: 100%;
+    width: 635px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px #f7f3ec;
+}
+
+.total_award,
+.total_person {
+    color: #666;
+    width: 150px;
+    height: 20px;
+    font-size: 12px;
+    padding-left: 30px;
+}
+
+.total_award>p,
+.total_person>p {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.total_award>p:last-of-type,
+.total_person>p:last-of-type {
+    color: #ffa21a;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.link_btn {
+    color: #fff;
+    width: 205px;
+    height: 45px;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    border-radius: 45px;
+    background: #ffc776;
+    line-height: 45px;
+    text-align: center;
+}
+
+.link_btn>p{
+    font-size: 16px;
+    margin-right: 60px;
+}
+
+.arrows_01,
+.arrows_02 {
+    top: 6px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.arrows_01 {
+    right: 10px;
+    background: #ffa21a url("../images/personal/arrows_01.png") center no-repeat;
+}
+
+/* 邀请好友流程 */
+.friends_step_ul{
+    height: 177px;
+}
+
+.friends_step_ul>li{
+    float: left;
+    height: 100%;
+    color: #666;
+    text-align: center;
+}
+
+.friends_step_ul>li>img{
+    padding: 20px 0;
+}
+
+.friends_step_ul>li:nth-child(2n+1){
+    width: 185px;
+}
+
+.friends_step_ul>li:nth-child(2n){
+    width: 40px;
+    padding-bottom: 50px;
+    background: url("../images/personal/left.png") 0 30% no-repeat;
+}
