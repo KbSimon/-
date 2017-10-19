@@ -1,0 +1,58 @@
+
+.messages_content{
+    color: #666;
+}
+.messages_title{
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.messages_text{
+    height: 80px;
+    padding: 0 40px;
+    border-radius: 5px;
+    line-height: 80px;
+    background: #fff;
+    margin-bottom: 10px;
+    box-shadow: 0 10px 20px #f7f3ec;
+}
+
+.messages_text_left{
+    float: left;
+}
+
+.messages_text_right{
+    float: right;
+}
+
+.messages_text_left{
+    display: flex;
+    justify-content: space-around;
+}
+
+.e_ring,
+.m_ring,
+.a_ring{
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 100%;
+    margin: 22px 25px 0 0;
+}
+
+.e_ring{
+    color: #ffa3a0;
+    background: #ffd4cf;
+}
+
+.m_ring{
+    color: #facc63;
+    background: #fdecc2;
+}
+
+.a_ring{
+    color: #62c8a5;
+    background: #d0eee4;
+}
