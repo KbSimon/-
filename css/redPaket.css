@@ -1,0 +1,178 @@
+.redPaket_title {
+    height: 60px;
+    color: #666;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.redPaket_text {
+    height: 155px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px #f7f3ec;
+}
+
+.redPaket_top_ul>li {
+    width: 30%;
+    float: left;
+    color: #666;
+    height: 100%;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.redPaket_top_ul {
+    height: 155px;
+}
+
+.redPaket_top_ul>li>p:first-child {
+    line-height: 1.8;
+    font-size: 30px;
+}
+
+.redPaket_bottom {
+    margin-top: 20px;
+    height: 655px;
+}
+
+.redPaket_bottom_ul {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.redPaket_bottom_ul>li {
+    float: left;
+    width: 295px;
+    height: 60px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px #f7f3ec;
+}
+
+.redPaket_bottom_ul>li:nth-last-child(2) {
+    margin: 0 17.5px;
+}
+
+.redPaket_bottom_content_01,
+.redPaket_bottom_content_02,
+.redPaket_bottom_content_03 {
+    height: 585px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px #f7f3ec
+}
+
+.redPaket_bottom_content_02,
+.redPaket_bottom_content_03{
+    display: none;
+}
+
+.used_redPaket_ul>li,
+.usable_redPaket_ul>li,
+.expire_redPaket_ul>li {
+    float: left;
+    width: 322px;
+    height: 184px;
+    margin: 30px 68.5px;
+    position: relative;
+}
+
+.usable_redPaket_ul>li {
+    background: url("../images/personal/redPaket_01.png")
+}
+
+.expire_redPaket_ul>li,
+.used_redPaket_ul>li {
+    background: url("../images/personal/redPaket_02.png")
+}
+
+.used_money,
+.usable_money,
+.expire_money {
+    color: #fff8ed;
+    padding-left: 35px;
+}
+
+.used_p01,
+.usable_p01,
+.expire_p01 {
+    line-height: 1;
+    font-size: 80px;
+}
+
+.used_p01::after,
+.usable_p01::after,
+.expire_p01::after {
+    margin-top: 10px;
+    content: "￥";
+    font-size: 20px;
+    position: absolute;
+}
+
+.used_p02,
+.usable_p02,
+.expire_p02 {
+    font-size: 12px;
+}
+
+.used_ring,
+.state_ring,
+.expire_ring {
+    top: 15px;
+    right: 35px;
+    width: 26px;
+    height: 26px;
+    color: #fff;
+    font-size: 8px;
+    line-height: 26px;
+    border-radius: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+.state_ring {
+    background: #ff6666;
+}
+
+.used_ring,
+.expire_ring {
+    background: #666;
+}
+
+.used_bottom,
+.usable_bottom,
+.expire_bottom {
+    width: 252px;
+    height: 28px;
+    line-height: 28px;
+    margin: 25px auto;
+    text-align: center;
+    background: #fff8ed;
+}
+
+.used_bottom_details,
+.usable_bottom_details,
+.expire_bottom_details {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.usable_bottom_details{
+    color: #ff6666;
+}
+
+.used_bottom_details,
+.expire_bottom_details{
+    color: #999;
+}
+
+.usable_bottom_date {
+    color: #ff938f;
+}
+
+.used_bottom_date,
+.expire_bottom_date{
+    color: #b6b4b0;
+}       
