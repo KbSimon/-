@@ -409,28 +409,63 @@
             <ul class="information">
                 <div class="information_title">个人资料</div>
                 <li>
-                    <div class="login_password">
+                    <div class="login_password slide_up">
                         <div class="login_password_left">
                                 <img src="images/personal/wait.png">
                                 <span style="margin:0 40px 0 10px">登录密码</span>
                                 <span>登录鑫路金融时需要输入的密码</span>
                         </div>
-                        <div class="login_password_change">修改</div>
+                        <div class="change_01">修改</div>
                     </div>
-                    <div class="login_content">
+                    <div class="slide_down">
                         <form action="" class="login_form">
                             <ul class="login_form_ul">
                                 <li>
                                     <div class="now_password"></div>
-                                    <input type="text" placeholder="请输入现在的密码" class="now_password_input"> 
+                                    <input type="password" placeholder="请输入现在的密码" class="now_password_input"> 
                                 </li>
-                                <li></li>
-                                <li></li>
+                                <li>
+                                    <div class="new_password1"></div>
+                                    <input type="password" placeholder="请输入新密码" class="new_password_input1"> 
+                                </li>
+                                <li>
+                                    <div class="new_password2"></div>
+                                    <input type="password" placeholder="确认新密码" class="new_password_input2"> 
+                                </li>
                             </ul>
+                            <input type="button" value="确认修改" class="affirm_btn1">
                         </form>
                     </div>
                 </li>
-                <li></li>
+                <li>
+                    <div class="login_password login_password_acgtive">
+                        <div class="login_password_left">
+                                <img src="images/personal/wait.png">
+                                <span style="margin:0 40px 0 10px">登录密码</span>
+                                <span>登录鑫路金融时需要输入的密码</span>
+                        </div>
+                        <div class="change_01">修改</div>
+                    </div>
+                    <div class="slide_down">
+                        <form action="" class="login_form">
+                            <ul class="login_form_ul">
+                                <li>
+                                    <div class="now_password"></div>
+                                    <input type="password" placeholder="请输入现在的密码" class="now_password_input"> 
+                                </li>
+                                <li>
+                                    <div class="new_password1"></div>
+                                    <input type="password" placeholder="请输入新密码" class="new_password_input1"> 
+                                </li>
+                                <li>
+                                    <div class="new_password2"></div>
+                                    <input type="password" placeholder="确认新密码" class="new_password_input2"> 
+                                </li>
+                            </ul>
+                            <input type="button" value="确认修改" class="affirm_btn1">
+                        </form>
+                    </div>
+                </li>
                 <li></li>
                 <li></li>
                 <li></li>
@@ -928,5 +963,20 @@
             $(".redPaket_bottom_content_02").hide();
             $(".redPaket_bottom_content_03").show();
         });
+    })
+</script>
+
+<script>
+    // 我的资料
+    $(".change_01").click(function(){
+        if ($(this).parent().next().css("display")== "none") {
+            $(this).text("收起");
+            $(this).parent().next().addClass("border_radius");
+            $(this).parent().addClass("border_bottom").removeClass("slide_up");
+        } else if($(this).parent().next().css("display")== "block") {
+            $(this).text("修改");
+            $(this).parent().removeClass("border_bottom").addClass("slide_up");
+        }
+        $(this).parent().next().slideToggle("slow");
     })
 </script>
