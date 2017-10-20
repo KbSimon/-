@@ -1,0 +1,66 @@
+.information>li{
+    color: #666;
+}
+
+.information_title{
+    height: 60px;
+    color: #666;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.login_password{
+    height: 80px;
+    background: #fff;
+    line-height: 80px;
+    padding-left: 40px;
+    padding-right: 60px;
+}
+
+
+.login_password_left{
+    /* width: 310px; */
+    float: left;
+}
+
+.login_password_change{
+    color: #ffa21a;
+    float: right;
+}
+
+.login_content{
+    height: 280px;
+    background: #fff;
+}
+
+.login_form{
+    height: 280px;
+    padding: 35px 155px;
+}
+
+
+.login_form_ul>li{
+    float: left;
+    width: 320px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #e4e4e4;
+}
+
+.now_password{
+    width: 30px;
+    height: 25px;
+    float: left;
+    margin: 10px;
+    border-right: 1px solid #e4e4e4;
+}
+
+.now_password{
+    background: url("../images/personal/now_password.png") no-repeat;
+}
+
+.now_password_input{
+    background-attachment: fixed;
+}
