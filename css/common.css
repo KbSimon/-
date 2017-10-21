@@ -543,6 +543,7 @@ footer {
     float: left;
     height: 55px;
     line-height: 55px;
+    cursor: pointer;
 }
 
 /* 个人中心左侧(结束) */

@@ -28,6 +28,7 @@
 .property_bottom_ul {
     height: 65px;
     line-height: 65px;
+    cursor: pointer;
 }
 
 .property_bottom_ul>li {
@@ -86,6 +87,7 @@
     line-height: 25px;
     text-align: center;
     color: #ffd08c;
+    cursor: pointer;
     border: 1px solid #ffd08c;
 }
 

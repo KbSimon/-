@@ -85,6 +85,7 @@
 
 .rechargr_btn{
     color: #fff;
+    cursor: pointer;
     background: #ffc776;
 }
 
@@ -93,6 +94,7 @@
     color: #ffc776;
     margin-top: 10px;
     background: #fff;
+    cursor: pointer;
     border: 1px solid #ffc776;
 }
 
@@ -162,6 +164,7 @@
     width: 50%;
     height: 100%;
     float: left;
+    padding-top: 10px;
     text-align: center;
 }
 

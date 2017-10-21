@@ -33,13 +33,9 @@
 }
 
 .border_radius{
+    background: #fff;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-}
-
-.slide_down{
-    height: 280px;
-    background: #fff;
 }
 
 .slide_down{
@@ -51,7 +47,8 @@
     padding: 35px 155px;
 }
 
-.login_form_ul>li{
+.login_form_ul>li,
+.email_form_ul>li{
     float: left;
     width: 320px;
     height: 45px;
@@ -71,16 +68,31 @@
     border-right: 1px solid #e4e4e4;
 }
 
+.email_input,
 .now_password_input,
 .new_password_input1,
-.new_password_input2{
+.new_password_input2,
+.deal_password_input,
+.deal_password_input1,
+.deal_password_input2{
     width: 250px;
     border: 0;
     outline: none;
 }
 
-.affirm_btn1{
+.affirm_btn3,
+.affirm_btn1,
+.affirm_div{
     width: 320px;
+}
+
+.affirm_btn2{
+    width: 210px;
+}
+
+.affirm_btn1,
+.affirm_btn2,
+.affirm_btn3{
     height: 45px;
     border: none;
     outline: none;
@@ -110,4 +122,21 @@
 
 .new_password2{
     background: url("../images/register/password_02.png") no-repeat;
+}
+
+/* 交易密码部分 */
+.affirm_div>a{
+    margin-left: 5px;
+}
+
+/* 手机号码 */
+.phone_text{
+    letter-spacing: 1px;
+    padding: 35px 160px;
+}
+
+/* 电子邮箱 */
+.email_form{
+    height: 170px;
+    padding: 35px 155px;
 }
