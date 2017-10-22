@@ -48,7 +48,8 @@
 }
 
 .login_form_ul>li,
-.email_form_ul>li{
+.email_form_ul>li,
+.approve_ul>li{
     float: left;
     width: 320px;
     height: 45px;
@@ -69,6 +70,9 @@
 }
 
 .email_input,
+.real_name,
+.idCard_input,
+.bank_input,
 .now_password_input,
 .new_password_input1,
 .new_password_input2,
@@ -129,6 +133,58 @@
     margin-left: 5px;
 }
 
+/* 实名认证 */
+.approve_form{
+    width: 400px;
+    height: 390px;
+    padding: 35px 155px;
+}
+
+select{
+    color: #666;
+    width: 320px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #e4e4e4;
+    
+}
+
+.approve_ul{
+    position: relative;
+}
+
+.approve_ul>li:nth-child(4){
+    border: none;
+}
+
+.approve_ul>li:nth-child(5){
+    width: 180px;
+    position: relative;
+}
+
+.approve_ul>li:nth-child(5)>input{
+    width: 100px;
+    border: 0;
+    outline: none;
+}
+
+.code_div02{
+    right: 0;
+    left: 200px;
+    bottom: 10px;
+}
+
+.real_user {
+    background: url("../images/register/real_user.png") no-repeat;
+}
+
+.id_card {
+    background: url("../images/register/id_card.png") no-repeat;
+}
+
+.bank_card {
+    background: url("../images/register/bank_card.png") 0 60% no-repeat;
+}
 /* 手机号码 */
 .phone_text{
     letter-spacing: 1px;

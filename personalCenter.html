@@ -406,32 +406,32 @@
                 </li>
             </ul>
             <!-- 个人资料 -->
-            <ul class="information">
+            <ul class="information close_ul">
                 <div class="information_title">个人资料</div>
                 <!-- 登录密码 -->
                 <li>
                     <div class="login_password slide_up">
                         <div class="login_password_left">
-                                <img src="images/personal/wait.png">
-                                <span style="margin:0 40px 0 10px">登录密码</span>
-                                <span>登录鑫路金融时需要输入的密码</span>
+                            <img src="images/personal/wait.png">
+                            <span style="margin:0 40px 0 10px">登录密码</span>
+                            <span>登录鑫路金融时需要输入的密码</span>
                         </div>
                         <div class="change_01">修改</div>
                     </div>
                     <div class="slide_down">
-                        <form action="" class="login_form">
+                        <form action="" class="login_form slide_form">
                             <ul class="login_form_ul">
                                 <li>
                                     <div class="now_password"></div>
-                                    <input type="password" placeholder="请输入现在的密码" class="now_password_input"> 
+                                    <input type="password" placeholder="请输入现在的密码" class="now_password_input">
                                 </li>
                                 <li>
                                     <div class="new_password1"></div>
-                                    <input type="password" placeholder="请输入新密码" class="new_password_input1"> 
+                                    <input type="password" placeholder="请输入新密码" class="new_password_input1">
                                 </li>
                                 <li>
                                     <div class="new_password2"></div>
-                                    <input type="password" placeholder="确认新密码" class="new_password_input2"> 
+                                    <input type="password" placeholder="确认新密码" class="new_password_input2">
                                 </li>
                             </ul>
                             <input type="button" value="确认修改" class="affirm_btn1">
@@ -442,32 +442,32 @@
                 <li>
                     <div class="login_password login_password_acgtive">
                         <div class="login_password_left">
-                                <img src="images/personal/frost.png">
-                                <span style="margin:0 40px 0 10px">交易密码</span>
-                                <span>请定期更换交易密码，并确保交易密码设置与登录密码不同</span>
+                            <img src="images/personal/frost.png">
+                            <span style="margin:0 40px 0 10px">交易密码</span>
+                            <span>请定期更换交易密码，并确保交易密码设置与登录密码不同</span>
                         </div>
                         <div class="change_01">修改</div>
                     </div>
                     <div class="slide_down">
-                        <form action="" class="login_form">
+                        <form action="" class="login_form slide_form">
                             <ul class="login_form_ul">
                                 <li>
                                     <div class="now_password"></div>
-                                    <input type="password" placeholder="请输入现在的支付密码" class="deal_password_input"> 
+                                    <input type="password" placeholder="请输入现在的支付密码" class="deal_password_input">
                                 </li>
                                 <li>
                                     <div class="new_password1"></div>
-                                    <input type="password" placeholder="请输入新交易密码" class="deal_password_input1"> 
+                                    <input type="password" placeholder="请输入新交易密码" class="deal_password_input1">
                                 </li>
                                 <li>
                                     <div class="new_password2"></div>
-                                    <input type="password" placeholder="确认新交易密码" class="deal_password_input2"> 
+                                    <input type="password" placeholder="确认新交易密码" class="deal_password_input2">
                                 </li>
                             </ul>
                             <div class="affirm_div">
-                            <input type="button" value="确认修改" class="affirm_btn2">
-                            <a href="">忘记交易密码？</a>
-                        </div>
+                                <input type="button" value="确认修改" class="affirm_btn2">
+                                <a href="">忘记交易密码？</a>
+                            </div>
                         </form>
                     </div>
                 </li>
@@ -475,32 +475,41 @@
                 <li>
                     <div class="login_password login_password_acgtive">
                         <div class="login_password_left">
-                                <img src="images/personal/yellow.png">
-                                <span style="margin:0 40px 0 10px">实名认证</span>
-                                <span>投资前需要通过公安部实名认证系统才能投资！请先认证</span>
+                            <img src="images/personal/yellow.png">
+                            <span style="margin:0 40px 0 10px">实名认证</span>
+                            <span>投资前需要通过公安部实名认证系统才能投资！请先认证</span>
                         </div>
                         <div class="change_01">修改</div>
                     </div>
                     <div class="slide_down">
-                        <form action="" class="login_form">
-                            <ul class="login_form_ul">
+                        <form action="" class="approve_form slide_form">
+                            <ul class="approve_ul clearfloat">
                                 <li>
-                                    <div class="now_password"></div>
-                                    <input type="password" placeholder="请输入现在的支付密码" class="deal_password_input"> 
+                                    <div class="real_user"></div>
+                                    <input type="password" placeholder="请输入真实姓名" class="real_name">
                                 </li>
                                 <li>
-                                    <div class="new_password1"></div>
-                                    <input type="password" placeholder="请输入新交易密码" class="deal_password_input1"> 
+                                    <div class="id_card"></div>
+                                    <input type="text" placeholder="请输入身份证号码" class="idCard_input">
                                 </li>
                                 <li>
-                                    <div class="new_password2"></div>
-                                    <input type="password" placeholder="确认新交易密码" class="deal_password_input2"> 
+                                    <div class="bank_card"></div>
+                                    <input type="text" placeholder="请输入银行卡号码" class="bank_input">
                                 </li>
+                                <li>
+                                    <select name="" id="">
+                                        <option selected="selected">选择所属银行</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <div class="code"></div>
+                                    <input type="text" cla placeholder="请输入验证码" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                                </li>
+                                <div class="code_div02">获取验证码</div>
                             </ul>
-                            <div class="affirm_div">
-                            <input type="button" value="确认修改" class="affirm_btn2">
-                            <a href="">忘记交易密码？</a>
-                        </div>
+                            <div class="register_end">
+                                <input type="button" class="gift_btn" value="完成领取红包 ">
+                            </div>
                         </form>
                     </div>
                 </li>
@@ -508,17 +517,22 @@
                 <li>
                     <div class="login_password login_password_acgtive">
                         <div class="login_password_left">
-                                <img src="images/personal/no_with.png">
-                                <span style="margin:0 40px 0 10px">手机号码</span>
-                                <span>150****5556</span>
+                            <img src="images/personal/no_with.png">
+                            <span style="margin:0 40px 0 10px">手机号码</span>
+                            <span>150****5556</span>
                         </div>
                         <div class="change_01">修改</div>
                     </div>
                     <div class="slide_down">
                         <div class="phone_text">
-                            <p>手机号码牵扯到你的<b>账户资金安全</b></p>
-                            <p>如<b>确认修改</b>，请联系客服（客服时间：周一至周五 9:00-18:00）</p>
-                            <p>客服热线：<b>400-807-0808</b></p>
+                            <p>手机号码牵扯到你的
+                                <b>账户资金安全</b>
+                            </p>
+                            <p>如
+                                <b>确认修改</b>，请联系客服（客服时间：周一至周五 9:00-18:00）</p>
+                            <p>客服热线：
+                                <b>400-807-0808</b>
+                            </p>
                         </div>
                     </div>
                 </li>
@@ -526,17 +540,22 @@
                 <li>
                     <div class="login_password login_password_acgtive">
                         <div class="login_password_left">
-                                <img src="images/personal/wait.png">
-                                <span style="margin:0 40px 0 10px">银行卡</span>
-                                <span>请先实名认证并绑定银行卡</span>
+                            <img src="images/personal/wait.png">
+                            <span style="margin:0 40px 0 10px">银行卡</span>
+                            <span>请先实名认证并绑定银行卡</span>
                         </div>
                         <div class="change_01">修改</div>
                     </div>
                     <div class="slide_down">
                         <div class="phone_text">
-                            <p>银行卡牵扯到你的<b>账户资金安全</b></p>
-                            <p>如<b>确认修改</b>，请联系客服（客服时间：周一至周五 9:00-18:00）</p>
-                            <p>客服热线：<b>400-807-0808</b></p>
+                            <p>银行卡牵扯到你的
+                                <b>账户资金安全</b>
+                            </p>
+                            <p>如
+                                <b>确认修改</b>，请联系客服（客服时间：周一至周五 9:00-18:00）</p>
+                            <p>客服热线：
+                                <b>400-807-0808</b>
+                            </p>
                         </div>
                     </div>
                 </li>
@@ -544,9 +563,9 @@
                 <li>
                     <div class="login_password login_password_acgtive">
                         <div class="login_password_left">
-                                <img src="images/personal/yellow.png">
-                                <span style="margin:0 40px 0 10px">电子邮箱</span>
-                                <span>绑定邮箱，轻松梳理理财信息（未绑定）</span>
+                            <img src="images/personal/yellow.png">
+                            <span style="margin:0 40px 0 10px">电子邮箱</span>
+                            <span>绑定邮箱，轻松梳理理财信息（未绑定）</span>
                         </div>
                         <div class="change_01">修改</div>
                     </div>
@@ -586,7 +605,7 @@
                 </li>
                 <li class="redPaket_bottom">
                     <ul class="redPaket_bottom_ul clearfloat">
-                        <li class="active_01 usable_btn" >可用红包</li>
+                        <li class="active_01 usable_btn">可用红包</li>
                         <li class="expire_btn">过期红包</li>
                         <li class="used_btn">已使用红包</li>
                     </ul>
@@ -700,58 +719,58 @@
                     </div>
                     <!-- 已使用红包 -->
                     <div class="redPaket_bottom_content_03">
-                            <!-- 已使用红包 -->
-                            <ul class="used_redPaket_ul">
-                                <li>
-                                    <div class="used_money">
-                                        <p class="used_p01">28</p>
-                                        <p class="used_p02">投资满1000元以上可用</p>
-                                        <p class="used_p02">使用投资期限29以上标的投资</p>
-                                    </div>
-                                    <div class="used_ring">已用</div>
-                                    <div class="used_bottom">
-                                        <span class="used_bottom_details">新手标28元</span>
-                                        <span class="used_bottom_date">2017-09-22到2017-11-21</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="used_money">
-                                        <p class="used_p01">28</p>
-                                        <p class="used_p02">投资满1000元以上可用</p>
-                                        <p class="used_p02">使用投资期限29以上标的投资</p>
-                                    </div>
-                                    <div class="used_ring">已用</div>
-                                    <div class="used_bottom">
-                                        <span class="used_bottom_details">新手标28元</span>
-                                        <span class="used_bottom_date">2017-09-22到2017-11-21</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="used_money">
-                                        <p class="used_p01">28</p>
-                                        <p class="used_p02">投资满1000元以上可用</p>
-                                        <p class="used_p02">使用投资期限29以上标的投资</p>
-                                    </div>
-                                    <div class="used_ring">已用</div>
-                                    <div class="used_bottom">
-                                        <span class="used_bottom_details">新手标28元</span>
-                                        <span class="used_bottom_date">2017-09-22到2017-11-21</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="used_money">
-                                        <p class="used_p01">28</p>
-                                        <p class="used_p02">投资满1000元以上可用</p>
-                                        <p class="used_p02">使用投资期限29以上标的投资</p>
-                                    </div>
-                                    <div class="used_ring">已用</div>
-                                    <div class="used_bottom">
-                                        <span class="used_bottom_details">新手标28元</span>
-                                        <span class="used_bottom_date">2017-09-22到2017-11-21</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        <!-- 已使用红包 -->
+                        <ul class="used_redPaket_ul">
+                            <li>
+                                <div class="used_money">
+                                    <p class="used_p01">28</p>
+                                    <p class="used_p02">投资满1000元以上可用</p>
+                                    <p class="used_p02">使用投资期限29以上标的投资</p>
+                                </div>
+                                <div class="used_ring">已用</div>
+                                <div class="used_bottom">
+                                    <span class="used_bottom_details">新手标28元</span>
+                                    <span class="used_bottom_date">2017-09-22到2017-11-21</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="used_money">
+                                    <p class="used_p01">28</p>
+                                    <p class="used_p02">投资满1000元以上可用</p>
+                                    <p class="used_p02">使用投资期限29以上标的投资</p>
+                                </div>
+                                <div class="used_ring">已用</div>
+                                <div class="used_bottom">
+                                    <span class="used_bottom_details">新手标28元</span>
+                                    <span class="used_bottom_date">2017-09-22到2017-11-21</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="used_money">
+                                    <p class="used_p01">28</p>
+                                    <p class="used_p02">投资满1000元以上可用</p>
+                                    <p class="used_p02">使用投资期限29以上标的投资</p>
+                                </div>
+                                <div class="used_ring">已用</div>
+                                <div class="used_bottom">
+                                    <span class="used_bottom_details">新手标28元</span>
+                                    <span class="used_bottom_date">2017-09-22到2017-11-21</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="used_money">
+                                    <p class="used_p01">28</p>
+                                    <p class="used_p02">投资满1000元以上可用</p>
+                                    <p class="used_p02">使用投资期限29以上标的投资</p>
+                                </div>
+                                <div class="used_ring">已用</div>
+                                <div class="used_bottom">
+                                    <span class="used_bottom_details">新手标28元</span>
+                                    <span class="used_bottom_date">2017-09-22到2017-11-21</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
             <!-- 推荐好友 -->
@@ -1034,41 +1053,49 @@
         });
 
         // 我的红包页面
-        $(".redPaket_bottom_ul>li").click(function(){
+        $(".redPaket_bottom_ul>li").click(function () {
             $(this).addClass("active_01").siblings().removeClass("active_01");
         });
         // 点击可用红包
-        $(".usable_btn").click(function(){
+        $(".usable_btn").click(function () {
             $(".redPaket_bottom_content_01").show();
             $(".redPaket_bottom_content_02").hide();
             $(".redPaket_bottom_content_03").hide();
         });
         // 点击过期红包
-        $(".expire_btn").click(function(){
+        $(".expire_btn").click(function () {
             $(".redPaket_bottom_content_01").hide();
             $(".redPaket_bottom_content_02").show();
             $(".redPaket_bottom_content_03").hide();
         });
         // 点击已使用红包
-        $(".used_btn").click(function(){
+        $(".used_btn").click(function () {
             $(".redPaket_bottom_content_01").hide();
             $(".redPaket_bottom_content_02").hide();
             $(".redPaket_bottom_content_03").show();
         });
+
+        // 我的资料
+        $(".change_01").click(function () {
+            if ($(this).parent().next().css("display") == "none") {
+                $(this).text("收起");
+                $(this).parent().next().addClass("border_radius");
+                $(this).parent().addClass("border_bottom").removeClass("slide_up");
+            } else if ($(this).parent().next().css("display") == "block") {
+                $(this).text("修改");
+                $(this).parent().removeClass("border_bottom").addClass("slide_up");
+            }
+            $(this).parent().next().slideToggle("slow");
+        });
+        $(".slide_form>ul>li").click(function () {
+            $(this).attr("id", "active").siblings().removeAttr("id", "active");
+        });
+        $(".slide_form>ul>li").click(function () {
+            $(this).attr("id", "active").siblings().removeAttr("id", "active");
+        })
+
     })
 </script>
 
 <script>
-    // 我的资料
-    $(".change_01").click(function(){
-        if ($(this).parent().next().css("display")== "none") {
-            $(this).text("收起");
-            $(this).parent().next().addClass("border_radius");
-            $(this).parent().addClass("border_bottom").removeClass("slide_up");
-        } else if($(this).parent().next().css("display")== "block") {
-            $(this).text("修改");
-            $(this).parent().removeClass("border_bottom").addClass("slide_up");
-        }
-        $(this).parent().next().slideToggle("slow");
-    })
 </script>
