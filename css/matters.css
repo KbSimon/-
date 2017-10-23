@@ -1,0 +1,162 @@
+.banner{
+    width: 100%;
+    height: 400px;
+    min-width: 1200px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url("../images/matters/banner.png") center no-repeat;
+}
+
+.matters_middle{
+    width: 100%;
+    height: 205px;
+    background: #fff;
+    box-shadow: 0 10px 20px #f7f3ec;
+}
+
+.matters_list{
+    color: #666;
+    height: 100%;
+}
+
+.matters_list01,
+.matters_list02{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.matters_list_title{
+    float: left;
+}
+
+.matters_list_ul01>li,
+.matters_list_ul02>li{
+    width: 70px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+}
+
+.matters_bottom{
+    color: #666;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.matters_bid,
+.matters_bid01{
+    width: 1200px;
+    margin: 0 auto;
+    height: 240px;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    /* border: 1px solid transparent; */
+    box-shadow: 0 10px 20px #f7f3ec;
+}
+
+.bid_top{
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.bid_top>span:first-child{
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.bid_mask{
+    width: 50px;
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    background: #ffa21a;
+}
+
+.bid_top>img{
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.bid_bottom{
+    height: 160px;
+}
+
+.bid_ul>li{
+    height: 160px;
+    width: 200px;
+    float: left;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.bid_ul>li>p:first-child{
+    font-size: 30px;
+    line-height: 2;
+}
+
+.bid_ul>li>p:first-child::after{
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.bid_rate::after{
+    content: "%";
+    color: "#ffa21a";
+}
+
+.bid_date::after{
+    content: "月";
+}
+
+.bid_start::after{
+    content: "元";
+}
+
+.bid_end::after{
+    content: "元";
+}
+
+.bid_residue::after{
+    content: "元";
+}
+
+.btn_01,
+.btn_02{
+    width: 130px;
+    height: 45px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    background: #ffa21a;
+}
+
+.btn_01{
+    background: #ffa21a;
+}
+
+.btn_02{
+    background: #ccc;
+}
+
+.choose_01{
+    font-weight: bold;
+    color: #ffa21a;
+}
+
+.choose_02{
+    border: 1px solid #ffa21a;
+}
+
+#laypages,
+#laypages_02{
+    text-align: center;
+}
