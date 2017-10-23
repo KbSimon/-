@@ -1,0 +1,38 @@
+.catti_banner{
+    height: 400px;
+    margin: 0 auto;
+    min-width: 1200px;
+    max-width: 1920px;
+    background: url("../images/catti/catti_banner.png") center no-repeat;
+}
+
+.catti_content{
+    padding-top: 120px;
+}
+
+.catti_ul{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.catti_ul>li{
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.catti_ul>li>p{
+    color: #666;
+    font-size: 20px;
+    line-height: 6;
+    padding-bottom: 100px;
+}
+
+.catti_ul>li>img{
+    border: 1px solid #e4e4e4;
+}
+
+.catti_ul>li:last-child{
+    margin-left: -590px;
+}
