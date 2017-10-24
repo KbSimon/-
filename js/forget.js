@@ -13,5 +13,5 @@ $(".forget_ul02>li").click(function () {
 $(".next").click(function () {
     $(".forget_part01").hide();
     $(".forget_part02").show();
-    $(".forget_top_img").attr("src", "images/forget/forget_02.png");
+    $(".forget_top_img").attr("src", "../../images/forget/forget_02.png");
 });

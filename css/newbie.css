@@ -1,48 +1,11 @@
-
-.us_bg01{
-    width: 1200px;
-    height: 620px;
-    float: right;
-    background: #fcf6ec;
-    margin-top: 60px;
-    margin-bottom: 190px;
-    border-radius: 5px;
-}
-
-@media screen and (min-width:1600px){
-    .us_bg01{
-        width: 1400px;
-    }
-}
-.us_bg02{
-    width: 230px;
-    height: 765px;
-    background: #ffd08c;
-    position: absolute;
-    right:80px;
-}
-
-.us_content{
-    width: 1200px;
+.new_part01{
+    height: 680px;
+    min-width: 1200px;
+    max-width: 1920px;
     margin: 0 auto;
+    margin-bottom: 120px;
+    background: url("../images/newbie/banner.png") center no-repeat;
 }
-
-.us_text{
-    width: 545px;
-    color: #666;
-    position: absolute;
-    margin-top: 260px;
-}
-
-.us_img{
-    width: 335px;
-    height: 640px;
-    position: absolute;
-    right: 205px;
-    margin-top: 100px;
-    background: url("../images/newbie/us_bg.png") center no-repeat;
-}
-
 /* 我们的业务模式 */
 .business{
     height: 475px;
@@ -90,7 +53,7 @@
 .part3_top{
     width: 100%;
     height: 325px;
-    margin: 100px 0;
+    margin: 100px auto;
     color: #fff;
     padding: 50px 0;
     text-align: center;
@@ -104,6 +67,8 @@
 }
 .part3_ul{
     top: 195px;
+    width: 1200px;
+    margin: 0 auto;
     position: absolute;
 }
 
@@ -180,74 +145,43 @@ button{
 
 .part04_top{
     width: 100%;
-    background: #ffe3bb;
     text-align: center;
 }
 
 .part04_bottom{
+    height: 600px;
     width: 1200px;
     margin: 0 auto;
-    height: 925px;
-    /* float: left; */
 }
 
-.part04_bottom>ul{
-    width: 550px;
-    float: left;
+.new_part04{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background: #fff;
+}
+
+.part04_ul>li{
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .question{
-    margin-top: 40px;
+    height: 45px;
+    color: #fff;
+    line-height: 45px;
+    background: #ffd08c;
 }
 
-.question>li,
-.answer>li{
-    width: 550px;
-    /* height: 60px; */
-    float: left;
+
+.question>p{
+    padding-left: 45px;
+    font-size: 18px;
 }
 
-.question_div01,
-.answer_div01{
-    width: 60px;
-    height: 60px;
-    font-size: 30px;
-    line-height: 60px;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid #e4e4e4;
-}
-
-.question_div01{
-    float: left;
-    color: #8ed3da; 
-}
-
-.answer_div01{
-    float: right;
-    color: #ffa21a;
-}
-
-.answer_div02{
-    float: left;
-    width: 460px;
+.answer{
     color: #666;
-    text-align: justify;
-    padding: 20px 40px;
-    border-radius: 5px;
-    background: #fff9f1;
-}
-
-.question_div02{
-    width: 461px;
-    height: 44px;
-    float: right;
-    margin: 10px 0;
-    line-height: 44px;
-    background: url("../images/newbie/question_bg.png")
-}
-
-.question_div02>p{
-    color: #666;
-    padding-left: 25px;
+    height: 105px;
+    padding-left: 75px;
+    line-height: 105px;
 }

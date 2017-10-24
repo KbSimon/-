@@ -13,12 +13,12 @@ $(".register_ul02>li").click(function () {
 $(".next").click(function () {
     $(".register_part01").hide();
     $(".register_part02").show();
-    $(".register_top_img").attr("src", "images/register/register_02.png");
+    $(".register_top_img").attr("src", "../../images/register/register_02.png");
 });
 // 显示注册第三步
 $(".get").click(function () {
     $(".register_part01").hide();
     $(".register_part02").hide();
     $(".register_part03").show();
-    $(".register_top_img").attr("src", "images/register/register_03.png");
+    $(".register_top_img").attr("src", "../../images/register/register_03.png");
 });

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equlv="expires" content="0">
+    <meta http-equlv="Pragma" content="no-cache">
+    <meta http-equlv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="鑫路金融,鑫路金融官网,理财平台,互联网理财平台">
+    <meta name="description" content="鑫路金融是一家专注于短期投资的个人理财平台,精选优质的个人理财产品,优化用户投资体验。">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>登录鑫路—鑫路金融官网</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/login.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/xinlu-icon.ico">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header></header>
+    <div class="login_img">
+        <div class="login_main">
+            <div class="login_div">
+                <div class="login_title">
+                    <p>用户登录</p>
+                </div>
+                <form action="">
+                    <ul class="login_ul ">
+                        <li class="username clearfloat">
+                            <div class="username_img"></div>
+                            <input type="text" class="user_input" name="userName" placeholder="请输入用户名">
+                        </li>
+                        <div class="error_01">
+                            <p></p>
+                        </div>
+                        <li class="password clearfloat">
+                            <div class="password_img"></div>
+                            <input type="password" class="pwd_input" name="password" placeholder="请输入密码">
+                        </li>
+                        <div class="error_02">
+                            <p></p>
+                        </div>
+                    </ul>
+                    <input type="submit" value="登录">
+                    <div class="login_bottom">
+                        <a href="forgetPassword.html" style="color:#999;">忘记密码</a>
+                        <a href="register.html" style="color:#fd9c1c;">免费注册</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <footer></footer>
+</body>
+
+</html>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/login.js">
+</script>
+<script>
+    $("header").load("head.html");
+    // 导入尾部
+    $("footer").load("footer.html");
+
+    $(".login_ul>li").click(function () {
+        $(this).addClass("active").siblings().removeClass("active")
+    });
+
+    $("form").submit(function () {
+        // 验证用户名不能为空
+        if ($(".user_input").val() == 0) {
+            $(".error_01>p").show().text("用户名不能为空");
+            return false;
+        } else {
+            $(".hint_01>p").hide();
+        };
+        // 验证密码不能为空
+        if ($(".pwd_input").val() == 0) {
+            $(".error_02>p").show().text("密码不能为空");
+            return false;
+        } else {
+            $(".hint_02>p").hide();
+        };
+        // 验证密码长度
+        if ($(".pwd_input").val().length < 6 || $(".pwd_input").val().length > 20) {
+            $(".error_02>p").show().text("请输入6到20位密码");
+            return false;
+        } else {
+            $(".hint_02>p").hide();
+        };
+       
+    })
+</script>
