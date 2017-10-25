@@ -145,3 +145,23 @@ select {
     height: 80px;
     text-align: center;
 }
+
+.error_01{
+    margin-top: 45px;
+}
+
+.error_01,
+.error_03{
+    width: 320px;
+    height: 20px;
+    color: red;
+    font-size: 12px;
+    /* margin-top: 45px; */
+}
+.error_01>p,
+.error_03>p{
+    width: 320px;
+    height: 0px;
+    text-align: right;
+    position: absolute;
+}

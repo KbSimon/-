@@ -454,7 +454,7 @@ footer {
 }
 
 .forget_ul01>li:nth-child(2),
-.register_ul01>li:nth-child(2),
+.register_ul01>li:nth-of-type(2),
 .register_ul02>li:nth-child(5) {
     width: 180px;
 }

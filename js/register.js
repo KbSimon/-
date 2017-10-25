@@ -10,11 +10,11 @@ $(".register_ul02>li").click(function () {
 })
 
 // 显示注册第二步
-$(".next").click(function () {
-    $(".register_part01").hide();
-    $(".register_part02").show();
-    $(".register_top_img").attr("src", "../../images/register/register_02.png");
-});
+// $(".next").click(function () {
+//     $(".register_part01").hide();
+//     $(".register_part02").show();
+//     $(".register_top_img").attr("src", "../../images/register/register_02.png");
+// });
 // 显示注册第三步
 $(".get").click(function () {
     $(".register_part01").hide();
