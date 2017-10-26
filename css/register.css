@@ -35,6 +35,10 @@ form {
     border: none;
 }
 
+.register_ul01>li:nth-of-type(4){
+    margin-bottom: 0;
+}
+
 select {
     width: 320px;
     height: 45px;
@@ -127,10 +131,10 @@ input[type="checkbox"] {
     background: url("../images/register/packet.png") center no-repeat;
 }
 
-.register_part02,
+/* .register_part02,
 .register_part03 {
     display: none;
-}
+} */
 
 .register_part03 {
     height: 440px;
@@ -147,11 +151,13 @@ select {
 }
 
 .error_01{
-    margin-top: 45px;
+    margin-top: 47px;
 }
 
 .error_01,
-.error_03{
+.error_02,
+.error_03,
+.error_04{
     width: 320px;
     height: 20px;
     color: red;
@@ -159,9 +165,23 @@ select {
     /* margin-top: 45px; */
 }
 .error_01>p,
-.error_03>p{
+.error_02>p,
+.error_03>p,
+.error_04>p{
     width: 320px;
     height: 0px;
     text-align: right;
     position: absolute;
+}
+
+.error_02>p{
+    margin-top: 46px;
+}
+
+.error_03>p{
+    margin-top: 92px;
+}
+
+.error_04>p{
+    margin-top: 137px;
 }

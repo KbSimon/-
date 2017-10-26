@@ -36,7 +36,7 @@
                         </div>
                         <li class="password clearfloat">
                             <div class="password_img"></div>
-                            <input type="password" class="pwd_input" name="password" placeholder="请输入密码">
+                            <input type="password" class="pwd_input" name="password" placeholder="请输入密码" minlength="6" maxlength="20">
                         </li>
                         <div class="error_02">
                             <p></p>
@@ -61,53 +61,5 @@
 <script src="../../js/login.js">
 </script>
 <script>
-    $("header").load("head.html");
-    // 导入尾部
-    $("footer").load("footer.html");
-
-    $(".login_ul>li").click(function () {
-        $(this).addClass("active").siblings().removeClass("active")
-    });
-
-    function checkUser() {
-        if ($(".user_input").val() == "") {
-            $(".error_01>p").show().text("用户名不能为空");
-            return false;
-        };
-    }
-
-    // function check() {
-    $(".user_input").blur(function () {
-        checkUser();
-    });
-
-    $(".user_input").focus(function () {
-        $(".error_01>p").hide();
-        return false;
-    });
-    // $(":submit").submit(); 
-    // }
-
-    // check();
-
-    $("form").submit(function () {
-        // 验证用户名不能为空
-        checkUser();
-
-        // 验证密码不能为空
-        if ($(".pwd_input").val() == 0) {
-            $(".error_02>p").show().text("密码不能为空");
-            return false;
-        } else {
-            $(".hint_02>p").hide();
-        };
-        // 验证密码长度
-        if ($(".pwd_input").val().length < 6 || $(".pwd_input").val().length > 20) {
-            $(".error_02>p").show().text("请输入6到20位密码");
-            return false;
-        } else {
-            $(".hint_02>p").hide();
-        };
-
-    })
+   
 </script>
