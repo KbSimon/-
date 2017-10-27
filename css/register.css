@@ -31,11 +31,11 @@ form {
     padding: 30px 40px;
 }
 
-.register_ul02>li:nth-child(4) {
+.register_ul02>li:nth-of-type() {
     border: none;
 }
 
-.register_ul01>li:nth-of-type(4){
+.register_ul01>li:nth-of-type(4) {
     margin-bottom: 0;
 }
 
@@ -63,7 +63,7 @@ select {
 }
 
 .bank_card {
-    background: url("../images/register/bank_card.png") no-repeat;
+    background: url("../images/register/bank_card.png") 0 45% no-repeat;
 }
 
 input[type="text"],
@@ -131,6 +131,7 @@ input[type="checkbox"] {
     background: url("../images/register/packet.png") center no-repeat;
 }
 
+
 /* .register_part02,
 .register_part03 {
     display: none;
@@ -150,38 +151,45 @@ select {
     text-align: center;
 }
 
-.error_01{
+.error_01 {
     margin-top: 47px;
 }
 
 .error_01,
 .error_02,
 .error_03,
-.error_04{
+.error_04,
+.error_05 {
     width: 320px;
     height: 20px;
     color: red;
     font-size: 12px;
     /* margin-top: 45px; */
 }
+
 .error_01>p,
 .error_02>p,
 .error_03>p,
-.error_04>p{
+.error_04>p,
+.error_05>p {
     width: 320px;
     height: 0px;
     text-align: right;
     position: absolute;
 }
 
-.error_02>p{
+.error_02>p {
     margin-top: 46px;
 }
 
-.error_03>p{
+.error_03>p {
     margin-top: 92px;
 }
 
-.error_04>p{
+.error_04>p {
     margin-top: 137px;
+}
+
+.error_05>p {
+    margin-top: 180px;
 }

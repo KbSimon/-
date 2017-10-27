@@ -440,6 +440,7 @@ footer {
     right: 40px;
     width: 120px;
     height: 45px;
+    cursor: pointer;
     border-radius: 5px;
     background: #e7e3de;
     line-height: 45px;
@@ -449,20 +450,20 @@ footer {
 
 .register_ul01>li>input:nth-child(2),
 .forget_ul01>li>input:nth-child(2),
-.register_ul02>li:nth-child(5)>input {
+.register_ul02>li:nth-of-type(5)>input {
     width: 100px;
 }
 
 .forget_ul01>li:nth-child(2),
 .register_ul01>li:nth-of-type(2),
-.register_ul02>li:nth-child(5) {
+.register_ul02>li:nth-of-type(5) {
     width: 180px;
 }
 
 .forget_ul01>li:nth-child(2),
 .forget_ul02>li:nth-child(2),
 .register_ul01>li:last-child,
-.register_ul02>li:nth-child(5) {
+.register_ul02>li:nth-of-type(5) {
     margin-bottom: 0;
 }
 
