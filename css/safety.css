@@ -1,115 +1,121 @@
 /* banner */
 
-.banner {
+.banner{
+  
+    background: url("../images/safety/banner.png") center no-repeat;
+}
+
+.banner,
+.part_01,
+.part_02,
+.part_03,
+.part_04,
+.part_05{
     width: 100%;
     height: 680px;
     min-width: 1200px;
     max-width: 1920px;
     margin: 0 auto;
-    background: url("../images/safety/banner.png") center no-repeat;
 }
 
-.safety_div01,
-.safety_div02,
-.safety_div03,
-.safety_div04 {
-    width: 100%;
-    height: 685px;
-    min-width: 1200px;
+
+
+.part_01{
+    background: #fff5eb;
 }
 
-.safety_content {
-    width: 1200px;
-    margin: 0 auto;
-    padding-top: 165px;
-    padding-bottom: 200px;
-}
-
-.safety_div01,
-.safety_part04 {
+.part_02{
     background: #fff;
 }
 
-.safety_part02 {
+.part_03{
     background: #e9f9f4;
 }
 
-.safety_part03{
-    background: #fcfaf7; 
+.part_04{
+    background: #fefefe;
 }
 
-.safety_text1,
-.safety_text2,
-.safety_text3,
-.safety_text4 {
-    width: 565px;
-    height: 300px;
+.part_05{
+    background: #fff5ea;
 }
 
-.safety_text1,
-.safety_text3 {
-    float: left;
-    margin-left: 70px;
+.part_01_ul{
+    color: #999;
+    width: 1110px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.part_02_ul{
+    width: 1200px;
+    margin: 0 auto;
 }
 
-.safety_text2,
-.safety_text4 {
-    float: right;
-}
-
-.safety_text1 {
-    background: url("../images/safety/safety_num01.png") no-repeat;
-}
-
-.safety_text2 {
-    background: url("../images//safety/safety_num02.png") no-repeat;
-}
-
-.safety_text3 {
-    background: url("../images//safety/safety_num03.png") no-repeat;
-}
-
-.safety_text4 {
-    background: url("../images//safety/safety_num04.png") no-repeat;
-}
-
-.safety_text1>p,
-.safety_text2>p,
-.safety_text3>p,
-.safety_text4>p {
-    margin-left: 10px;
-}
-
-.safety_img01,
-.safety_img02,
-.safety_img03,
-.safety_img04 {
-    width: 397px;
-    height: 297px;
-}
-
-.safety_img01,
-.safety_img03 {
-    float: right;
-}
-
-.safety_img02,
-.safety_img04 {
+.part_01_ul>li{
     float: left;
 }
 
-.safety_img01 {
-    background: url("../images/safety/safety_img01.png");
+.part_01_ul>li:first-of-type,
+.part_01_ul>li:last-of-type{
+    width: 185px;
+    text-align: center;
 }
 
-.safety_img02 {
-    background: url("../images/safety/safety_img02.png");
+.part_01_ul>li:nth-of-type(2){
+    width: 740px;
+    padding-top: 70px;
+    text-align: center;
 }
 
-.safety_img03 {
-    background: url("../images/safety/safety_img03.png");
+.part_02_ul>li{
+    width: 235px;
+    float: left;
+    letter-spacing: 0.5px;
+    margin-right: 247.5px;
 }
 
-.safety_img04 {
-    background: url("../images/safety/safety_img04.png");
+.part_02_ul>li:last-of-type{
+    margin-right: 0;
+}
+
+.part_02_ul>li>p:first-of-type{
+    color: #666;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.part_02_ul>li>p:last-of-type{
+    color: #999;
+    text-align: justify;
+}
+
+.part_03_left{
+    width: 600px;
+    float: left;
+    text-align: justify;
+}
+
+.part_03_right{
+    width: 600px;
+    float: right;
+    text-align: right;
+}
+
+.part_03_content{
+    width: 1200px;
+    margin: 0 auto;
+    color: #666;
+    letter-spacing: 0.5px;
+}
+
+.part_05_left{
+    float: left;
+    width: 780px;
+    text-align: left;
+}
+
+.part_05_right{
+    float: right;
+    width: 420px;
+    text-align: left;
 }
