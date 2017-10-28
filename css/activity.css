@@ -1,0 +1,40 @@
+
+.banner,
+.middle,
+.bottom{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    min-width: 1200px;
+    max-width: 1920px;
+}
+
+.banner{
+    height: 964px;
+    background: url("../images/acvitity/banner.png") center no-repeat;
+}
+
+.middle{
+    height: 969px;
+    background: url("../images/acvitity/img_01.png") center no-repeat;
+}
+
+.bottom{
+    height: 1143px;
+    background: url("../images/acvitity/img_02.png") center no-repeat;
+}
+
+.activity_01{
+    color: #fff;
+    padding-top: 270px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.btn{
+    bottom: 200px;
+    width: 1200px;
+    margin: 0 auto;
+    height: 101px;
+    position: absolute;
+}
