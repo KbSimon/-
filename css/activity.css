@@ -7,6 +7,7 @@
     position: relative;
     min-width: 1200px;
     max-width: 1920px;
+    text-align: center;
 }
 
 .banner{
@@ -24,10 +25,29 @@
     background: url("../images/acvitity/img_02.png") center no-repeat;
 }
 
+
 .activity_01{
-    color: #fff;
     padding-top: 270px;
-    text-align: center;
+}
+
+.activity_02{
+    padding-top: 580px;    
+}
+
+.activity_03{
+    padding-top: 860px;
+}
+
+.activity_04{
+    color: #dad5fc;
+    padding-top: 40px;
+    letter-spacing: 2px;
+}
+
+.activity_01,
+.activity_02,
+.activity_03{
+    color: #fff;
     letter-spacing: 2px;
 }
 
@@ -37,4 +57,35 @@
     margin: 0 auto;
     height: 101px;
     position: absolute;
+}
+
+.btn1,
+.btn2{
+    width: 225px;
+    height: 90px;
+    color: #fff;
+    font-size: 16px;
+    line-height:58px;
+    position: absolute;
+    border-radius: 10%;
+    background: url("../images/acvitity/btn.png") center no-repeat;
+}
+
+.btn1{
+    margin-left: 595px;
+}
+
+.btn2{
+    margin-left: 1110px;
+}
+
+.btn3{
+    width: 300px;
+    height: 101px;
+    color: #fff;
+    /* margin: 0 auto; */
+    font-size: 16px;
+    line-height: 71px;
+    margin: -100px 0 0 800px;
+    background: url("../images/acvitity/btn2.png") center no-repeat;
 }
