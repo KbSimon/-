@@ -86,6 +86,29 @@
         </div>
     </main>
     <footer></footer>
+
+    <!-- 遮罩效果 -->
+    <div class="mask">
+        <div class="trader_password">
+            <div class="trader_password_top  clearfloat">
+                <p>交易密码</p>
+                <span class="close_btn">×</span>
+            </div>
+            <form action="">
+                <h2>请输入交易密码</h2>
+                <ul class="trader_password_ul">
+                    <li class="clearfloat">
+                        <div class="pwd"></div>
+                        <input type="password" name="password" placeholder="请输入交易密码" minlength="6" maxlength="20">
+                    </li>
+                </ul>
+            </form>
+            <div class="trader_password_bottom">
+                <input type="button" value="确定"><br>
+                <a>忘记交易密码</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
@@ -94,5 +117,11 @@
 <script src="../../js/common.js"></script>
 <script>
     $("header").load("head.html");
-    $("footer").laod("footer.html");
+    $("footer").load("footer.html");
+
+    $(".close_btn").click(function(){
+        $(".mask").hide();
+        $(".trader_password").hide();
+
+    })
 </script>
