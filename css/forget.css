@@ -1,21 +1,21 @@
-.forget_content{
+.forget_content {
     width: 1200px;
     margin: 0 auto;
 }
 
-.forget_top{
+.forget_top {
     width: 766px;
     height: 160px;
     margin: 0 auto;
     line-height: 160px;
 }
 
-.forget_step{
+.forget_step {
     width: 1200px;
     margin: 0 auto;
 }
 
-form{
+form {
     margin: 0 auto;
     background: #fff;
     border-radius: 5px;
@@ -24,25 +24,25 @@ form{
     box-shadow: 0px 10px 20px #f7f3ec;
 }
 
-.forget_part01{
+.forget_part01 {
     width: 400px;
     height: 230px;
 }
 
-.forget_part02{
+.forget_part02 {
     width: 400px;
     height: 295px;
     display: none;
 }
 
 .forget_ul01,
-.forget_ul02{
+.forget_ul02 {
     position: relative;
     padding: 25px 40px;
 }
 
 .forget_ul01>li,
-.forget_ul02>li{
+.forget_ul02>li {
     width: 320px;
     height: 45px;
     float: left;
@@ -61,11 +61,11 @@ input[type="password"] {
     outline: none;
 }
 
-.code_div01{
+.code_div01 {
     top: 90px;
 }
 
-.forget_btn{
+.forget_btn {
     text-align: center;
 }
 
@@ -77,16 +77,40 @@ input[type="password"] {
     background: url("../images/register/password_02.png") no-repeat;
 }
 
-.to_index{
-        width: 340px;
-        height: 45px;
-        color: #fe9c1c;
-        outline: none;
-        border: none;
-        margin-bottom: 10px;
-        line-height: 45px;
-        background: #fff;
-        border-radius: 5px;
-        margin-top: 10px;
-        border: 1px solid #fe9c1c;
+.to_index {
+    width: 340px;
+    height: 45px;
+    color: #fe9c1c;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    line-height: 45px;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #fe9c1c;
+}
+
+.error_01,
+.error_02{
+    width: 320px;
+    height: 20px;
+    color: red;
+    font-size: 12px;
+}
+
+.error_01>p,
+.error_02>p{
+    width: 320px;
+    height: 0px;
+    text-align: right;
+    position: absolute;
+}
+
+.error_01{
+    margin-top: 45px;
+}
+
+.error_02{
+    padding-top: 45px;
 }

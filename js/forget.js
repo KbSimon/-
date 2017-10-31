@@ -10,8 +10,10 @@ $(".forget_ul02>li").click(function () {
 })
 
 // 显示注册第一步
-$(".next").click(function () {
-    $(".forget_part01").hide();
-    $(".forget_part02").show();
-    $(".forget_top_img").attr("src", "../../images/forget/forget_02.png");
-});
+// $(".next").click(function () {
+//     $(".forget_part01").hide();
+//     $(".forget_part02").show();
+//     $(".forget_top_img").attr("src", "../../images/forget/forget_02.png");
+// });
+
+
