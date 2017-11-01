@@ -8,6 +8,7 @@
     min-width: 1200px;
     max-width: 1920px;
     text-align: center;
+    position: relative;
 }
 
 .banner{
@@ -35,7 +36,7 @@
 }
 
 .activity_03{
-    padding-top: 860px;
+    padding-top: 760px;
 }
 
 .activity_04{
@@ -52,11 +53,11 @@
 }
 
 .btn{
-    bottom: 200px;
+    top: 380px;
     width: 1200px;
     margin: 0 auto;
     height: 101px;
-    position: absolute;
+    position: relative;
 }
 
 .btn1,
@@ -72,11 +73,11 @@
 }
 
 .btn1{
-    margin-left: 595px;
+    margin-left: 230px;
 }
 
 .btn2{
-    margin-left: 1110px;
+    margin-left: 750px;
 }
 
 .btn3{
@@ -86,6 +87,8 @@
     /* margin: 0 auto; */
     font-size: 16px;
     line-height: 71px;
-    margin: -100px 0 0 800px;
+    /* padding-top: 100px; */
+    position: absolute;
+    margin: 300px 0 0 460px;
     background: url("../images/acvitity/btn2.png") center no-repeat;
 }

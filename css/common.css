@@ -1,16 +1,12 @@
 header {
     width: 100%;
     height: 140px;
+    max-width: 1920px;
+    min-width:1200px;
+    margin: 0 auto;
     border-bottom: 1px solid #f8bac2;
 }
 
-@media screen and (max-width:1200px) {
-    header,
-    .banner,
-    footer {
-        width: 1200px;
-    }
-}
 
 .head_top {
     height: 40px;
@@ -298,6 +294,7 @@ header {
     position: absolute;
     height: 172px;
     width: 108px;
+    z-index:10;
     line-height: 30px;
     text-align: center;
 }
@@ -322,7 +319,11 @@ header {
 /* 底部 */
 
 footer {
+    width: 100%;
     height: 404px;
+    min-width: 1200px;
+    max-width: 1920px;
+    margin: 0 auto;
     font-size: 12px;
     background: #eee;
 }
@@ -347,6 +348,8 @@ footer {
     border-left: 1px solid #e4e4e4;
     margin-top: 45px;   
     padding-left: 40px;
+    cursor: pointer;
+    position: relative;
 }
 
 .footer_ewm>span{
@@ -357,12 +360,23 @@ footer {
     margin-right:10px;
 }
 
+.qq_code{
+    top: 10px;
+    opacity: 0;
+    position: absolute;
+}
 
+.weixin_code{
+    top: 10px;
+    margin-left: 150px;
+    opacity: 0;
+    position: absolute;
+}
 
 .app,
 .wechat {
     float: left;
-    margin-left: 80px;
+    margin-left: 53px;
     text-align: center;
 }
 
@@ -380,6 +394,7 @@ footer {
 .kefu {
     float: left;
     margin-top: 45px;
+    margin-left:25px;
 }
 
 .footer_bottom {
@@ -655,4 +670,97 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     background: #fd9c1c;
+}
+
+
+/* 遮罩层 */
+.mask{
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    opacity: 0.8;
+    background-color: #979694;
+}
+
+.mask,
+.login_mask,
+.approve_mask{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: fixed;
+    display: none;
+}
+
+.login_mask,
+.approve_mask{
+    width: 400px;
+    height: 280px;
+    margin: auto;
+    z-index: 100;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.login_mask_top,
+.approve_mask_top{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.login_mask_top>p,
+.approve_mask_top>p{
+    color: #999;
+    font-size: 12px;
+    margin-left: 20px;
+    float: left;
+}
+
+.login_mask_top>span,
+.approve_mask_top>span{
+    width: 25px;
+    height: 25px;
+    float: right;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 20px;
+    margin-top: 12.5px;
+    font-size: 30px;
+    background: #ffc695;
+    text-align: center;
+    line-height: 25px;
+}
+
+.login_mask>p:first-of-type,
+.approve_mask>p:first-of-type{
+    text-align: center;
+    font-size: 18px;
+    line-height: 3;
+    margin-top: 30px;
+}
+
+.approve_mask>a{
+    color: #999;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+}
+
+.login_mask>button,
+.approve_mask>button{
+    width: 265px;
+    height: 45px;
+    color: #fff;
+    outline: none;
+    display: block;
+    font-size: 16px;
+    margin: 40px auto;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    background: #fb9a20;
+    border: 1px solid #fb9a20;
 }

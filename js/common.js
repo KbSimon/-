@@ -17,6 +17,21 @@ $(".head_top_left04").hover(function () {
 }, function () {
     $(this).children("img").attr("src", "../../images/tellphone.png")
 })
+// 底部悬浮
+$(".footer_ewm>span").eq(0).hover(function(){
+    $(".qq_code").stop().animate({opacity:"1"},200);
+    $(this).css("color","#ffa21a").find("img").attr("src","../../images/qq_01.png");
+},function(){
+    $(".qq_code").stop().animate({opacity:"0"},200);
+    $(this).css("color","#333").find("img").attr("src","../../images/qq.png");
+});
+$(".footer_ewm>span").eq(1).hover(function(){
+    $(".weixin_code").stop().animate({opacity:"1"},200);
+    $(this).css("color","#ffa21a").find("img").attr("src","../../images/weixin_01.png");
+},function(){
+    $(".weixin_code").stop().animate({opacity:"0"},200);
+    $(this).css("color","#333").find("img").attr("src","../../images/weixin.png");
+});
 // 右侧悬浮
 window.onscroll = function () {
     var t = document.documentElement.scrollTop || document.body.scrollTop;
