@@ -24,3 +24,28 @@
 .call_us{
     background: url("../images/aboutUs/call_us.png");
 }
+
+.wx_div{
+    width: 140px;
+    float: left;
+    border-top: 1px solid #e4e4e4;
+}
+
+.kf_div{
+    width: 148px;
+    float: left;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.kf_div>img{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #e4e4e4;
+}
+
+#container{
+    width: 890px;
+    height: 340px;
+    margin: 20px 40px;
+}

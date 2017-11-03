@@ -228,10 +228,17 @@
 .series_middle_p1,
 .series_middle_p2,
 .series_middle_p3{
-    font-size: 30px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.series_middle_p1>span,
+.series_middle_p2>span,
+.series_middle_p3>span{
+    font-size: 30px;
+    margin-right: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .series_middle_p4{
     font-size: 12px;
     color: #666;
@@ -241,27 +248,9 @@
     color: #fbd585;
 }
 
-.series_middle_p1::after{
-    content: "%";
-    font-size: 12px;
-    margin-left: 2px;
-}
-
 .series_middle_p2,
 .series_middle_p3{
     color: #666;
-}
-
-.series_middle_p2::after{
-    content: "月";
-    font-size: 14px;
-    margin-left: 5px;
-}
-
-.series_middle_p3::after{
-    content: "起投";
-    font-size: 14px;
-    margin-left: 5px;
 }
 
 .gulde_text {
@@ -270,6 +259,30 @@
     margin: 40px 0 0 0;
 }
 
+.loading_01{
+    width: 428px;
+    height: 4px;
+    border-radius: 4px;
+    margin: 0 auto;
+    background: #ccc;
+}
+
+.loading_div01{
+    background: #fbd585;
+    height: 4px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.radius{
+    width: 8px;
+    height: 8px;
+    top:-2px;
+    right: 0;
+    border-radius: 100%;
+    position: absolute;
+    background: #fbd585;
+}
 
 /* 投资专区 */
 
@@ -326,6 +339,15 @@
     line-height: 180px;
 }
 
+#invest_01,
+#invest_02,
+#invest_03,
+#invest_04{
+    width:180px;
+    height:180px;
+    margin-left:55px;
+}
+
 .invest_sold {
     width: 30px;
     font-size: 14px;
@@ -340,25 +362,17 @@
     margin: 80px 0 0 120px;
 }
 
-.invest_middle_per::after {
-    top: 5px;
-    content: "%";
+.invest_bottom_per>span {
     font-size: 20px;
-    margin-left: 2px;
-    position: absolute;
-}
-
-.invest_bottom_per {
-    font-size: 20px;
-    margin-top: 20px;
+   margin-right: 2px;
     font-weight: bold;
 }
 
-.invest_bottom_per::after {
-    content: "%";
-    font-size: 12px;
-    margin-left: 2px;
+.invest_bottom_per{
+    margin-top: 20px;
+    font-size: 14px;
 }
+
 
 .invest_text {
     display: flex;
@@ -374,6 +388,7 @@
 /* 资讯报道 */
 
 .message {
+    overflow: hidden;
     height: 560px;
 }
 
@@ -437,6 +452,7 @@
     width: 280px;
     height: 120px;
     color: #666;
+    cursor: pointer;
     line-height: 120px;
     text-align: center;
     background: #fff;

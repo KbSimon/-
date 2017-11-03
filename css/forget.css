@@ -32,7 +32,7 @@ form {
 .forget_part02 {
     width: 400px;
     height: 295px;
-    display: none;
+    /* display: none; */
 }
 
 .forget_ul01,

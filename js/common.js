@@ -32,7 +32,13 @@ $(".footer_ewm>span").eq(1).hover(function(){
     $(".weixin_code").stop().animate({opacity:"0"},200);
     $(this).css("color","#333").find("img").attr("src","../../images/weixin.png");
 });
-// 右侧悬浮
+// 判断用户是否登录 登录后的操作
+// $(".head_nav>li").eq(4).attr("id","login_state");
+// $("#login_state>a").text("欢迎")
+// $(".head_nav>li").eq(5).attr("id","login_user");
+// $("#login_user>a").text("151****2821")
+
+// 右侧悬浮窗
 window.onscroll = function () {
     var t = document.documentElement.scrollTop || document.body.scrollTop;
     if (t >= $(window).height()) {

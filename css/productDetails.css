@@ -36,13 +36,13 @@
 }
 
 .series_middle {
-    margin: 0;
-    padding: 70px 40px 40px 40px;
+    margin: 20px 0;
+    padding: 70px 40px 0px 40px;
 }
 
 .content_top_left_bottom {
-    height: 125px;
-    padding: 30px 150px 40px 40px;
+    height: 105px;
+    padding: 20px 150px 0px 40px;
 }
 
 .content_ul_01 {

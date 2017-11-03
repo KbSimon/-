@@ -10,10 +10,10 @@
     <meta name="description" content="鑫路金融是一家专注于短期投资的个人理财平台,精选优质的个人理财产品,优化用户投资体验。">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>用户注册-鑫路金融官网</title>
-    <link rel="stylesheet" href="../../css/base.css">
-    <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/register.css">
-    <link rel="shortcut icon" type="image/x-icon" href="../../images/xinlu-icon.ico">
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/base.css">
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/common.css">
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/register.css">
+    <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/xinlu-icon.ico">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
     <main>
         <div class="register_content">
             <div class="register_top">
-                <img src="../../images/register/register_01.png" alt="" class="register_top_img">
+                <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/register/register_01.png" alt="" class="register_top_img">
             </div>
             <div class="register_step">
                 <!-- 注册第一步 -->
@@ -155,7 +155,8 @@
                 <p>6、您同意，用户账户的暂停、中断或终止不代表您责任的终止，您仍应对您使用本网站服务期间的行为承担可能的违约或损害赔偿责任，同时本网站仍可保有您的相关信息。</p>
                 <p>7、若您使用第三方网站账号注册本网站用户账户，则您应对您本网站用户账户所对应的第三方网站账号拥有合法的使用权，如您因故对该第三方网站账号丧失使用权的，则本网站可停止为您的该用户账户提供服务。但如该用户账户尚存有余额的，本网站将会为您妥善保管。此时，如您欲取回其原有余额，本网站将提供更换本网站账户名的服务，即您可把您原本网站账户下余额转移到您另外合法注册的本网站账户中；如因故无法自助完成更换账户名，您可以向本网站提出以银行账户接受原有资金的请求，经核验属实后，本网站可配合您将原有资金转移到以您真实姓名登记的银行账户下。</p>
                 <p>九、 通知</p>
-                <p>本协议项下的通知如以公示方式作出，一经在本网站公示即视为已经送达。除此之外，其他向您个人发布的具有专属性的通知将由本网站向您在注册时提供的电子邮箱，或本网站在您的个人账户中为您设置的站内消息系统栏，或您在注册后在本网站绑定的手机发送，一经发送即视为已经送达。请您密切关注您的电子邮箱 、站内消息系统栏中的邮件、信息及手机中的短信信息。您同意本网站出于向您提供服务之目的，可以向您的电子邮箱、站内消息系统栏和手机发送有关通知或提醒；若您不愿意接收，请在本网站相应系统板块进行设置。但您同时同意并确认，若您设置了不接收有关通知或提醒，则您有可能收不到该等通知信息，您不得以您未收到或未阅读该等通知信息为由，单方面理解为相关通知未送达于您。</p>
+                <p>本协议项下的通知如以公示方式作出，一经在本网站公示即视为已经送达。除此之外，其他向您个人发布的具有专属性的通知将由本网站向您在注册时提供的电子邮箱，或本网站在您的个人账户中为您设置的站内消息系统栏，或您在注册后在本网站绑定的手机发送，一经发送即视为已经送达。请您密切关注您的电子邮箱
+                    、站内消息系统栏中的邮件、信息及手机中的短信信息。您同意本网站出于向您提供服务之目的，可以向您的电子邮箱、站内消息系统栏和手机发送有关通知或提醒；若您不愿意接收，请在本网站相应系统板块进行设置。但您同时同意并确认，若您设置了不接收有关通知或提醒，则您有可能收不到该等通知信息，您不得以您未收到或未阅读该等通知信息为由，单方面理解为相关通知未送达于您。</p>
                 <p>十、 适用法律和管辖</p>
                 <p>因本网站所提供服务而产生的争议均适用中华人民共和国法律，并由本网站住所地的人民法院管辖。</p>
                 <p>十一、其他</p>
@@ -170,10 +171,29 @@
 </body>
 
 </html>
-<script src="../../js/jquery.min.js"></script>
-<script src="../../js/common.js"></script>
-<script src="../../js/register.js"></script>
+<script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/jquery.min.js"></script>
+<script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/common.js"></script>
+<script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/register.js"></script>
 <script>
     $("header").load("head.html");
     $("footer").load("footer.html");
+    $.ajax({
+        type: "post",
+        url: mobilecodeUrl,
+        dataType: "json",
+        data: {
+            code = '',
+            mobile = '',
+        },
+        success: function (data) {
+            register.valid_mobilecode_helper(data.code);
+            mobilecodeStat = data.code;
+            if (data.code == 1) {
+                // tijiao();
+            }
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            alert(errorThrown);
+        }
+    });
 </script>

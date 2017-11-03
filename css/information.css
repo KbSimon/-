@@ -86,7 +86,8 @@
 
 .affirm_btn3,
 .affirm_btn1,
-.affirm_div{
+.affirm_div,
+.register_end{
     width: 320px;
 }
 
@@ -135,7 +136,6 @@
 
 /* 实名认证 */
 .approve_form{
-    width: 400px;
     height: 390px;
     padding: 35px 155px;
 }
@@ -150,19 +150,20 @@
 }
 
 .approve_ul{
+    width: 400px;
     position: relative;
 }
 
-.approve_ul>li:nth-child(4){
+.approve_ul>li:nth-of-type(4){
     border: none;
 }
 
-.approve_ul>li:nth-child(5){
+.approve_ul>li:nth-of-type(5){
     width: 180px;
     position: relative;
 }
 
-.approve_ul>li:nth-child(5)>input{
+.approve_ul>li:nth-of-type(5)>input{
     width: 100px;
     border: 0;
     outline: none;
@@ -195,4 +196,27 @@
 .email_form{
     height: 170px;
     padding: 35px 155px;
+}
+
+.error_01>p,
+.error_02>p,
+.error_03>p,
+.error_04>p,
+.error_05>p,
+.error_06>p,
+.error_07>p,
+.error_08>p,
+.error_09>p,
+.error_10>p,
+.error_11>p,
+.error_12>p{
+    width: 80px;
+    float: left;
+    color: red;
+    padding-left: 10px;
+    line-height: 45px;
+}
+
+.error_12>p{
+    padding-left: 150px;
 }

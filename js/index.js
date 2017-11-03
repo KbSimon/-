@@ -1,11 +1,11 @@
 // 鑫客户专享系列
 $('.novice_series').hover(function () {
-    $(".series_mark").attr("src", "../../images/series_mark_01.png");
+    $(".series_mark").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/series_mark_01.png");
     $(this).css('box-shadow', '0 15px 30px rgba(0,0,0,0.1)').stop().animate({
         top: -10
     }, 300);
 }, function () {
-    $(".series_mark").attr("src", "../../images/series_mark.png");
+    $(".series_mark").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/series_mark.png");
     $(this).css('box-shadow', '0 10px 20px #f7f3ec').stop().animate({
         top: 0
     }, 300);
@@ -102,4 +102,16 @@ $(document).ready(function () {
 
         $('.banner_ul').css('left', banL);
     })
+});
+
+$('.invest li').hover(function () {
+    $(this).find(".invest_img_02").show();
+    $(this).css('box-shadow', '0 15px 30px rgba(0,0,0,0.1)').stop().animate({
+        top: -10
+    }, 300);
+}, function () {
+    $(this).find(".invest_img_02").hide();
+    $(this).css('box-shadow', '0 10px 20px #f7f3ec').stop().animate({
+        top: 0
+    }, 300);
 });

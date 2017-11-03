@@ -1,7 +1,4 @@
-$("header").load("head.html");
-$("footer").load("footer.html");
-
-// s输入框焦点
+// 输入框焦点
 $(".forget_ul01>li").click(function () {
     $(this).attr("id", "active").siblings().removeAttr("id", "active");
 });
