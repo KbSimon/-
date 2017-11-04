@@ -97,34 +97,13 @@
 }
 
 .bid_ul>li>p:first-child{
-    font-size: 30px;
+    font-size: 16px;
     line-height: 2;
 }
 
-.bid_ul>li>p:first-child::after{
-    font-size: 14px;
-    margin-left: 5px;
-}
-
-.bid_rate::after{
-    content: "%";
-    color: "#ffa21a";
-}
-
-.bid_date::after{
-    content: "月";
-}
-
-.bid_start::after{
-    content: "元";
-}
-
-.bid_end::after{
-    content: "元";
-}
-
-.bid_residue::after{
-    content: "元";
+.bid_ul>li>p>span{
+    font-size: 30px;
+    margin-right: 2px;
 }
 
 .btn_01,
@@ -136,11 +115,17 @@
     border: none;
     outline: none;
     margin-top: 20px;
+    line-height: 45px;
     background: #ffa21a;
 }
 
 .btn_01{
     background: #ffa21a;
+}
+
+.btn_01:hover,
+.btn_02:hover{
+    color: #fff;
 }
 
 .btn_02{

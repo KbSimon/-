@@ -173,27 +173,7 @@
 </html>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/jquery.min.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/common.js"></script>
+<script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/base.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/register.js"></script>
-<script>
-    $("header").load("head.html");
-    $("footer").load("footer.html");
-    $.ajax({
-        type: "post",
-        url: mobilecodeUrl,
-        dataType: "json",
-        data: {
-            code = '',
-            mobile = '',
-        },
-        success: function (data) {
-            register.valid_mobilecode_helper(data.code);
-            mobilecodeStat = data.code;
-            if (data.code == 1) {
-                // tijiao();
-            }
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-            alert(errorThrown);
-        }
-    });
-</script>
+
+  

@@ -415,6 +415,12 @@
     border-right: 1px solid #e7e3de;
 }
 
+.message_div_03>img{
+    width: 550px;
+    height: 370px;
+    padding: 30px;
+}
+
 .message_div_04,
 .message_div_05 {
     width: 360px;
@@ -426,7 +432,7 @@
     border-bottom: 1px solid #e7e3de;
 }
 
-.message_div_05>p {
+.message_div_05>a {
     float: right;
     margin-right: 20px;
 }
