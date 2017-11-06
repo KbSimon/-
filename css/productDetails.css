@@ -177,7 +177,7 @@ i{
 
 table{
     width: 1130px;
-    height: 100%;
+    /* height: 100%; */
     margin: 20px 35px;
     text-align: center;
     border-collapse:collapse;
@@ -189,7 +189,12 @@ tr{
     border-bottom: 1px solid #e4e4e4;
 }
 
-tr:first-child{
+/* tr:first-child{
+    border-bottom: none;
+    background: #fcd391;
+} */
+
+#head_style{
     border-bottom: none;
     background: #fcd391;
 }

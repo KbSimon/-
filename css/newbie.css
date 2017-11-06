@@ -97,15 +97,15 @@
 }
 
 .register_img{
-    background: url("../images/newbie/register.png") 30% 20%;
+    background: url("../images/newbie/register.png") center no-repeat;
 }
 
 .approve_img{
-    background: url("../images/newbie/approve.png") 80% 52%;
+    background: url("../images/newbie/approve.png") center no-repeat
 }
 
 .pay_img{
-    background: url("../images/newbie/pay.png") 45% 20%;
+    background: url("../images/newbie/pay.png") center no-repeat;
 }
 
 .register_img>span,

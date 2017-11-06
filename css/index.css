@@ -124,12 +124,30 @@
     margin: 40px 0 10px 0;
 }
 
-.feature_text>p {
+.feature_text02{
+    margin: 46px 0 10px 0;
+}
+
+.feature_text03{
+    margin: 15px 0 10px 0;
+}
+
+.feature_text04{
+    margin: 30px 0 10px 0;
+}
+
+.feature_text>p,
+.feature_text02>p,
+.feature_text03>p,
+.feature_text04>p {
     color: #666;
     font-size: 14px;
 }
 
-.feature_text>span {
+.feature_text>span,
+.feature_text02>span,
+.feature_text03>span,
+.feature_text04>span{
     color: #333;
     font-size: 18px;
     font-weight: bold;

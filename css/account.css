@@ -47,11 +47,12 @@
     float: left;
 }
 
+
 .income01,
-.income02,
-.balance01,
 .balance02{
-    margin: 40px 90px;
+    margin-top: 40px;
+    width: 230px;
+    text-align: center;
 }
 
 .income01>p:first-child,
