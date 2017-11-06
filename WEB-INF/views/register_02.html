@@ -29,21 +29,23 @@
                     <ul class="register_ul02 clearfloat">
                         <li>
                             <div class="real_user"></div>
-                            <input type="text" class="real_name" name="accntnm" placeholder="请输入真实姓名" >
+                            <input type="text" class="real_name" name="accntnm" placeholder="请输入真实姓名">
                         </li>
                         <div class="error_01">
                             <p></p>
                         </div>
                         <li>
                             <div class="id_card"></div>
-                            <input type="text" class="idCard" name="id_card" placeholder="请输入身份证号码" minlength="15" maxlength="18" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                            <input type="text" class="idCard" name="id_card" placeholder="请输入身份证号码" minlength="15" maxlength="18" onkeyup="this.value=this.value.replace(/\D/g,'')"
+                                onafterpaste="this.value=this.value.replace(/\D/g,'')">
                         </li>
                         <div class="error_02">
                             <p></p>
                         </div>
                         <li>
                             <div class="bank_card"></div>
-                            <input type="text"  class="bankid" name="acc_no" placeholder="请输入银行卡号码" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                            <input type="text" class="bankid" name="acc_no" placeholder="请输入银行卡号码" onkeyup="this.value=this.value.replace(/\D/g,'')"
+                                onafterpaste="this.value=this.value.replace(/\D/g,'')">
                         </li>
                         <div class="error_03">
                             <p></p>
@@ -58,7 +60,8 @@
                         </div>
                         <li>
                             <div class="code"></div>
-                            <input type="text" class="auchcode" name="sms_code" placeholder="请输入验证码" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                            <input type="text" class="auchcode" name="sms_code" placeholder="请输入验证码" onkeyup="this.value=this.value.replace(/\D/g,'')"
+                                onafterpaste="this.value=this.value.replace(/\D/g,'')">
                         </li>
                         <div class="code_div02">获取验证码</div>
                         <div class="error_05">
@@ -74,6 +77,17 @@
     </main>
     <!-- 尾部 -->
     <footer></footer>
+    <div class="mask" style="display:block;">
+    <div class="approve_mask" style="display:block;">
+        <div class="approve_mask_top  clearfloat">
+            <p>登录注册</p>
+            <span class="close_btn">×</span>
+        </div>
+        <p>认证成功！</p>
+        <span style="width:196px;margin:0 auto;display:block;">红包已经放入您的<a href="" style="color:#20acec;">个人用户中心</a></span>
+        <button>立即使用红包</button>
+    </div>
+</div>
 </body>
 
 </html>
@@ -82,47 +96,45 @@
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/base.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/register.js"></script>
 <script>
-    $(".gift_btn").click(function(){
+    $(".gift_btn").click(function () {
         // 真实姓名验证
-        if($(".real_name").val()<2){
+        if ($(".real_name").val() < 2) {
             $(".error_01>p").show().text("请输入真实姓名");
-        }else if(/[\u4E00-\u9FA5]/.test($(".real_name").val()) != true){
+        } else if (/[\u4E00-\u9FA5]/.test($(".real_name").val()) != true) {
             $(".error_01>p").show().text("真实姓名必须包含中文");
         };
         // 身份证验证
-        if($(".idCard").val().length <15){
+        if ($(".idCard").val().length < 15) {
             $(".error_02>p").show().text("请输入身份证号码");
-        }else if($(".idCard").val() != /^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/){
+        } else if ($(".idCard").val() !=
+            /^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/) {
             $(".error_02>p").show().text("身份证号码格式不正确");
         };
         // 银行卡验证
-        if($(".bankid").val()<18){
+        if ($(".bankid").val() < 18) {
             $(".error_03>p").show().text("请输入银行卡号");
         }
         // 验证码
-        if($(".authcode").val() == 0){
+        if ($(".authcode").val() == 0) {
             $(".error_05>p").show().text("请输入验证码");
         }
-
-        $(".register_ul02>li>input").focus(function(){
-           $(this).parent().siblings().find("p").hide();
+        $(".register_ul02>li>input").focus(function () {
+            $(this).parent().siblings().find("p").hide();
         });
-
     })
-
     // 验证码点击
-    $(".code_div02").click(function(){
+    $(".code_div02").click(function () {
         $.ajax({
-            type : "psot",
-            url : "118.31.20.195:8083/uheart/sendFuYouSmsForBindH",
-            data :{
-                acc_no : $(".bankid").val(),
+            type: "psot",
+            url: "118.31.20.195:8083/uheart/sendFuYouSmsForBindH",
+            data: {
+                acc_no: $(".bankid").val(),
             },
-            success : function(data){
-                if(data.code == 0){
+            success: function (data) {
+                if (data.code == 0) {
                     downTime();
-                }else{
-                    down=Time();
+                } else {
+                    down = Time();
                 }
             }
         });
@@ -130,22 +142,21 @@
 
     var flag = true;
     var at;
-    function downTime(){
-        if(flag){
-            flag =false;
+
+    function downTime() {
+        if (flag) {
+            flag = false;
             at = 30;
-            var MyTime = setInterval(function(){
-                if(at>0){
+            var MyTime = setInterval(function () {
+                if (at > 0) {
                     at--;
-                    $(".code_div02").html("重新发送("+at+")").attr("disabled", "disabled");
-                }else if(at==0){
+                    $(".code_div02").html("重新发送(" + at + ")").attr("disabled", "disabled");
+                } else if (at == 0) {
                     $(".code_div02").html("获取验证码").removeAttr("disabled");
                     clearInterval(MyTime);
                     flag = true;
                 }
-            },1000);
+            }, 1000);
         }
     }
-   
-    
 </script>

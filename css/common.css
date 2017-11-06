@@ -43,7 +43,13 @@ header {
 .head_top_left03,
 .head_top_left04 {
     width: 24px;
+    height: 40px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
 }
 
 .head_top_left02:hover,
@@ -60,35 +66,29 @@ header {
 }
 
 .load,
-.head_wechat {
-    position: absolute;
-    z-index: 9;
-    padding: 3px;
-    margin-left: -1px;
-}
-
-.load,
 .tell_num,
 .head_wechat {
+    z-index: 9;
+    padding: 3px;
     display: none;
     background: #fff;
+    position: absolute;    
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
     border-bottom: 1px solid #cdcdcd;
 }
 
-.head_wechat {
-    position: absolute;
+.load,
+.head_wechat{
+    margin-top: 50.5px;
+    margin-left: 19px;
 }
 
 .tell_num {
     width: 180px;
     height: 80px;
-    margin-left: -1px;
-    position: absolute;
-    border-left: 1px solid #cdcdcd;
-    border-right: 1px solid #cdcdcd;
-    border-bottom: 1px solid #cdcdcd;
+    margin-top: 60px;
+    margin-left: 78px;
 }
 
 .head_top_left02 {
@@ -150,7 +150,9 @@ header {
     width: 150px;
     height: 63px;
     float: left;
-    line-height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .head_nav {
@@ -188,15 +190,15 @@ header {
     margin-right: 105px;
 }
 
-.head_nav>li:nth-child(5),
-.head_nav>li:nth-child(6) {
+.head_nav>li:nth-child(7),
+.head_nav>li:nth-child(8) {
     width: 100px;
     height: 40px;
     text-align: center;
     line-height: 40px;
 }
 
-.head_nav>li:nth-child(5) {
+.head_nav>li:nth-child(7) {
     background: #ffd08c;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -210,7 +212,7 @@ header {
     color: #fbb671;
 }
 
-.head_nav>li:nth-child(6) {
+.head_nav>li:nth-child(8) {
     background: #fff;
     border: 1px solid #feebd0;
     border-top-right-radius: 5px;
@@ -282,6 +284,7 @@ header {
 }
 
 
+/* 登录后的样式 */
 #login_state:hover>.login_state_ul,
 .about_us:hover>.about_us_ul,
 .safety:hover>.safety_ul {
@@ -303,10 +306,22 @@ header {
 
 #login_state{
     width:45px;
+    height: 40px;
+    line-height: 40px;
+    background: #ffd08c;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 #login_user{
     width:155px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    border: 1px solid #feebd0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .login_state_ul{
