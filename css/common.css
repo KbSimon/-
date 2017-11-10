@@ -2,11 +2,11 @@ header {
     width: 100%;
     height: 140px;
     max-width: 1920px;
-    min-width:1200px;
+    min-width: 1200px;
     margin: 0 auto;
+    background: #fff;
     border-bottom: 1px solid #f8bac2;
 }
-
 
 .head_top {
     height: 40px;
@@ -34,62 +34,95 @@ header {
     float: left;
 }
 
+.head_top_left {
+    float: left;
+    overflow: hidden;
+}
+
 .head_top_left01 {
     color: #666;
     font-size: 12px;
 }
 
+/* 电话 微信 微博 */
 .head_top_left02,
 .head_top_left03,
 .head_top_left04 {
     width: 24px;
     height: 40px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 .head_top_left02:hover,
 .head_top_left03:hover,
 .head_top_left04:hover {
-    border-left: 1px solid #ced2ce;
-    border-right: 1px solid #ced2ce;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
 }
 
-.head_top_left02:hover>.load,
-.head_top_left03:hover>.head_wechat,
-.head_top_left04:hover>.tell_num {
-    display: block;
+
+.head_top_left02{
+    background-image: url("../images/mobilephone.png");
+}
+.head_top_left02:hover{
+    background-image: url("../images/mobilephone_01.png");
+}
+
+.head_wechat{
+    margin-left: -0.5px;
+}
+
+.head_top_left03{
+    background-image: url("../images/weixin.png");
+}
+
+.head_top_left03:hover{
+    background-image: url("../images/weixin_01.png");
+}
+
+.head_top_left04{
+    background-image: url("../images/weibo.png");
+}
+
+.head_top_left04:hover{
+    background-image: url("../images/weibo_01.png");
 }
 
 .load,
-.tell_num,
 .head_wechat {
     z-index: 9;
     padding: 3px;
+    width: 90px;
+    height: 90px;
     display: none;
     background: #fff;
-    position: absolute;    
+    margin-top: 40px;
+    position: absolute;
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
     border-bottom: 1px solid #cdcdcd;
 }
 
-.load,
-.head_wechat{
-    margin-top: 50.5px;
-    margin-left: 19px;
+.head_top_left02:hover>.load,
+.head_top_left03:hover>.head_wechat{
+    display: block;
 }
 
-.tell_num {
-    width: 180px;
-    height: 80px;
-    margin-top: 60px;
-    margin-left: 78px;
+.load {
+    margin-left: -1px;
 }
+
+.load>img,
+.head_wechat>img{
+    width: 100%;
+    height: 100%;
+}
+
 
 .head_top_left02 {
     margin: 0px 0 0 10px;
@@ -147,7 +180,7 @@ header {
 }
 
 .logo {
-    width: 150px;
+    width: 168px;
     height: 63px;
     float: left;
     display: flex;
@@ -178,27 +211,45 @@ header {
 
 .head_nav>li:first-child {
     color: #ffa21a;
-    margin: 0px 50px 0px 170px;
+    margin: 0px 30px 0px 170px;
+}
+
+.head_nav>li:first-child:hover,
+.head_nav>li:nth-child(2):hover,
+.head_nav>li:nth-child(3):hover,
+.head_nav>li:nth-child(4):hover  {
+    color: #fff;
+    background: #ffa219;
+}
+
+
+.head_nav>li:first-child:hover>a,
+.head_nav>li:nth-child(2):hover>a,
+.head_nav>li:nth-child(3):hover>a,
+.head_nav>li:nth-child(4):hover>a  {
+    color: #fff;
 }
 
 .head_nav>li:nth-child(2),
 .head_nav>li:nth-child(3) {
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .head_nav>li:nth-child(4) {
-    margin-right: 105px;
+    margin-right: 90px;
 }
 
-.head_nav>li:nth-child(7),
-.head_nav>li:nth-child(8) {
+/* 未登录的样式 */
+
+.login_state,
+.login_user {
     width: 100px;
     height: 40px;
     text-align: center;
     line-height: 40px;
 }
 
-.head_nav>li:nth-child(7) {
+.login_state {
     background: #ffd08c;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -212,13 +263,53 @@ header {
     color: #fbb671;
 }
 
-.head_nav>li:nth-child(8) {
+.login_user {
     background: #fff;
     border: 1px solid #feebd0;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
+
+/* 登录后的样式 */
+
+#login_state:hover>.login_state_ul,
+.about_us:hover>.about_us_ul,
+.safety:hover>.safety_ul {
+    color: #333;
+    display: block;
+    background: #fff;
+}
+
+#login_state {
+    width: 45px;
+    height: 40px;
+    line-height: 40px;
+    background: #ffd08c;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#login_user {
+    width: 155px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    border: 1px solid #feebd0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.login_state_ul {
+    display: none;
+    position: absolute;
+    width: 200px;
+    z-index: 10;
+    line-height: 30px;
+}
+
+/* 左侧悬浮窗 */
 .right_nav {
     right: 12px;
     top: 50%;
@@ -242,19 +333,21 @@ header {
     top: 0;
     width: 80px;
     height: 80px;
-    right: -160px;
-    display: flex;
+    right: 50px;
+    display: none;
     background: #fff;
     position: absolute;
-    align-items: center;
-    transition: all 0.2s;
-    justify-content: center;
     border: 1px solid #e4e1d3;
+}
+
+.down_div>img {
+    padding-top: 12px;
 }
 
 .kefu_num {
     top: 80px;
-    right: -160px;
+    right: 50px;
+    display: none;
     width: 130px;
     height: 50px;
     line-height: 25px;
@@ -277,20 +370,10 @@ header {
     border-top: 0;
 }
 
-.about_us:hover,
-.safety:hover {
-    color: #fff;
-    background: #ffa219;
-}
-
-
-/* 登录后的样式 */
-#login_state:hover>.login_state_ul,
-.about_us:hover>.about_us_ul,
-.safety:hover>.safety_ul {
-    color: #333;
+/* 信息披露和关于鑫路 */
+.safety_ul>li>a,
+.about_us_ul>li>a {
     display: block;
-    background: #fff;
 }
 
 .about_us_ul,
@@ -299,37 +382,11 @@ header {
     position: absolute;
     height: 172px;
     width: 108px;
-    z-index:10;
+    z-index: 10;
+    font-size: 14px;
     line-height: 30px;
     text-align: center;
-}
-
-#login_state{
-    width:45px;
-    height: 40px;
-    line-height: 40px;
-    background: #ffd08c;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-#login_user{
-    width:155px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    background: #fff;
-    border: 1px solid #feebd0;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.login_state_ul{
-    display: none;
-    position: absolute;
-    width: 200px;
-    z-index:10;
-    line-height: 30px;
+    box-shadow: 0 1px 1px #eee;
 }
 
 .about_us_ul>li,
@@ -342,6 +399,7 @@ header {
 .about_us_ul>li:hover,
 .safety_ul>li:hover,
 .login_state_ul>li:hover {
+    color: #fff !important;
     background: #ffa219;
 }
 
@@ -364,45 +422,48 @@ footer {
     background: #eee;
 }
 
-
-.footer_top{
+.footer_top {
     height: 265px;
 }
 
 .footer_ul {
     float: left;
+    width: 120px;
     margin-top: 45px;
-    margin-right: 60px;
+    line-height: 24px;
 }
 
 .footer_ul>li:first-child {
-    margin-bottom: 50px;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .footer_ewm {
     float: left;
     border-left: 1px solid #e4e4e4;
-    margin-top: 45px;   
+    margin-top: 45px;
     padding-left: 40px;
     cursor: pointer;
     position: relative;
 }
 
-.footer_ewm>span{
+.footer_ewm>span {
     margin-top: 20px;
 }
 
-.footer_ewm>span>img{
-    margin-right:10px;
+.footer_ewm>span>img {
+    margin-right: 10px;
 }
 
-.qq_code{
+.qq_code {
     top: 10px;
     opacity: 0;
     position: absolute;
 }
 
-.weixin_code{
+.weixin_code {
     top: 10px;
     margin-left: 150px;
     opacity: 0;
@@ -430,7 +491,7 @@ footer {
 .kefu {
     float: left;
     margin-top: 45px;
-    margin-left:25px;
+    margin-left: 10px;
 }
 
 .footer_bottom {
@@ -438,10 +499,10 @@ footer {
     justify-content: space-between;
 }
 
-.footer_hr{
+.footer_hr {
     width: 100%;
-    min-width:1200px;
-    max-width:1920px;
+    min-width: 1200px;
+    max-width: 1920px;
     border-top: 1px solid #e4e4e4;
 }
 
@@ -659,7 +720,7 @@ footer {
 }
 
 .protocol {
-    top:5%;
+    top: 5%;
     height: 90%;
     width: 1000px;
     margin: 0 auto;
@@ -677,7 +738,7 @@ footer {
     display: none;
 }
 
-.protocol_text{
+.protocol_text {
     color: #333;
     padding: 0 100px;
     height: 80%;
@@ -685,18 +746,17 @@ footer {
     text-align: justify;
 }
 
-.protocol_text>p{
+.protocol_text>p {
     margin-bottom: 20px;
     text-indent: 35px;
 }
 
-.protocol_button{
+.protocol_button {
     height: 20%;
     text-align: center;
 }
 
-
-.close_protlcol{
+.close_protlcol {
     height: 45px;
     width: 300px;
     color: #fff;
@@ -710,7 +770,8 @@ footer {
 
 
 /* 遮罩层 */
-.mask{
+
+.mask {
     width: 100%;
     height: 100%;
     z-index: 99;
@@ -720,7 +781,7 @@ footer {
 
 .mask,
 .login_mask,
-.approve_mask{
+.approve_mask {
     top: 0px;
     left: 0px;
     right: 0px;
@@ -730,7 +791,7 @@ footer {
 }
 
 .login_mask,
-.approve_mask{
+.approve_mask {
     width: 400px;
     height: 280px;
     margin: auto;
@@ -741,14 +802,14 @@ footer {
 }
 
 .login_mask_top,
-.approve_mask_top{
+.approve_mask_top {
     height: 50px;
     line-height: 50px;
     border-bottom: 1px solid #e4e4e4;
 }
 
 .login_mask_top>p,
-.approve_mask_top>p{
+.approve_mask_top>p {
     color: #999;
     font-size: 12px;
     margin-left: 20px;
@@ -756,7 +817,7 @@ footer {
 }
 
 .login_mask_top>span,
-.approve_mask_top>span{
+.approve_mask_top>span {
     width: 25px;
     height: 25px;
     float: right;
@@ -771,14 +832,14 @@ footer {
 }
 
 .login_mask>p:first-of-type,
-.approve_mask>p:first-of-type{
+.approve_mask>p:first-of-type {
     text-align: center;
     font-size: 18px;
     line-height: 3;
     margin-top: 30px;
 }
 
-.approve_mask>a{
+.approve_mask>a {
     color: #999;
     font-size: 12px;
     display: block;
@@ -786,7 +847,7 @@ footer {
 }
 
 .login_mask>button,
-.approve_mask>button{
+.approve_mask>button {
     width: 265px;
     height: 45px;
     color: #fff;

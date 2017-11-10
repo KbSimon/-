@@ -2,7 +2,7 @@
 $('.novice_series').hover(function () {
     $(".series_mark").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/series_mark_01.png");
     $(this).css('box-shadow', '0 15px 30px rgba(0,0,0,0.1)').stop().animate({
-        top: -10
+        top: -5
     }, 300);
 }, function () {
     $(".series_mark").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/series_mark.png");

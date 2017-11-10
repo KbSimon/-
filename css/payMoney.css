@@ -122,6 +122,7 @@ input[type="button"]{
 }
 
 .mask,
+.complete,
 .trader_password{
     top: 0px;
     left: 0px;
@@ -131,21 +132,24 @@ input[type="button"]{
     display: none;
 }
 
+.complete,
 .trader_password{
     top: 100px;
     width: 400px;
-    height: 340px;
+    height: 360px;
     background: #fff;
     margin: 0 auto;
     border-radius: 5px;
 }
 
+.complete_top,
 .trader_password_top{
     height: 50px;
     line-height: 50px;
     border-bottom: 1px solid #e4e4e4;
 }
 
+.complete_top>p,
 .trader_password_top>p{
     color: #999;
     font-size: 12px;
@@ -153,6 +157,7 @@ input[type="button"]{
     float: left;
 }
 
+.complete_top>span,
 .trader_password_top>span{
     width: 25px;
     height: 25px;
@@ -172,10 +177,12 @@ input[type="button"]{
     background: url("../images/register/password_01.png") no-repeat;
 }
 
+.complete_bottom>h2,
 .trader_password>form{
     text-align: center;
 }
 
+.complete_bottom>h2,
 .trader_password>form>h2{
     padding: 50px 0 45px 0;
 }
@@ -209,6 +216,41 @@ input[type="button"]{
     color:#65b9ed;
     float: right;
     margin: 10px 40px 0px 0px;
+}
+
+.error_01>p{
+    color: red;
+    text-align: right;
+    padding-right: 40px;
+}
+
+.pay_btn01,
+.pay_btn02{
+    width: 140px;
+    height: 45px;
+    margin: 0 auto;
+    border-radius: 5px;
+    line-height: 45px;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.pay_btn01{
+   
+    background: #fd9c1c;
+}
+
+.pay_btn01>a{
+    color: #fff;
+}
+
+.pay_btn02{
+    border: 1px solid #fd9c1c;
+}
+
+.pay_btn02>a{
+    color: #fe9c1c;
 }
 
 

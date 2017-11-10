@@ -42,7 +42,7 @@
 
 .content_top_left_bottom {
     height: 105px;
-    padding: 20px 150px 0px 40px;
+    padding: 20px 100px 0px 40px;
 }
 
 .content_ul_01 {
@@ -60,7 +60,11 @@
 .progress_width{
     height: 4px;  
     border-radius: 4px;  
-    background: #fbd585;
+    background: #fc9c1c;
+}
+
+.series_middle_p1{
+    color: #fc9c1c;
 }
 
 .content_ul_01>li {
@@ -90,6 +94,18 @@
     outline: none;
     line-height: 50px;
     border-radius: 5px; 
+}
+
+.buttonClassNo{
+    width: 340px;
+    height: 50px;
+    outline: none;
+    line-height: 50px;
+    border-radius: 5px; 
+    color: #fff;
+    margin-top: 10px;
+    background: #e3e3e3;
+    border: 1px solid transparent;
 }
 
 .invest_money{

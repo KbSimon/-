@@ -39,6 +39,7 @@
     text-align: center;
     background: #fff;
     border-radius: 5px;
+    border-top: 5px solid transparent;
     box-shadow: 0 10px 20px #f7f3ec;
 }
 
@@ -49,12 +50,12 @@
 .active_01 {
     color: #ffa21a;
     font-weight: bold;
-    border-top: 5px solid #ffa21a;
+    border-top: 5px solid #ffa21a !important;
 }
 
 .property_bottom_content_01,
 .property_bottom_content_02{
-    height: 620px;
+    /* height: 620px; */
     width: 100%;
     background: #fff;
     border-radius: 5px;
@@ -128,6 +129,8 @@
 }
 
 #laypages,
+#laypages01,
+#laypages02,
 #laypages_02{
     text-align: center;
 }

@@ -26,24 +26,16 @@
                         <p>鑫路金融App</p>
                     </div>
                     <div class="head_top_left02 fleft">
-                        <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/mobilephone.png">
                         <div class="load">
                             <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/load.png" alt="">
                         </div>
                     </div>
                     <div class="head_top_left03 fleft">
-                        <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/weixin.png" class="weixin">
                         <div class="head_wechat">
                             <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/weixin_qr.png" alt="">
                         </div>
                     </div>
                     <div class="head_top_left04 fleft">
-                        <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/tellphone.png" class="tell">
-                        <div class="tell_num">
-                            <span style="font-size:20px;color:#666;font-weight:bold;">400-087-0808</span>
-                            <br>
-                            <span>工作日：9:00-18:00</span>
-                        </div>
                     </div>
                 </div>
                 <div class="head_top_right">
@@ -84,8 +76,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="about_us">
-                    <a href="aboutUs.html">关于鑫路</a>
+                <li class="about_us">关于鑫路
                     <ul class="about_us_ul">
                         <li>
                             <a href="aboutUs.html">公司简介</a>
@@ -102,7 +93,7 @@
                     </ul>
                 </li>
                 <!-- 登录后 默认隐藏  用户登录后出现-->
-                <li id="login_state">
+                <li id="login_state" style="display:none;">
                     <a href="" class="login">欢迎</a>
                     <ul class="login_state_ul">
                         <li>
@@ -125,14 +116,14 @@
                         </li>
                     </ul>
                 </li>
-                <li id="login_user">
+                <li id="login_user" style="display:none;">
                     <a href="" class="register">151****2821</a>
                 </li>
                 <!-- 未登录 默认显示 用户登录后显示 -->
-                <li style="display:none;">
+                <li class="login_state" >
                     <a href="/login/login" class="login">登录</a>
                 </li>
-                <li style="display:none;">
+                <li class="login_user" >
                     <a href="register.html" class="register">注册有礼</a>
                 </li>
             </ul>
@@ -180,7 +171,7 @@
             <li class="feature02">
                 <a href="javascript:;">
                     <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/feature_02.png" alt="">
-                    <div class="feature_text02">
+                    <div class="feature_text">
                         <p>直融业务模式，安全高效运作</p>
                         <span>合规模式</span>
                     </div>
@@ -189,7 +180,7 @@
             <li class="feature03">
                 <a href="javascript:;">
                     <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/feature_03.png" alt="">
-                    <div class="feature_text03">
+                    <div class="feature_text">
                         <p>多重安全保障，真正理财无忧</p>
                         <span>严密风控</span>
                     </div>
@@ -198,7 +189,7 @@
             <li class="feature04">
                 <a href="javascript:;">
                     <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/feature_04.png" alt="">
-                    <div class="feature_text04">
+                    <div class="feature_text">
                         <p>实力明星团队，多年行业经验</p>
                         <span>专业高效</span>
                     </div>
@@ -237,7 +228,7 @@
         <ul class="novice_ul">
             <li class="novice_register">
                 <div>
-                    <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/novice_01.png" style="margin:30px 0;">
+                    <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/novice_01.png">
                     <div>
                         <a href="javascript:;" class="novice_btn">注册领588元红包</a>
                     </div>
@@ -269,10 +260,8 @@
                         <div class="loading_div01" style="width:30%">
                             <div class="radius"></div>
                         </div>
+                        <p style="color:#666;position:absolute;right:15px;margin-top:-12px;">已售30%</p>
                     </div>
-                    <!-- <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/series_loding.png" alt=""> -->
-                    <p style="color:#666;position:absolute;right:40px">已售30%</p>
-
                 </a>
             </li>
             <li class="novice_gulde" onclick="location.href='newbie.html'">
@@ -561,9 +550,7 @@
     <footer>
         <div class="w1200 footer_top clearfloat">
             <ul class="footer_ul clearfloat">
-                <li>
-                    <a href="aboutUs.html">关于鑫路</a>
-                </li>
+                <li>关于鑫路</li>
                 <li>
                     <a href="javascript:;">公司简介</a>
                 </li>
@@ -578,9 +565,7 @@
                 </li>
             </ul>
             <ul class="footer_ul">
-                <li>
-                    <a href="javascript:;">信息披露</a>
-                </li>
+                <li>信息披露</li>
                 <li>
                     <a href="bankSave.html">银行存管</a>
                 </li>
@@ -595,9 +580,7 @@
                 </li>
             </ul>
             <ul class="footer_ul">
-                <li>
-                    <a href="javascript:;">平台指南</a>
-                </li>
+                <li>平台指南</li>
                 <li>
                     <a href="help.html">帮助中心</a>
                 </li>
@@ -681,7 +664,7 @@
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/base.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/index.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/plugins/echarts.min.js"></script>
-<script>
+<script> 
     $(".message_ul>li").click(function () {
         $(this).addClass("message_active").siblings().removeClass("message_active");
     })

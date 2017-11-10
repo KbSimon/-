@@ -12,7 +12,8 @@
     <title>收益计算器—快速计算收益,理财必备神器—鑫路金融官网</title>
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/base.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/common.css">
-    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/counter.css">
+    <link rel="stylesheet" href="../../css/counter.css">
+    <!-- <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/counter.css"> -->
 </head>
 
 <body>
@@ -30,25 +31,25 @@
             <form action="">
                 <div>
                     <label for="">投资金额：</label>
-                    <input type="text" class="money" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                    <input type="text" class="money">
                     <span>元</span>
                     <span class="warning_money">请输入投资金额</span>
                 </div>
                 <div>
                     <label for="">年化利率：</label>
-                    <input type="text" class="rate" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                    <input type="text" class="rate">
                     <span>%</span>
                     <span class="warning_rate">请输入年化金额</span>
                 </div>
                 <div>
                     <label for="">投资周期：</label>
-                    <input type="text" class="date" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                    <input type="text" class="date">
                     <span>天</span>
                     <span class="warning_date">请输入投资时间(天)</span>
                 </div>
                 <div>
                     <label for="">还款方式：</label>
-                    <input type="radio" name="" id="check" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                    <input type="radio" name="" id="check">
                     <label for="">到期还本付息</label>
                 </div>
                 <div>
@@ -62,14 +63,14 @@
                 <div class="counter_right_div_02">
                     <div>
                         <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/invest_text_02.png" alt="">
-                        <span>本息计算</span>
+                        <span>本息收益</span>
                     </div>
                     <span class="benxi">0</span>
                 </div>
                 <div class="counter_right_div_02">
                     <div>
                         <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/invest_text_08.png" alt="">
-                        <span>本息计算</span>
+                        <span>利息收益</span>
                     </div>
                     <span class="benxi">0</span>
                 </div>
@@ -78,7 +79,7 @@
     </div>
 
     <!-- 每期收益明细 -->
-    <div class="detailes w1200">
+    <!-- <div class="detailes w1200">
         <div class="detailes_div w1200">
             <p style="margin-left:40px;font-size:16px;color:#666;">每期收益明细</p>
         </div>
@@ -98,7 +99,7 @@
                 <td>0元</td>
             </tr>
         </table>
-    </div>
+    </div> -->
 
     <!-- 尾部 -->
     <footer></footer>
@@ -108,8 +109,6 @@
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/jquery.min.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/base.js"></script>
 <script>
-    $("header>div").load("head.html");
-    $("footer").load("footer.html");
     $("form").submit(function () {
         var money = $(".money").val();
         var rate = $(".rate").val();

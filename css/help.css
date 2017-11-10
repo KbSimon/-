@@ -1,14 +1,12 @@
 
 main{
+    max-width: 1920px;
     min-width: 1200px;
     margin: 0 auto;
 }
 
 .help_top{
     height: 200px;
-    /* width: 100%;
-    max-width: 1920px;
-    margin: 0 auto; */
     background: #fff6eb;
 }
 
@@ -82,7 +80,7 @@ main{
 
 .helpCenter_02_title{
     width: 170px;
-    height: 465px;
+    height: 505px;
     border-radius: 5px;
     border: 1px solid #eae5e2;
 }
@@ -101,7 +99,8 @@ main{
 }
 
 .helpCenter_02_title_active{
-    background: #fff;
+    color: #fff;
+    background: #fcd391;
     border-radius: 5px;
     border: 1px solid #eae5e2 !important;
 }

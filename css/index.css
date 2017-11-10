@@ -50,7 +50,7 @@
 
 .banner_bottom{
    width:100%;
-    height:60px;
+    height:40px;
     left:0 ;
     bottom:5px;
     zoom:1;
@@ -69,9 +69,9 @@
 .banner_btn>li {
     float: left;
     width: 291px;
-    height: 60px;
+    height: 40px;
     color: #fff;
-    line-height: 60px;
+    line-height: 40px;
     background: #000;
     font-size: 16px;
     cursor: pointer;
@@ -86,11 +86,11 @@
 }
 
 .banner_active {
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .banner_unactive {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 
@@ -121,19 +121,7 @@
 }
 
 .feature_text {
-    margin: 40px 0 10px 0;
-}
-
-.feature_text02{
-    margin: 46px 0 10px 0;
-}
-
-.feature_text03{
-    margin: 15px 0 10px 0;
-}
-
-.feature_text04{
-    margin: 30px 0 10px 0;
+    margin: 20px 0 10px 0;
 }
 
 .feature_text>p,
@@ -142,6 +130,7 @@
 .feature_text04>p {
     color: #666;
     font-size: 14px;
+    padding-bottom: 10px;
 }
 
 .feature_text>span,
@@ -263,7 +252,7 @@
 }
 
 .series_middle_p1{
-    color: #fbd585;
+    color: #f9c314;
 }
 
 .series_middle_p2,
@@ -274,19 +263,17 @@
 .gulde_text {
     color: #282d33;
     font-weight: bold;
-    margin: 40px 0 0 0;
 }
 
 .loading_01{
-    width: 428px;
+    width: 400px;
     height: 4px;
     border-radius: 4px;
-    margin: 0 auto;
     background: #ccc;
 }
 
 .loading_div01{
-    background: #fbd585;
+    background: #f9c314;
     height: 4px;
     border-radius: 4px;
     position: relative;
@@ -299,7 +286,7 @@
     right: 0;
     border-radius: 100%;
     position: absolute;
-    background: #fbd585;
+    background: #f9c314;
 }
 
 /* 投资专区 */
@@ -412,7 +399,7 @@
 
 .message_div_01,
 .message_div_02 {
-    display: flex;
+    overflow: hidden;
 }
 
 .message_div_01,
@@ -422,15 +409,21 @@
     height: 380px;
 }
 
+.message_ul{
+    float: left;
+}
+
 .message_div_02 {
     width: 910px;
+    float: right;
     background: #fff;
     border-radius: 5px;
 }
 
 .message_div_03 {
     width: 550px;
-    border-right: 1px solid #e7e3de;
+    float: left;
+    border-right: 1px solid #e3e3e3;
 }
 
 .message_div_03>img{
@@ -442,12 +435,13 @@
 .message_div_04,
 .message_div_05 {
     width: 360px;
+    float: right;
 }
 
 .message_div_05 {
     height: 55px;
     line-height: 55px;
-    border-bottom: 1px solid #e7e3de;
+    border-bottom: 1px solid #e3e3e3;
 }
 
 .message_div_05>a {
@@ -484,6 +478,7 @@
     font-size: 16px;
     font-weight: bold;
     margin: 0 10px 10px 0;
+    border-left: 8px solid transparent;
 }
 
 .message_ul>.message_active {

@@ -12,7 +12,8 @@
     <title>个人中心-鑫路金融官网</title>
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/base.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/common.css">
-    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/account.css"> 
+    <link rel="stylesheet" href="../../css/account.css">
+    <!-- <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/account.css">  -->
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/property.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/information.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/redPaket.css">
@@ -707,6 +708,7 @@
                                 </div>
                             </li>
                         </ul>
+                        
                     </div>
                     <!-- 过期红包部分 -->
                     <div class="redPaket_bottom_content_02">
@@ -941,6 +943,7 @@
 
     <!-- 遮罩效果 -->
     <div class="mask">
+        <!-- 充值提现弹出框 -->
         <div class="trader_password">
             <div class="trader_password_top  clearfloat">
                 <p>请输入交易密码</p>
@@ -959,11 +962,32 @@
                     </div>
                 </ul>
             </form>
-            <div class="trader_password_bottom">
+            <div class="trader_password_bottom" id="trader_password_bottom">
                 <input type="button" value="确定">
                 <br>
                 <a>忘记交易密码</a>
             </div>
+        </div>
+        <div class="pay_mask">
+            <div class="pay_mask_top  clearfloat">
+                <p>完成充值</p>
+                <span class="close_btn">×</span>
+            </div>
+            <div class="pay_mask_bottom">
+                <p>充值成功！</p>
+            </div>
+            <div class="pay_mask_btn">查看账户</div>
+        </div>
+        <div class="refere_mask">
+            <div class="refere_mask_top  clearfloat">
+                <p>完成提现</p>
+                <span class="close_btn">×</span>
+            </div>
+            <div class="refere_mask_bottom">
+                <p>提现成功！T+1工作日到账</p>
+                <p>双休日、法定假日则顺延</p>
+            </div>
+            <div class="refere_mask_btn">查看账户</div>
         </div>
     </div>
 </body>
@@ -1095,12 +1119,20 @@
     $(".to_pay").click(function () {
         $(".mask").show();
         $(".trader_password").show();
+    });
+    $(".trader_password_bottom").click(function(){
+        $(".pay_mask").show();
+        $(".trader_password").hide();
     })
 
     $(".to_refere").click(function () {
         $(".mask").show();
         $(".PIN_p1").text("提现到银行卡")
         $(".trader_password").show();
+    })
+    $("#trader_password_bottom").click(function(){
+        $(".refere_mask").show();
+        $(".trader_password").hide();
     })
 
     $(".close_btn").click(function () {

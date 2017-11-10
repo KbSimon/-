@@ -48,7 +48,13 @@
 }
 
 
+.income02{
+    width: 198px;
+    margin-top: 40px;
+}
+
 .income01,
+
 .balance02{
     margin-top: 40px;
     width: 230px;
@@ -311,6 +317,8 @@
 }
 
 .mask,
+.pay_mask,
+.refere_mask,
 .trader_password{
     top: 0px;
     left: 0px;
@@ -320,6 +328,8 @@
     display: none;
 }
 
+.pay_mask,
+.refere_mask,
 .trader_password{
     top: 100px;
     width: 400px;
@@ -329,12 +339,21 @@
     border-radius: 5px;
 }
 
+.pay_mask,
+.refere_mask{
+    height: 260px;
+}
+
+.pay_mask_top,
+.refere_mask_top,
 .trader_password_top{
     height: 50px;
     line-height: 50px;
     border-bottom: 1px solid #e4e4e4;
 }
 
+.pay_mask_top>p,
+.refere_mask_top>p,
 .trader_password_top>p{
     color: #999;
     font-size: 12px;
@@ -342,6 +361,8 @@
     float: left;
 }
 
+.pay_mask_top>span,
+.refere_mask_top>span,
 .trader_password_top>span{
     width: 25px;
     height: 25px;
@@ -355,6 +376,36 @@
     background: #ffc695;
     text-align: center;
     line-height: 25px;
+}
+
+.pay_mask_bottom,
+.refere_mask_bottom{
+    text-align: center;
+}
+
+.pay_mask_bottom>p,
+.refere_mask_bottom>p{
+    color: #666;
+}
+
+.pay_mask_btn,
+.refere_mask_btn{
+    color: #fff;
+    width: 300px;
+    height: 45px;
+    margin: 0 auto;
+    margin-top: 20px;
+    line-height: 45px;
+    border-radius: 5px; 
+    text-align: center;   
+    background: #fd9c1c;
+}
+
+.refere_mask_bottom>p:first-of-type,
+.pay_mask_bottom>p:first-of-type{
+    font-size: 20px;
+    padding-top: 35px;
+    padding-bottom: 10px;
 }
 
 .pwd{

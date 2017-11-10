@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/base.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/common.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/index.css">
-    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/productDetails.css">
+    <link rel="stylesheet" href="../../css/productDetails.css">
+    <!-- <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/productDetails.css"> -->
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/plugins/layui/css/layui.css">
     <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/xinlu-icon.ico">
 </head>
@@ -126,7 +127,7 @@
                     <ul class="risk_ul clearfloat">
                         <li>
                             <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/productDetail/risk_01.png">
-                            <p>上海银行存管</p>
+                            <!-- <p>上海银行存管</p> -->
                         </li>
                         <li>
                             <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/productDetail/risk_02.png" style="margin-top:15px;">
@@ -251,14 +252,8 @@
     // 鑫火稳健
     $('.content_top_left').hover(function () {
         $(".series_mark").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/content_top_01.png");
-        $(this).css('box-shadow', '0 15px 30px rgba(0,0,0,0.1)').stop().animate({
-            top: -10
-        }, 300);
     }, function () {
         $(".series_mark").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/content_top.png");
-        $(this).css('box-shadow', '0 10px 20px #f7f3ec').stop().animate({
-            top: 0
-        }, 300);
     });
 
     $(".close_btn").click(function () {

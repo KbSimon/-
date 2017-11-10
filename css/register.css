@@ -43,7 +43,6 @@ select {
     width: 320px;
     height: 45px;
     border-radius: 5px;
-    border: 1px solid #e4e4e4;
 }
 
 .pwd {

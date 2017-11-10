@@ -12,7 +12,8 @@
     <title>确认付款</title>
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/base.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/common.css">
-    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/payMoney.css">
+    <link rel="stylesheet" href="../../css/payMoney.css">
+    <!-- <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/payMoney.css"> -->
     <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/xinlu-icon.ico">
 </head>
 
@@ -99,18 +100,32 @@
                 <ul class="trader_password_ul">
                     <li class="clearfloat">
                         <div class="pwd"></div>
-                        <input type="password" name="password" placeholder="请输入交易密码" minlength="6" maxlength="20">
+                        <input type="password" name="password" class="paypwd" placeholder="请输入交易密码" minlength="6" maxlength="20">
                     </li>
                     <div class="pay_hint" style="margin-right:40px;text-align:right;color:red;">
                             <p></p>
                         </div>
                 </ul>
             </form>
+            <div class="error_01">
+                <p></p>
+            </div>
             <div class="trader_password_bottom">
                 <input type="button" value="确定"><br>
                 <a>忘记交易密码</a>
             </div>
         </div>
+        <div class="complete" >
+            <div class="complete_top  clearfloat">
+                <p>交易密码</p>
+                <span class="close_btn">×</span>
+            </div>
+            <div class="complete_bottom">
+                <h2>投资成功</h2>
+                <div class="pay_btn01"><a href="javascript:;">继续投资</a></div>
+                <div class="pay_btn02"><a href="javascript:;">查看记录</a></div>
+            </div>
+        </div> 
     </div>
 </body>
 
@@ -127,6 +142,11 @@
 
     $(".close_btn").click(function(){
         $(".mask").hide();
+        $(".trader_password").hide();
+    })
+
+    $(".trader_password_bottom").click(function(){
+        $(".complete").show();
         $(".trader_password").hide();
     })
 </script>

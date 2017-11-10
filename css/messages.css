@@ -9,7 +9,7 @@
 }
 
 .messages_text{
-    height: 80px;
+    /* height: 80px; */
     padding: 0 40px;
     border-radius: 5px;
     line-height: 80px;
@@ -26,10 +26,18 @@
     float: right;
 }
 
-.messages_text_left{
+
+.messages_text_left>p{
+    width: 600px;
+    float: left;
+    line-height: 1.5;
+    margin-top: 30px;
+    padding-bottom: 15px;
+}
+/* .messages_text_left{
     display: flex;
     justify-content: space-around;
-}
+} */
 
 .e_ring,
 .m_ring,
@@ -48,6 +56,7 @@
 }
 
 .m_ring{
+    float: left;
     color: #facc63;
     background: #fdecc2;
 }

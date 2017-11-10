@@ -94,11 +94,15 @@ input{
 }
 
 .counter_right_div{
-    margin: 75px 155px 235px 70px;
+    margin: 75px 0px 235px 70px;
 }
 
 .counter_right_div_02{
     display: flex;
+}
+
+.counter_right_div_02>div{
+    float: left;
 }
 
 .counter_right_div_02:last-child{

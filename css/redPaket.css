@@ -48,6 +48,7 @@
     background: #fff;
     border-radius: 5px;
     cursor: pointer;
+    border-top: 5px solid transparent;
     box-shadow: 0 10px 20px #f7f3ec;
 }
 
