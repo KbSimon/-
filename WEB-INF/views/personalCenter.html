@@ -12,8 +12,7 @@
     <title>个人中心-鑫路金融官网</title>
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/base.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/common.css">
-    <link rel="stylesheet" href="../../css/account.css">
-    <!-- <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/account.css">  -->
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/account.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/property.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/information.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/redPaket.css">
@@ -72,7 +71,7 @@
             </div>
         </div>
         <!-- 个人中心右侧 -->
-        <div class="personal_center_right">
+        <div class="personal_center_right ">
             <!-- 账户总览 -->
             <ul class="account">
                 <!-- 账户总览页面 -->
@@ -535,15 +534,22 @@
                                 <div class="error_10">
                                     <p></p>
                                 </div>
-                                <li>
-                                    <select name="" id="chooseBank">
-                                        <option selected="selected">选择所属银行</option>
-                                    </select>
-                                </li>
+                                <select name="" class="chooseBank">
+                                    <option selected="selected">选择所属银行</option>
+                                </select>
                                 <div class="error_11">
                                     <p></p>
                                 </div>
                                 <br>
+                                <select class="province">
+                                    <option selected="selected">请选择开户地区</option>
+                                </select>
+                                <select class="city">
+                                    <option selected="selected">请选择开户地区</option>
+                                </select>
+                                <div class="error_13">
+                                    <p></p>
+                                </div>
                                 <li>
                                     <div class="code"></div>
                                     <input type="text" cla placeholder="请输入验证码" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
@@ -708,7 +714,7 @@
                                 </div>
                             </li>
                         </ul>
-                        
+
                     </div>
                     <!-- 过期红包部分 -->
                     <div class="redPaket_bottom_content_02">
@@ -863,7 +869,7 @@
                 <li class="friends_middle">
                     <p style="color:#666;font-size:18px;line-height:3;padding-left:30px;">邀请好友领取奖励规则</p>
                     <p style="padding-left:30px;line-height:1.8;">1.先登陆鑫路金融账户，进入我的账户，点击“邀请好友”，点击“复制推荐链接”按钮，再发送给你的好友即可。</p>
-                    <p style="padding-left:30px;line-height:1.8;">2.在好友注册并首次投资成功达到1000元后，你即可获得50元推荐红包；若好友首次投资成功达到10000，红包福利可增加至100元。</p>
+                    <p style="padding-left:30px;line-height:1.8;">2.在好友注册并累计投资成功达到1000元后，你即可获得50元推荐红包；若好友首次投资成功达到10000，红包福利可增加至100元。</p>
                     <p style="padding-left:30px;line-height:1.8;">3.以上活动鑫路金融保留法律许可范围内的解释权。</p>
                 </li>
                 <li class="friends_bottom">
@@ -1120,7 +1126,7 @@
         $(".mask").show();
         $(".trader_password").show();
     });
-    $(".trader_password_bottom").click(function(){
+    $(".trader_password_bottom").click(function () {
         $(".pay_mask").show();
         $(".trader_password").hide();
     })
@@ -1130,7 +1136,7 @@
         $(".PIN_p1").text("提现到银行卡")
         $(".trader_password").show();
     })
-    $("#trader_password_bottom").click(function(){
+    $("#trader_password_bottom").click(function () {
         $(".refere_mask").show();
         $(".trader_password").hide();
     })
@@ -1209,10 +1215,10 @@
             $(this).parent().next().slideToggle("slow");
         });
         $(".slide_form>ul>li").click(function () {
-            $(this).attr("id", "active").siblings().removeAttr("id", "active");
+            $(this).attr("id", "active").siblings("li").removeAttr("id", "active");
         });
         $(".slide_form>ul>li").click(function () {
-            $(this).attr("id", "active").siblings().removeAttr("id", "active");
+            $(this).attr("id", "active").siblings("li").removeAttr("id", "active");
         })
 
     })

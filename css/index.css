@@ -10,8 +10,8 @@
 
 .banner_ul {
     top: 0;
-    left:0;
-    zoom:1;
+    left: 0;
+    zoom: 1;
     width: 9999px;
     height: 450px;
     position: absolute;
@@ -19,51 +19,54 @@
 
 .banner_ul>li {
     float: left;
-    width:100%;
-    height:450px;
-    min-width:1200px;
-    max-width:1920px;
+    width: 100%;
+    height: 450px;
+    min-width: 1200px;
+    max-width: 1920px;
 }
 
-.banner_ul>li>a{
-    width:100%;
-    display:block;
-    height:450px;
-    background-position:center;
-    background-size:1920px auto;        
+.banner_ul>li>a {
+    width: 100%;
+    display: block;
+    height: 450px;
+    background-position: center;
+    background-size: 1920px auto;
 }
 
-.banner_ul>li:nth-of-type(1)>a{
+.banner_ul>li:nth-of-type(1)>a {
     background-image: url("../images/banner_01.png");
 }
 
-.banner_ul>li:nth-of-type(2)>a{
+.banner_ul>li:nth-of-type(2)>a {
     background-image: url("../images/banner_02.png");
 }
-.banner_ul>li:nth-of-type(3)>a{
+
+.banner_ul>li:nth-of-type(3)>a {
     background-image: url("../images/banner_03.png");
 }
 
-.banner_ul>li:nth-of-type(4)>a{
+.banner_ul>li:nth-of-type(4)>a {
     background-image: url("../images/banner_04.png");
 }
 
-.banner_bottom{
-   width:100%;
-    height:40px;
-    left:0 ;
-    bottom:5px;
-    zoom:1;
-    min-width:1200px;
-    max-width:1920px;
+.banner_bottom {
+    width: 100%;
+    height: 40px;
+    left: 0;
+    bottom: 5px;
+    zoom: 1;
+    min-width: 1200px;
+    max-width: 1920px;
     position: absolute;
 }
-.banner_btn{
-    width:1200px;
+
+.banner_btn {
+    width: 1200px;
     margin: 0 auto;
 }
-.banner_btn>li>a{
-    color:#fff;
+
+.banner_btn>li>a {
+    color: #fff;
 }
 
 .banner_btn>li {
@@ -75,7 +78,7 @@
     background: #000;
     font-size: 16px;
     cursor: pointer;
-    text-align:center;
+    text-align: center;
     margin: 0 12px 0px 0px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -96,12 +99,12 @@
 
 /* 四大特色 */
 
-.feature{
+.feature {
     width: 100%;
     height: 300px;
-    min-width:1200px;
-    max-width:1920px;
-    margin-top: 40px;        
+    min-width: 1200px;
+    max-width: 1920px;
+    margin-top: 40px;
 }
 
 .feature_ul {
@@ -136,7 +139,7 @@
 .feature_text>span,
 .feature_text02>span,
 .feature_text03>span,
-.feature_text04>span{
+.feature_text04>span {
     color: #333;
     font-size: 18px;
     font-weight: bold;
@@ -214,49 +217,50 @@
     font-weight: bold;
 }
 
-.series_text{
+.series_text {
     top: 27px;
     left: 45px;
     color: #6b6b6b;
     position: absolute;
 }
 
-.series_mark{
+.series_mark {
     top: 0;
     right: 0;
     position: absolute;
 }
 
-.series_middle{
+.series_middle {
     display: flex;
     margin: 35px 40px;
 }
 
 .series_middle_p1,
 .series_middle_p2,
-.series_middle_p3{
+.series_middle_p3 {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .series_middle_p1>span,
 .series_middle_p2>span,
-.series_middle_p3>span{
+.series_middle_p3>span {
     font-size: 30px;
     margin-right: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.series_middle_p4{
+
+.series_middle_p4 {
     font-size: 12px;
     color: #666;
 }
 
-.series_middle_p1{
+.series_middle_p1 {
     color: #f9c314;
 }
 
 .series_middle_p2,
-.series_middle_p3{
+.series_middle_p3 {
     color: #666;
 }
 
@@ -265,29 +269,30 @@
     font-weight: bold;
 }
 
-.loading_01{
+.loading_01 {
     width: 400px;
     height: 4px;
     border-radius: 4px;
     background: #ccc;
 }
 
-.loading_div01{
+.loading_div01 {
     background: #f9c314;
     height: 4px;
     border-radius: 4px;
     position: relative;
 }
 
-.radius{
+.radius {
     width: 8px;
     height: 8px;
-    top:-2px;
+    top: -2px;
     right: 0;
     border-radius: 100%;
     position: absolute;
     background: #f9c314;
 }
+
 
 /* 投资专区 */
 
@@ -324,13 +329,13 @@
 }
 
 .invest_img_01,
-.invest_img_02{
+.invest_img_02 {
     top: 0;
     right: 0;
     position: absolute;
 }
 
-.invest_img_02{
+.invest_img_02 {
     display: none;
 }
 
@@ -347,10 +352,10 @@
 #invest_01,
 #invest_02,
 #invest_03,
-#invest_04{
-    width:180px;
-    height:180px;
-    margin-left:55px;
+#invest_04 {
+    width: 180px;
+    height: 180px;
+    margin-left: 55px;
 }
 
 .invest_sold {
@@ -369,15 +374,14 @@
 
 .invest_bottom_per>span {
     font-size: 20px;
-   margin-right: 2px;
+    margin-right: 2px;
     font-weight: bold;
 }
 
-.invest_bottom_per{
+.invest_bottom_per {
     margin-top: 20px;
     font-size: 14px;
 }
-
 
 .invest_text {
     display: flex;
@@ -409,7 +413,7 @@
     height: 380px;
 }
 
-.message_ul{
+.message_ul {
     float: left;
 }
 
@@ -426,7 +430,7 @@
     border-right: 1px solid #e3e3e3;
 }
 
-.message_div_03>img{
+.message_div_03>img {
     width: 550px;
     height: 370px;
     padding: 30px;
@@ -508,7 +512,6 @@
     width: 1200px;
     overflow: hidden;
     margin: 0 auto;
-
 }
 
 .friends_ul>li {

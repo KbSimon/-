@@ -290,6 +290,12 @@ header {
     border-bottom-left-radius: 5px;
 }
 
+#login_state>.login{
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
 #login_user {
     width: 155px;
     height: 40px;
