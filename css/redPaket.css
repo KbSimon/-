@@ -71,6 +71,12 @@
     display: none;
 }
 
+.used_redPaket_ul,
+.usable_redPaket_ul,
+.expire_redPaket_ul{
+   overflow: hidden;
+}
+
 .used_redPaket_ul>li,
 .usable_redPaket_ul>li,
 .expire_redPaket_ul>li {

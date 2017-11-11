@@ -4,6 +4,9 @@ $(".head_top_left02").hover(function () {
 }, function () {
     $(".head_top_left01 p").css("color", "#666");
 });
+$(".head_top_left04").click(function(){
+    window.location.href="https://weibo.com/u/6363624631?topnav=1&wvr=6&is_hot=1";
+})
 
 // 底部悬浮
 $(".footer_ewm>span").eq(0).hover(function () {
@@ -56,6 +59,10 @@ $(".right_nav>li").eq(2).hover(function () {
     $(".kefu_num").hide();
     $(this).children("img").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/kefu.png");
 });
+$(".right_nav>li").eq(2).click(function(){
+    window.location.href="http://p.qiao.baidu.com/cps/chat?siteId=11392674&userId=24667589";
+})
+
 $(".right_nav>li").eq(3).hover(function () {
     $(this).children("img").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/up_01.png");
 }, function () {
