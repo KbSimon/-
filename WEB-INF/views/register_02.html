@@ -12,7 +12,8 @@
     <title>用户注册-鑫路金融官网</title>
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/base.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/common.css">
-    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/register.css">
+    <link rel="stylesheet" href="../../css/register.css">
+    <!-- <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/register.css"> -->
     <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/xinlu-icon.ico">
 </head>
 
@@ -48,16 +49,24 @@
                                 onafterpaste="this.value=this.value.replace(/\D/g,'')">
                         </li>
                         <div class="error_03">
-                            <p></p>
+                            <p>1</p>
                         </div>
-                        <li>
-                            <select name="brankId" id="">
-                                <option selected="selected">选择所属银行</option>
-                            </select>
-                        </li>
+                        <select name="brankId" class="chooseBank">
+                            <option selected="selected">选择所属银行</option>
+                        </select>
                         <div class="error_04">
                             <p></p>
                         </div>
+                        <select class="province">
+                            <option selected="selected">请选择开户地区</option>
+                        </select>
+                        <select class="city">
+                            <option selected="selected">请选择开户地区</option>
+                        </select>
+                        <div class="error_06">
+                            <p></p>
+                        </div>
+
                         <li>
                             <div class="code"></div>
                             <input type="text" class="auchcode" name="sms_code" placeholder="请输入验证码" onkeyup="this.value=this.value.replace(/\D/g,'')"
@@ -78,16 +87,18 @@
     <!-- 尾部 -->
     <footer></footer>
     <div class="mask">
-    <div class="approve_mask">
-        <div class="approve_mask_top  clearfloat">
-            <p>登录注册</p>
-            <span class="close_btn">×</span>
+        <div class="approve_mask">
+            <div class="approve_mask_top  clearfloat">
+                <p>登录注册</p>
+                <span class="close_btn">×</span>
+            </div>
+            <p>认证成功！</p>
+            <span style="width:196px;margin:0 auto;display:block;">红包已经放入您的
+                <a href="" style="color:#20acec;">个人用户中心</a>
+            </span>
+            <button>立即使用红包</button>
         </div>
-        <p>认证成功！</p>
-        <span style="width:196px;margin:0 auto;display:block;">红包已经放入您的<a href="" style="color:#20acec;">个人用户中心</a></span>
-        <button>立即使用红包</button>
     </div>
-</div>
 </body>
 
 </html>

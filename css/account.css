@@ -22,7 +22,7 @@
 /* 总资产 */
 .total_money{
     padding-top: 45px;
-    font-size: 30px;
+    font-size: 26px;
     color: #ffa21a;
     font-weight: bold;
     margin-left: -40px;
@@ -68,7 +68,7 @@
 .lay_money>p:first-child,
 .earnings_money>p:first-child{
     color: #666;
-    font-size: 30px;
+    font-size: 24px;
     margin-top: 5px;
 }
 

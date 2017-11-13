@@ -150,7 +150,7 @@
 .active{
     color: #ffa21a;
     font-weight: bold;
-    border-bottom: 2px solid #fca218;
+    border-bottom: 2px solid #fca218 !important;
 }
 
 .prooject_details>div{
@@ -210,7 +210,8 @@ tr{
     background: #fcd391;
 } */
 
-#head_style{
+#head_style,
+#head_top{
     border-bottom: none;
     background: #fcd391;
 }

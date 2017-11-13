@@ -1,0 +1,84 @@
+#set($page_title="鑫路金融")
+#parse("layout/head.vm")
+#set($page_other_links='<link href="'+$!CDNTool.replace($!{staticFileUrl})+'/css/product.css?v='+$!{static_version}+'" rel="stylesheet" type="text/css">')
+<div class="height18"></div>
+
+#if(${validAmount} > 0)
+<!-- 投资成功 -->
+<div class="layout bgWhite borderGray clearfix" id='tipsWeb' name="success_tips">
+    <i class="iSuccess"></i>
+	<div class="text">
+       <h3>恭喜您，投资订单提交成功！</h3>
+       <h4>我们整个审核过程需要大约 3分钟，请耐心等待。</h4>
+       <a id="go_home_id" class="backIndex" href="${rc.contextPath}/index.html"></a>
+       <div class="height18"></div>
+       <dl>
+          <dt>温馨提示</dt>
+          <dd>1、下单流程：投资下单 > 订单审核确定 > 成功投资</dd>
+          <dd>2、如想查看记录请到“账户中心”-“<a href="${rc.contextPath}/uheart/bid/showTenderDetail?page=1&rows=10" class="aBlue">投标管理</a>”里查看</dd>
+          <dd>3、如有投资问题可咨客服 (<em class="fontRed">客服时间：周一至周五 9:00-21:00，双休日 9:00-21:00</em>)</dd>
+       </dl>
+       <div class="but"><a href="${rc.contextPath}/index.html">前往首页</a><a href="${rc.contextPath}/loan/loanList">继续投资</a></div>
+    </div>
+</div>
+<!-- 投资成功 end -->
+#else 
+<!-- 投资失败 -->
+<div class="layout bgWhite borderGray clearfix" id='tipsWeb' name="failed_tips">
+    <i class="iconError"></i>
+	<div class="text">
+       <h3>对不起，您的操作失败啦!</h3>
+       <h4>#if(${validAmount} == -1)${msgInfo}#end</h4>
+       <a id="go_home_id" class="backIndex" href="${rc.contextPath}/index.html"></a>
+       <div class="height18"></div>
+       <dl>
+          <dt>温馨提示</dt>
+          <dd>请联系客服 (<em class="fontRed">客服时间：周一至周五 9:00-21:00，双休日 9:00-21:00</em>)<br />客服热线：400-686-5850
+               <br />
+在线客服：<a href="#" class="aBlue" onclick="javascript:window.open('http://crm2.qq.com/page/portalpage/wpa.php?uin=4009925222&amp;f=1&amp;ty=1&amp;aty=0&amp;a=&amp;from=6', '_blank', 'height=544, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');return false;">点击在线客服</a></p></dd>
+       </dl>
+       <div class="height18"></div>
+       <div class="height18"></div>
+       <div class="but"><a href="${rc.contextPath}/index.html">前往首页</a><a href="${rc.contextPath}/loan/loanList">继续投资</a></div>
+    </div>
+</div>
+<!-- 投资失败 end -->
+#end
+<div class="height18"></div>
+<script src="$!CDNTool.replace($!{staticFileUrl})/js/public.js"></script>
+<script src="$!CDNTool.replace($!{staticFileUrl})/js/product.js"></script>
+
+<script>
+$(function(){
+	if("$!{validAmount}" === ""){
+		$("[name='failed_tips']").remove();
+		location = getRootPath()+"/index.html";
+	}
+	time_down = 10;
+	setInterval(timeDown,1000);
+});
+
+var time_down;
+//倒计时功能(time单位：秒；updataFun()：每秒执行；stopFun()：倒计时结束执行)
+function timeDown() {
+	time = time_down;
+    var hh = Math.floor(time/3600);
+    var mm = Math.floor((time%3600)/60);
+    var ss = Math.floor(time%60);
+    var showTime = '';
+    if(hh>0){
+        showTime += hh+'时';
+    }
+    if(mm>0){
+        showTime += mm+'分';
+    }
+    showTime += ss+'秒';
+    if (time > 0){
+    	time_down--;
+    	$(".backIndex").html(time+"秒后返回首页");
+    } else {
+    	location = getRootPath()+"/index.html";
+    }
+}
+</script>
+#parse("layout/foot.vm")

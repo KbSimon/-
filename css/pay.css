@@ -1,0 +1,48 @@
+.layout,
+.fuenter_borderrt{
+    width: 1200px;
+    margin: 40px auto;
+    /* text-align: center; */
+    background: #fff;
+    padding: 60px 200px;
+}
+
+dl{
+    text-align: left;
+}
+
+h2,h3,h4{
+    color: #666;
+    font-weight: normal;
+}
+
+h4{
+    font-size: 18px;
+}
+
+h3{
+    font-size: 26px;
+}
+
+.but>a{
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    background: #ffa21a;
+    border-radius: 5px;
+}
+
+.but>a:first-of-type{
+    margin-right: 50px;
+}
+
+.backIndex{
+    color: red;
+}
+
+.fupay_sdtxt>span{
+    display: block;
+}

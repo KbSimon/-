@@ -74,7 +74,7 @@ header {
 }
 
 .head_wechat{
-    margin-left: -0.5px;
+    margin-left: -1px;
 }
 
 .head_top_left03{
@@ -259,7 +259,12 @@ header {
     color: #fff;
 }
 
+#login_user>a:hover{
+    color: #fbb671;
+}
+
 .register {
+    display: block;
     color: #fbb671;
 }
 
@@ -290,12 +295,6 @@ header {
     border-bottom-left-radius: 5px;
 }
 
-#login_state>.login{
-    width: 16px;
-    height: 16px;
-    display: block;
-}
-
 #login_user {
     width: 155px;
     height: 40px;
@@ -314,6 +313,7 @@ header {
     z-index: 10;
     line-height: 30px;
 }
+
 
 /* 左侧悬浮窗 */
 .right_nav {
@@ -378,7 +378,8 @@ header {
 
 /* 信息披露和关于鑫路 */
 .safety_ul>li>a,
-.about_us_ul>li>a {
+.about_us_ul>li>a,
+.login_state_ul>li>a{
     display: block;
 }
 
@@ -589,20 +590,20 @@ footer {
 
 .register_ul01>li>input:nth-child(2),
 .forget_ul01>li:nth-of-type(2)>input,
-.register_ul02>li:nth-of-type(5)>input {
+.register_ul02>li:nth-of-type(4)>input {
     width: 100px;
 }
 
 .forget_ul01>li:nth-of-type(2),
 .register_ul01>li:nth-of-type(2),
-.register_ul02>li:nth-of-type(5) {
+.register_ul02>li:nth-of-type(4) {
     width: 180px;
 }
 
 .forget_ul01>li:nth-of-type(2),
 .forget_ul02>li:nth-of-type(2),
 .register_ul01>li:last-child,
-.register_ul02>li:nth-of-type(5) {
+.register_ul02>li:nth-of-type(4) {
     margin-bottom: 0;
 }
 
@@ -625,6 +626,9 @@ footer {
     border: 1px solid #fe9c1c;
 }
 
+/* .active{
+    border: 1px solid #fe9c1c !important;
+} */
 
 /* 个人中心 */
 

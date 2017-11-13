@@ -3,7 +3,7 @@ $(".register_ul01>li").click(function () {
     $(this).attr("id", "active").siblings().removeAttr("id", "active");
 });
 $(".register_ul02>li").click(function () {
-    $(this).attr("id", "active").siblings().removeAttr("id", "active");
+    $(this).addClass("active").siblings().removeClass("active");
 });
 
 // 注册协议input框

@@ -49,8 +49,67 @@
     border: 1px solid #e4e4e4;
 }
 
+/* 高德地图 */
 #container{
     width: 890px;
     height: 340px;
     margin: 20px 40px;
 }
+
+/* 新闻公告 */
+.news_title{
+    width: 690px;
+    margin: 0 auto;
+}
+
+.news_title>li{
+    color: #999;
+    width: 120px;
+    height: 45px;
+    float: left;
+    cursor: pointer;
+    margin: 20px 55px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.active{
+    color: #fff !important;
+    border-radius: 5px;
+    background: #fcd391;
+}
+
+section{
+    color: #999;
+    margin:40px 60px;
+}
+
+.company_news{
+    margin-bottom: 60px;
+}
+
+.company_news>li{
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.company_news>li>a{
+    color: #999;
+    float: left;
+}
+
+.company_news>li>a:hover{
+    color: #999;
+}
+
+.company_news>li>span{
+    float: right;
+}
+
+#laypages,
+#laypages_01,
+#laypages_02{
+    text-align: center;
+}
+
