@@ -32,6 +32,12 @@
     border: 1px solid #e4e4e4;
 }
 
-.catti_ul>li:last-child{
+.catti_ul>li:nth-of-type(3){
     margin-left: -590px;
+    /* float: left; */
+}
+
+.catti_ul>li:nth-of-type(4){
+    margin-top: -988px;
+    margin-left: 600px;
 }

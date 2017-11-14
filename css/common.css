@@ -240,7 +240,6 @@ header {
 }
 
 /* 未登录的样式 */
-
 .login_state,
 .login_user {
     width: 100px;
@@ -259,7 +258,11 @@ header {
     color: #fff;
 }
 
-#login_user>a:hover{
+.login_state>a:hover{
+    color: #fff;
+}
+
+.login_user>a:hover{
     color: #fbb671;
 }
 
@@ -312,6 +315,10 @@ header {
     width: 200px;
     z-index: 10;
     line-height: 30px;
+}
+
+#login_user>a:hover{
+    color: #fbb671;
 }
 
 
