@@ -25,7 +25,6 @@
     font-size: 26px;
     color: #ffa21a;
     font-weight: bold;
-    margin-left: -40px;
 }
 
 .total_img{
@@ -45,6 +44,7 @@
 .rechargr_page_top_right>div,
 .withdraw_page_top_right>div{
     float: left;
+    width: 33.3%;
 }
 
 
@@ -54,7 +54,6 @@
 }
 
 .income01,
-
 .balance02{
     margin-top: 40px;
     width: 230px;
@@ -76,7 +75,7 @@
 .rechargr_withdraw01,
 .rechargr_withdraw02,
 .rechargr_withdraw03{
-    margin: 25px 35px;
+    margin: 25px 0;
 }
 
 .call_back,
@@ -85,6 +84,7 @@
     width: 138px;
     height: 45px;
     font-size: 16px;
+    margin: 0 auto;
     border-radius: 45px;
     line-height: 45px;
     position: relative;
@@ -194,7 +194,7 @@
     display: none;
 }
 .all_money{
-    margin: 45px 50px 40px 90px;
+    margin-top: 45px;
 }
 
 .all_money>p:first-child{

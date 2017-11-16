@@ -38,6 +38,7 @@ form {
     margin-bottom: 0;
 }
 
+#sel_bank,
 .chooseBank {
     width: 320px;
     height: 45px;
@@ -162,6 +163,7 @@ select {
     padding-left: 10px;
 }
 
+
 .register_end {
     height: 80px;
     text-align: center;
@@ -176,7 +178,8 @@ select {
 .error_03,
 .error_04,
 .error_05,
-.error_06 {
+.error_06,
+.error_07 {
     width: 320px;
     height: 20px;
     color: red;
@@ -189,7 +192,8 @@ select {
 .error_03>p,
 .error_04>p,
 .error_05>p,
-.error_06>p {
+.error_06>p,
+.error_07>p {
     width: 320px;
     height: 0px;
     text-align: right;
@@ -204,10 +208,10 @@ select {
     margin-top: 92px;
 }
 
-/* .error_04>p {
+.error_04>p {
     margin-top: 137px;
-} */
+}
 
 .error_05>p {
-    margin-top: 180px;
+    margin-top: 45px;
 }

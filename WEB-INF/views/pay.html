@@ -40,7 +40,7 @@
             </div>
         </div> -->
 
-    <div id="jl02" class="fuenter_borderrt">
+    <!-- <div id="jl02" class="fuenter_borderrt">
         <div class="fuenter_bdrttitle">
             <h4>账户提现</h4>
         </div>
@@ -50,7 +50,7 @@
             <h2>安全保障：数据安全由阿里云全程保障，稳健安全！</h2>
         </div>
         <!--提现金额大于提现账户余额  开始-->
-        <div class="fupay_succeed">
+       <!-- <div class="fupay_succeed">
             <div class="fupay_sdtitle">
                 <h3>$!{errorMsg}</h3>
             </div>
@@ -60,7 +60,34 @@
                 <span>客服热线：400-163-8178</span>
             </div>
         </div>
+    </div> -->
+    <div class="topTips">
+        <p><span>安全保障：</span>数据安全由阿里云全程保障，稳健安全！</p>
     </div>
+    <div style="text-align:center;">
+    <a href="${rc.contextPath}/loan/loanList" style="display:inline-block; width:100px; height:40px; line-height:40px; background-color:#495AA5; color:#ffffff; border-radius:6px;">立即投资</a>
+    </div>
+#else
+    #if($!{error_code} == "9999")
+        <div class="topTips">绑卡返回信息：$!{msg} ;<a href="${rc.contextPath}/uheart/safety.html" class="aRed">重新绑定</a></div>
+    #else 
+        <div class="topTips">您的账户尚未绑定任何银行卡 <a href="${rc.contextPath}/uheart/safety.html" class="aRed">立即绑定</a></div>
+    #end
+#end
+    <div class="topTips">
+        <h4>温馨提示</h4>
+        <div style="text-align:left;">
+            <p style="display:block; text-align:center;">
+            <span style="width:550px; text-align:left; display:inline-block;">
+            1. 您选择的银行卡开户名必须与您的投资实名认证一致，否则提现申请将无法提交。<br>
+            2. 禁止洗钱、信用卡套现、虚假交易等行为，一经发现并确认，将终止该账户的使用。<br>
+            3. 如遇到提现问题，请联系客服400-163-8178。
+            </span>
+            </p>
+        </div>
+    </div>
+<!--用户中心内容 end-->
+
 </body>
 
 </html>

@@ -63,6 +63,7 @@
 .banner_btn {
     width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .banner_btn>li>a {
@@ -70,7 +71,6 @@
 }
 
 .banner_btn>li {
-    float: left;
     width: 291px;
     height: 40px;
     color: #fff;
@@ -78,6 +78,7 @@
     background: #000;
     font-size: 16px;
     cursor: pointer;
+    display: inline-block;
     text-align: center;
     margin: 0 12px 0px 0px;
     border-top-left-radius: 5px;
@@ -274,6 +275,7 @@
     height: 4px;
     border-radius: 4px;
     background: #ccc;
+    margin-left: 10px;
 }
 
 .loading_div01 {
@@ -380,6 +382,12 @@
     font-weight: bold;
     line-height: 80px;
 }
+
+.invest_bottom>a{
+    display: block;
+    color: #ffa21a;
+}
+
 
 .invest_text {
     display: flex;

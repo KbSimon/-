@@ -12,8 +12,7 @@
     <title>用户注册-鑫路金融官网</title>
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/base.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/common.css">
-    <link rel="stylesheet" href="../../css/register.css">
-    <!-- <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/register.css"> -->
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/register.css">
     <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/xinlu-icon.ico">
 </head>
 
@@ -37,8 +36,7 @@
                         </div>
                         <li>
                             <div class="id_card"></div>
-                            <input type="text" class="idCard" name="id_card" placeholder="请输入身份证号码" minlength="15" maxlength="18" onkeyup="this.value=this.value.replace(/\D/g,'')"
-                                onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                            <input type="text" class="idCard" name="id_card" placeholder="请输入身份证号码" minlength="15" maxlength="18">
                         </li>
                         <div class="error_02">
                             <p></p>
@@ -54,8 +52,8 @@
                         <select name="brankId" class="chooseBank">
                             <option selected="selected">选择所属银行</option>
                         </select>
-                        <div class="error_04">
-                            <p></p>
+                        <div class="error_07">
+                            <p>开户</p>
                         </div>
                         <select class="province">
                             <option selected="selected">请选择开户地区</option>
@@ -64,9 +62,8 @@
                             <option selected="selected">请选择开户地区</option>
                         </select>
                         <div class="error_06">
-                            <p></p>
+                            <p>1</p>
                         </div>
-
                         <li>
                             <div class="code"></div>
                             <input type="text" class="auchcode" name="sms_code" placeholder="请输入验证码" onkeyup="this.value=this.value.replace(/\D/g,'')"
@@ -74,7 +71,7 @@
                         </li>
                         <div class="code_div02">获取验证码</div>
                         <div class="error_05">
-                            <p></p>
+                            <p>1</p>
                         </div>
                     </ul>
                     <div class="register_end">
@@ -117,10 +114,10 @@
         // 身份证验证
         if ($(".idCard").val().length < 15) {
             $(".error_02>p").show().text("请输入身份证号码");
-        } else if ($(".idCard").val() !=
-            /^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/) {
-            $(".error_02>p").show().text("身份证号码格式不正确");
-        };
+        // } else if ($(".idCard").val() !=
+        //     /^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/) {
+        //     $(".error_02>p").show().text("身份证号码格式不正确");
+        // };
         // 银行卡验证
         if ($(".bankid").val() < 18) {
             $(".error_03>p").show().text("请输入银行卡号");

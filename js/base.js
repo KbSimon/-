@@ -4,8 +4,9 @@ $(".head_top_left02").hover(function () {
 }, function () {
     $(".head_top_left01 p").css("color", "#666");
 });
-$(".head_top_left04").click(function(){
-    window.location.href="https://weibo.com/u/6363624631?topnav=1&wvr=6&is_hot=1";
+// 新浪微博
+$(".head_top_left04").click(function () {
+    window.open("https://weibo.com/u/6363624631?topnav=1&wvr=6&is_hot=1");
 })
 
 // 底部悬浮
@@ -32,14 +33,21 @@ $(".footer_ewm>span").eq(1).hover(function () {
     $(this).css("color", "#333").find("img").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/weixin.png");
 });
 // 右侧悬浮窗
-window.onscroll = function () {
-    var t = document.documentElement.scrollTop || document.body.scrollTop;   
-    if (t >= $(window).height()) {
-        $('.up').fadeIn();
+$(window).scroll(function () {
+    var i = $(window).scrollTop();
+    if (i == 0) {
+        $(".up").stop().animate({
+            opacity: "0"
+        }, 200);;
     } else {
-        $('.up').fadeOut();
+        $(".up").stop().animate({
+            opacity: "1"
+        }, 200);;
     }
-};
+});
+$(".up").click(function () {
+    $(window).scrollTop(0);
+})
 $(".right_nav>li").eq(0).hover(function () {
     $(".down_div").show();
     $(this).children("img").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/download_01.png");
@@ -59,8 +67,9 @@ $(".right_nav>li").eq(2).hover(function () {
     $(".kefu_num").hide();
     $(this).children("img").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/kefu.png");
 });
-$(".right_nav>li").eq(2).click(function(){
-    window.location.href="http://p.qiao.baidu.com/cps/chat?siteId=11392674&userId=24667589";
+// 联系客服
+$(".right_nav>li").eq(2).click(function () {
+    window.open("http://p.qiao.baidu.com/cps/chat?siteId=11392674&userId=24667589");
 })
 
 $(".right_nav>li").eq(3).hover(function () {

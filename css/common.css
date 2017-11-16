@@ -48,7 +48,7 @@ header {
 .head_top_left02,
 .head_top_left03,
 .head_top_left04 {
-    width: 24px;
+    width: 28px;
     height: 40px;
     text-align: center;
     border-left: 1px solid transparent;
@@ -124,18 +124,11 @@ header {
 }
 
 
-.head_top_left02 {
-    margin: 0px 0 0 10px;
-}
-
-.head_top_left03 {
-    margin: 0px 0 0 70px;
-}
-
+.head_top_left02,
+.head_top_left03,
 .head_top_left04 {
-    margin: 0px 0 0 16px;
+    margin: 0px 0 0 15px;
 }
-
 
 /* 导航栏头部（右侧） */
 
@@ -353,10 +346,6 @@ header {
     border: 1px solid #e4e1d3;
 }
 
-.down_div>img {
-    padding-top: 12px;
-}
-
 .kefu_num {
     top: 80px;
     right: 50px;
@@ -386,7 +375,8 @@ header {
 /* 信息披露和关于鑫路 */
 .safety_ul>li>a,
 .about_us_ul>li>a,
-.login_state_ul>li>a{
+.login_state_ul>li>a,
+.footer_bottom_ul>li>a{
     display: block;
 }
 
@@ -536,6 +526,9 @@ footer {
     margin-right: 0;
 }
 
+.footer_bottom_ul>li>a{
+    height: 30px;
+}
 
 /* 关闭选项 */
 

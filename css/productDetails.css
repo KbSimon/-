@@ -179,12 +179,15 @@ i{
     display: inline-block;
 }
 
+.risk_ul{
+    text-align: center;
+}
 
 .risk_ul>li{
     width: 200px;
-    float: left;
     padding: 80px 0;
     text-align: center;
+    display: inline-block;
 }
 
 .risk_ul>li>p{
