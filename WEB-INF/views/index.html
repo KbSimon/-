@@ -679,13 +679,14 @@
 
 </html>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/jquery.min.js"></script>
-<!-- <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/common.js"></script> -->
+<script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/common.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/base.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/index.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/plugins/echarts.min.js"></script>
 <script>
     $(".message_ul>li").click(function () {
         $(this).addClass("message_active").siblings().removeClass("message_active");
+        $(this).parent().siblings("div").addClass("close_ul").siblings("div").removeClass()
     })
 
     $(".xl_message").click(function () {

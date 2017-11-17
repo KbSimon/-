@@ -445,6 +445,7 @@ footer {
 }
 
 .footer_ewm {
+    width: 360px;
     float: left;
     border-left: 1px solid #e4e4e4;
     margin-top: 45px;
@@ -477,8 +478,7 @@ footer {
 .app,
 .wechat {
     float: left;
-    margin-left: 53px;
-    text-align: center;
+    margin-left: 45px;
 }
 
 .app>p,
@@ -487,15 +487,9 @@ footer {
     text-align: center;
 }
 
-.app>img {
-    display: block;
-    position: relative;
-}
-
 .kefu {
     float: left;
     margin-top: 45px;
-    margin-left: 10px;
 }
 
 .footer_bottom {
