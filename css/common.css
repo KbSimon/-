@@ -785,6 +785,7 @@ footer {
 
 .mask,
 .login_mask,
+.unlogin_mask,
 .approve_mask {
     top: 0px;
     left: 0px;
@@ -795,6 +796,7 @@ footer {
 }
 
 .login_mask,
+.unlogin_mask,
 .approve_mask {
     width: 400px;
     height: 280px;
@@ -806,6 +808,7 @@ footer {
 }
 
 .login_mask_top,
+.unlogin_mask_top,
 .approve_mask_top {
     height: 50px;
     line-height: 50px;
@@ -813,6 +816,7 @@ footer {
 }
 
 .login_mask_top>p,
+.unlogin_mask>p,
 .approve_mask_top>p {
     color: #999;
     font-size: 12px;
@@ -821,6 +825,7 @@ footer {
 }
 
 .login_mask_top>span,
+.unlogin_mask>span,
 .approve_mask_top>span {
     width: 25px;
     height: 25px;
@@ -836,6 +841,7 @@ footer {
 }
 
 .login_mask>p:first-of-type,
+.unlogin_mask>p:first-of-type,
 .approve_mask>p:first-of-type {
     text-align: center;
     font-size: 18px;
@@ -851,6 +857,7 @@ footer {
 }
 
 .login_mask>button,
+.unlogin_mask>button,
 .approve_mask>button {
     width: 265px;
     height: 45px;

@@ -1,0 +1,317 @@
+@charset "utf-8";
+/* CSS Document */
+li { list-style:none;}
+img { border:none}
+body { font-family:"微软雅黑"; font-size:14px; color:#333333;}
+a { text-decoration:none; font-family:"微软雅黑"; font-size:14px; color:#333333;}
+a:hover { color:#2996F8;}
+.clear:after{ clear:both; display:block; content:" ";}
+*{margin:0;  padding:0;  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+input[type="number"]{-moz-appearance:textfield;}
+ul,ol{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.bn1,.bn2,.bn3,.bn4,
+.ad1,.ad2,.ad3,.ad4,.ad5,.ad6,
+.text1,.text2,.text3,
+.play1,.play2,.play3,.play4,.play5,.play6,.play7,.play8,.play9,
+.end{
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+.frame{
+    width: 750px;
+    margin: 0 auto;
+}
+
+.bn1,.bn2,.bn3,.bn4{
+    height: 155px;
+}
+.bn1{
+    background-image: url("../images/banner1.jpg");
+}
+.bn2{
+    background-image: url("../images/banner2.jpg");
+}
+.bn3{
+    background-image: url("../images/banner3.jpg");
+}
+.bn4{
+    background-image: url("../images/banner4.jpg");
+}
+
+.ad1,.ad2,.ad3,.ad4,.ad5{
+    height: 156px;
+}
+.ad1{
+    background-image: url("../images/award1.jpg");
+}
+.ad2{
+    background-image: url("../images/award2.jpg");
+}
+.ad3{
+    background-image: url("../images/award3.jpg");
+}
+.ad4{
+    background-image: url("../images/award4.jpg");
+}
+.ad5{
+    background-image: url("../images/award5.jpg");
+}
+.ad6{
+    background-image: url("../images/award6.jpg");
+    height: 94px;
+}
+
+
+.text1{
+    background-image: url("../images/text1.jpg");
+    height: 151px;
+    text-align: center;
+}
+.text1>p{
+    background: url("../images/title.png");
+    width: 454px;
+    height: 70px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 80px;
+}
+.title>span{
+    color:#fff;
+    font-size: 32px;
+    line-height: 55px;
+}
+.text2{
+    background-image: url("../images/text2.jpg");
+    height: 126px;
+}
+.text2>p{
+    margin-left: 24px;
+    font-size: 24px;
+    line-height: 130px;
+}
+.text3{
+    background-image: url("../images/text3.jpg");
+    height: 178px;
+}
+.text3>p{
+    margin: 0 24px 0 20px;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.play1{
+    background-image: url("../images/play1.jpg");
+    height: 171px;
+    text-align: center;
+}
+.hd{
+    background: url("../images/headline.png") no-repeat center;
+    width:428px;
+    height: 96px;
+    display: inline-block;
+    margin-top: 75px;
+}
+.play2{
+    background-image: url("../images/play2.jpg");
+    height: 96px;
+}
+.play2>p{
+    margin: 55px 24px 0;
+    display: inline-block;
+    font-size: 24px;
+}
+.tx>span{
+    color:#4ba26d;
+}
+.tx>span>b{
+    font-weight: normal;
+}
+.play3{
+    background-image: url("../images/play3.jpg");
+    height: 127px;
+    text-align: center;
+}
+.play3>p{
+    background-image: url("../images/river.png");
+    width: 674px;
+    height: 71px;
+    display: inline-block;
+    margin-top: 36px;
+    position: relative;
+}
+.river>span{
+    background: url("../images/dragon.png");
+    width: 204px;
+    height: 88px;
+    position: absolute;
+    top: -35px;
+    left: 363px;
+}
+.play4{
+    background-image: url("../images/play4.jpg");
+    height: 80px;
+}
+.play4>p{
+    margin: 41px 24px 0;
+    display: inline-block;
+    font-size: 24px;
+}
+.tx1>span{
+    color:#4ba26d;
+}
+.play5{
+    background-image: url("../images/play5.jpg");
+    height: 107px;
+}
+.play5>p{
+    background: url("../images/river2.png");
+    width: 128px;
+    height: 71px;
+    display: inline-block;
+    position: relative;
+    top: 34px;
+    left: 50px;
+}
+.river2>span{
+    background: url("../images/dragon.png");
+    width: 204px;
+    height: 88px;
+    position: absolute;
+    top: -35px;
+    left: -24px;
+}
+.play6{
+    background-image: url("../images/play6.jpg");
+    height: 168px;
+}
+.play6>p{
+    font-size: 24px;
+    margin: 65px 23px 0 24px;
+    display: inline-block;
+    line-height: 36px;
+}
+.play7{
+    background-image: url("../images/play7.jpg");
+    height: 107px;
+}
+.play7>p{
+    font-size: 24px;
+    margin: 40px 21px 0 24px;
+    display: inline-block;
+    line-height: 36px;
+}
+.play8{
+    background-image: url("../images/play8.jpg");
+    height: 117px;
+    text-align: center;
+}
+.btn{
+    background: url("../images/btn.png") no-repeat;
+    width: 173px;
+    height: 58px;
+    display: inline-block;
+    margin-top: 58px;
+}
+.btn>a{
+    color:#fff;
+    font-size: 24px;
+    line-height: 53px;
+    display: inline-block;
+    width: 173px;
+    height: 58px;
+}
+.play9{
+    background-image: url("../images/play9.jpg");
+    height: 120px;
+}
+
+.end{
+    background-image: url("../images/end.jpg");
+    height: 115px;
+    text-align: center;
+}
+.end>span{
+    display: inline-block;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    margin-top: 45px;
+}
+
+
+
+
+/*龙船部分  开始*/
+.play3, .play5{
+    position: relative;
+}
+.he_bg{
+    width:674px;
+    height: 71px;
+    background: url(../images/he_bg.jpg);
+    background-repeat: repeat-x;
+    border-radius: 12px;
+    margin:0 auto;
+    position: absolute;
+    bottom: 0;
+    left:48px;
+    text-align: left;
+}
+.he_long{
+    width:99%;
+    height:100%;
+    border-radius: 12px;
+    display: inline-block;
+}
+.he_long_img{
+    display: inline-block;
+    width:204px;
+    margin-left: -24px;
+    height:88px;
+    background: url(../images/dragon.png) no-repeat center;
+    position: absolute;
+    margin-top: -36px;
+}
+.he_long_img_active{
+    margin-right:-25px !important;
+    right: 0;
+
+}
+.he_long_img_active02{
+    margin-right:-25px !important;
+    right: 0;
+    margin-top: -107px !important;
+}
+/*龙船部分  结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
