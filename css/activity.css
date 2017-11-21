@@ -128,3 +128,21 @@
     font-size: 12px;
     padding-top: 80px;
 }
+
+.middle_title{
+    color: #fff;
+    padding-top: 200px;
+    letter-spacing: 1px;
+}
+
+.record_btn{
+    width: 260px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    background: #af34fd;
+    line-height: 40px;
+    border-radius: 40px;
+    margin: 60px auto;
+}

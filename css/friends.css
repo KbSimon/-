@@ -24,8 +24,9 @@
 .total_award,
 .total_person {
     color: #666;
-    width: 150px;
+    width: 265px;
     height: 20px;
+    float: left;
     font-size: 12px;
     padding-left: 30px;
 }
@@ -48,7 +49,7 @@
     width: 205px;
     height: 45px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 80px;
     position: relative;
     border-radius: 45px;
     background: #ffc776;

@@ -22,7 +22,7 @@
     <main>
         <div class="banner">
             <div class="register">
-                <form class="register_part01">
+                <form class="register_part01" id="register">
                     <ul class="register_ul01 clearfloat">
                         <li>
                             <div class="phone"></div>
@@ -234,5 +234,30 @@
         } else if (ii === false) {
             $(".next").css("background-color", "#ccc").attr("disabled", "disabled");
         };
+    });
+    // 立即注册判断
+    $(".register_div").click(function () {
+        // 表单内容为空时阻止提交
+        if ($(".mibbleNum").val() == "" || $(".authCode").val() == "" || $(".login_pwd").val() == "" || $(
+                ".login_pwd02").val() == "" || $("input[type='checkbox']").prop("checked") != true) {
+            return false;
+        // 输入内容后同意注册协议后
+        } else {
+            $(".draw").removeAttr("disabled").removeAttr("id");
+            return true;
+        }
     })
+    // 点击立即投资时的判断
+    $(".invest_div").click(function () {
+        // 表单未输入内容未同意注册协议,跳转回表单
+        if ($(".mibbleNum").val() == "" || $(".authCode").val() == "" || $(".login_pwd").val() == "" || $(
+                ".login_pwd02").val() == "" || $("input[type='checkbox']").prop("checked") != true) {
+            window.location.href = "#register";
+            return false;
+            // 输入内容后同意注册协议跳转到投资
+        } else {
+            $(".draw").removeAttr("disabled").removeAttr("id");
+            return true;
+        }
+    });
 </script>

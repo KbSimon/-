@@ -1,98 +1,68 @@
-
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-
-.dial_active{
-  width:100%;
-  height:814px;
-  margin:0 auto;
+.dial_active {
+  width: 100%;
+  height: 814px;
+  margin: 0 auto;
 }
-.dial_all{
-  width:722px;
-  height:722px;
-  margin:0 auto;
+
+.dial_all {
+  width: 722px;
+  height: 722px;
+  margin: 0 auto;
   position: relative;
 }
-.dial_deng{
-  width:100%;height:100%;
-  background: url(../images/deng.gif) no-repeat center;
+
+.dial_deng {
+  width: 100%;
+  height: 100%;
+  background: url("../images/acvitity/deng.gif") no-repeat center;
   position: relative;
 }
-.dial_pan{
+
+.dial_pan {
+
   text-align: center;
 }
-.dial_pan> img{
+
+.dial_pan>img {
   display: inline-block;
   vertical-align: middle;
+  margin-left: 15px;
+ margin-top: 90px;
 }
-.dial_zhen{
-  width:722px;
-  height:722px;
-  background: url(../images/tou.png) no-repeat center;
-  position: absolute;
-  top:0;
-  left:0;
 
-}
-.dial_btn{
-  width:161px;
-  height:161px;
+.dial_zhen {
+  width: 722px;
+  height: 722px;
+  background: url("../images/acvitity/yuan.png") no-repeat center;
   position: absolute;
-  top:50%;left:50%;
+  top: 0;
+  left: 0;
+}
+
+.dial_btn {
+  width: 161px;
+  height: 161px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   margin-left: -80.5px;
   margin-top: -80.5px;
   cursor: pointer;
 }
-.dial_btn> img{
+
+.dial_btn>img {
   display: inline-block;
   vertical-align: middle;
+  margin-top: 65px;
 }
-.dial_dizuo{
+
+.dials_ctall {
   position: absolute;
-  bottom: 0;
-  z-index:0;
-  left:50%;
-  margin-left: -244.5px;
-  margin-bottom: -92px;
-  width:489px;
-  height:142px;
-  background: url(../images/dizuo.png) no-repeat center;
-}
-.dial_dizuo> span{
-  position: absolute;
-  bottom: 0;
-  width:100%;
-  line-height: 54px;
-  display: block;
-  text-align: center;
-  font-size: 24px;
-  color:#FFFFFF;
-}
-.dials_ctall{
-  position: absolute;
-  margin-top: 60px;
-  left:50%;
+  left: 50%;
   margin-left: -361px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
