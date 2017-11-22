@@ -1,7 +1,6 @@
-
 .banner,
 .middle,
-.bottom{
+.bottom {
     width: 100%;
     margin: 0 auto;
     min-width: 1200px;
@@ -9,44 +8,43 @@
     text-align: center;
 }
 
-.banner{
+.banner {
     height: 1220px;
 }
 
-.banner_01{
+.banner_01 {
     height: 716px;
     background: url("../images/acvitity/active_01.png") center no-repeat;
 }
 
-.banner_02{
+.banner_02 {
     height: 505px;
     background: url("../images/acvitity/active_02.png") center no-repeat;
 }
 
-.middle{
+.middle {
     height: 1129px;
     background: url("../images/acvitity/active_03.png") center no-repeat;
 }
 
-.bottom{
+.bottom {
     height: 1143px;
     background: url("../images/acvitity/active_04.png") center no-repeat;
 }
 
-
-.activity_01{
+.activity_01 {
     padding-top: 270px;
 }
 
-.activity_02{
-    padding-top: 580px;    
+.activity_02 {
+    padding-top: 580px;
 }
 
-.activity_03{
+.activity_03 {
     padding-top: 460px;
 }
 
-.activity_04{
+.activity_04 {
     color: #dad5fc;
     padding-top: 40px;
     letter-spacing: 2px;
@@ -54,12 +52,12 @@
 
 .activity_01,
 .activity_02,
-.activity_03{
+.activity_03 {
     color: #fff;
     letter-spacing: 2px;
 }
 
-.btn{
+.btn {
     top: 450px;
     width: 300px;
     margin: 0 auto;
@@ -69,7 +67,7 @@
     margin-top: 300px;
 }
 
-.btn3{
+.btn3 {
     width: 300px;
     height: 101px;
     color: #fff;
@@ -79,37 +77,39 @@
     background: url("../images/acvitity/btn2.png") center no-repeat;
 }
 
-.record{
-    height: 860px;
-    background: url("../images/acvitity/active_05.png") center no-repeat;
+.record {
+    background: #644aff;
 }
 
-.record_ul{
+.record_img {
+    height: 231px;
+    background: url("../images/acvitity/record_01.png") center no-repeat;
+}
+
+.record_ul {
     width: 996px;
     margin: 0 auto;
-    padding-top: 300px;
     border-radius: 10px;
 }
 
-.record_ul>li{
+.record_ul>li {
     text-align: center;
 }
 
-.record_ul>li>div{
+.record_ul>li>div {
     width: 332px;
-    /* height: 60px; */
     float: left;
-    white-space:normal;
+    white-space: normal;
 }
 
-.head{
+.head {
     color: #fff;
     height: 60px;
     background: #ff8a4e;
     line-height: 60px;
 }
 
-.content{
+.content {
     height: 60px;
     font-size: 14px;
     color: #4936bb;
@@ -118,24 +118,27 @@
     border-bottom: 1px solid #eaddb0;
 }
 
-.part_05_title{
+.part_05_title {
     color: #fff;
     padding-top: 30px;
     text-align: center;
+    padding-bottom: 50px;
+    background: url("../images/acvitity/record_02.png") center no-repeat;
+    background-size: 100% 100%;
 }
 
-.part_05_title>p:nth-of-type(2){
+.part_05_title>p:nth-of-type(2) {
     font-size: 12px;
     padding-top: 80px;
 }
 
-.middle_title{
+.middle_title {
     color: #fff;
     padding-top: 200px;
     letter-spacing: 1px;
 }
 
-.record_btn{
+.record_btn {
     width: 260px;
     height: 40px;
     color: #fff;
