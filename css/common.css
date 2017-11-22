@@ -816,7 +816,7 @@ footer {
 }
 
 .login_mask_top>p,
-.unlogin_mask>p,
+.unlogin_mask_top>p,
 .approve_mask_top>p {
     color: #999;
     font-size: 12px;
@@ -825,7 +825,7 @@ footer {
 }
 
 .login_mask_top>span,
-.unlogin_mask>span,
+.unlogin_mask_top>span,
 .approve_mask_top>span {
     width: 25px;
     height: 25px;
