@@ -12,13 +12,50 @@
     box-shadow: 0 10px 20px #f7f3ec;
 }
 
+
+/* 我的福利 顶部 */
+
 .redPaket_top_ul>li {
-    width: 30%;
+    width: 50%;
     float: left;
     color: #666;
     height: 100%;
     padding-top: 40px;
     text-align: center;
+}
+
+.redPaket_top_ul>li:first-of-type {
+    border-right: 1px solid #e3e3e3;
+}
+
+.rate_left,
+.rate_right,
+.redPaket_left,
+.redPaket_right {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+.rate_left>img,
+.rate_right>img,
+.redPaket_left>img,
+.redPaket_right>img {
+    width: 17px;
+    height: 17px;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+.redPaket_left>p,
+.rate_left>p {
+    font-size: 26px;
+    line-height: 2;
+}
+
+.redPaket_right>div,
+.rate_right>div {
+    margin-bottom: 15px;
 }
 
 .redPaket_top_ul {
@@ -35,6 +72,9 @@
     height: 655px;
 }
 
+
+/* 我的红包 我的加息劵 选项卡 */
+
 .redPaket_bottom_ul {
     height: 60px;
     line-height: 60px;
@@ -43,7 +83,7 @@
 
 .redPaket_bottom_ul>li {
     float: left;
-    width: 295px;
+    width: 450px;
     height: 60px;
     background: #fff;
     border-radius: 5px;
@@ -52,39 +92,86 @@
     box-shadow: 0 10px 20px #f7f3ec;
 }
 
-.redPaket_bottom_ul>li:nth-last-child(2) {
-    margin: 0 17.5px;
+.redPaket_bottom_ul>li:first-of-type {
+    margin-right: 20px;
 }
+
+.active_03 {
+    color: #fff;
+    border-radius: 5px;
+    background: #ffa21a;
+}
+
+section {
+    background: #fff;
+    margin-top: 10px;
+}
+
+
+/* 红包选项卡 */
+
+.redPaket_ul>li {
+    width: 100px;
+    height: 30px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    margin: 30px 20px;
+}
+
+
+/* 我的红包内容 */
 
 .redPaket_bottom_content_01,
 .redPaket_bottom_content_02,
 .redPaket_bottom_content_03 {
     height: 585px;
-    margin-top: 10px;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 10px 20px #f7f3ec
 }
 
 .redPaket_bottom_content_02,
-.redPaket_bottom_content_03{
+.redPaket_bottom_content_03 {
     display: none;
 }
 
+
+/* 红包 加息劵 ul */
+
+.usable_rete_ul,
+.used_rete_ul,
+.expire_rete_ul,
 .used_redPaket_ul,
 .usable_redPaket_ul,
-.expire_redPaket_ul{
-   overflow: hidden;
+.expire_redPaket_ul {
+    overflow: hidden;
 }
 
+
+/* 红包 加息劵 li */
+
+.usable_rete_ul>li,
+.used_rete_ul>li,
+.expire_rete_ul>li,
 .used_redPaket_ul>li,
 .usable_redPaket_ul>li,
 .expire_redPaket_ul>li {
     float: left;
     width: 322px;
     height: 184px;
+    cursor: pointer;
     margin: 30px 68.5px;
     position: relative;
+    overflow: hidden;
+}
+
+
+/* 红包 加息劵 背景图 */
+
+.usable_rete_ul>li {
+    background: url("../images/personal/redPaket_05.png")
 }
 
 .usable_redPaket_ul>li {
@@ -95,6 +182,115 @@
 .used_redPaket_ul>li {
     background: url("../images/personal/redPaket_02.png")
 }
+
+.expire_rete_ul>li,
+.used_rete_ul>li{
+    background: url("../images/personal/redPaket_06.png")
+}
+
+/* 加息劵的文字 */
+
+.usable_rete {
+    width: 130px;
+    float: left;
+    text-align: center;
+}
+
+.usable_rete>p {
+    color: #fff8ed;
+    font-size: 60px;
+    padding: 45px 0 15px 0;
+}
+
+.usable_rete>p>span {
+    font-size: 26px;
+    margin-left: -15px;
+}
+
+.rete_btn_01,
+.rete_btn_02 {
+    width: 88px;
+    height: 26px;
+    margin: 0 auto;
+    font-size: 10px;
+    line-height: 26px;
+    background: #fff;
+}
+
+.rete_btn_01{
+    color: #ffa21a;
+}
+
+.rete_btn_02{
+    color: #999;
+}
+
+.rete_bottom {
+    width: 190px;
+    float: left;
+    height: 100%;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+.rete_p02{
+    color: #ff900e;
+    font-size: 24px;
+    line-height: 3;
+}
+
+.rete_p07{
+    color: #999;
+    font-size: 24px;
+    line-height: 3;
+}
+
+.rete_p03,
+.rete_p04,
+.rete_p05{
+    font-size: 12px;
+    color: #fff;
+}
+
+
+/* 小圈 */
+
+.used_ring,
+.state_ring,
+.expire_ring,
+.used_ring_01,
+.state_ring_01,
+.expire_ring_01 {
+    top: 15px;
+    right: 35px;
+    width: 26px;
+    height: 26px;
+    color: #fff;
+    font-size: 8px;
+    line-height: 26px;
+    border-radius: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+.state_ring {
+    background: #ff6666;
+}
+
+.state_ring_01 {
+    background: #ffa21a;
+}
+
+.used_ring,
+.expire_ring,
+.used_ring_01,
+.expire_ring_01  {
+    background: #666;
+}
+
+
+/* 红包的文字 */
 
 .used_money,
 .usable_money,
@@ -125,30 +321,6 @@
     font-size: 12px;
 }
 
-.used_ring,
-.state_ring,
-.expire_ring {
-    top: 15px;
-    right: 35px;
-    width: 26px;
-    height: 26px;
-    color: #fff;
-    font-size: 8px;
-    line-height: 26px;
-    border-radius: 100%;
-    position: absolute;
-    text-align: center;
-}
-
-.state_ring {
-    background: #ff6666;
-}
-
-.used_ring,
-.expire_ring {
-    background: #666;
-}
-
 .used_bottom,
 .usable_bottom,
 .expire_bottom {
@@ -167,12 +339,12 @@
     margin-right: 5px;
 }
 
-.usable_bottom_details{
+.usable_bottom_details {
     color: #ff6666;
 }
 
 .used_bottom_details,
-.expire_bottom_details{
+.expire_bottom_details {
     color: #999;
 }
 
@@ -181,6 +353,12 @@
 }
 
 .used_bottom_date,
-.expire_bottom_date{
+.expire_bottom_date {
     color: #b6b4b0;
-}       
+}
+
+#laypages_04,
+#laypages_05,
+#laypages_06 {
+    text-align: center;
+}

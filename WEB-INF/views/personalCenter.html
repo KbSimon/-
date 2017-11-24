@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/account.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/property.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/information.css">
-    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/redPaket.css">
+    <link rel="stylesheet" href="../../css/redPaket.css">
+    <!-- <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/redPaket.css"> -->
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/friends.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/messages.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/plugins/layui/css/layui.css">
@@ -50,7 +51,7 @@
             <div>
                 <ul class="personal_left_ul clearfloat">
                     <li class="personal_left_ul_active">
-                        <a href="javascpipt:;">账户总览</a>
+                        <a href="javascpipt:;"></a>账户总览</a>
                     </li>
                     <li>
                         <a href="javascpipt:;">资产记录</a>
@@ -59,7 +60,7 @@
                         <a href="javascpipt:;">个人资料</a>
                     </li>
                     <li>
-                        <a href="javascpipt:;">我的红包</a>
+                        <a href="javascpipt:;">我的福利</a>
                     </li>
                     <li>
                         <a href="javascpipt:;">推荐好友</a>
@@ -73,7 +74,7 @@
         <!-- 个人中心右侧 -->
         <div class="personal_center_right ">
             <!-- 账户总览 -->
-            <ul class="account">
+            <ul class="account close_ul">
                 <!-- 账户总览页面 -->
                 <li class="account_page">
                     <!-- 账户总览头部 -->
@@ -634,196 +635,439 @@
                     </div>
                 </li>
             </ul>
-            <!-- 我的红包 -->
-            <ul class="redPaket close_ul">
+            <!-- 我的福利 -->
+            <ul class="redPaket">
                 <li class="redPaket_top">
-                    <div class="redPaket_title">我的红包</div>
+                    <div class="redPaket_title">我的福利</div>
                     <div class="redPaket_text">
                         <ul class="redPaket_top_ul clearfloat">
-                            <li>
-                                <p>0.00</p>
-                                <p>可用红包(元)</p>
+                            <!-- 红包 -->
+                            <li class="redPaket_content">
+                                <div class="redPaket_left">
+                                    <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/personal/redPaket_03.png" alt="">
+                                    <span>可用红包（元）</span>
+                                    <p>0.00</p>
+                                </div>
+                                <div class="redPaket_right">
+                                    <div>
+                                        <span>过期红包（元）</span>
+                                        <span>0.00</span>
+                                    </div>
+                                    <div>
+                                        <span>已使用红包（元）</span>
+                                        <span>0.00</span>
+                                    </div>
+                                </div>
                             </li>
-                            <li>
-                                <p>0.00</p>
-                                <p>过期红包</p>
+                            <!-- 加息劵 -->
+                            <li class="rate_hike">
+                                <div class="rate_left">
+                                    <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/personal/redPaket_04.png" alt="">
+                                    <span>可用加息劵（张）</span>
+                                    <p>0</p>
+                                </div>
+                                <div class="rate_right">
+                                    <div>
+                                        <span>过期加息劵（张）</span>
+                                        <span>0</span>
+                                    </div>
+                                    <div>
+                                        <span>已使用加息劵（张）</span>
+                                        <span>0</span>
+                                    </div>
+                                </div>
                             </li>
-                            <li>
-                                <p>0.00</p>
-                                <p>已使用红包</p>
-                            </li>
+
                         </ul>
                     </div>
                 </li>
                 <li class="redPaket_bottom">
                     <ul class="redPaket_bottom_ul clearfloat">
-                        <li class="active_01 usable_btn">可用红包</li>
-                        <li class="expire_btn">过期红包</li>
-                        <li class="used_btn">已使用红包</li>
+                        <li class="my_redPaket active_01">我的红包</li>
+                        <li class="my_rate">我的加息劵</li>
                     </ul>
-                    <!-- 可用红包部分 -->
-                    <div class="redPaket_bottom_content_01">
-                        <!-- 可用红包 -->
-                        <ul class="usable_redPaket_ul">
-                            <li>
-                                <div class="usable_money">
-                                    <p class="usable_p01">28</p>
-                                    <p class="usable_p02">投资满1000元以上可用</p>
-                                    <p class="usable_p02">使用投资期限29以上标的投资</p>
-                                </div>
-                                <div class="state_ring">可用</div>
-                                <div class="usable_bottom">
-                                    <span class="usable_bottom_details">新手标28元</span>
-                                    <span class="usable_bottom_date">2017-09-22到2017-11-21</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="usable_money">
-                                    <p class="usable_p01">28</p>
-                                    <p class="usable_p02">投资满1000元以上可用</p>
-                                    <p class="usable_p02">使用投资期限29以上标的投资</p>
-                                </div>
-                                <div class="state_ring">可用</div>
-                                <div class="usable_bottom">
-                                    <span class="usable_bottom_details">新手标28元</span>
-                                    <span class="usable_bottom_date">2017-09-22到2017-11-21</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="usable_money">
-                                    <p class="usable_p01">28</p>
-                                    <p class="usable_p02">投资满1000元以上可用</p>
-                                    <p class="usable_p02">使用投资期限29以上标的投资</p>
-                                </div>
-                                <div class="state_ring">可用</div>
-                                <div class="usable_bottom">
-                                    <span class="usable_bottom_details">新手标28元</span>
-                                    <span class="usable_bottom_date">2017-09-22到2017-11-21</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="usable_money">
-                                    <p class="usable_p01">28</p>
-                                    <p class="usable_p02">投资满1000元以上可用</p>
-                                    <p class="usable_p02">使用投资期限29以上标的投资</p>
-                                </div>
-                                <div class="state_ring">可用</div>
-                                <div class="usable_bottom">
-                                    <span class="usable_bottom_details">新手标28元</span>
-                                    <span class="usable_bottom_date">2017-09-22到2017-11-21</span>
-                                </div>
-                            </li>
+                    <!-- 我的红包内容 -->
+                    <section>
+                        <!-- 我的红包选项卡 -->
+                        <ul class="redPaket_ul clearfloat">
+                            <li class="usable_btn active_03">可用红包</li>
+                            <li class="expire_btn">过期红包</li>
+                            <li class="used_btn">已使用红包</li>
                         </ul>
+                        <!-- 可用红包部分 -->
+                        <div class="redPaket_bottom_content_01">
+                            <!-- 可用红包 -->
+                            <ul class="usable_redPaket_ul">
+                                <li>
+                                    <div class="usable_money">
+                                        <p class="usable_p01">28</p>
+                                        <p class="usable_p02">投资满1000元以上可用</p>
+                                        <p class="usable_p02">使用投资期限29以上标的投资</p>
+                                    </div>
+                                    <div class="state_ring">可用</div>
+                                    <div class="usable_bottom">
+                                        <span class="usable_bottom_details">新手标28元</span>
+                                        <span class="usable_bottom_date">2017-09-22到2017-11-21</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="usable_money">
+                                        <p class="usable_p01">28</p>
+                                        <p class="usable_p02">投资满1000元以上可用</p>
+                                        <p class="usable_p02">使用投资期限29以上标的投资</p>
+                                    </div>
+                                    <div class="state_ring">可用</div>
+                                    <div class="usable_bottom">
+                                        <span class="usable_bottom_details">新手标28元</span>
+                                        <span class="usable_bottom_date">2017-09-22到2017-11-21</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="usable_money">
+                                        <p class="usable_p01">28</p>
+                                        <p class="usable_p02">投资满1000元以上可用</p>
+                                        <p class="usable_p02">使用投资期限29以上标的投资</p>
+                                    </div>
+                                    <div class="state_ring">可用</div>
+                                    <div class="usable_bottom">
+                                        <span class="usable_bottom_details">新手标28元</span>
+                                        <span class="usable_bottom_date">2017-09-22到2017-11-21</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="usable_money">
+                                        <p class="usable_p01">28</p>
+                                        <p class="usable_p02">投资满1000元以上可用</p>
+                                        <p class="usable_p02">使用投资期限29以上标的投资</p>
+                                    </div>
+                                    <div class="state_ring">可用</div>
+                                    <div class="usable_bottom">
+                                        <span class="usable_bottom_details">新手标28元</span>
+                                        <span class="usable_bottom_date">2017-09-22到2017-11-21</span>
+                                    </div>
+                                </li>
+                            </ul>
 
-                    </div>
-                    <!-- 过期红包部分 -->
-                    <div class="redPaket_bottom_content_02">
-                        <!-- 过期红包 -->
-                        <ul class="expire_redPaket_ul">
-                            <li>
-                                <div class="expire_money">
-                                    <p class="expire_p01">28</p>
-                                    <p class="expire_p02">投资满1000元以上可用</p>
-                                    <p class="expire_p02">使用投资期限29以上标的投资</p>
-                                </div>
-                                <div class="expire_ring">失效</div>
-                                <div class="expire_bottom">
-                                    <span class="expire_bottom_details">新手标28元</span>
-                                    <span class="expire_bottom_date">2017-09-22到2017-11-21</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="expire_money">
-                                    <p class="expire_p01">28</p>
-                                    <p class="expire_p02">投资满1000元以上可用</p>
-                                    <p class="expire_p02">使用投资期限29以上标的投资</p>
-                                </div>
-                                <div class="expire_ring">失效</div>
-                                <div class="expire_bottom">
-                                    <span class="expire_bottom_details">新手标28元</span>
-                                    <span class="expire_bottom_date">2017-09-22到2017-11-21</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="expire_money">
-                                    <p class="expire_p01">28</p>
-                                    <p class="expire_p02">投资满1000元以上可用</p>
-                                    <p class="expire_p02">使用投资期限29以上标的投资</p>
-                                </div>
-                                <div class="expire_ring">失效</div>
-                                <div class="expire_bottom">
-                                    <span class="expire_bottom_details">新手标28元</span>
-                                    <span class="expire_bottom_date">2017-09-22到2017-11-21</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="expire_money">
-                                    <p class="expire_p01">28</p>
-                                    <p class="expire_p02">投资满1000元以上可用</p>
-                                    <p class="expire_p02">使用投资期限29以上标的投资</p>
-                                </div>
-                                <div class="expire_ring">失效</div>
-                                <div class="expire_bottom">
-                                    <span class="expire_bottom_details">新手标28元</span>
-                                    <span class="expire_bottom_date">2017-09-22到2017-11-21</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- 已使用红包 -->
-                    <div class="redPaket_bottom_content_03">
+                        </div>
+                        <!-- 过期红包部分 -->
+                        <div class="redPaket_bottom_content_02">
+                            <!-- 过期红包 -->
+                            <ul class="expire_redPaket_ul">
+                                <li>
+                                    <div class="expire_money">
+                                        <p class="expire_p01">28</p>
+                                        <p class="expire_p02">投资满1000元以上可用</p>
+                                        <p class="expire_p02">使用投资期限29以上标的投资</p>
+                                    </div>
+                                    <div class="expire_ring">失效</div>
+                                    <div class="expire_bottom">
+                                        <span class="expire_bottom_details">新手标28元</span>
+                                        <span class="expire_bottom_date">2017-09-22到2017-11-21</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="expire_money">
+                                        <p class="expire_p01">28</p>
+                                        <p class="expire_p02">投资满1000元以上可用</p>
+                                        <p class="expire_p02">使用投资期限29以上标的投资</p>
+                                    </div>
+                                    <div class="expire_ring">失效</div>
+                                    <div class="expire_bottom">
+                                        <span class="expire_bottom_details">新手标28元</span>
+                                        <span class="expire_bottom_date">2017-09-22到2017-11-21</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="expire_money">
+                                        <p class="expire_p01">28</p>
+                                        <p class="expire_p02">投资满1000元以上可用</p>
+                                        <p class="expire_p02">使用投资期限29以上标的投资</p>
+                                    </div>
+                                    <div class="expire_ring">失效</div>
+                                    <div class="expire_bottom">
+                                        <span class="expire_bottom_details">新手标28元</span>
+                                        <span class="expire_bottom_date">2017-09-22到2017-11-21</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="expire_money">
+                                        <p class="expire_p01">28</p>
+                                        <p class="expire_p02">投资满1000元以上可用</p>
+                                        <p class="expire_p02">使用投资期限29以上标的投资</p>
+                                    </div>
+                                    <div class="expire_ring">失效</div>
+                                    <div class="expire_bottom">
+                                        <span class="expire_bottom_details">新手标28元</span>
+                                        <span class="expire_bottom_date">2017-09-22到2017-11-21</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                         <!-- 已使用红包 -->
-                        <ul class="used_redPaket_ul">
-                            <li>
-                                <div class="used_money">
-                                    <p class="used_p01">28</p>
-                                    <p class="used_p02">投资满1000元以上可用</p>
-                                    <p class="used_p02">使用投资期限29以上标的投资</p>
-                                </div>
-                                <div class="used_ring">已用</div>
-                                <div class="used_bottom">
-                                    <span class="used_bottom_details">新手标28元</span>
-                                    <span class="used_bottom_date">2017-09-22到2017-11-21</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="used_money">
-                                    <p class="used_p01">28</p>
-                                    <p class="used_p02">投资满1000元以上可用</p>
-                                    <p class="used_p02">使用投资期限29以上标的投资</p>
-                                </div>
-                                <div class="used_ring">已用</div>
-                                <div class="used_bottom">
-                                    <span class="used_bottom_details">新手标28元</span>
-                                    <span class="used_bottom_date">2017-09-22到2017-11-21</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="used_money">
-                                    <p class="used_p01">28</p>
-                                    <p class="used_p02">投资满1000元以上可用</p>
-                                    <p class="used_p02">使用投资期限29以上标的投资</p>
-                                </div>
-                                <div class="used_ring">已用</div>
-                                <div class="used_bottom">
-                                    <span class="used_bottom_details">新手标28元</span>
-                                    <span class="used_bottom_date">2017-09-22到2017-11-21</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="used_money">
-                                    <p class="used_p01">28</p>
-                                    <p class="used_p02">投资满1000元以上可用</p>
-                                    <p class="used_p02">使用投资期限29以上标的投资</p>
-                                </div>
-                                <div class="used_ring">已用</div>
-                                <div class="used_bottom">
-                                    <span class="used_bottom_details">新手标28元</span>
-                                    <span class="used_bottom_date">2017-09-22到2017-11-21</span>
-                                </div>
-                            </li>
+                        <div class="redPaket_bottom_content_03">
+                            <!-- 已使用红包 -->
+                            <ul class="used_redPaket_ul">
+                                <li>
+                                    <div class="used_money">
+                                        <p class="used_p01">28</p>
+                                        <p class="used_p02">投资满1000元以上可用</p>
+                                        <p class="used_p02">使用投资期限29以上标的投资</p>
+                                    </div>
+                                    <div class="used_ring">已用</div>
+                                    <div class="used_bottom">
+                                        <span class="used_bottom_details">新手标28元</span>
+                                        <span class="used_bottom_date">2017-09-22到2017-11-21</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="used_money">
+                                        <p class="used_p01">28</p>
+                                        <p class="used_p02">投资满1000元以上可用</p>
+                                        <p class="used_p02">使用投资期限29以上标的投资</p>
+                                    </div>
+                                    <div class="used_ring">已用</div>
+                                    <div class="used_bottom">
+                                        <span class="used_bottom_details">新手标28元</span>
+                                        <span class="used_bottom_date">2017-09-22到2017-11-21</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="used_money">
+                                        <p class="used_p01">28</p>
+                                        <p class="used_p02">投资满1000元以上可用</p>
+                                        <p class="used_p02">使用投资期限29以上标的投资</p>
+                                    </div>
+                                    <div class="used_ring">已用</div>
+                                    <div class="used_bottom">
+                                        <span class="used_bottom_details">新手标28元</span>
+                                        <span class="used_bottom_date">2017-09-22到2017-11-21</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="used_money">
+                                        <p class="used_p01">28</p>
+                                        <p class="used_p02">投资满1000元以上可用</p>
+                                        <p class="used_p02">使用投资期限29以上标的投资</p>
+                                    </div>
+                                    <div class="used_ring">已用</div>
+                                    <div class="used_bottom">
+                                        <span class="used_bottom_details">新手标28元</span>
+                                        <span class="used_bottom_date">2017-09-22到2017-11-21</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- 我的加息劵内容 -->
+                    <section class="close_ul">
+                        <!-- 我的加息劵选项卡 -->
+                        <ul class="redPaket_ul clearfloat">
+                            <li class="usable_btn active_03">可用加息劵</li>
+                            <li class="expire_btn">过期加息劵</li>
+                            <li class="used_btn">已使用加息劵</li>
                         </ul>
-                    </div>
+                        <!-- 可用加息劵部分 -->
+                        <div class="redPaket_bottom_content_01">
+                            <!-- 可用加息劵-->
+                            <ul class="usable_rete_ul">
+                                <li>
+                                    <div class="usable_rete">
+                                        <p class="rete_p01">1.5
+                                            <span>%</span>
+                                        </p>
+                                        <div class="rete_btn_01">RETE COUPON</div>
+                                    </div>
+                                    <div class="state_ring_01">可用</div>
+                                    <div class="rete_bottom">
+                                        <p class="rete_p02">新手加息劵</p>
+                                        <p class="rete_p03">投资额1000元以上可用</p>
+                                        <p class="rete_p04">适用于6天以上的使用</p>
+                                        <p class="rete_p05">有效期至2017-12-31</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="usable_rete">
+                                        <p class="rete_p01">1.5
+                                            <span>%</span>
+                                        </p>
+                                        <div class="rete_btn_01">RETE COUPON</div>
+                                    </div>
+                                    <div class="state_ring_01">可用</div>
+                                    <div class="rete_bottom">
+                                        <p class="rete_p02">新手加息劵</p>
+                                        <p class="rete_p03">投资额1000元以上可用</p>
+                                        <p class="rete_p04">适用于6天以上的使用</p>
+                                        <p class="rete_p05">有效期至2017-12-31</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="usable_rete">
+                                        <p class="rete_p01">1.5
+                                            <span>%</span>
+                                        </p>
+                                        <div class="rete_btn_01">RETE COUPON</div>
+                                    </div>
+                                    <div class="state_ring_01">可用</div>
+                                    <div class="rete_bottom">
+                                        <p class="rete_p02">新手加息劵</p>
+                                        <p class="rete_p03">投资额1000元以上可用</p>
+                                        <p class="rete_p04">适用于6天以上的使用</p>
+                                        <p class="rete_p05">有效期至2017-12-31</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="usable_rete">
+                                        <p class="rete_p01">1.5
+                                            <span>%</span>
+                                        </p>
+                                        <div class="rete_btn_01">RETE COUPON</div>
+                                    </div>
+                                    <div class="state_ring_01">可用</div>
+                                    <div class="rete_bottom">
+                                        <p class="rete_p02">新手加息劵</p>
+                                        <p class="rete_p03">投资额1000元以上可用</p>
+                                        <p class="rete_p04">适用于6天以上的使用</p>
+                                        <p class="rete_p05">有效期至2017-12-31</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div id="laypages_04"></div>
+                        </div>
+                        <!-- 过期加息劵部分 -->
+                        <div class="redPaket_bottom_content_02">
+                            <!-- 过期加息劵 -->
+                            <ul class="expire_rete_ul">
+                                <li>
+                                    <div class="usable_rete">
+                                        <p class="rete_p01">1.5
+                                            <span>%</span>
+                                        </p>
+                                        <div class="rete_btn_02">RETE COUPON</div>
+                                    </div>
+                                    <div class="expire_ring_01">失效</div>
+                                    <div class="rete_bottom">
+                                        <p class="rete_p07">新手加息劵</p>
+                                        <p class="rete_p03">投资额1000元以上可用</p>
+                                        <p class="rete_p04">适用于6天以上的使用</p>
+                                        <p class="rete_p05">有效期至2017-12-31</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="usable_rete">
+                                        <p class="rete_p01">1.5
+                                            <span>%</span>
+                                        </p>
+                                        <div class="rete_btn_02">RETE COUPON</div>
+                                    </div>
+                                    <div class="expire_ring_01">失效</div>
+                                    <div class="rete_bottom">
+                                        <p class="rete_p07">新手加息劵</p>
+                                        <p class="rete_p03">投资额1000元以上可用</p>
+                                        <p class="rete_p04">适用于6天以上的使用</p>
+                                        <p class="rete_p05">有效期至2017-12-31</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="usable_rete">
+                                        <p class="rete_p01">1.5
+                                            <span>%</span>
+                                        </p>
+                                        <div class="rete_btn_02">RETE COUPON</div>
+                                    </div>
+                                    <div class="expire_ring_01">失效</div>
+                                    <div class="rete_bottom">
+                                        <p class="rete_p07">新手加息劵</p>
+                                        <p class="rete_p03">投资额1000元以上可用</p>
+                                        <p class="rete_p04">适用于6天以上的使用</p>
+                                        <p class="rete_p05">有效期至2017-12-31</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="usable_rete">
+                                        <p class="rete_p01">1.5
+                                            <span>%</span>
+                                        </p>
+                                        <div class="rete_btn_02">RETE COUPON</div>
+                                    </div>
+                                    <div class="expire_ring_01">失效</div>
+                                    <div class="rete_bottom">
+                                        <p class="rete_p07">新手加息劵</p>
+                                        <p class="rete_p03">投资额1000元以上可用</p>
+                                        <p class="rete_p04">适用于6天以上的使用</p>
+                                        <p class="rete_p05">有效期至2017-12-31</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div id="laypages_05"></div>
+                        </div>
+                        <!-- 已使用加息劵 -->
+                        <div class="redPaket_bottom_content_03">
+                            <!-- 已使用加息劵 -->
+                            <ul class="used_rete_ul">
+                                <li>
+                                    <div class="usable_rete">
+                                        <p class="rete_p01">1.5
+                                            <span>%</span>
+                                        </p>
+                                        <div class="rete_btn_02">RETE COUPON</div>
+                                    </div>
+                                    <div class="used_ring_01">已用</div>
+                                    <div class="rete_bottom">
+                                        <p class="rete_p07">新手加息劵</p>
+                                        <p class="rete_p03">投资额1000元以上可用</p>
+                                        <p class="rete_p04">适用于6天以上的使用</p>
+                                        <p class="rete_p05">有效期至2017-12-31</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="usable_rete">
+                                        <p class="rete_p01">1.5
+                                            <span>%</span>
+                                        </p>
+                                        <div class="rete_btn_02">RETE COUPON</div>
+                                    </div>
+                                    <div class="used_ring_01">已用</div>
+                                    <div class="rete_bottom">
+                                        <p class="rete_p07">新手加息劵</p>
+                                        <p class="rete_p03">投资额1000元以上可用</p>
+                                        <p class="rete_p04">适用于6天以上的使用</p>
+                                        <p class="rete_p05">有效期至2017-12-31</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="usable_rete">
+                                        <p class="rete_p01">1.5
+                                            <span>%</span>
+                                        </p>
+                                        <div class="rete_btn_02">RETE COUPON</div>
+                                    </div>
+                                    <div class="used_ring_01">已用</div>
+                                    <div class="rete_bottom">
+                                        <p class="rete_p07">新手加息劵</p>
+                                        <p class="rete_p03">投资额1000元以上可用</p>
+                                        <p class="rete_p04">适用于6天以上的使用</p>
+                                        <p class="rete_p05">有效期至2017-12-31</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="usable_rete">
+                                        <p class="rete_p01">1.5
+                                            <span>%</span>
+                                        </p>
+                                        <div class="rete_btn_02">RETE COUPON</div>
+                                    </div>
+                                    <div class="used_ring_01">已用</div>
+                                    <div class="rete_bottom">
+                                        <p class="rete_p07">新手加息劵</p>
+                                        <p class="rete_p03">投资额1000元以上可用</p>
+                                        <p class="rete_p04">适用于6天以上的使用</p>
+                                        <p class="rete_p05">有效期至2017-12-31</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div id="laypages_06"></div>
+                        </div>
+                    </section>
                 </li>
             </ul>
             <!-- 推荐好友 -->
@@ -833,7 +1077,7 @@
                         <p style="color:#666;font-size:18px;line-height:3;padding-left:30px;">分享链接给好友</p>
                         <div class="total_award">
                             <p>累计红包奖励:</p>
-                            <p>50</p>                            
+                            <p>50</p>
                         </div>
                         <div class="total_person">
                             <p>累计推广人数:</p>
@@ -1154,54 +1398,52 @@
             elem: 'laypages',
             count: 100,
             theme: "#ffa21a",
-            layout: ['count', 'prev', 'page', 'next', 'limit', 'skip'],
-            // jump: function (obj) {
-            //     console.log(obj)
-            // }
+            layout: ['prev', 'page', 'next'],
         });
-
         laypage.render({
             elem: 'laypages_02',
             count: 100,
             theme: "#ffa21a",
-            layout: ['count', 'prev', 'page', 'next', 'limit', 'skip'],
-            // jump: function (obj) {
-            //     console.log(obj)
-            // }
+            layout: ['prev', 'page', 'next'],
         });
         laypage.render({
             elem: 'laypages_03',
             count: 100,
             theme: "#ffa21a",
-            layout: ['count', 'prev', 'page', 'next', 'limit', 'skip'],
-            // jump: function (obj) {
-            //     console.log(obj)
-            // }
+            layout: ['prev', 'page', 'next'],
+        });
+
+        // 加息劵分页
+        laypage.render({
+            elem: 'laypages_04',
+            theme: "#ffa21a",
+            layout: ['prev', 'page', 'next'],
+        });
+
+        laypage.render({
+            elem: 'laypages_05',
+            theme: "#ffa21a",
+            layout: ['prev', 'page', 'next'],
+        });
+        laypage.render({
+            elem: 'laypages_06',
+            theme: "#ffa21a",
+            layout: ['prev', 'page', 'next'],
         });
 
         // 我的红包页面
         $(".redPaket_bottom_ul>li").click(function () {
             $(this).addClass("active_01").siblings().removeClass("active_01");
-        });
-        // 点击可用红包
-        $(".usable_btn").click(function () {
-            $(".redPaket_bottom_content_01").show();
-            $(".redPaket_bottom_content_02").hide();
-            $(".redPaket_bottom_content_03").hide();
-        });
-        // 点击过期红包
-        $(".expire_btn").click(function () {
-            $(".redPaket_bottom_content_01").hide();
-            $(".redPaket_bottom_content_02").show();
-            $(".redPaket_bottom_content_03").hide();
-        });
-        // 点击已使用红包
-        $(".used_btn").click(function () {
-            $(".redPaket_bottom_content_01").hide();
-            $(".redPaket_bottom_content_02").hide();
-            $(".redPaket_bottom_content_03").show();
+            $(this).parent().siblings("section").eq($(this).index()).removeClass("close_ul").siblings(
+                "section").addClass("close_ul");
         });
 
+        // 我的红包选项卡
+        $(".redPaket_ul>li").click(function () {
+            $(this).addClass("active_03").siblings().removeClass("active_03");
+            $(this).parent().siblings("div").eq($(this).index()).show().siblings("div").hide();
+        })
+       
         // 我的资料
         $(".change_01").click(function () {
             if ($(this).parent().next().css("display") == "none") {
