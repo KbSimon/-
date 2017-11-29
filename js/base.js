@@ -14,23 +14,23 @@ $(".footer_ewm>span").eq(0).hover(function () {
     $(".qq_code").stop().animate({
         opacity: "1"
     }, 200);
-    $(this).css("color", "#ffa21a").find("img").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/qq_01.png");
+    $(this).css("color", "#ffa21a").find("img").attr("src", "https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/qq_01.png");
 }, function () {
     $(".qq_code").stop().animate({
         opacity: "0"
     }, 200);
-    $(this).css("color", "#333").find("img").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/qq.png");
+    $(this).css("color", "#333").find("img").attr("src", "https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/qq.png");
 });
 $(".footer_ewm>span").eq(1).hover(function () {
     $(".weixin_code").stop().animate({
         opacity: "1"
     }, 200);
-    $(this).css("color", "#ffa21a").find("img").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/weixin_01.png");
+    $(this).css("color", "#ffa21a").find("img").attr("src", "https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/weixin_01.png");
 }, function () {
     $(".weixin_code").stop().animate({
         opacity: "0"
     }, 200);
-    $(this).css("color", "#333").find("img").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/weixin.png");
+    $(this).css("color", "#333").find("img").attr("src", "https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/weixin.png");
 });
 // 右侧悬浮窗
 $(window).scroll(function () {
@@ -50,22 +50,22 @@ $(".up").click(function () {
 })
 $(".right_nav>li").eq(0).hover(function () {
     $(".down_div").show();
-    $(this).children("img").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/download_01.png");
+    $(this).children("img").attr("src", "https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/download_01.png");
 }, function () {
     $(".down_div").hide();
-    $(this).children("img").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/download.png");
+    $(this).children("img").attr("src", "https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/download.png");
 });
 $(".right_nav>li").eq(1).hover(function () {
-    $(this).find("img").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/jisuanqi_01.png");
+    $(this).find("img").attr("src", "https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/jisuanqi_01.png");
 }, function () {
-    $(this).find("img").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/jisuanqi.png");
+    $(this).find("img").attr("src", "https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/jisuanqi.png");
 });
 $(".right_nav>li").eq(2).hover(function () {
     $(".kefu_num").show();
-    $(this).children("img").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/kefu_01.png");
+    $(this).children("img").attr("src", "https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/kefu_01.png");
 }, function () {
     $(".kefu_num").hide();
-    $(this).children("img").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/kefu.png");
+    $(this).children("img").attr("src", "https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/kefu.png");
 });
 // 联系客服
 $(".right_nav>li").eq(2).click(function () {
@@ -73,9 +73,9 @@ $(".right_nav>li").eq(2).click(function () {
 })
 
 $(".right_nav>li").eq(3).hover(function () {
-    $(this).children("img").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/up_01.png");
+    $(this).children("img").attr("src", "https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/up_01.png");
 }, function () {
-    $(this).children("img").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/up.png");
+    $(this).children("img").attr("src", "https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/up.png");
 })
 // 注册协议
 $(".to_protlcol").click(function () {

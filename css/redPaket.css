@@ -204,12 +204,12 @@ section {
 
 .usable_rete>p>span {
     font-size: 26px;
-    margin-left: -15px;
+    /* margin-left: -15px; */
 }
 
 .rete_btn_01,
 .rete_btn_02 {
-    width: 88px;
+    width: 95px;
     height: 26px;
     margin: 0 auto;
     font-size: 10px;
