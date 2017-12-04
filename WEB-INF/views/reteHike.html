@@ -22,7 +22,6 @@
     <div class="part_02">
         <div class="title">
             <div class="btn">立即投资</div>
-            <p>注：输入投资金额后系统会自动匹配使用红包加息券的最优方案</p>
         </div>
     </div>
     <div class="part_05">
@@ -35,7 +34,7 @@
             </div>
             <section>
                 <p>如何查看加息券？</p>
-                <p>【我的账户】-》【我的优惠】-》【加息券】</p>
+                <p>【我的账户】-》【我的福利】-》【加息券】</p>
             </section>
             <section>
                 <p>如何获得加息券？</p>
@@ -52,10 +51,43 @@
                 </p>
             </section>
         </div>
-
     </div>
+    <div class="mask"></div>
+    <div class="mask_bg"></div>
+    <div class="close_btn"></div>
 </body>
 
 </html>
+<script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/jquery.min.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/base.js"></script>
+<script>
+    // 显示弹窗
+    function show() {
+        $(".mask").show();
+        $(".mask_bg").show();
+        $(".close_btn").show();
+    }
+
+    // 关闭弹窗
+    function hide() {
+        $(".mask").hide();
+        $(".mask_bg").hide();
+        $(".close_btn").hide();
+    }
+
+    // 点底下的×关闭弹窗
+    $(".close_btn").click(function () {
+        hide();
+    });
+
+    $(".btn").click(function () {
+        var nowDate = new Date();
+        var begin = new Date(2017, 11, 7);
+        if (begin > nowDate) {
+            show();
+        } else {
+            app_android.tender();
+        }
+    });
+</script>

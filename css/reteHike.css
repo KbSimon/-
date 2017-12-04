@@ -36,6 +36,7 @@
     font-size: 30px;
     line-height: 100px;
     text-align: center;
+    cursor: pointer;
     background: url("../images/reteHike/img_04.png") center no-repeat;
 }
 
@@ -91,4 +92,41 @@ section>p:first-of-type{
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+}
+
+
+.mask{
+    width: 100%;
+    height: 100%;
+    background: #666;
+    opacity: 0.5;
+}
+
+.mask,
+.mask_bg,
+.close_btn{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 9999;
+    position: fixed;
+    display: none;
+}
+
+.mask_bg{
+    top: 10%;
+    width: 640px;
+    height: 520px;
+    margin: 0 auto;
+    background: url("https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/images/reteHike/img_06.png") center no-repeat;
+}
+
+.close_btn{ 
+    top: 640px;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    cursor: pointer;
+    background: url("https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/images/expand/mask_07.png") center no-repeat;
 }
