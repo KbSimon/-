@@ -219,10 +219,12 @@ section {
 
 .rete_btn_01{
     color: #ffa21a;
+    font-weight: bold;
 }
 
 .rete_btn_02{
     color: #999;
+    font-weight: bold;
 }
 
 .rete_bottom {
