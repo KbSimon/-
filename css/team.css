@@ -1,6 +1,7 @@
 .banner{
     width: 100%;
     height: 400px;
+    margin: 0 auto;
     min-width: 1200px;
     max-width: 1920px;
     background: url("../images/team/banner.png") center no-repeat;
