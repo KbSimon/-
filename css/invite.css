@@ -41,12 +41,20 @@
     height: 90px;
     color: #fff;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
     border-radius: 90px;
     text-align: center;
     line-height: 90px;
     background: #ff6918;
+}
+
+.btn>a{
+    color: #fff;
+}
+
+.btn>a:hover{
+    color: #fff;
 }
 
 .bottom>p{

@@ -253,5 +253,8 @@ input[type="button"]{
     color: #fe9c1c;
 }
 
-
-
+#redPacket,
+#rateHike_id{
+    display: block;
+    margin-top: 10px;
+}
