@@ -266,11 +266,11 @@ section {
 .expire_ring_01 {
     top: 15px;
     right: 35px;
-    width: 26px;
-    height: 26px;
+    width: 32px;
+    height: 32px;
     color: #fff;
     font-size: 8px;
-    line-height: 26px;
+    line-height: 32px;
     border-radius: 100%;
     position: absolute;
     text-align: center;

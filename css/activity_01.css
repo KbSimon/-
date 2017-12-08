@@ -1,0 +1,66 @@
+.part_01,
+.part_02,
+.part_03,
+.bottom{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1920px;
+    min-width: 1200px;
+    
+}
+
+.part_01{
+    height: 456px;
+    background: url("../images/activity_01/img_01.png") center no-repeat;
+    background-size: 100% 100%;
+}
+
+.part_02{
+    height: 694px;
+    background: url("../images/activity_01/img_02.png") center no-repeat;
+    background-size: 100% 100%;    
+}
+
+.part_03{
+    height: 523px;
+    background: url("../images/activity_01/img_03.png") center no-repeat;
+    background-size: 100% 100%;   
+}
+
+.part_04{
+    height: 544px;
+    background: url("../images/activity_01/img_05.png") center no-repeat;
+    background-size: 100% 100%;
+}
+
+.bottom{
+    width: 522px;
+    height: 148px;
+    color: #333333;
+    text-align: center;
+    position: relative;
+}
+
+.btn>a{
+    top: 50px;
+    display: block;
+    width: 522px;
+    height: 148px;
+    margin:0 auto;
+    position: relative;
+    background: url("../images/activity_01/img_04.png") center no-repeat;
+}
+
+.bottom>p:first-of-type{
+    top: 80px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.bottom>p:last-of-type{
+    top: 240px;
+    font-size: 16px;
+    position: relative;
+    letter-spacing: 2px;
+}

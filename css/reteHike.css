@@ -119,17 +119,17 @@ section>p:first-of-type{
 
 .mask_bg{
     top: 10%;
-    width: 640px;
-    height: 520px;
+    width: 520px;
+    height: 423px;
     margin: 0 auto;
-    background: url("https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/images/reteHike/img_06.png") center no-repeat;
+    background: url("../images/reteHike/img_05.png") center no-repeat;
 }
 
 .close_btn{ 
-    top: 640px;
-    width: 70px;
-    height: 70px;
+    top: 540px;
+    width: 54px;
+    height: 54px;
     margin: 0 auto;
     cursor: pointer;
-    background: url("https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-h5/images/expand/mask_07.png") center no-repeat;
+    background: url("../images/reteHike/img_06.png") center no-repeat;
 }
