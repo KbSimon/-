@@ -149,4 +149,14 @@
         $(".complete").show();
         $(".trader_password").hide();
     })
+
+    // 未同意注册协议
+    $("#deal_input").click(function () {
+        var ii = $("input[type='checkbox']").prop("checked");
+        if (ii === true) {
+            $(".pay_btn").css("background-color", "#fe9c1c").removeAttr("disabled");
+        } else if (ii === false) {
+            $(".pay_btn").css({"background-color":"#ccc","border":"none"}).attr("disabled", "disabled");
+        };
+    });
 </script>
