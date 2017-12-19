@@ -1,0 +1,325 @@
+
+input {
+    border: none;
+    outline: none;
+}
+
+.part_01,
+.part_02,
+.part_03,
+.part_04,
+.part_05 {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1920px;
+    min-width: 1200px;
+}
+
+.part_01 {
+    height: 735px;
+    background: url("../images/activity_02/img_01.png") center no-repeat;
+    background-size: 100% 100%;
+}
+
+.part_02 {
+    height: 983px;
+    position: relative;
+    background: url("../images/activity_02/img_02.png") center no-repeat;
+    background-size: 100% 100%;
+}
+
+.part_03 {
+    height: 848px;
+    position: relative;
+    background: url("../images/activity_02/img_03.png") center no-repeat;
+    background-size: 100% 100%;
+}
+
+.part_04 {
+    height: 805px;
+    position: relative;
+    background: url("../images/activity_02/img_04.png") center no-repeat;
+    background-size: 100% 100%;
+}
+
+/* .part_05 {
+    height: 697px;
+    position: relative;
+    background:  url("../images/activity_02/img_05.png") center no-repeat;
+} */
+
+.sign,
+.rete,
+.paket {
+    /* left: 14%; */
+    width: 745px;
+    margin: 0 auto;
+    /* position: absolute; */
+}
+
+.sign {
+    padding-top: 180px;
+}
+
+.sign_p1,
+.sign_p2,
+.sign_p3,
+.sign_p4,
+.sign_p5,
+.sign_p6 {
+    color: #B89362;
+    text-align: center;
+}
+
+.sign_p1 {
+    font-size: 28px;
+}
+
+.sign_ul {
+    margin: 40px 0;
+}
+
+.sign_ul>li {
+    width: 186.25px;
+    float: left;
+    text-align: center;
+}
+
+.qdbg,
+.sign_bg{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.sign_bg{
+    background: url("../images/activity_02/img_07.png") center no-repeat;
+}
+
+.qdbg{
+    background: url("../images/activity_02/img_06.png") center no-repeat;
+}
+
+.sign_p2 {
+    font-size: 20++++++++++++++++++++++++++++++++++px;
+    line-height: 2;
+    margin-bottom: 10px;
+}
+
+.sign_button {
+    margin-bottom: 20px;
+}
+
+.rete_btn,
+.sign_btn1,
+.sign_btn2 {
+    width: 300px;
+    height: 83px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.sign_btn1 {
+    background: url("../images/activity_02/img_08.png") center no-repeat;
+}
+
+.sign_btn2 {
+    background: url("../images/activity_02/img_09.png") center no-repeat;
+}
+
+.sign_p3,
+.sign_p4 {
+    width: 242px;
+    font-size: 22px;
+}
+
+.sign_p5,
+.sign_p6 {
+    font-size: 20px;
+}
+
+.time1,
+.sign_btn1 {
+    float: left;
+}
+
+.time2,
+.sign_btn2 {
+    float: right;
+}
+
+.paket {
+    height: 640px;
+    padding-top: 200px;
+}
+
+.paket_ul {
+    padding: 55px 0;
+}
+
+.paket_ul>li {
+    width: 100%;
+    height: 202px;
+    position: relative;
+}
+
+.paket_ul>li:first-of-type {
+    margin-bottom: 20px;
+    background: url("../images/activity_02/img_10.png") center no-repeat;
+}
+
+.paket_ul>li:last-of-type {
+    background: url("../images/activity_02/img_11.png") center no-repeat;
+}
+
+.sign_p7,
+.sign_p8 {
+    top: 50px;
+    right: 80px;
+    width: 30px;
+    height: 100px;
+    font-size: 24px;
+    color: #f5481a;
+    line-height: 1;
+    position: absolute;
+}
+
+.unchoose{
+    color: #c8b79a;
+}
+
+.rete {
+    padding-top: 230px;
+    /* position: absolute; */
+}
+
+.rete_button {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.rete_btn {
+    background: url("../images/activity_02/img_12.png") center no-repeat;
+}
+
+.mask {
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+
+.get,
+.end,
+.mask,
+.error,
+.NoTerm,
+.NoStart,
+.NoBegin,
+.award_01,
+.award_02,
+.award_03,
+.success_01,
+.success_02{
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    z-index: 9999;
+    display: none;    
+    margin: 0 auto;
+    position: fixed;
+    min-width: 1200px;
+    max-width: 1920px;
+}
+
+.close_btn {
+    top: 130px;
+    right: 80px;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    background: url("../images/activity_02/close_btn.png") center no-repeat
+}
+
+.success_01,
+.success_02 {
+    top: 20%;
+    height: 572px;
+}
+
+.success_01 {
+    background: url("../images/activity_02/success_01.png") center no-repeat;
+}
+
+.success_02 {
+    background: url("../images/activity_02/succsess_02.png") center no-repeat;
+}
+
+.award_01,
+.award_02,
+.award_03 {
+    top: 10%;
+    height: 1081px;
+}
+
+.award_01 {
+    background: url("../images/activity_02/award_01.png") center no-repeat;
+}
+
+.award_02 {
+    background: url("../images/activity_02/award_02.png") center no-repeat;
+}
+
+.award_03 {
+    background: url("../images/activity_02/award_03.png") center no-repeat;
+}
+
+.get,
+.end,
+.NoTerm,
+.NoStart{
+    top: 20%;
+    height: 652px;
+}
+
+.get{
+    background: url("../images/activity_02/get.png") center no-repeat; 
+}
+
+.end{
+    background: url("../images/activity_02/end.png") center no-repeat;
+}
+
+.error,
+.NoBegin{
+    top: 20%;
+    height: 572px;
+}
+
+.error_text{
+    width: 550px;
+    margin: 0 auto;
+    font-size: 36px;
+    color: #ffc600;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 350px;
+   
+}
+
+.error{
+    background: url("../images/activity_02/error.png") center no-repeat;
+}
+
+.NoTerm{
+    background: url("../images/activity_02/NoTerm.png") center no-repeat;
+}
+
+.NoStart{
+    background: url("../images/activity_02/NoStart.png") center no-repeat;
+}
+
+.NoBegin{ 
+    background: url("../images/activity_02/NoBegin.png") center no-repeat;
+}

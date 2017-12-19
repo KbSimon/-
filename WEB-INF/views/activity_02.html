@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equlv="expires" content="0">
+    <meta http-equlv="Pragma" content="no-cache">
+    <meta http-equlv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="鑫路金融,鑫路金融官网,理财平台,互联网理财平台">
+    <meta name="description" content="鑫路金融是一家专注于短期投资的个人理财平台,精选优质的个人理财产品,优化用户投资体验。">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>双旦活动——鑫路金融官网</title>
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/base.css">
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/common.css">
+    <link rel="stylesheet" href="../../css/activity_02.css">
+    <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/xinlu-icon.ico">
+</head>
+
+<body>
+    <div class="part_01"></div>
+    <div class="part_02">
+        <div class="sign">
+            <p class="sign_p1">活动期间，用户每日上线进行签到，累计
+                <br>签到7天及以上的用户，可在2018年1月1日
+                <br>领取福袋</p>
+            <ul class="sign_ul clearfloat">
+                <li class="date19">
+                    <div class="sign_bg"></div>
+                    <p class="sign_p2">1天</p>
+                </li>
+                <li class="date25">
+                    <div class="sign_bg"></div>
+                    <p class="sign_p2">2天</p>
+                </li>
+                <li class="date26">
+                    <div class="sign_bg"></div>
+                    <p class="sign_p2">3天</p>
+                </li>
+                <li class="date27">
+                    <div class="sign_bg"></div>
+                    <p class="sign_p2">4天</p>
+                </li>
+                <li class="date28">
+                    <div class="sign_bg"></div>
+                    <p class="sign_p2">5天</p>
+                </li>
+                <li class="date29">
+                    <div class="sign_bg"></div>
+                    <p class="sign_p2">6天</p>
+                </li>
+                <li class="date30">
+                    <div class="sign_bg"></div>
+                    <p class="sign_p2">7天</p>
+                </li>
+                <li class="date31">
+                    <div class="sign_bg"></div>
+                    <p class="sign_p2">8天</p>
+                </li>
+            </ul>
+            <div class="sign_button clearfloat">
+                <input type="button" class="sign_btn1" value="每日签到">
+                <input type="button" class="sign_btn2" value="兑换礼包">
+            </div>
+            <div class="sign_text clearfloat">
+                <div class="time1">
+                    <p class="sign_p3">签到时间</p>
+                    <p class="sign_p5">2017/12/24-2017-12-31</p>
+                </div>
+                <div class="time2">
+                    <p class="sign_p4">兑换时间</p>
+                    <p class="sign_p6">2018/01/01</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="part_03">
+            <div class="paket">
+                    <p class="sign_p1">活动期间，鑫路金融每日为用户备上豪礼，
+                        <br>坐等各位官人领取，保证领到你手软。</p>
+                    <ul class="paket_ul">
+                        <li>
+                            <p class="sign_p7">立即领取</p>
+                        </li>
+                        <li>
+                            <p class="sign_p8">立即领取</p>
+                        </li>
+                    </ul>
+                </div>
+    </div>
+    <div class="part_04">
+            <div class="rete">
+                    <p class="sign_p1">活动期间，平台每日推出活动标的，
+                        <br>每日一标，10:00开抢！</p>
+                    <div class="rete_button">
+                        <input type="button" class="rete_btn" value="立即开抢">
+                    </div>
+                </div>
+    </div>
+    <!-- <div class="part_05">
+      
+
+    </div> -->
+    <div class="mask"></div>
+    <!-- 签到成功 -->
+    <div class="success_01" style="display:none;">
+        <div class="close_btn"></div>
+    </div>
+    <!-- 福袋1 -->
+    <div class="award_01" style="display:none;">
+        <div class="close_btn" style="top:160px;"></div>
+    </div>
+    <!-- 福袋2 -->
+    <div class="award_02" style="display:none;">
+        <div class="close_btn" style="top:160px;"></div>
+    </div>
+    <!-- 福袋3 -->
+    <div class="award_03" style="display:none;">
+        <div class="close_btn" style="top:280px;"></div>
+    </div>
+    <!-- 领取成功 -->
+    <div class="success_02" style="display:none;">
+        <div class="close_btn"></div>
+    </div>
+    <!-- 活动未开始 -->
+    <div class="NoStart" style="display:none;">
+        <div class="close_btn"></div>
+    </div>
+    <!-- 时间未到 -->
+    <div class="NoBegin" style="display:none;">
+        <div class="close_btn"></div>
+    </div>
+    <!-- 没有领取条件 -->
+    <div class="NoTerm" style="display:none;">
+        <div class="close_btn"></div>
+    </div>
+    <!-- 活动已结束 -->
+    <div class="end" style="display:none;">
+        <div class="close_btn"></div>
+    </div>
+    <!-- 福利已领取 -->
+    <div class="get" style="display:none;">
+        <div class="close_btn"></div>
+    </div>
+    <!-- 错误弹窗 -->
+    <div class="error" style="">
+        <div class="close_btn"></div>
+        <p class="error_text"></p>
+    </div>
+</body>
+
+</html>
+<script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.min.js"></script>
+<script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/base.js"></script>
+<script>
+    // 获取当前日期
+    var date = new Date();
+    // 获取当前时间
+    var hour = date.getHours();
+    // 签到开始时间
+    var start = new Date(2017, 11, 19);
+    // 签到结束时间,兑换礼包开始时间
+    var end = new Date(2018, 0, 1);
+
+    // 签到方法
+    function qiandao() {
+        $(".date" + myDate.getDate()).find("div").addClass('qdbg');
+    }
+
+    // 签到成功
+    function success_01() {
+        $(".mask").show();
+        $(".close_btn").show();
+        $(".success_01").show();
+        $(".sign_btn1").val("已签到").css("color", "#c37d02");
+        $(".date" + date.getDate()).find("div").addClass('qdbg');
+    }
+
+    // 领取成功
+    function success_02() {
+        $(".mask").show();
+        $(".close_btn").show();
+        $(".success_02").show();
+    }
+
+    // 兑换成功
+    function success_03() {
+        $(".sign_btn2").val("已兑换").css("color", "#046095");
+    }
+
+    // 活动未开始
+    function NoStart() {
+        $(".mask").show();
+        $(".NoStart").show();
+        $(".close_btn").show();
+    }
+
+    // 未达到领取条件
+    function NoTerm() {
+        $(".mask").show();
+        $(".NoTerm").show();
+        $(".close_btn").show();
+    }
+
+    // 活动已结束
+    function end() {
+        $(".end").show();
+        $(".mask").show();
+        $(".close_btn").show();
+    }
+
+    // 福袋1 投资大于5W
+    function award_01() {
+        $(".mask").show();
+        $(".award_01").show();
+        $(".close_btn").show();
+    }
+
+    // 福袋2 1W<投资<5W
+    function award_01() {
+        $(".mask").show();
+        $(".award_02").show();
+        $(".close_btn").show();
+    }
+
+    // 福袋3 投资小于1W
+    function award_01() {
+        $(".mask").show();
+        $(".award_03").show();
+        $(".close_btn").show();
+    }
+
+    // 已经领取
+    function get() {
+        $(".get").show();
+        $(".mask").show();
+        $(".close_btn").show();
+    }
+
+    function NoBegin() {
+        $(".mask").show();
+        $(".NoBegin").show();
+        $(".close_btn").show();
+    }
+
+    // 关闭弹窗
+    function close() {
+        $(".get").hide();
+        $(".end").hide();
+        $(".mask").hide();
+        $(".error").hide();
+        $(".NoBegin").hide();
+        $(".NoStart").hide();
+        $(".award_01").hide();
+        $(".award_02").hide();
+        $(".award_03").hide();
+        $(".close_btn").hide();
+        $(".success_01").hide();
+        $(".success_02").hide();
+    }
+
+    // 关闭弹窗
+    $(".close_btn").click(function () {
+        close();
+    })
+
+    // 每日签到按钮
+    $(".sign_btn1").click(function () {
+        // 活动未开始 和 活动结束
+        if (date < start) {
+            NoStart();
+        } else if (date >= end) {
+            end();
+        }else if(start <= date <end){
+            success_01();
+        };
+
+
+        // $.ajax({
+        //     type: 'POST',
+        //     url: '118.31.20.195:8083/activity/doubleDanActivity',
+        //     data: {
+        //         uid :"",
+        //         source : ";",
+        //     },
+        //     success: function (data) {
+        //         if (data.success == true) {
+        //             // $(".sign_btn1").attr("disabled", "disabled");
+        //           
+        //             success_01();
+        //         }
+        //         // $(".error_text").html(data.msg);
+
+        //     },
+        //     error: function (XMLHttpRequest, textStatus, errorThrown) {
+        //         alert(errorThrown);
+        //     }
+        // });
+    });
+
+    //  兑换红包   
+    $(".sign_btn2").click(function () {
+        // 活动未开始 
+        if (date < start) {
+            NoStart();
+        } else if (date >= end) {
+            end();
+        }else if(start <= date <end){
+            alert(1)
+            success_01();
+        };
+
+
+
+        // $.ajax({
+        //     type: 'POST',
+        //     url: '118.31.20.195:8083/activity/doubleDanActivity',
+        //     data: {
+        //         uid :"display:none;",
+        //         source : "display:none;",
+        //     },
+        //     success: function (data) {
+        //         if (data.success == true) {
+        //             // $(".sign_btn1").attr("disabled", "disabled");
+        //             // downTime();
+        //             兑换成功 根据条件调用 award1-3 下面方法必须调用
+        //             success_03();
+        //         }
+        //         // $("..error_text").html(data.msg);
+
+        //     },
+        //     error: function (XMLHttpRequest, textStatus, errorThrown) {
+        //         alert(errorThrown);
+        //     }
+        // });
+    })
+
+    // 第一个立即领取
+    $(".sign_p7").click(function () {
+        success_02();
+        $(this).text("已领取").addClass("unchoose");
+        $(".sign_p8").click(function () {
+            get();
+            $(this).text("立即领取").removeClass("unchoose");
+        });
+    })
+
+    // 第二个立即领取
+    $(".sign_p8").click(function () {
+        success_02();
+        $(this).text("已领取").addClass("unchoose");
+        $(".sign_p7").click(function () {
+            get();
+            $(this).text("立即领取").removeClass("unchoose");
+        });
+    })
+
+    // 立即开抢
+    $(".rete_btn").click(function () {
+        // alert(1)
+        if (hour < 10) {
+            NoBegin();
+        }
+    })
+</script>
