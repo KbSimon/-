@@ -1,0 +1,198 @@
+.swiper-container {
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;    
+    min-width: 1200px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.banner_01,
+.banner_02,
+.banner_03,
+.banner_04{
+    width: 100%;
+    height: 450px;
+    min-width: 1200px;
+    display: inline-block;
+}
+
+.banner_01{
+    background: url("../images/banner_01.png") center no-repeat;
+    /* background-size: 100% 100%; */
+}
+
+.banner_02{
+    background: url("../images/banner_02.png") center no-repeat;
+}
+
+.banner_03{
+    background: url("../images/banner_03.png") center no-repeat;
+    /* background-size: 100% 100%; */
+}
+
+.banner_04{
+    background: url("../images/banner_04.png") center no-repeat;
+}
+
+/* 合作伙伴 */
+.xlfriends{
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    max-width: 1920px;
+    min-width: 1200px;
+    background: url("../images/index/friends.png") center no-repeat;
+    background-size: 100% 100%;
+}
+
+.xlfriendsContent{
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.xlfriendsContent>p{
+    color: #fff;
+    font-size: 24px;
+    padding: 25px 0 35px 0;
+}
+
+/* 合作伙伴 背景图 */
+.friends_ul{
+    height: 60px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.friends_ul>li{
+    float: left;
+    width: 190px;
+    height: 60px;
+    margin-right: 12px;
+    border: 1px solid #ccc;
+}
+
+.friends_ul>li>a{
+    height: 60px;
+    display: block;
+}
+
+.friends_ul>li:last-of-type{
+    margin-right: 0;
+}
+
+.friends_ul>li:nth-child(1)>a{
+    background: url("../images/index/friends_01.png") center no-repeat;
+}
+
+.friends_ul>li:nth-child(2)>a{
+    background: url("../images/index/friends_02.png") center no-repeat;
+}
+
+.friends_ul>li:nth-child(3)>a{
+    background: url("../images/index/friends_03.png") center no-repeat;
+}
+
+.friends_ul>li:nth-child(4)>a{
+    background: url("../images/index/friends_04.png") center no-repeat;
+}
+
+.friends_ul>li:nth-child(5)>a{
+    background: url("../images/index/friends_05.png") center no-repeat;
+}
+
+.friends_ul>li:nth-child(6)>a{
+    background: url("../images/index/friends_06.png") center no-repeat;
+}
+
+/* 下载专区 */
+.downloadApp{
+    width: 100%;
+    height: 496px;
+    margin: 0 auto;
+    min-width: 1200px;
+    background: url("../images/index/app_bg.png") center no-repeat;
+    /* background-size: 100% 100%; */
+}
+
+.downloadApp_text{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+.downloadApp_text>p:first-of-type{
+    color: #fff;
+    font-size: 34px;
+}
+
+.downloadApp_text>p:last-of-type{
+    color: #fff;
+    font-size: 34px;
+}
+
+.iPhone,
+.Android{
+    float: left;    
+    width: 250px;
+    height: 60px;
+    color: #fff;
+    margin-top: 55px;
+    line-height: 65px;
+    text-align: center;
+    border-radius: 60px;
+    border: 1px solid #fff;
+}
+
+.iPhone{
+    margin-right: 60px;
+}
+
+.iPhone_content,
+.Android_content{
+    width: 180px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.iPhone_bg,
+.Android_bg{
+    width: 26px;
+    float: left;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.iPhone_bg{
+    background: url("../images/index/iPhone_01.png") center no-repeat;
+}
+
+.Android_bg{
+    background: url("../images/index/Android_01.png") center no-repeat;
+}
+
+
+.iPhone_text,
+.Android_text{
+    float: left;
+    font-size: 16px;
+}

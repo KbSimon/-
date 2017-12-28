@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="utf-8">
     <meta http-equlv="expires" content="0">
@@ -10,14 +11,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>鑫路金融 银行资金存管 值得信赖的短期理财平台</title>
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/base.css">
-    <link rel="stylesheet" href="../../css/common_02.css">
+    <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/index_02.css">
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/plugins/swiper/swiper.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/xinlu-icon.ico">
 </head>
+
 <body>
-    
+    <header>
+    </header>
+    <!-- 轮播图 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="" class="banner_01"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="" class="banner_02"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="" class="banner_03"></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="" class="banner_04"></a>
+            </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <!-- 下载专区 -->
+    <div class="downloadApp">
+        <div class="downloadApp_text clearfloat">
+            <p>随时随地掌上理财&#x3000;尽在鑫路金融APP</p>
+            <p>会员中心、精彩活动、最新福利</p>
+            <div class="iPhone">
+                <div class="iPhone_content clearfloat">
+                    <div class="iPhone_bg"></div>
+                    <div class="iPhone_text">iPhone版APP下载</div>
+                </div>
+            </div>
+            <div class="Android">
+                <div class="Android_content clearfloat">
+                    <div class="Android_bg"></div>
+                    <div class="Android_text">iPhone版APP下载</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 合作伙伴 -->
+    <div class="xlfriends">
+        <div class="xlfriendsContent">
+            <p>合作伙伴</p>
+            <ul class="friends_ul">
+                <li>
+                    <a href="http://www.wdzj.com/" target="_blank" rel="nofollow"></a>
+                </li>
+                <li>
+                    <a href="https://www.p2peye.com/" target="_blank" rel="nofollow"></a>
+                </li>
+                <li>
+                    <a href="https://www.fuiou.com/" target="_blank" rel="nofollow"></a>
+                </li>
+                <li>
+                    <a href="https://www.tsign.cn/" target="_blank" rel="nofollow"></a>
+                </li>
+                <li>
+                    <a href="http://www.dahantc.com/Index/home.html" target="_blank" rel="nofollow"></a>
+                </li>
+                <li>
+                    <a href="http://www.sanminlaw.com/" target="_blank" rel="nofollow"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/jquery.min.js"></script>
-<script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/common.js"></script>
+<!-- <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/common.js"></script> -->
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/base.js"></script>
+<script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/plugins/swiper/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    swiper.el.onmouseover = function () {
+        swiper.autoplay.stop();
+    }
+    swiper.el.onmouseout = function () {
+        swiper.autoplay.start();
+    }
+</script>

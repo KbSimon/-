@@ -64,10 +64,10 @@ input{
 }
 
 #check{
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border: 0;
-    margin: 10px 0 0 20px;
+    margin: 12px 0 0 20px;
 }
 
 .jisuan_btn,
@@ -123,6 +123,16 @@ input{
     content: "元";
     font-size: 14px;
     margin-left: 3px;
+}
+
+.cycle>input[type="radio"]{
+    width: 12px;
+    height: 12px;
+    margin: 0 2px 0 0;
+}
+
+.cycle>input[type="radio"]:nth-child(2){
+    margin-left: 15px;
 }
 
 .detailes{

@@ -2,6 +2,7 @@
 input {
     border: none;
     outline: none;
+    background-color: transparent;
 }
 
 .part_01,
@@ -25,39 +26,26 @@ input {
     height: 983px;
     position: relative;
     background: url("../images/activity_02/img_02.png") center no-repeat;
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
 }
 
 .part_03 {
     height: 848px;
     position: relative;
     background: url("../images/activity_02/img_03.png") center no-repeat;
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
 }
 
 .part_04 {
     height: 805px;
     position: relative;
     background: url("../images/activity_02/img_04.png") center no-repeat;
-    background-size: 100% 100%;
-}
-
-/* .part_05 {
-    height: 697px;
-    position: relative;
-    background:  url("../images/activity_02/img_05.png") center no-repeat;
-} */
-
-.sign,
-.rete,
-.paket {
-    /* left: 14%; */
-    width: 745px;
-    margin: 0 auto;
-    /* position: absolute; */
+    /* background-size: 100% 100%; */
 }
 
 .sign {
+    width: 745px;
+    margin: 0 auto;
     padding-top: 180px;
 }
 
@@ -72,7 +60,8 @@ input {
 }
 
 .sign_p1 {
-    font-size: 28px;
+    margin-top: 20px;
+    font-size: 18px;
 }
 
 .sign_ul {
@@ -101,9 +90,9 @@ input {
 }
 
 .sign_p2 {
-    font-size: 20++++++++++++++++++++++++++++++++++px;
+    font-size: 20px;
     line-height: 2;
-    margin-bottom: 10px;
+    margin: 10px 0 30px 0;
 }
 
 .sign_button {
@@ -117,6 +106,7 @@ input {
     height: 83px;
     color: #fff;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .sign_btn1 {
@@ -135,7 +125,15 @@ input {
 
 .sign_p5,
 .sign_p6 {
-    font-size: 20px;
+    width: 300px;   
+    font-size: 14px;
+}
+
+.sign_p9{
+    font-size: 14px;
+    color: #de3550;
+    margin-top: 25px;
+    text-align: center;
 }
 
 .time1,
@@ -149,18 +147,27 @@ input {
 }
 
 .paket {
-    height: 640px;
+    width: 870px;
+    margin: 0 auto;
     padding-top: 200px;
 }
 
 .paket_ul {
+    width: 870px;
+    /* height: 100%; */
+    margin: 0 auto;
     padding: 55px 0;
 }
 
 .paket_ul>li {
-    width: 100%;
+    float: left;
+    width: 400px;
     height: 202px;
     position: relative;
+}
+
+.paket_ul>li:first-of-type{
+    margin-right: 65px;
 }
 
 .paket_ul>li:first-of-type {
@@ -174,13 +181,14 @@ input {
 
 .sign_p7,
 .sign_p8 {
-    top: 50px;
-    right: 80px;
-    width: 30px;
-    height: 100px;
-    font-size: 24px;
-    color: #f5481a;
+    top: 85px;
+    right: 8px;
+    width: 100px;
+    height: 30px;
     line-height: 1;
+    cursor: pointer;    
+    font-size: 20px;
+    color: #f5481a;
     position: absolute;
 }
 
@@ -188,13 +196,49 @@ input {
     color: #c8b79a;
 }
 
+.rules{
+    width: 870px;
+    height: 95px;
+    margin: 0 auto;
+}
+
+.rules>li{
+    width: 375px;
+    border: 0.5px solid #de3550;
+}
+
+.left_border{
+    float: left;
+    margin-top: 18px;
+}
+
+.right_border{
+    float: right;
+    margin-top: 18px;
+}
+
+.sign_p11{
+    font-size: 26px;
+    color: #de3550;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sign_p10{
+    font-size: 28px;
+    color: #b38a59;
+    font-weight: bold; 
+    text-align: center;
+}
+
 .rete {
+    width: 870px;
+    margin: 0 auto;
     padding-top: 230px;
-    /* position: absolute; */
 }
 
 .rete_button {
-    margin-top: 60px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -204,14 +248,16 @@ input {
 
 .mask {
     height: 100%;
-    background: #000;
     opacity: 0.5;
+    background: #000;
+    
 }
 
-.get,
+
 .end,
 .mask,
 .error,
+.repeat,
 .NoTerm,
 .NoStart,
 .NoBegin,
@@ -235,16 +281,17 @@ input {
 
 .close_btn {
     top: 130px;
-    right: 80px;
+    right: 30%;
     width: 64px;
     height: 64px;
+    cursor: pointer;
     position: absolute;
     background: url("../images/activity_02/close_btn.png") center no-repeat
 }
 
 .success_01,
 .success_02 {
-    top: 20%;
+    top: 10%;
     height: 572px;
 }
 
@@ -253,13 +300,13 @@ input {
 }
 
 .success_02 {
-    background: url("../images/activity_02/succsess_02.png") center no-repeat;
+    background: url("../images/activity_02/success_02.png") center no-repeat;
 }
 
 .award_01,
 .award_02,
 .award_03 {
-    top: 10%;
+    top: -20%;
     height: 1081px;
 }
 
@@ -275,15 +322,16 @@ input {
     background: url("../images/activity_02/award_03.png") center no-repeat;
 }
 
-.get,
+
 .end,
+.repeat,
 .NoTerm,
 .NoStart{
-    top: 20%;
+    top: 5%;
     height: 652px;
 }
 
-.get{
+.repeat{
     background: url("../images/activity_02/get.png") center no-repeat; 
 }
 
@@ -293,7 +341,7 @@ input {
 
 .error,
 .NoBegin{
-    top: 20%;
+    top: 10%;
     height: 572px;
 }
 
