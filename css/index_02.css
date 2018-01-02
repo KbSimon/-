@@ -52,6 +52,261 @@
     background: url("../images/banner_04.png") center no-repeat;
 }
 
+/* 公告 */
+.xlnotice{
+    width: 100%;
+    height: 205px;
+    margin: 0 auto;
+    min-width: 1200px;
+    max-width: 1920px;
+    background: #fff;
+}
+
+.xlnotice_top{
+    width: 100%;
+    height: 37px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.xlnotice_bottom{
+    width: 100%;
+    height: 168px;
+}
+
+.xlnotice_top_content{
+    width: 1200px;
+    height: 37px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.xlnotice_icon{
+    float: left;
+    width: 22px;
+    height: 16px;
+    background: url("../images/index/notice.png") center no-repeat;
+}
+
+.xlnotice_ul{
+    float: left;
+    width: 680px;
+    height: 20px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.xlnotice_ul>li{
+    float: left;
+    width: 220px;
+    height: 20px;
+    text-align: center;
+    border-right: 1px solid #e3e3e3;
+}
+
+.xlnotice_ul>li:last-of-type{
+    border-right: 0;
+}
+
+.xlnotice_ul>li>a{
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.xlnotice_more{
+    float:right;
+}
+
+.xlnotice_bottom_content{
+    width: 1200px;
+    height: 168px;
+    margin: 0 auto;
+}
+
+.xlnotice_bottom_ul{
+    width: 975px;
+    margin: 0 auto;
+}
+
+.xlnotice_bottom_ul>li{
+    float: left;
+    width: 195px;
+    height: 60px;
+    margin: 55px 0;
+    /* padding: 10px 0; */
+    text-align: center;
+    border-right: 1px solid #ff9900
+}
+
+.xlnotice_bottom_ul>li:last-of-type{
+    border-right: 0;
+}
+
+.xlnotice_bottom_ul>li>p{
+    font-size: 26px;
+    color: #ff9900;
+}
+
+.xlnotice_bottom_ul>li>span{
+    color: #999;
+}
+
+/* 标的 */
+.xlmark{
+    width: 1200px;
+    height: 630px;
+    margin: 0 auto;
+    padding-top: 15px;  
+}
+
+.xlmark_ul{
+    width: 1200px;
+    height: 570px;
+    margin: 0 auto;
+}
+
+.xlmark_li{
+    float: left;    
+    width: 380px;
+    height: 260px;
+    margin-top: 25px;
+    background: #fff;
+    margin-right: 30px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.xlmark_li>a{
+    width: 380px;
+    height: 260px;
+    display: block;
+    padding: 24px 35px 24px 24px;
+}
+
+.xlmark_badge{
+    top: -8px;
+    right: 20px;
+    width: 49px;
+    height: 52px;
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    background: url("../images/index/mark.png") center no-repeat;
+}
+
+.xlmark_more{
+    width: 120px;
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px; 
+    line-height: 30px;
+    text-align: center;
+    border-radius: 30px; 
+    border: 1px solid #e3e3e3;
+}
+
+.xlmark_li:nth-child(3),
+.xlmark_li:nth-child(6){
+    margin-right: 0;
+}
+
+.xlmark_title{
+    height: 26px;
+    font-size: 16px;
+}
+
+.xlmark_content{
+    height: 150px;
+    padding-top: 50px;
+    padding-bottom: 45px;
+}
+
+.xlmark_content>span{
+    width: 70px;
+    text-align: center;
+}
+
+.xlmark_content>span:first-of-type{
+    float: left;
+}
+
+.xlmark_content>span:last-of-type{
+    float: right;
+}
+
+.xlmark_rate01,
+.xlmark_rate02{
+    width: 50%;
+    float: left;
+    font-size: 40px;
+}
+
+.xlmark_day02,
+.xlmark_rate02{
+    color: #ccc;
+}
+
+.xlmark_day01,
+.xlmark_day02{
+    width: 50%;
+    float: right;
+    font-size: 40px;
+    text-align: right;
+}
+
+.xlmark_day01{
+    color: #999999;
+}
+
+.xlmark_day01>span,
+.xlmark_day02>span,
+.xlmark_rate01>span,
+.xlmark_rate02>span{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.xlmark_bottom{
+    height: 60px;
+}
+
+.xlmark_progress_bg{
+    height: 6px;
+    width: 335px;
+    margin: 0 auto;
+    border-radius: 6px;
+    background: #eee;
+    margin-bottom: 10px;
+}
+
+.xlmark_progress01,
+.xlmark_progress02{
+    height: 6px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.xlmark_progress01{
+    background: url("../images/index/progress_01.png") center repeat-x;
+}
+
+.xlmark_progress02{
+    background: url("../images/index/progress_02.png") center repeat-x;
+}
+
+.xlmark_startMoney{
+    float: left;
+}
+
+.xlmark_endMoney{
+    float: right;
+}
+
 /* 合作伙伴 */
 .xlfriends{
     width: 100%;
@@ -59,8 +314,7 @@
     margin: 0 auto;
     max-width: 1920px;
     min-width: 1200px;
-    background: url("../images/index/friends.png") center no-repeat;
-    background-size: 100% 100%;
+    background: #fff;
 }
 
 .xlfriendsContent{
@@ -71,8 +325,9 @@
 }
 
 .xlfriendsContent>p{
-    color: #fff;
+    color: #333;
     font-size: 24px;
+    font-weight: bold;
     padding: 25px 0 35px 0;
 }
 
@@ -125,19 +380,26 @@
 }
 
 /* 下载专区 */
-.downloadApp{
-    width: 100%;
+.downloadApp,
+.downloadApp02{
+    width: 1200px;
     height: 496px;
     margin: 0 auto;
-    min-width: 1200px;
+}
+
+.downloadApp{
     background: url("../images/index/app_bg.png") center no-repeat;
-    /* background-size: 100% 100%; */
+}
+
+.downloadApp02{
+    background: url("../images/index/download_bg.png") center no-repeat;
 }
 
 .downloadApp_text{
     width: 1200px;
     margin: 0 auto;
     padding-top: 200px;
+    padding-left: 60px;
 }
 
 .downloadApp_text>p:first-of-type{
@@ -156,11 +418,19 @@
     width: 250px;
     height: 60px;
     color: #fff;
-    margin-top: 55px;
+    cursor: pointer;    
+    margin-top: 85px;
     line-height: 65px;
     text-align: center;
     border-radius: 60px;
     border: 1px solid #fff;
+}
+
+.iPhone:hover,
+.Android:hover{
+    color: #ff9900;
+    background: #fff;
+    /* border: 1px solid #ff9900; */
 }
 
 .iPhone{
@@ -175,7 +445,9 @@
 }
 
 .iPhone_bg,
-.Android_bg{
+.Android_bg,
+.iPhone_bg02,
+.Android_bg02{
     width: 26px;
     float: left;
     height: 60px;
@@ -186,13 +458,150 @@
     background: url("../images/index/iPhone_01.png") center no-repeat;
 }
 
+.iPhone_bg02{
+    background: url("../images/index/iPhone_02.png") center no-repeat;
+}
+
 .Android_bg{
     background: url("../images/index/Android_01.png") center no-repeat;
 }
 
+.Android_bg02{
+    background: url("../images/index/Android_02.png") center no-repeat;
+}
 
 .iPhone_text,
 .Android_text{
     float: left;
     font-size: 16px;
+}
+
+/* 媒体 */
+.news{
+    width: 1200px;
+    height: 475px;
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 45px;
+}
+
+.media,
+.company{
+    float: left;
+    width: 580px;
+    height: 350px;
+    background: #fff;
+}
+
+.company{
+    margin-right: 40px;
+}
+
+.media_top,
+.company_top{
+    height: 80px;
+    padding: 20px 30px 20px 20px;
+}
+
+.company_top{
+    background: url("../images/index/company.png") center no-repeat;
+}
+
+.media_top{
+    background: url("../images/index/media.png") center no-repeat;
+}
+
+.media_top_text,
+.company_top_text{
+    color: #fff;
+}
+
+.media_top_text>li:first-of-type,
+.company_top_text>li:first-of-type{
+    font-size: 18px;
+}
+
+.xlmark_endMoney,
+.xlmark_startMoney,
+.xlmark_content>span,
+.media_top_text>li:last-of-type,
+.company_top_text>li:last-of-type{
+    font-size: 12px;
+}
+
+.media_top_text a,
+.company_top_text a{
+    color: #fff;
+    float: right;
+}
+
+.xlmark_rate01,
+.media_top a:hover,
+.company_top a:hover,
+.xlnotice_more>a:hover,
+.xlnotice_ul>li>a:hover{
+    color: #ff9900;
+}
+
+.media_bottom,
+.company_bottom{
+    height: 270px;
+    padding: 20px 15px 5px 15px;
+}
+
+.media_content_img,
+.company_content_img{
+    float: left;
+    margin-right: 20px;
+}
+
+.media_content,
+.company_content{
+    margin-bottom: 25px;
+}
+
+.media_content_text,
+.company_content_text{
+    float: right;
+}
+
+.media_content_ul,
+.company_content_ul{
+    width: 420px;
+}
+
+.media_content_ul>li:first-of-type,
+.company_content_ul>li:first-of-type{
+    height: 24px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.media_content_ul>li:first-of-type a:hover,
+.company_content_ul>li:first-of-type a:hover{
+    color: #ff9900;
+}
+
+.news_title{
+    float: left;
+    width: 305px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.news_date{
+    float: right;
+    color: #999;
+}
+
+.news_content{
+    width: 420px;
+    overflow: hidden; 
+    line-height: 1.7;
+    display: -webkit-box; 
+    word-break: break-all;
+    -webkit-line-clamp: 3; 
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;   
 }

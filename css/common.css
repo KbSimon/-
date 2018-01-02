@@ -113,37 +113,51 @@ footer{
 
 .xlfooter_top_left{
     float: left;
-    width: 595px;
+    width: 436px;
     height: 185px;
     border-right: 1px solid #e3e3e3;
 }
 
 .xlfooter_top_right{
     float: right;
-    width: 605px;
+    width: 465px;
     height: 185px;
-    padding-left: 218px;
+    padding-left: 78px;
 }
 
 .xlfooter_top_left>ul{
     float: left;
-    width: 165px;
-    line-height: 1.8;
+    width: 145px;
+    line-height: 1.5;
 }
 
 .xlfooter_top_left>ul>li:first-of-type{
+    cursor: pointer;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .xlfooter_top_left>ul>li>a{
-    display: block;
+    font-size: 12px;    
+    display: inline-block;
+}
+
+.xlfooter_top_left>ul>li>a:hover{
+    color: #ff9900;
+}
+
+.xlfooter_top_middle{
+    float: left;
+    width: 299px;
+    height: 185px;   
+    border-right: 1px solid #e3e3e3;     
 }
 
 /* icon */
 .xlfooter_top_icon{
     width: 387px;
     height: 60px;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 
@@ -188,7 +202,9 @@ footer{
     background: url("../images/index/icon_08.png") center no-repeat;
 }
 
-.xlfooter_top_icon>li:nth-child(1):hover>.download{
+
+
+/* .xlfooter_top_icon>li:nth-child(1):hover>.download{
     display: block;
 }
 
@@ -198,21 +214,31 @@ footer{
 
 .xlfooter_top_icon>li:nth-child(3):hover>.qq{
     display: block;
-}
+} */
 
 .xlfooter_top_icon>li:last-of-type{
     margin-right: 0;
 }
 
+
+.logo_03{
+    width: 172px;
+    height: 172px;
+    margin: 0 auto;
+    background: url("../images/index/logo_03.png") center no-repeat;
+    /* background-size: 100% 100%; */
+}
+
 .qq,
 .weixin,
 .download{
-    top: -180px;
-    left: -56px;
+    /* top: -180px;
+    left: -56px; */
     width: 172px;
     height: 172px;
-    display: none;
-    position: absolute;
+    margin: 0 auto;
+    /* display: none; */
+    /* position: absolute; */
 }
 
 
@@ -233,6 +259,7 @@ footer{
 .xlfooter_top_service{
     width: 387px;
     height: 78px;
+    margin-top: 5px;
 }
 
 .xlfooter_top_service>li:first-of-type{
@@ -275,7 +302,6 @@ footer{
 .integrity_icon{
     width: 85px;
     height: 30px;
-    
     display: inline-block;
 }
 

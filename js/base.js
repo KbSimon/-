@@ -1,36 +1,18 @@
-// 顶部悬浮
-$(".head_top_left02").hover(function () {
-    $(".head_top_left01 p").css("color", "#ffa21a");
-}, function () {
-    $(".head_top_left01 p").css("color", "#666");
-});
-// 新浪微博
-$(".head_top_left04").click(function () {
-    window.open("https://weibo.com/u/6363624631?topnav=1&wvr=6&is_hot=1");
-})
-
 // 底部悬浮
-$(".footer_ewm>span").eq(0).hover(function () {
-    $(".qq_code").stop().animate({
-        opacity: "1"
-    }, 200);
-    $(this).css("color", "#ffa21a").find("img").attr("src", "https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/qq_01.png");
+$(".xlfooter_top_icon li").eq(0).hover(function () {
+    $(".logo_03").removeClass("logo_03").addClass("download");
 }, function () {
-    $(".qq_code").stop().animate({
-        opacity: "0"
-    }, 200);
-    $(this).css("color", "#333").find("img").attr("src", "https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/qq.png");
+    $(".download").addClass("logo_03").removeClass("download");
 });
-$(".footer_ewm>span").eq(1).hover(function () {
-    $(".weixin_code").stop().animate({
-        opacity: "1"
-    }, 200);
-    $(this).css("color", "#ffa21a").find("img").attr("src", "https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/weixin_01.png");
+$(".xlfooter_top_icon li").eq(1).hover(function () {
+    $(".logo_03").removeClass("logo_03").addClass("weixin");
 }, function () {
-    $(".weixin_code").stop().animate({
-        opacity: "0"
-    }, 200);
-    $(this).css("color", "#333").find("img").attr("src", "https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/weixin.png");
+    $(".weixin").addClass("logo_03").removeClass("weixin");
+});
+$(".xlfooter_top_icon li").eq(2).hover(function () {
+    $(".logo_03").removeClass("logo_03").addClass("qq");
+}, function () {
+    $(".qq").addClass("logo_03").removeClass("qq");
 });
 // 右侧悬浮窗
 $(window).scroll(function () {

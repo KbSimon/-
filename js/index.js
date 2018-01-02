@@ -1,3 +1,34 @@
+
+// 标的
+$(".xlmark_li").hover(function(){
+    $(this).css('box-shadow', '0 15px 30px rgba(0,0,0,0.1)').stop().animate({
+        top: -3
+    }, 300);
+},function(){
+    $(this).css('box-shadow', '0 10px 20px #f7f3ec').stop().animate({
+        top: 0
+    }, 300);
+});
+
+// 下载
+$(".iPhone").hover(function(){
+    $(".iPhone_bg").removeClass("iPhone_bg").addClass("iPhone_bg02");
+    $(".downloadApp").removeClass("downloadApp").addClass("downloadApp02");
+},function(){
+    $(".iPhone_bg02").addClass("iPhone_bg").removeClass("iPhone_bg02");
+    $(".downloadApp02").addClass("downloadApp").removeClass("downloadApp02");
+});
+$(".Android").hover(function(){
+    $(".Android_bg").removeClass("Android_bg").addClass("Android_bg02");
+    $(".downloadApp").removeClass("downloadApp").addClass("downloadApp02");
+},function(){
+    $(".Android_bg02").addClass("Android_bg").removeClass("Android_bg02");
+    $(".downloadApp02").addClass("downloadApp").removeClass("downloadApp02");
+});
+
+
+
+
 // 鑫客户专享系列
 $('.novice_series').hover(function () {
     $(".series_mark").attr("src", "https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/series_mark_01.png");
