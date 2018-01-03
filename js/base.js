@@ -1,3 +1,16 @@
+// header悬浮
+$("header").hover(function(){
+    $(".topbar>li>a").css("color","#666");
+    $(".bottombar>li>a").css("color","#333");
+    $(".aborder").addClass("otherborder").removeClass("aborder");
+    $(".xlHead_left").removeClass("xlHead_left").addClass("logo_02");
+},function(){
+    $(".topbar>li>a").css("color","#fff");
+    $(".bottombar>li>a").css("color","#fff");
+    $(".logo_02").addClass("xlHead_left").removeClass("logo_02");
+    $(".otherborder").removeClass("otherborder").addClass("aborder");
+})
+
 // 底部悬浮
 $(".xlfooter_top_icon li").eq(0).hover(function () {
     $(".logo_03").removeClass("logo_03").addClass("download");
@@ -14,6 +27,7 @@ $(".xlfooter_top_icon li").eq(2).hover(function () {
 }, function () {
     $(".qq").addClass("logo_03").removeClass("qq");
 });
+
 // 标的详情
 $(".xllist_item").hover(function(){
     $(this).css('box-shadow', '0 15px 30px rgba(0,0,0,0.1)').stop().animate({

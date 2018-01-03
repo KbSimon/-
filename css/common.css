@@ -8,10 +8,22 @@ header {
     z-index: 1000;
 }
 
+header:hover{
+    background: #fff;
+}
+
+
+
 .xlHead_noActive{
     position:absolute;
     background: transparent;
     border-bottom: 1px solid #fff;
+}
+
+.xlHead_active{
+    position: fixed;
+    background: #fff;
+    border-bottom: 1px solid #e3e3e3;
 }
 
 .xlHead{
@@ -21,12 +33,20 @@ header {
 }
 
 /* 头部左侧 */
+.logo_02,
 .xlHead_left{
     float: left;
     width: 185px;
     height: 100px;
     line-height: 100px;
+}
+
+.xlHead_left{
     background: url("../images/index/logo_01.png") center no-repeat;
+}
+
+.logo_02{
+    background: url("../images/index/logo_02.png") center no-repeat;
 }
 
 .xlHead_left>a{
@@ -62,7 +82,12 @@ header {
 .topbar>li>a{
     color: #fff;
     padding: 0 12px;
+    font-size: 12px;
     display: inline-block;
+}
+
+.topbar>li>a:hover{
+    color: #ff9900 !important;
 }
 
 .topbar>span{
@@ -90,20 +115,22 @@ header {
     text-align: center;   
 }
 
+.aborder{
+    border-bottom: 3px solid #fff;
+}
+
+.otherborder{
+    border-bottom: 3px solid #333;
+}
+
 .bottombar>li>a{
-    border-bottom: 2px solid transparent;
-}
-
-.bottombar>li:first-of-type>a{
-    border-bottom: 2px solid #fff;
-}
-
-.us>li>a,
-.bottombar>li>a,
-.message>li>a{
     color: #fff;
-    padding: 17px 14px;
+    padding: 16.5px 14px;
     display: inline-block;
+}
+
+.bottombar>li>a:hover{
+    font-weight: bold;
 }
 
 /* 信息披露和关于我们 */

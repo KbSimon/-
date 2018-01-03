@@ -38,7 +38,7 @@
                             </li>
                             <span class="">|</span>
                             <li>
-                                <a href="">活动指引</a>
+                                <a href="">活动专区</a>
                             </li>
                             <span class="">|</span>
                             <li>
@@ -53,42 +53,16 @@
                     <div class="xlHead_bottombar">
                         <ul class="bottombar claerfloat">
                             <li>
-                                <a href="">首页</a>
+                                <a href="" class="aborder">首页</a>
                             </li>
                             <li>
                                 <a href="">投资专区</a>
                             </li>
                             <li>
-                                <ul class="message">
-                                    <li>
-                                        <a href="">信息披露</a>
-                                    </li>
-                                    <li>
-                                        <a href="">公司简介</a>
-                                    </li>
-                                    <li>
-                                        <a href="">团队架构</a>
-                                    </li>
-                                    <li>
-                                        <a href="">联系我们</a>
-                                    </li>
-                                </ul>
+                                <a href="">信息披露</a>
                             </li>
                             <li>
-                                <ul class="us">
-                                    <li>
-                                        <a href="">关于我们</a>
-                                    </li>
-                                    <li>
-                                        <a href="">证书执照</a>
-                                    </li>
-                                    <li>
-                                        <a href="">安全保障</a>
-                                    </li>
-                                    <li>
-                                        <a href="">联系我们</a>
-                                    </li>
-                                </ul>
+                                <a href="">关于我们</a>
                             </li>
                         </ul>
                     </div>
@@ -509,13 +483,4 @@
     swiper.el.onmouseout = function () {
         swiper.autoplay.start();
     }
-    console.log($(window).scrollTop());
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 500) {
-
-            $("header").css("position", "fixed");
-        } else if ($(window).scrollTop() < 500) {
-            $("header").css("position", "absolute");
-        }
-    })
 </script>
