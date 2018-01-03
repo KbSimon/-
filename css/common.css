@@ -5,7 +5,13 @@ header {
     height: 100px;
     min-width: 1200px;
     margin: 0 auto;
-    background: #fff;
+    z-index: 1000;
+}
+
+.xlHead_noActive{
+    position:absolute;
+    background: transparent;
+    border-bottom: 1px solid #fff;
 }
 
 .xlHead{
@@ -17,10 +23,10 @@ header {
 /* 头部左侧 */
 .xlHead_left{
     float: left;
-    width: 180px;
+    width: 185px;
     height: 100px;
     line-height: 100px;
-    background: #ff9907 url("../images/index/logo.png") center no-repeat;
+    background: url("../images/index/logo_01.png") center no-repeat;
 }
 
 .xlHead_left>a{
@@ -32,35 +38,71 @@ header {
 /* 头部右侧 */
 .xlHead_right{
     float: right;
-    width: 1020px;
+    width: 1015px;
     height: 100px;
 }
 
-/* 下拉框 */
+/* 导航 */
 .xlHead_topbar{
-    float: left;
-    width: 890px;
-    margin-top: 60px;
+    float: right;
+    height: 40px;
+    width: 1015px; 
 }
 
 .topbar{
-    width: 690px;
-    height: 40px;
-    margin: 0 auto;
+    float: right;
 }
 
 .topbar>li{
     float: left;
-    width: 120px;
-    color: #333;
-    margin: 0 8px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.topbar>li>a{
+    color: #fff;
+    padding: 0 12px;
+    display: inline-block;
+}
+
+.topbar>span{
+    float: left;
+    margin: 9px 0;
+    color: #e3e3e3;
+}
+
+/* 下拉框 */
+.xlHead_bottombar{
+    float: left;
+    width: 890px;
+}
+
+.bottombar{
+    width: 690px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.bottombar>li{
+    float: left;
+    padding: 0 20px;
     font-size: 16px;
-    text-align: center;
+    text-align: center;   
+}
+
+.bottombar>li>a{
+    border-bottom: 2px solid transparent;
+}
+
+.bottombar>li:first-of-type>a{
+    border-bottom: 2px solid #fff;
 }
 
 .us>li>a,
-.topbar>li>a,
+.bottombar>li>a,
 .message>li>a{
+    color: #fff;
+    padding: 17px 14px;
     display: inline-block;
 }
 
@@ -202,45 +244,18 @@ footer{
     background: url("../images/index/icon_08.png") center no-repeat;
 }
 
-
-
-/* .xlfooter_top_icon>li:nth-child(1):hover>.download{
-    display: block;
-}
-
-.xlfooter_top_icon>li:nth-child(2):hover>.weixin{
-    display: block;
-}
-
-.xlfooter_top_icon>li:nth-child(3):hover>.qq{
-    display: block;
-} */
-
 .xlfooter_top_icon>li:last-of-type{
     margin-right: 0;
 }
 
-
-.logo_03{
-    width: 172px;
-    height: 172px;
-    margin: 0 auto;
-    background: url("../images/index/logo_03.png") center no-repeat;
-    /* background-size: 100% 100%; */
-}
-
+/* 四个icon */
 .qq,
 .weixin,
 .download{
-    /* top: -180px;
-    left: -56px; */
     width: 172px;
     height: 172px;
     margin: 0 auto;
-    /* display: none; */
-    /* position: absolute; */
 }
-
 
 .download{
     background: url("../images/index/download_icon.png") center no-repeat;
@@ -254,6 +269,14 @@ footer{
     background: url("../images/index/qq_icon.png") center no-repeat;
 }
 /* icon 结束 */
+
+/* logo */
+.logo_03{
+    width: 172px;
+    height: 172px;
+    margin: 0 auto;
+    background: url("../images/index/logo_03.png") center no-repeat;
+}
 
 /* 客服 */
 .xlfooter_top_service{
@@ -271,7 +294,6 @@ footer{
 
 .xlfooter_top_service>li:last-of-type{
     float: right;
-   
 }
 
 .serviceNumber{
@@ -281,6 +303,19 @@ footer{
 
 .serviceTime{
     font-size: 14px;
+}
+
+/* 活动角标 */
+.xlmark_badge{
+    top: -8px;
+    right: 20px;
+    width: 49px;
+    height: 52px;
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    background: url("../images/index/mark.png") center no-repeat;
 }
 
 /* 底部信息 */
@@ -312,6 +347,64 @@ footer{
 
 .integrity_icon{
     background: url("../images/index/integrity_icon.png") center no-repeat;
+}
+
+
+/* 左侧悬浮窗 */
+.right_nav {
+    right: 12px;
+    top: 50%;
+    z-index: 2;
+    height: 195px;
+    position: fixed;
+    text-align: center;
+}
+
+.right_nav>li {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e4e1d3;
+}
+
+.down_div {
+    top: 0;
+    width: 80px;
+    height: 80px;
+    right: 50px;
+    display: none;
+    background: #fff;
+    position: absolute;
+    border: 1px solid #e4e1d3;
+}
+
+.kefu_num {
+    top: 80px;
+    right: 50px;
+    display: none;
+    width: 130px;
+    height: 50px;
+    line-height: 25px;
+    position: absolute;
+    background: #fff;
+    transition: all 0.2s;
+    border: 1px solid #e4e1d3;
+}
+
+.kefu_num>p {
+    color: #666;
+}
+
+.up {
+    margin-top: 38px;
+}
+
+.right_nav>li:nth-child(2),
+.right_nav>li:nth-child(3) {
+    border-top: 0;
 }
 
 /* 关闭选项 */

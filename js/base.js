@@ -14,6 +14,18 @@ $(".xlfooter_top_icon li").eq(2).hover(function () {
 }, function () {
     $(".qq").addClass("logo_03").removeClass("qq");
 });
+// 标的详情
+$(".xllist_item").hover(function(){
+    $(this).css('box-shadow', '0 15px 30px rgba(0,0,0,0.1)').stop().animate({
+        top: -3
+    }, 300);
+},function(){
+    $(this).css('box-shadow', '0 10px 20px #f7f3ec').stop().animate({
+        top: 0
+    }, 300);
+});
+
+
 // 右侧悬浮窗
 $(window).scroll(function () {
     var i = $(window).scrollTop();

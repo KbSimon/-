@@ -1,6 +1,6 @@
 .swiper-container {
     width: 100%;
-    height: 450px;
+    height: 600px;
     margin: 0 auto;    
     min-width: 1200px;
 }
@@ -29,27 +29,27 @@
 .banner_03,
 .banner_04{
     width: 100%;
-    height: 450px;
+    height: 600px;
     min-width: 1200px;
     display: inline-block;
 }
 
 .banner_01{
-    background: url("../images/banner_01.png") center no-repeat;
+    background: url("../images/index/banner.png") center no-repeat;
     /* background-size: 100% 100%; */
 }
 
 .banner_02{
-    background: url("../images/banner_02.png") center no-repeat;
+    background: url("../images/index/banner.png") center no-repeat;
 }
 
 .banner_03{
-    background: url("../images/banner_03.png") center no-repeat;
+    background: url("../images/index/banner.png") center no-repeat;
     /* background-size: 100% 100%; */
 }
 
 .banner_04{
-    background: url("../images/banner_04.png") center no-repeat;
+    background: url("../images/index/banner.png") center no-repeat;
 }
 
 /* 公告 */
@@ -80,6 +80,7 @@
     padding: 10px 0;
 }
 
+/* 小喇叭 */
 .xlnotice_icon{
     float: left;
     width: 22px;
@@ -120,6 +121,7 @@
     float:right;
 }
 
+/* 公告底部 */
 .xlnotice_bottom_content{
     width: 1200px;
     height: 168px;
@@ -186,30 +188,6 @@
     padding: 24px 35px 24px 24px;
 }
 
-.xlmark_badge{
-    top: -8px;
-    right: 20px;
-    width: 49px;
-    height: 52px;
-    color: #fff;
-    padding: 5px;
-    position: absolute;
-    text-align: center;
-    background: url("../images/index/mark.png") center no-repeat;
-}
-
-.xlmark_more{
-    width: 120px;
-    height: 30px;
-    margin: 0 auto;
-    display: block;
-    margin-top: 40px; 
-    line-height: 30px;
-    text-align: center;
-    border-radius: 30px; 
-    border: 1px solid #e3e3e3;
-}
-
 .xlmark_li:nth-child(3),
 .xlmark_li:nth-child(6){
     margin-right: 0;
@@ -220,6 +198,7 @@
     font-size: 16px;
 }
 
+/* 年化和投资期限 */
 .xlmark_content{
     height: 150px;
     padding-top: 50px;
@@ -275,6 +254,7 @@
     height: 60px;
 }
 
+/* 进度条 */
 .xlmark_progress_bg{
     height: 6px;
     width: 335px;
@@ -305,6 +285,19 @@
 
 .xlmark_endMoney{
     float: right;
+}
+
+/* 查看更多 */
+.xlmark_more{
+    width: 120px;
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px; 
+    line-height: 30px;
+    text-align: center;
+    border-radius: 30px; 
+    border: 1px solid #e3e3e3;
 }
 
 /* 合作伙伴 */

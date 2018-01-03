@@ -18,10 +18,83 @@
 </head>
 
 <body>
-    <header>
-    </header>
+
     <!-- 轮播图 -->
     <div class="swiper-container">
+        <header class="xlHead_noActive">
+            <div class="xlHead clearfloat">
+                <div class="xlHead_left">
+                    <a href="../index.html"></a>
+                </div>
+                <div class="xlHead_right clearfloat">
+                    <div class="xlHead_topbar clearfloat">
+                        <ul class="topbar clearfloat">
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <span class="">|</span>
+                            <li>
+                                <a href="https://www.xinlujinrong.com/sys/newbie">鑫手指引</a>
+                            </li>
+                            <span class="">|</span>
+                            <li>
+                                <a href="">活动指引</a>
+                            </li>
+                            <span class="">|</span>
+                            <li>
+                                <a href="https://www.xinlujinrong.com/sys/help">帮助中心</a>
+                            </li>
+                            <span class="">|</span>
+                            <li>
+                                <a href="">关注微信</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="xlHead_bottombar">
+                        <ul class="bottombar claerfloat">
+                            <li>
+                                <a href="">首页</a>
+                            </li>
+                            <li>
+                                <a href="">投资专区</a>
+                            </li>
+                            <li>
+                                <ul class="message">
+                                    <li>
+                                        <a href="">信息披露</a>
+                                    </li>
+                                    <li>
+                                        <a href="">公司简介</a>
+                                    </li>
+                                    <li>
+                                        <a href="">团队架构</a>
+                                    </li>
+                                    <li>
+                                        <a href="">联系我们</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="us">
+                                    <li>
+                                        <a href="">关于我们</a>
+                                    </li>
+                                    <li>
+                                        <a href="">证书执照</a>
+                                    </li>
+                                    <li>
+                                        <a href="">安全保障</a>
+                                    </li>
+                                    <li>
+                                        <a href="">联系我们</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <a href="" class="banner_01"></a>
@@ -40,6 +113,31 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
+    <!-- 侧边栏 -->
+    <ul class="right_nav">
+        <li>
+            <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/download.png" class="down">
+            <div class="down_div">
+                <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/load_03.png" alt="">
+            </div>
+        </li>
+
+        <li>
+            <a href="counter.html">
+                <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/jisuanqi.png" class="jisuan">
+            </a>
+        </li>
+        <li>
+            <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/kefu.png" class="servive">
+            <div class="kefu_num">
+                <p>客服热线</p>
+                <p>400-087-0808</p>
+            </div>
+        </li>
+        <li class="up">
+            <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/up.png">
+        </li>
+    </ul>
     <!-- 公告 -->
     <div class="xlnotice">
         <div class="xlnotice_top">
@@ -411,4 +509,13 @@
     swiper.el.onmouseout = function () {
         swiper.autoplay.start();
     }
+    console.log($(window).scrollTop());
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 500) {
+
+            $("header").css("position", "fixed");
+        } else if ($(window).scrollTop() < 500) {
+            $("header").css("position", "absolute");
+        }
+    })
 </script>

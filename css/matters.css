@@ -7,142 +7,239 @@
     background: url("../images/matters/banner.png") center no-repeat;
 }
 
-.matters_middle{
+.xlmatters_navbar{
     width: 100%;
-    height: 305px;
-    margin-top: 30px;
+    height: 315px;
+    margin: 0 auto;
+    min-width: 1200px;
+    max-width: 1920px;
     background: #fff;
-    box-shadow: 0 10px 20px #f7f3ec;
 }
 
-.matters_list{
-    color: #666;
-    height: 100%;
-}
-
-.matters_list01,
-.matters_list02{
+.navbar{
     width: 1200px;
     margin: 0 auto;
-    padding-top: 60px;
-}
-
-.matters_list_title{
-    float: left;
-}
-
-.matters_list_ul01>li,
-.matters_list_ul02>li{
-    width: 70px;
-    float: left;
     cursor: pointer;
-    text-align: center;
+    padding: 25px 0 30px 0;
 }
 
-.matters_bottom{
-    color: #666;
-    margin-top: 60px;
-    margin-bottom: 80px;
-}
-
-.matters_bid,
-.matters_bid01{
-    width: 1200px;
+.navbar_div{
+    height: 260px;
     margin: 0 auto;
-    height: 220px;
+    /* border: 1px solid #e3e3e3; */
+}
+
+.navbar_ul{
+    height: 65px;
+    background: #eee;
+    border-top: 1px solid #e3e3e3;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+}
+
+.navbar_ul>li{
+    float: left;
+    width: 239.6px;
+    font-size: 16px;
+    line-height: 62px;
+    text-align: center;
+    border-top: 3px solid transparent;
+}
+
+.day_ul>li,
+.rate_ul>li,
+.deadline_ul>li{
+    float: left;
+    width: 150px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;    
+}
+
+.navbar_content{
+    height: 195px;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.xlmatters_content{
+    width: 1200px;
+    height: 1220px;
+    margin: 0 auto;
+}
+
+.xlmatters_mark{
+    height: 1150px;
+}
+
+/* 标的 */
+.xllist_item{
+    float: left;
+    width: 585px;
+    height: 180px;
+    cursor: pointer;
+    margin-top: 40px;
     background: #fff;
     border-radius: 5px;
-    margin-bottom: 30px;
-    /* border: 1px solid transparent; */
-    box-shadow: 0 10px 20px #f7f3ec;
-}
-
-.mMMM_03_active>a{
-    color: #ffa21a;
-}
-
-.bid_top{
-    height: 80px;
-    line-height: 80px;
+    text-align: center;
     position: relative;
-    border-bottom: 1px solid #e4e4e4;
 }
 
-.bid_top>span:first-child{
-    margin-left: 40px;
-    margin-right: 10px;
+.xlmatters_mark>li:nth-of-type(2n+1){
+    margin-right: 30px;
 }
 
-.bid_mask{
-    width: 50px;
-    height: 24px;
-    line-height: 24px;
-    color: #fff;
-    text-align: center;
-    display: inline-block;
-    background: #ffa21a;
-}
-
-.bid_top>img{
-    top: 0;
-    right: 0;
-    position: absolute;
-}
-
-.bid_bottom{
-    height: 140px;
-}
-
-.bid_ul>li{
-    height: 140px;
-    width: 200px;
+/* 标的左侧 */
+.xllist_item_left{
     float: left;
-    padding-top: 40px;
-    text-align: center;
+    width: 135px;
+    height: 180px;
+    color: #fff;
+    background: #ff9900;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
-.bid_ul>li>p:first-child{
+/* 标的名称 */
+.xllist_item_left_title{
     font-size: 16px;
+    padding: 35px 0 25px 0;
 }
 
-.bid_ul>li>p>span{
-    font-size: 30px;
-    margin-right: 2px;
+.xllist_item_left_text>p{
+    font-size: 40px;
 }
 
-.btn_01,
-.btn_02{
-    width: 130px;
-    height: 45px;
-    color: #fff;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    margin-top: 20px;
-    line-height: 45px;
-    background: #ffa21a;
+.xllist_item_left_text>p>span{
+    font-size: 18px;
+    margin-left: 10px;
 }
 
-.btn_01{
-    background: #ffa21a;
+.xllist_item_left_text>span{
+    font-size: 12px;
 }
 
-.btn_01:hover,
-.btn_02:hover{
-    color: #fff;
+/* 标的右侧 */
+.xllist_item_right{
+    float: right;
+    width: 450px;
+    height: 180px;
 }
 
-.btn_02{
+.xllist_item_right_content{
+    float: left;
+    width: 250px;
+    height: 90px;
+    color: #666;
+    margin: 60px 14px 30px 45px;
+}
+
+/* 周期和剩余可投 */
+.xllist_item_day{
+    float: left;
+    font-size: 34px;
+    line-height: 0.75;
+}
+
+.xllist_item_day>span,
+.xllist_item_money>span{
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.xllist_item_day>span:last-of-type,
+.xllist_item_money>span:last-of-type{
+    font-size: 12px;
+}
+
+.xllist_item_money{
+    float: right;
+    line-height: 0.75;
+    font-size: 34px;
+}
+
+.xllist_item_progress{
+    padding-top: 30px;
+}
+
+/* 进度条 */
+.progress_bg{
+    float: left;
+    height: 6px;
+    width: 160px;
+    margin-top: 5px;
+    border-radius: 6px;
     background: #ccc;
+   
+}
+
+.progress_01,
+.progress_02{
+    float: left;
+    height: 6px;
+    width: 160px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.progress_01{
+    background: url("../images/index/progress_01.png") center repeat-x;
+}
+
+.progress_02{
+    background: url("../images/index/progress_02.png") center repeat-x;
+}
+
+.progress_text{
+    float: right;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+/* 立即投资按钮 */
+.xlinvest{
+    float: right;
+}
+
+/* 售罄 */
+.soldOut_01{
+    color: #ccc
+}
+
+.soldOut_02{
+    background: #ccc !important;
+}
+
+/* .soldOut_02>a{
+    color: #fff ;
+}
+.soldOut_02>a:hover{
+    color: #fff;
+} */
+
+.xlinvest>a{
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    background: #ff9900;
+    display: inline-block;
+    margin: 85px 25px 55px 14px;
+}
+
+.xlinvest>a:hover{
+    color: #fff;
 }
 
 .choose_01{
-    font-weight: bold;
-    color: #ffa21a;
+    color: #ff9900;
+    background: #fff;
+    border-top: 3px solid #ff9900 !important;
 }
 
 .choose_02{
-    border: 1px solid #ffa21a;
+    color: #ff9900;
 }
 
 #laypages,
