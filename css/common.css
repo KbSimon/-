@@ -123,6 +123,10 @@ header:hover{
     border-bottom: 3px solid #333;
 }
 
+.antherborder{
+    border-bottom: 3px solid #ff9900;
+}
+
 .bottombar>li>a{
     color: #fff;
     padding: 16.5px 14px;
@@ -160,7 +164,6 @@ header:hover{
 
 
 /* 底部 */
-
 footer{
     width: 100%;
     height: 350px;
@@ -332,19 +335,6 @@ footer{
     font-size: 14px;
 }
 
-/* 活动角标 */
-.xlmark_badge{
-    top: -8px;
-    right: 20px;
-    width: 49px;
-    height: 52px;
-    color: #fff;
-    padding: 5px;
-    position: absolute;
-    text-align: center;
-    background: url("../images/index/mark.png") center no-repeat;
-}
-
 /* 底部信息 */
 .xlfooter_bottom{
     width: 100%;
@@ -434,11 +424,84 @@ footer{
     border-top: 0;
 }
 
+/* 活动角标 */
+.xlmark_badge{
+    top: -8px;
+    right: 20px;
+    width: 49px;
+    height: 52px;
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    background: url("../images/index/mark.png") center no-repeat;
+}
+
+/* 售卖 */
+.sold{
+    color: #ff9900 !important;
+}
+
+/* 售罄 */
+.soldOut_01{
+    color: #ccc;
+}
+
+.soldOut_02{
+    background: #ccc !important;
+}
+
+/* 进度条 */
+.xlmark_progress_bg,
+.xlsign_progress_bg,
+.xlmatters_progress_bg{
+    float: left;
+    height: 6px;
+    margin-top: 5px;
+    border-radius: 6px;
+    background: #eee;
+}
+
+.xlmark_progress_bg{
+    width: 335px;
+    margin-bottom: 10px;
+}
+
+.xlsign_progress_bg{
+    width: 600px;
+    margin-bottom: 10px;
+}
+
+.xlmatters_progress_bg{
+    width: 160px;
+}
+
+.progress_01,
+.progress_02{
+    float: left;
+    height: 6px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.progress_01{
+    background: url("../images/index/progress_01.png") center repeat-x;
+}
+
+.progress_02{
+    background: url("../images/index/progress_02.png") center repeat-x;
+}
+
+.progress_text{
+    float: right;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
 /* 关闭选项 */
 .close_ul {
     display: none;
 }
-
 
 /* 表单格式 */
 .register_ul01>li,

@@ -255,31 +255,6 @@
     height: 60px;
 }
 
-/* 进度条 */
-.xlmark_progress_bg{
-    height: 6px;
-    width: 335px;
-    margin: 0 auto;
-    border-radius: 6px;
-    background: #eee;
-    margin-bottom: 10px;
-}
-
-.xlmark_progress01,
-.xlmark_progress02{
-    height: 6px;
-    border-radius: 6px;
-    position: relative;
-}
-
-.xlmark_progress01{
-    background: url("../images/index/progress_01.png") center repeat-x;
-}
-
-.xlmark_progress02{
-    background: url("../images/index/progress_02.png") center repeat-x;
-}
-
 .xlmark_startMoney{
     float: left;
 }

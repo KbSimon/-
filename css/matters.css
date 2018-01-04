@@ -103,8 +103,8 @@
 
 /* 标的名称 */
 .xllist_item_left_title{
-    font-size: 16px;
-    padding: 35px 0 25px 0;
+    font-size: 14px;
+    padding: 35px 10px 25px 10px;
 }
 
 .xllist_item_left_text>p{
@@ -113,7 +113,6 @@
 
 .xllist_item_left_text>p>span{
     font-size: 18px;
-    margin-left: 10px;
 }
 
 .xllist_item_left_text>span{
@@ -139,13 +138,12 @@
 .xllist_item_day{
     float: left;
     font-size: 34px;
-    line-height: 0.75;
+    line-height: 1;
 }
 
 .xllist_item_day>span,
 .xllist_item_money>span{
     font-size: 16px;
-    margin-left: 5px;
 }
 
 .xllist_item_day>span:last-of-type,
@@ -155,7 +153,7 @@
 
 .xllist_item_money{
     float: right;
-    line-height: 0.75;
+    line-height: 1;
     font-size: 34px;
 }
 
@@ -163,62 +161,13 @@
     padding-top: 30px;
 }
 
-/* 进度条 */
-.progress_bg{
-    float: left;
-    height: 6px;
-    width: 160px;
-    margin-top: 5px;
-    border-radius: 6px;
-    background: #ccc;
-   
-}
-
-.progress_01,
-.progress_02{
-    float: left;
-    height: 6px;
-    width: 160px;
-    border-radius: 6px;
-    position: relative;
-}
-
-.progress_01{
-    background: url("../images/index/progress_01.png") center repeat-x;
-}
-
-.progress_02{
-    background: url("../images/index/progress_02.png") center repeat-x;
-}
-
-.progress_text{
-    float: right;
-    font-size: 12px;
-    margin-left: 10px;
-}
-
 /* 立即投资按钮 */
 .xlinvest{
     float: right;
 }
 
-/* 售罄 */
-.soldOut_01{
-    color: #ccc
-}
-
-.soldOut_02{
-    background: #ccc !important;
-}
-
-/* .soldOut_02>a{
-    color: #fff ;
-}
-.soldOut_02>a:hover{
-    color: #fff;
-} */
-
-.xlinvest>a{
+.xlinvest>a,
+.xlinvest>input{
     width: 100px;
     height: 40px;
     color: #fff;
@@ -226,6 +175,10 @@
     background: #ff9900;
     display: inline-block;
     margin: 85px 25px 55px 14px;
+}
+
+.soldOut_02{
+    border: none;
 }
 
 .xlinvest>a:hover{
