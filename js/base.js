@@ -46,11 +46,11 @@ $(window).scroll(function () {
     if (i == 0) {
         $(".up").stop().animate({
             opacity: "0"
-        }, 200);;
+        }, 200);
     } else {
         $(".up").stop().animate({
             opacity: "1"
-        }, 200);;
+        }, 200);
     }
 });
 $(".up").click(function () {

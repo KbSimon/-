@@ -1,66 +1,71 @@
 .xlbid_top,
-.xlbid_bottom{
+.xlbid_bottom {
     width: 100%;
     margin: 0 auto;
     min-width: 1200px;
     max-width: 1920px;
 }
 
-.xlbid_top{
+.xlbid_top {
     height: 360px;
     background: #eeeeee;
 }
 
-.xlbid_content{
+.xlbid_content {
     width: 1200px;
     margin: 0 auto;
     padding: 40px 0;
 }
 
-.xlbid_content{
+.xlbid_content {
     height: 360px;
 }
 
-
 .xlsign,
 .xlLogin,
-.xlnoLogin{
+.xlnoLogin {
     height: 280px;
     background: #fff;
     border-radius: 5px;
 }
 
+
 /* 左侧 */
-.xlsign{
+
+.xlsign {
     float: left;
     width: 830px;
     cursor: pointer;
-    margin-right: 20px;    
+    margin-right: 20px;
 }
 
+
 /* 左侧顶部 */
-.xlsign_top{
+
+.xlsign_top {
     height: 55px;
     border-bottom: 1px solid #e3e3e3;
 }
 
-.xlsign_top>p{
+.xlsign_top>p {
     font-size: 16px;
     padding: 20px 35px;
 }
 
-.xlsign_bottom{
+.xlsign_bottom {
     height: 225px;
     padding-left: 35px;
 }
 
+
 /* 左侧中间 */
-.xlsign_middle{
+
+.xlsign_middle {
     height: 140px;
     padding: 45px 0;
 }
 
-.xlsign_middle_ul>li{
+.xlsign_middle_ul>li {
     width: 25%;
     float: left;
     height: 60px;
@@ -68,75 +73,81 @@
     text-align: left;
 }
 
-.xlsign_middle_ul>li>p{
+.xlsign_middle_ul>li>p {
     color: #666;
     font-size: 36px;
 }
 
-.xlsign_middle_ul>li:last-of-type>p{
+.xlsign_middle_ul>li:last-of-type>p {
     font-size: 18px;
     padding-top: 5px;
     line-height: 1.5;
 }
 
-.xlsign_middle_ul>li>p>span:first-of-type{
+.xlsign_middle_ul>li>p>span:first-of-type {
     font-size: 20px;
 }
 
 .xlsign_middle_ul>li:last-of-type>span,
-.xlsign_middle_ul>li>p>span:last-of-type{
+.xlsign_middle_ul>li>p>span:last-of-type {
     color: #999;
     font-size: 14px;
     margin-left: 5px;
 }
 
+
 /* 进度条 */
-.xlsign_progress{
+
+.xlsign_progress {
     height: 85px;
 }
 
 .progress_01,
-.progress_02{
+.progress_02 {
     width: 600px;
 }
 
-.progress_text{
+.progress_text {
     margin-right: 100px;
 }
 
 .xlsign_residue,
-.xlsign_totalMoney{
+.xlsign_totalMoney {
     float: left;
     font-size: 12px;
     margin-right: 30px;
 }
 
+
 /* 未登录状态 */
+
 .xlLogin,
-.xlnoLogin{
+.xlnoLogin {
     width: 350px;
     float: right;
 }
 
-.xlnoLogin{
+.xlnoLogin {
     padding: 65px 35px 60px 35px;
 }
 
-.xlLogin{
+.xlLogin {
     color: #666;
     font-size: 14px;
     padding: 25px 35px 40px 35px;
 }
 
-.xlnoLogin_state{
+.xlnoLogin_state {
     cursor: pointer;
     text-align: center;
 }
 
+
 /* 登录注册按钮 */
+
 .login_btn,
 .invest_btn,
-.register_btn{
+.register_btn {
     height: 50px;
     width: 280px;
     font-size: 16px;
@@ -144,172 +155,248 @@
     display: inline-block
 }
 
-.login_btn{
+.login_btn {
     color: #fff;
     margin-bottom: 15px;
     background: #ff9900;
 }
 
-.login_btn:hover{
+.login_btn:hover {
     color: #fff;
 }
 
-.register_btn{
+.register_btn {
     color: #ff9900;
     background: #fff;
     margin-bottom: 25px;
     border: 1px solid #ff9900;
 }
 
-.register_btn:hover{
+.register_btn:hover {
     color: #ff9900;
 }
 
+
 /* 登录后 */
-.residue_money>span{
+
+.residue_money>span {
     font-size: 24px;
     margin-right: 5px;
 }
 
-.input_money{
+.input_money {
     width: 280px;
     height: 50px;
-    background: #fff;  
+    background: #fff;
     padding-left: 15px;
-    margin: 25px 0 20px 0;  
+    margin: 25px 0 20px 0;
     border: 1px solid #e3e3e3;
 }
 
-.earnings{
+.earnings {
     margin-right: 20px;
 }
 
 .balance,
-.earnings{
+.earnings {
     float: left;
 }
 
-.invest_btn{
+.invest_btn {
     color: #fff;
     margin-top: 35px;
     text-align: center;
     background: #ff9900;
 }
 
-.xlLogin_invest>a:hover{
+.xlLogin_invest>a:hover {
     color: #fff;
 }
 
+
 /* 底部 */
-.xlbid_bottom{
+
+.xlbid_bottom {
     background: #fff;
 }
 
-.xlitem_top{
+.xlitem_top {
     height: 65px;
     border-bottom: 1px solid #e3e3e3;
 }
 
-.xlitem_ul{
-    height: 65px;    
+.xlitem_ul {
+    height: 65px;
     width: 1200px;
     margin: 0 auto;
     cursor: pointer;
     line-height: 65px;
 }
 
-.xlitem_ul>li{
+.xlitem_ul>li {
     float: left;
     width: 200px;
     font-size: 16px;
 }
 
-.xlitem_ul>li>span{
+.xlitem_ul>li>span {
     padding: 22px 0;
 }
 
+
 /* 项目详情和投资记录 */
+
+.xlrecord,
 .xldetails,
-.xlrecord{
+.xlmessage {
     width: 100%;
     margin: 0 auto;
     min-width: 1200px;
     max-width: 1920px;
-    background: #fff;    
+    background: #fff;
 }
 
 .xlrecord_content,
-.xldetails_content{
+.xldetails_content,
+.xlmessage_content {
     color: #666;
     width: 1200px;
     margin: 0 auto;
     background: #fff;
 }
 
+
 /* 项目详情 */
+
 .item_flow,
 .item_safety,
+.history_more,
 .item_explain,
 .item_questions,
-.item_introduce{
+.item_introduce,
+.history_message {
     margin-top: 45px;
 }
 
-.item_title{
+.item_title {
     font-size: 16px;
     margin-bottom: 25px;
 }
 
-.item_text{
+.item_text {
     font-size: 14px;
     line-height: 1.5;
 }
 
-.item_text>li{
+.item_text>li {
     float: left;
     margin-right: 50px;
 }
 
-.item_text>li>span{
+.item_text>li>span {
     color: #333;
 }
 
+
 /* 资金流向 */
-.flow_ul{
-    margin: 50px 0 45px 0;
+
+.flow_ul {
+    padding: 50px 0 45px 0;
 }
 
-.arrows{
-    top: 30%;
+.reality_flow_ul {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.flow_div {
+    left: 20%;
+    opacity: 0;
+    width: 120px;
+    height: 130px;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    background: #ff9900;
+}
+
+.flow_div>p:first-of-type {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.arrows {
+    top: 35%;
     right: 0;
     position: absolute;
 }
 
-.flow_ul>li{
+.flow_ul>li {
     float: left;
     width: 200px;
     position: relative;
     text-align: center;
 }
 
-.flow_ul>li>img{
-    margin-bottom: 20px;
+.flow_ul>li>img {
+    margin-bottom: 5px;
 }
 
+.lookPact {
+    width: 120px;
+    height: 30px;
+    margin: 0 auto;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 40px;
+    border: 1px solid #e3e3e3;
+}
+
+.mask {
+    opacity: 0.8;
+}
+
+.swiper-container {
+    top: 30%;
+    opacity: 1;
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    z-index: 99999;
+}
+
+.swiper-slide {
+    overflow: hidden;
+}
+
+.close{
+    top: 100px;
+    width: 15px;
+    right: 300px;    
+    height: 15px;
+    position: absolute;
+    background: url("../images/item/close.png") center no-repeat;
+}
+
+
 /* 常见问题 */
-.question{
+
+.question {
     margin-top: 30px;
 }
 
-.question>p:first-of-type{
+.question>p:first-of-type {
     float: left;
     background: #eee;
 }
 
+
 /* 安全保障 */
 
-
-.safety_ul>li{
+.safety_ul>li {
     float: left;
     width: 240px;
     height: 85px;
@@ -317,42 +404,95 @@
     margin: 20px 0 60px 0;
 }
 
-.safety_ul>li>img{
+.safety_ul>li>img {
     margin-bottom: 10px;
     vertical-align: middle;
 }
 
+
 /* 投资记录 */
-.xlrecord{
+
+.xlrecord,
+.xlmessage {
     display: none;
     margin-top: 45px;
     padding-bottom: 45px;
 }
 
-.record_ul>li{
+.record_ul>li,
+.message_ul>li {
     width: 1200px;
     height: 65px;
     line-height: 65px;
     text-align: center;
-    
 }
 
-.record_ul>li>div{
+.history_ul>li,
+.record_ul>li>div {
     float: left;
     width: 300px;
-}
-
-.record_ul>li:first-of-type{
-    height: 50px;
-    background: #eee;
-    line-height: 50px;    
-}
-
-#laypages,
-#laypages_02{
     text-align: center;
 }
 
+.record_ul>li:first-of-type {
+    height: 50px;
+    background: #eee;
+    line-height: 50px;
+}
 
 
+/* 借款人信息 */
 
+.message_ul {
+    padding-top: 20px;
+}
+
+.message_ul>li>div {
+    float: left;
+    width: 200px;
+}
+
+.message_ul>li>div:nth-of-type(2n+1) {
+    background: #eee;
+}
+
+.history_content {
+    padding-top: 30px;
+}
+
+.borrowTime,
+.borrowMoney,
+.history_left {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.history_left {
+    border-right: 1px solid #e3e3e3;
+}
+
+.repayMoney,
+.overdueTime,
+.history_right {
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+.borrowTime>p:last-of-type,
+.repayMoney>p:last-of-type,
+.overdueTime>p:last-of-type,
+.borrowMoney>p:last-of-type {
+    font-size: 26px;
+    padding-top: 10px;
+}
+
+.history_ul {
+    padding: 50px 0;
+}
+
+#laypages,
+#laypages_02 {
+    text-align: center;
+}
