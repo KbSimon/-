@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equlv="expires" content="0">
+    <meta http-equlv="Pragma" content="no-cache">
+    <meta http-equlv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="鑫路金融,鑫路金融官网,理财平台,互联网理财平台">
+    <meta name="description" content="鑫路金融是一家专注于短期投资的个人理财平台,精选优质的个人理财产品,优化用户投资体验。">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>车贷</title>
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/base.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/bid.css">
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/plugins/layui/css/layui.css">
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/plugins/swiper/swiper.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/xinlu-icon.ico">
+</head>
+
+<body>
+    <headder></headder>
+    <div class="xlbid_top">
+        <div class="xlbid_content clearfloat">
+            <!-- 左侧标的 -->
+            <div class="xlsign">
+                <div class="xlsign_top">
+                    <p class="title">鑫火001期</p>
+                </div>
+                <div class="xlsign_bottom">
+                    <div class="xlsign_middle">
+                        <ul class="xlsign_middle_ul clearfloat">
+                            <li>
+                                <p class="sold">13
+                                    <span>%</span>
+                                    <br>
+                                    <span>年化率</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>14
+                                    <span>天</span>
+                                    <br>
+                                    <span>投资周期</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>100
+                                    <span>元</span>
+                                    <br>
+                                    <span>起投金额</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>先息后本</p>
+                                <br>
+                                <span>还款方式</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="xlsign_progress clearfloat">
+                        <div style="height:21px;">
+                            <div class="xlsign_progress_bg">
+                                <div class="progress_01" style="width:75%"></div>
+                                <!-- 售罄状态 -->
+                                <!-- <div class="progress_02"></div> -->
+                            </div>
+                            <div class="progress_text">已投：
+                                <span>0.00</span>%
+                            </div>
+                        </div>
+                        <div class="xlsign_totalMoney">融资金额：
+                            <span>100000</span>
+                        </div>
+                        <div class="xlsign_residue">剩余可投：
+                            <span>50000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 未登录状态 -->
+            <div class="xlnoLogin">
+                <div class="xlnoLogin_state">
+                    <a href="跳转到登录" class="login_btn">登录</a>
+                    <a href="跳转到注册" class="register_btn">注册</a>
+                    <p style="color:#999;">登录后查看详情</p>
+                </div>
+            </div>
+            <!-- 登录状态 -->
+            <div class="xlLogin" style="display:none;">
+                <!-- 投资中 -->
+                <div class="residue_money">剩余可投：
+                    <span>120125</span>元</div>
+                <div class="clearfloat">
+                    <input type="text" class="input_money" placeholder="请输入金额">
+                    <div class="earnings">预计收益：
+                        <span class="sold">120</span>
+                    </div>
+                    <div class="balance">可用余额：
+                        <span class="sold">10000000</span>
+                    </div>
+                </div>
+                <div class="xlLogin_invest">
+                    <a href="跳转到投资页" class="invest_btn">立即投资</a>
+                </div>
+                <!-- 已售罄 -->
+                <!-- <div class="residue_money">剩余可投：<span>120125</span>元</div>
+                <div class="clearfloat">
+                    <input type="text" class="input_money" placeholder="请输入金额" disabled="disabled">
+                </div>
+                <div class="xlLogin_invest">
+                    <a href="javascpipt:;" class="invest_btn soldOut_02">已售罄</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="xlbid_bottom">
+        <div class="xlitem_top">
+            <ul class="xlitem_ul clearfloat">
+                <li>
+                    <span class="antherborder">项目详情</span>
+                </li>
+                <li>
+                    <span>借款人信息</span>
+                </li>
+                <li>
+                    <span>投资记录</span>
+                </li>
+            </ul>
+        </div>
+        <div class="xldetails">
+            <!-- 项目详情 -->
+            <div class="xldetails_content">
+                <!-- 项目介绍 -->
+                <div class="item_introduce">
+                    <p class="item_title">项目简介</p>
+                    <p class="item_text">
+                        <span class="title"></span>是鑫路金融推出的车辆抵押贷款，即为个人资金周转借款，借款人以车辆为抵押物。每个借款人经过实体门店风控人员多层严格筛选。通过车辆抵质押保障还款来源，收益中等，稳健可靠。
+                    </p>
+                    <p class="item_text">借款人向平台发起借款申请，平台对其风控审核通过后，即发布标的。投资人通过该标的直接借钱给借款人，并与借款人签署以平台为居间的借贷协议，借款人通过平台向投资人还本付息。</p>
+                    <p class="item_text">
+                        本期借款
+                        <span>1000</span>元，预期年化收益
+                        <span>13</span>%，借款周期
+                        <span>28</span>天。抵押车辆为
+                        <span>皮皮虾</span>，估值
+                        <span>1000</span>元，借款人拥有稳定收入来源，本次借款用途为短期资金周转，项目风险较低。
+                    </p>
+                </div>
+                <!-- 借款人信息 -->
+                <div class="basicPerson_message">
+                    <p class="item_title">基本信息</p>
+                    <ul class="brrow_message">
+                        <li>
+                            <div>姓名</div>
+                            <div>李四</div>
+                            <div>性别</div>
+                            <div>男</div>
+                            <div>年龄</div>
+                            <div>25</div>
+                            <div>户籍</div>
+                            <div>杭州</div>
+                            <div>学历</div>
+                            <div>专科</div>
+                        </li>
+                        <li>
+                            <div>婚姻</div>
+                            <div>已婚</div>
+                            <div>子女</div>
+                            <div>有</div>
+                            <div>房产</div>
+                            <div>无</div>
+                            <div>车产</div>
+                            <div>有</div>
+                            <div>还款来源</div>
+                            <div>营业收入</div>
+                        </li>
+                        <li>
+                            <div>累计借款</div>
+                            <div>5次</div>
+                            <div>还款逾期</div>
+                            <div>0次</div>
+                            <div>共借款</div>
+                            <div>10000</div>
+                            <div>待还款</div>
+                            <div>5000</div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 车辆信息 -->
+                <div class="carMessage">
+                    <p class="item_title">车辆信息</p>
+                    <ul class="carMessage_ul">
+                        <li>
+                            <div>品牌/型号</div>
+                            <div>丰田/凯美奇</div>
+                            <div>购车时间</div>
+                            <div>2010-10-12</div>
+                            <div>行驶里程（km）</div>
+                            <div>100000</div>
+                        </li>
+                        <li>
+                            <div>车牌号</div>
+                            <div>鄂****P0</div>
+                            <div>评估价值</div>
+                            <div>150000元</div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 资产流向 -->
+                <div class="item_flow">
+                    <p class="item_title">业务流程</p>
+                    <div class="item_text">
+                        <ul class="flow_ul car_ul clearfloat">
+                            <li>
+                                <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/arrows.png" class="arrows">
+                                <img src="https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/car_01.png">
+                                <br>
+                                <span>车辆抵押</span>
+                            </li>
+                            <li>
+                                <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/arrows.png" class="arrows">
+                                <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/car_02.png">
+                                <br>
+                                <span>GPS实时监控</span>
+                            </li>
+                            <li>
+                                <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/arrows.png" class="arrows">
+                                <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/car_03.png">
+                                <br>
+                                <span>发布标的</span>
+                            </li>
+                            <li>
+                                <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/arrows.png" class="arrows">
+                                <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/car_04.png">
+                                <br>
+                                <span>投资</span>
+                            </li>
+                            <li>
+                                <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/arrows.png" class="arrows">
+                                <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/car_05.png">
+                                <br>
+                                <span>满标复审</span>
+                            </li>
+                            <li>
+                                <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/car_06.png">
+                                <br>
+                                <span>放款</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 常见问题 -->
+                <div class="item_questions" style="padding-bottom:45px;">
+                    <p class="item_title">常见问题</p>
+                    <div class="item_text">
+                        <div class="question clearfloat">
+                            <p>Q：提现多久能到账？</p>
+                            <br>
+                            <p>A：正常情况下T+0工作日到账，遇双休日、法定节假日则顺延，实际到账时间依据提现银行而有所差异。</p>
+                        </div>
+                        <div class="question clearfloat">
+                            <p>Q：如何进行项目筛选和风险控制的？</p>
+                            <br>
+                            <p>A：首先对借款人的征信、资质、抵质押物、资金流水、还款方式、风险指标等进行严格的审查，确保借款人提供数据的真实性。车辆登记并安装GPS追踪器，由风控部门全程监控，确保投资人资金安全。借款人借款成功后，风控部门实时关注借款人资产动态，确保其能按时还款。</p>
+                        </div>
+                        <div class="question clearfloat">
+                            <p>Q：项目的募集期是多久，募集期间有利息么？</p>
+                            <br>
+                            <p>A：项目最长募集期通常是3天，满标后开始计息，所以募集期是没有利息的。</p>
+                        </div>
+                        <div class="question clearfloat">
+                            <p>Q：平台上的合同、协议和条款这些都有法律效力吗？</p>
+                            <br>
+                            <p>A:根据《合同法》第11条规定，当事人可以采用合同书、信件和数据电文等形式订立合同。电子合同是法律认可的书面合同形式之一。所以平台上的电子合同（借款合同、协议和法律条款等）均具有法律效力，接受司法认可和保护。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 项目材料 -->
+            <div class="xlmessage">
+                <div class="xlmessage_content">
+                    <ul class="materials_ul">
+                        <li>
+                            <div>审核资料</div>
+                            <div>审核情况</div>
+                            <div>查看照片</div>
+                        </li>
+                        <li>
+                            <div>身份证</div>
+                            <div>通过</div>
+                            <div>
+                                <a href="javascript:;">查看</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>驾驶证</div>
+                            <div>通过</div>
+                            <div>
+                                <a href="javascript:;">查看</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>结婚证</div>
+                            <div>通过</div>
+                            <div>
+                                <a href="javascript:;">查看</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>收入证明</div>
+                            <div>通过</div>
+                            <div>
+                                <a href="javascript:;">查看</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>人车合照</div>
+                            <div>通过</div>
+                            <div>
+                                <a href="javascript:;">查看</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>行驶公里</div>
+                            <div>通过</div>
+                            <div>
+                                <a href="javascript:;">查看</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>车辆驾驶证</div>
+                            <div>通过</div>
+                            <div>
+                                <a href="javascript:;">查看</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>保险保单</div>
+                            <div>通过</div>
+                            <div>
+                                <a href="javascript:;">查看</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>借款合同</div>
+                            <div>通过</div>
+                            <div>
+                                <a href="javascript:;">查看</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>借款申请表</div>
+                            <div>通过</div>
+                            <div>
+                                <a href="javascript:;">查看</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>车辆评估表</div>
+                            <div>通过</div>
+                            <div>
+                                <a href="javascript:;">查看</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 投资记录 -->
+            <div class="xlrecord">
+                <div class="xlrecord_content">
+                    <ul class="record_ul clearfloat">
+                        <li>
+                            <div>用户名</div>
+                            <div>投资金额</div>
+                            <div>投资方式</div>
+                            <div>投标时间</div>
+                        </li>
+                        <li>
+                            <div>胖虎</div>
+                            <div>1000元</div>
+                            <div>iOS</div>
+                            <div>2018-01-02 10:49:45</div>
+                        </li>
+                        <li>
+                            <div>小夫</div>
+                            <div>100000元</div>
+                            <div>Android</div>
+                            <div>2018-01-01 12:29:45</div>
+                        </li>
+                        <li>
+                            <div>大雄</div>
+                            <div>10000元</div>
+                            <div>iOS</div>
+                            <div>2017-12-31 15:09:24</div>
+                        </li>
+                        <li>
+                            <div>静香</div>
+                            <div>50000元</div>
+                            <div>Android</div>
+                            <div>2017-12-30 19:09:47</div>
+                        </li>
+                        <li>
+                            <div>哆啦A梦</div>
+                            <div>50000元</div>
+                            <div>Android</div>
+                            <div>2017-12-30 19:09:47</div>
+                        </li>
+                        <li>
+                            <div>傻虎</div>
+                            <div>50000元</div>
+                            <div>PC</div>
+                            <div>2017-12-30 19:09:47</div>
+                        </li>
+                        <li>
+                            <div>傻虎</div>
+                            <div>50000元</div>
+                            <div>Android</div>
+                            <div>2017-12-30 19:09:47</div>
+                        </li>
+                        <li>
+                            <div>傻虎</div>
+                            <div>50000元</div>
+                            <div>Android</div>
+                            <div>2017-12-30 19:09:47</div>
+                        </li>
+                        <li>
+                            <div>傻虎</div>
+                            <div>50000元</div>
+                            <div>Android</div>
+                            <div>2017-12-30 19:09:47</div>
+                        </li>
+                        <li>
+                            <div>傻虎</div>
+                            <div>50000元</div>
+                            <div>Android</div>
+                            <div>2017-12-30 19:09:47</div>
+                        </li>
+                    </ul>
+                    <div id="laypages_03"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <fotter></fotter>
+</body>
+
+</html>
+<script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/jquery.min.js"></script>
+<script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/plugins/layui/layui.js"></script>
+<script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/common.js"></script>
+<script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/plugins/swiper/swiper.min.js"></script>
+<script src="../../js/base.js"></script>
+<script>
+    var title = "胖虎001-皮皮虾";
+
+    $(".title").text(title)
+
+    // 切换项目详情和投资列表
+    $(".xlitem_ul>li>span").click(function () {
+        $(".xldetails>div").eq($(this).parent("li").index()).show().siblings("div").hide()
+        $(this).addClass("antherborder").parent().siblings().find("span").removeClass("antherborder");
+    })
+
+    // 分页
+    layui.use(['laypage', 'layer'], function () {
+        var laypage = layui.laypage,
+            layer = layui.layer;
+        laypage.render({
+            elem: 'laypages_03',
+            count: 100,
+            theme: "#ffa21a",
+        });
+    });
+</script>

@@ -269,6 +269,7 @@
 /* 项目详情 */
 
 .item_flow,
+.carMessage,
 .item_safety,
 .history_more,
 .item_explain,
@@ -420,9 +421,12 @@
 }
 
 .record_ul>li,
-.message_ul>li {
+.message_ul>li,
+.materials_ul>li,
+.carMessage_ul>li,
+.brrow_message>li{
     width: 1200px;
-    height: 65px;
+    overflow: hidden;
     line-height: 65px;
     text-align: center;
 }
@@ -434,7 +438,14 @@
     text-align: center;
 }
 
-.record_ul>li:first-of-type {
+.materials_ul>li>div{
+    float: left;
+    width: 400px;
+    text-align: center;
+}
+
+.record_ul>li:first-of-type,
+.materials_ul>li:first-of-type{
     height: 50px;
     background: #eee;
     line-height: 50px;
@@ -447,12 +458,15 @@
     padding-top: 20px;
 }
 
-.message_ul>li>div {
+.message_ul>li>div,
+.carMessage_ul>li>div{
     float: left;
     width: 200px;
 }
 
-.message_ul>li>div:nth-of-type(2n+1) {
+.message_ul>li>div:nth-of-type(2n+1),
+.carMessage_ul>li>div:nth-of-type(2n+1),
+.brrow_message>li>div:nth-of-type(2n+1) {
     background: #eee;
 }
 
@@ -492,7 +506,29 @@
     padding: 50px 0;
 }
 
+/* 借款人信息 */
+.basicPerson_message{
+    margin-top: 45px;
+}
+
+.brrow_message>li>div{
+    float: left;
+    width: 120px;
+    text-align: center;
+}
+
+/* 车贷 */
+.car_ul{
+    padding: 0;
+}
+
+.materials_ul>li>div>a,
+.materials_ul>li>div>a:hover{
+    color: #ff9900;
+}
+
 #laypages,
-#laypages_02 {
+#laypages_02,
+#laypages_03 {
     text-align: center;
 }
