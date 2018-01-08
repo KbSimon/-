@@ -12,7 +12,7 @@
     <title>鑫路金融 银行资金存管 值得信赖的短期理财平台</title>
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/base.css">
     <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/index_02.css">
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/index_02.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/plugins/swiper/swiper.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/xinlu-icon.ico">
 </head>
@@ -21,6 +21,7 @@
 
     <!-- 轮播图 -->
     <div class="swiper-container">
+        <!-- header -->
         <header class="xlHead_noActive">
             <div class="xlHead clearfloat">
                 <div class="xlHead_left">
@@ -29,46 +30,83 @@
                 <div class="xlHead_right clearfloat">
                     <div class="xlHead_topbar clearfloat">
                         <ul class="topbar clearfloat">
-                            <li>
-                                <a href=""></a>
+                            <li id="xlWelcome" style="display:none">
+                                欢迎用户
+                                <a href="个人中心">183****5873</a>
+                                <a href="">安全退出</a>
                             </li>
-                            <span class="">|</span>
+                            <li id="xlLogin">
+                                <a href="登录">登录</a>
+                                <span>-</span>
+                                <a href="注册">注册</a>
+                            </li>
+                            <span>|</span>
                             <li>
                                 <a href="https://www.xinlujinrong.com/sys/newbie">鑫手指引</a>
                             </li>
-                            <span class="">|</span>
+                            <span>|</span>
                             <li>
-                                <a href="">活动专区</a>
+                                <a href="javascript:;">活动专区</a>
                             </li>
-                            <span class="">|</span>
+                            <span>|</span>
                             <li>
                                 <a href="https://www.xinlujinrong.com/sys/help">帮助中心</a>
                             </li>
-                            <span class="">|</span>
-                            <li>
-                                <a href="">关注微信</a>
+                            <span>|</span>
+                            <li class="xlPay_weixin">
+                                <a href="javascript:;">关注微信</a>
+                                <div class="weixin_div">
+                                </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="xlHead_bottombar">
+                    <div class="xlHead_bottombar clearflot">
                         <ul class="bottombar claerfloat">
                             <li>
-                                <a href="" class="aborder">首页</a>
+                                <a href="首页" class="aborder">首页</a>
                             </li>
                             <li>
-                                <a href="">投资专区</a>
+                                <a href="投资专区">投资专区</a>
                             </li>
-                            <li>
-                                <a href="">信息披露</a>
+                            <li class="xlMessage_li">
+                                <a href="javascript:;">信息披露</a>
                             </li>
-                            <li>
-                                <a href="">关于我们</a>
+                            <li class="xlUs_li">
+                                <a href="javascript:;">关于鑫路</a>
                             </li>
                         </ul>
+                        <div class="xlUser clearfloat">
+                            <div class="xlUser_bg01"></div>
+                            <a href="个人中心">我的账户</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="xlMessage">
+                <ul class="xlMessage_ul">
+                    <li>
+                        <a href="">公司简介</a>
+                    </li>
+                    <li>
+                        <a href="">团队架构</a>
+                    </li>
+                    <li>
+                        <a href="">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="xlUs">
+                <ul class="xlUs_ul">
+                    <li>
+                        <a href="">证书执照</a>
+                    </li>
+                    <li>
+                        <a href="">安全保障</a>
+                    </li>
+                </ul>
+            </div>
         </header>
+        <!-- banner -->
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <a href="" class="banner_01"></a>
@@ -82,6 +120,38 @@
             <div class="swiper-slide">
                 <a href="" class="banner_04"></a>
             </div>
+        </div>
+        <div class="xlFeature">
+            <ul class="xlFeature_ul clearfloat">
+                <li>
+                    <div class="featureUl_left"></div>
+                    <div class="featureUl_right">
+                        <p>直融模式</p>
+                        <p>投资去向更一目了然</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="featureUl_left"></div>
+                    <div class="featureUl_right">
+                        <p>鑫手指南</p>
+                        <p>定制化手绘理财蓝图</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="featureUl_left"></div>
+                    <div class="featureUl_right">
+                        <p>人人筑梦</p>
+                        <p>开启新财富自由之路</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="featureUl_left"></div>
+                    <div class="featureUl_right">
+                        <p>一键投资</p>
+                        <p>智能理财一站式服务</p>
+                    </div>
+                </li>
+            </ul>
         </div>
         <!-- Add Arrows -->
         <div class="swiper-button-next"></div>
@@ -459,7 +529,7 @@
         </div>
     </div>
 </body>
-     
+
 </html>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/jquery.min.js"></script>
 <!-- <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/common.js"></script> -->

@@ -1,15 +1,19 @@
-// header悬浮
-$("header").hover(function(){
-    $(".topbar>li>a").css("color","#666");
-    $(".bottombar>li>a").css("color","#333");
-    $(".aborder").addClass("otherborder").removeClass("aborder");
-    $(".xlHead_left").removeClass("xlHead_left").addClass("logo_02");
+
+// 信息披露
+$(".xlMessage_li").hover(function(){
+    $(".xlMessage").slideDown(300);
 },function(){
-    $(".topbar>li>a").css("color","#fff");
-    $(".bottombar>li>a").css("color","#fff");
-    $(".logo_02").addClass("xlHead_left").removeClass("logo_02");
-    $(".otherborder").removeClass("otherborder").addClass("aborder");
-})
+    $(".xlMessage").slideUp(300);
+});
+
+// 关于鑫路
+$(".xlUs_li").hover(function(){
+    $(".xlUs").slideDown(300);
+},function(){
+    $(".xlUs").slideUp(300);
+});
+
+
 
 // 底部悬浮
 $(".xlfooter_top_icon li").eq(0).hover(function () {

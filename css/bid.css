@@ -69,30 +69,33 @@
     width: 25%;
     float: left;
     height: 60px;
-    line-height: 0.75;
     text-align: left;
 }
 
-.xlsign_middle_ul>li>p {
+.xlsign_middle_ul>li>p:first-of-type {
     color: #666;
     font-size: 36px;
 }
 
-.xlsign_middle_ul>li:last-of-type>p {
+.xlsign_middle_ul>li>p:last-of-type{
+    color: #999;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.xlsign_middle_ul>li:last-of-type>p:first-of-type {
     font-size: 18px;
-    padding-top: 5px;
+    padding-top: 10px;
     line-height: 1.5;
 }
 
-.xlsign_middle_ul>li>p>span:first-of-type {
-    font-size: 20px;
+.xlsign_middle_ul>li>p>span:last-of-type,
+.xlsign_middle_ul>li:last-of-type>p:last-of-type {
+    font-size: 14px;
 }
 
-.xlsign_middle_ul>li:last-of-type>span,
-.xlsign_middle_ul>li>p>span:last-of-type {
-    color: #999;
-    font-size: 14px;
-    margin-left: 5px;
+.xlsign_middle_ul>li:last-of-type>p:last-of-type{
+    padding-top: 5px;
 }
 
 
@@ -358,6 +361,14 @@
 
 .mask {
     opacity: 0.8;
+}
+
+.swiper-container{
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: fixed;
+    display: none;
 }
 
 .swiper-container {

@@ -26,6 +26,10 @@ header:hover{
     border-bottom: 1px solid #e3e3e3;
 }
 
+.border_01{
+    border-bottom: 1px solid #e3e3e3 !important;
+}
+
 .xlHead{
     width: 1200px;
     height: 100px;
@@ -76,13 +80,25 @@ header:hover{
 .topbar>li{
     float: left;
     height: 40px;
+    color: #fff;
+    font-size: 12px;
     line-height: 40px;
+}
+
+#xlLogin>a,
+#xlWelcome>a{
+    padding: 0;
+}
+
+#xlLogin,
+#xlWelcome{
+    padding: 0 12px;
 }
 
 .topbar>li>a{
     color: #fff;
     padding: 0 12px;
-    font-size: 12px;
+   
     display: inline-block;
 }
 
@@ -96,16 +112,72 @@ header:hover{
     color: #e3e3e3;
 }
 
+/* 关注微信 */
+.xlPay_weixin{
+    position: relative;
+}
+
+.topbar>li:last-of-type>a{
+    padding-right: 0;
+}
+
+.xlPay_weixin:hover>.weixin_div{
+    display: block;
+}
+
+.weixin_div{
+    left: -100px;
+    width: 160px;
+    height: 160px;
+    display: none;
+    position: absolute;
+    border: 1px solid #e3e3e3;
+    background: #fff url("../images/index/pay_weixin.png") center no-repeat;
+}
+
+/* 信息披露 */
+.xlUs,
+.xlMessage{
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: none;
+    min-width: 1200px;
+    max-width: 1920px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1); 
+}
+
+
+.xlUs_ul,
+.xlMessage_ul{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.xlUs_ul>li,
+.xlMessage_ul>li{
+    width: 195px;
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    text-align: center;
+
+}
+
 /* 下拉框 */
 .xlHead_bottombar{
     float: left;
-    width: 890px;
+    width: 1015px;
 }
 
 .bottombar{
+    float: left;
     width: 690px;
     height: 60px;
-    margin: 0 auto;
+    margin-left: 162.5px;
 }
 
 .bottombar>li{
@@ -129,12 +201,42 @@ header:hover{
 
 .bottombar>li>a{
     color: #fff;
-    padding: 16.5px 14px;
+    padding: 16.5px 17px;
     display: inline-block;
 }
 
 .bottombar>li>a:hover{
     font-weight: bold;
+}
+
+/* 我的账户 */
+.xlUser{
+    float: right;
+    height: 60px;
+    width: 162.5px;
+    line-height: 60px;
+    text-align: right;
+}
+
+.xlUser>a{
+    color: #fff;
+}
+
+.xlUser_bg01,
+.xlUser_bg02{
+    float: left;
+    width: 32px;
+    height: 55px;
+    margin-left: 64.5px;
+    padding: 0 10px 5px 0;
+}
+
+.xlUser_bg01{
+    background: url("../images/index/user_01.png") center no-repeat;
+}
+
+.xlUser_bg02{
+    background: url("../images/index/user_02.png") center no-repeat;
 }
 
 /* 信息披露和关于我们 */
@@ -784,8 +886,7 @@ input[type="checkbox"] {
 .mask,
 .login_mask,
 .unlogin_mask,
-.approve_mask,
-.swiper-container{
+.approve_mask{
     top: 0px;
     left: 0px;
     right: 0px;

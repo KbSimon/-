@@ -1,0 +1,14 @@
+.xlUser>a,
+#xlLogin,
+.topbar>li>a {
+    color: #666;
+}
+
+.bottombar>li>a{
+    color: #333;
+}
+
+.xlHead_active{
+    position: static;
+}
+
