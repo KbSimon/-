@@ -1,19 +1,22 @@
 
 // 信息披露
-$(".xlMessage_li").hover(function(){
+$(".xlMessage_li").mouseenter(function(){
+    $(".xlUs").hide();
     $(".xlMessage").slideDown(300);
-},function(){
-    $(".xlMessage").slideUp(300);
 });
+$(".xlMessage").mouseleave(function(){
+    $(this).slideUp(300);
+})
 
 // 关于鑫路
-$(".xlUs_li").hover(function(){
+$(".xlUs_li").mouseenter(function(){
+    $(".xlMessage").hide();
     $(".xlUs").slideDown(300);
-},function(){
-    $(".xlUs").slideUp(300);
 });
 
-
+$(".xlUs").mouseleave(function(){
+    $(this).slideUp(300);
+})
 
 // 底部悬浮
 $(".xlfooter_top_icon li").eq(0).hover(function () {
@@ -42,7 +45,6 @@ $(".xllist_item").hover(function(){
         top: 0
     }, 300);
 });
-
 
 // 右侧悬浮窗
 $(window).scroll(function () {

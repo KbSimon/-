@@ -525,7 +525,12 @@
 .brrow_message>li>div{
     float: left;
     width: 120px;
+    height: 65px;
+    padding: 0 10px;
+    overflow: hidden;
     text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 /* 车贷 */
