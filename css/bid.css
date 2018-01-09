@@ -251,7 +251,7 @@
 
 .xlrecord,
 .xldetails,
-.xlmessage {
+.xlmaterials {
     width: 100%;
     margin: 0 auto;
     min-width: 1200px;
@@ -261,7 +261,7 @@
 
 .xlrecord_content,
 .xldetails_content,
-.xlmessage_content {
+.xlmaterials_content {
     color: #666;
     width: 1200px;
     margin: 0 auto;
@@ -425,7 +425,7 @@
 /* 投资记录 */
 
 .xlrecord,
-.xlmessage {
+.xlmaterials {
     display: none;
     margin-top: 45px;
     padding-bottom: 45px;
