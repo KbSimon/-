@@ -371,7 +371,7 @@
                             <div>身份证</div>
                             <div>通过</div>
                             <div>
-                                <a href="javascript:;">查看</a>
+                                <a>查看</a>
                             </div>
                         </li>
                         <li>
@@ -445,6 +445,33 @@
                             </div>
                         </li>
                     </ul>
+                    <div class="mask" >
+                            <div class="close"></div>
+                            <div class="swiper-container" style="display:block">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="swiper-zoom-container">
+                                            <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/img_01.png">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-zoom-container">
+                                            <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/img_02.png">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-zoom-container">
+                                            <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/img_03.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination swiper-pagination-white"></div>
+                                <!-- Add Navigation -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
                 </div>
             </div>
             <!-- 投资记录 -->
@@ -528,7 +555,6 @@
 
 </html>
 
-
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/jquery.min.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/plugins/layui/layui.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/common.js"></script>
@@ -556,4 +582,25 @@
             theme: "#ffa21a",
         });
     });
+
+
+    var swiper = new Swiper('.swiper-container', {
+        zoom: true,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    // 查看借款协议
+    $(".materials_ul a").click(function () {
+        // alert(1)
+        $(".mask").show();
+    })
+    $(".close").click(function () {
+        $(".mask").hide();
+    })
 </script>
