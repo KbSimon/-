@@ -13,10 +13,20 @@ $(".xlUs_li").mouseenter(function(){
     $(".xlMessage").hide();
     $(".xlUs").slideDown(300);
 });
-
 $(".xlUs").mouseleave(function(){
     $(this).slideUp(300);
 })
+
+$(".bottombar>li").eq(0).hover(function(){
+    $(".xlUs").hide();
+    $(".xlMessage").hide();
+})
+
+$(".bottombar>li").eq(1).hover(function(){
+    $(".xlUs").hide();
+    $(".xlMessage").slideUp(300);;
+})
+
 
 // 底部悬浮
 $(".xlfooter_top_icon li").eq(0).hover(function () {
