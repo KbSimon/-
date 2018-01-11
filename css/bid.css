@@ -442,11 +442,16 @@
     text-align: center;
 }
 
-.history_ul>li,
 .record_ul>li>div {
     float: left;
     width: 300px;
     text-align: center;
+}
+
+.history_ul>li{
+    width: 171px;
+    text-align: center;
+    display: inline-block;
 }
 
 .materials_ul>li>div{
@@ -514,6 +519,7 @@
 }
 
 .history_ul {
+    text-align: center;
     padding: 50px 0;
 }
 
@@ -524,7 +530,7 @@
 
 .brrow_message>li>div{
     float: left;
-    width: 120px;
+    width: 150px;
     height: 65px;
     padding: 0 10px;
     overflow: hidden;
