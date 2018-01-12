@@ -610,6 +610,8 @@
 .media_content_img,
 .company_content_img{
     float: left;
+    width: 110px;
+    height: 100px;
     margin-right: 20px;
 }
 
