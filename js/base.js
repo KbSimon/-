@@ -2,19 +2,19 @@
 // 信息披露
 $(".xlMessage_li").mouseenter(function(){
     $(".xlUs").hide();
-    $(".xlMessage").slideDown(300);
+    $(".xlMessage").slideDown(100);
 });
 $(".xlMessage").mouseleave(function(){
-    $(this).slideUp(300);
+    $(this).slideUp(100);
 })
 
 // 关于鑫路
 $(".xlUs_li").mouseenter(function(){
     $(".xlMessage").hide();
-    $(".xlUs").slideDown(300);
+    $(".xlUs").slideDown(100);
 });
 $(".xlUs").mouseleave(function(){
-    $(this).slideUp(300);
+    $(this).slideUp(100);
 })
 
 $(".bottombar>li").eq(0).hover(function(){
@@ -24,7 +24,7 @@ $(".bottombar>li").eq(0).hover(function(){
 
 $(".bottombar>li").eq(1).hover(function(){
     $(".xlUs").hide();
-    $(".xlMessage").slideUp(300);;
+    $(".xlMessage").slideUp(100);;
 })
 
 

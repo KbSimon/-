@@ -69,7 +69,7 @@ $(window).scroll(function () {
             $(".aborder").addClass("otherborder").removeClass("aborder");
             $(".xlHead_left").removeClass("xlHead_left").addClass("logo_02");
             $(".xlUser_bg01").addClass("xlUser_bg02").removeClass("xlUser_bg01");
-        }, function () {
+        }, function () {// alert(1)
             $(this).removeClass("border_01");
             $(".xlUser>a").css("color", "#fff");
             $(".topbar>li").css("color", "#fff");
