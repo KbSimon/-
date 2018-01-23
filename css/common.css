@@ -165,7 +165,6 @@ header:hover{
     line-height: 60px;
     display: inline-block;
     text-align: center;
-
 }
 
 /* 下拉框 */
@@ -893,7 +892,7 @@ input[type="checkbox"] {
     right: 0px;
     bottom: 0px;
     position: fixed;
-    display: none;
+    /* display: none; */
 }
 
 

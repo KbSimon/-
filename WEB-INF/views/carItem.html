@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/base.css">
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/head.css">
-    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/bid.css">
+    <link rel="stylesheet" href="../../css/bid.css">
+    <!-- <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/bid.css"> -->
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/plugins/layui/css/layui.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/plugins/swiper/swiper.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/xinlu-icon.ico">
@@ -274,8 +275,8 @@
                         </li>
                     </ul>
                 </div>
-                 <!-- 历史借款信息 -->
-                 <div class="history_message">
+                <!-- 历史借款信息 -->
+                <div class="history_message">
                     <p class="item_title">历史借款信息</p>
                     <div class="history_content clearfloat">
                         <div class="history_left clearfloat">
@@ -371,7 +372,7 @@
                 </div>
             </div>
             <!-- 项目材料 -->
-            <div class="xlmaterials">
+            <div class="xlmaterials" >
                 <div class="xlmaterials_content">
                     <ul class="materials_ul">
                         <li>
@@ -457,33 +458,33 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="mask" >
-                            <div class="close"></div>
-                            <div class="swiper-container" style="display:block">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="swiper-zoom-container">
-                                            <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/img_01.png">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper-zoom-container">
-                                            <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/img_02.png">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="swiper-zoom-container">
-                                            <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/img_03.png">
-                                        </div>
+                    <div class="dialog">
+                        <div class="close"></div>
+                        <div class="swiper-container" style="display:block">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-zoom-container">
+                                        <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/img_01.png">
                                     </div>
                                 </div>
-                                <!-- Add Pagination -->
-                                <div class="swiper-pagination swiper-pagination-white"></div>
-                                <!-- Add Navigation -->
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-zoom-container">
+                                        <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/img_02.png">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-zoom-container">
+                                        <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/img_03.png">
+                                    </div>
+                                </div>
                             </div>
+                            <!-- Add Pagination -->
+                            <!-- <div class="swiper-pagination swiper-pagination-white"></div> -->
+                            <!-- Add Navigation -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
+                    </div>
                 </div>
             </div>
             <!-- 投资记录 -->
@@ -578,14 +579,19 @@
 
     $(".title").text(title)
 
+    window.onload = function(){ 
+        $(".xlmaterials").addClass("close_ul");
+        $(".xlrecord").addClass("close_ul");
+    }
+
     // 切换项目详情和投资列表
-    $(".xlitem_ul>li>span").click(function () {
-        $(".xldetails>div").eq($(this).parent("li").index()).show().siblings("div").hide()
+    $(".xlitem_ul>li>span").click(function() {
+        $(".xldetails>div").eq($(this).parent("li").index()).css({"opacity":"1","display":"block"}).siblings("div").css({"opacity":"1","display":"none"});
         $(this).addClass("antherborder").parent().siblings().find("span").removeClass("antherborder");
     })
 
     // 分页
-    layui.use(['laypage', 'layer'], function () {
+    layui.use(['laypage', 'layer'], function() {
         var laypage = layui.laypage,
             layer = layui.layer;
         laypage.render({
@@ -608,11 +614,18 @@
     });
 
     // 查看借款协议
-    $(".materials_ul a").click(function () {
-        // alert(1)
-        $(".mask").show();
+
+    $(".lookPact").click(function() {
+        $(".dialog").addClass("color");
     })
-    $(".close").click(function () {
-        $(".mask").hide();
+    $(".close").click(function() {
+        $(".dialog").removeClass("color");
+    })
+    $(".materials_ul>li>div>a").click(function() {
+        // alert(1)
+        $(".dialog").addClass("color");
+    })
+    $(".close").click(function() {
+        $(".dialog").removeClass("color");
     })
 </script>

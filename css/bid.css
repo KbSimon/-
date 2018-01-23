@@ -77,7 +77,7 @@
     font-size: 36px;
 }
 
-.xlsign_middle_ul>li>p:last-of-type{
+.xlsign_middle_ul>li>p:last-of-type {
     color: #999;
     font-size: 14px;
     padding-left: 10px;
@@ -94,7 +94,7 @@
     font-size: 14px;
 }
 
-.xlsign_middle_ul>li:last-of-type>p:last-of-type{
+.xlsign_middle_ul>li:last-of-type>p:last-of-type {
     padding-top: 5px;
 }
 
@@ -359,15 +359,36 @@
     border: 1px solid #e3e3e3;
 }
 
-.lookPact:hover{
+.lookPact:hover {
     color: #ff9900;
 }
 
-.mask {
-    opacity: 0.8;
+.dialog {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99999;
+    opacity: 0;
+    background: #000;
+    visibility: hidden;
+    /* background: rgba(0, 0, 0, 0) */
 }
 
-.swiper-container{
+.color {
+    visibility: visible;
+     opacity: 0.8;
+}
+
+.color1{
+    visibility: visible;
+    opacity: 1;
+}
+
+.swiper-container {
     left: 0px;
     right: 0px;
     bottom: 0px;
@@ -388,10 +409,10 @@
     overflow: hidden;
 }
 
-.close{
+.close {
     top: 100px;
     width: 15px;
-    right: 300px;    
+    right: 300px;
     height: 15px;
     position: absolute;
     background: url("../images/item/close.png") center no-repeat;
@@ -430,7 +451,6 @@
 
 .xlrecord,
 .xlmaterials {
-    display: none;
     margin-top: 45px;
     padding-bottom: 45px;
 }
@@ -439,7 +459,7 @@
 .message_ul>li,
 .materials_ul>li,
 .carMessage_ul>li,
-.brrow_message>li{
+.brrow_message>li {
     width: 1200px;
     overflow: hidden;
     line-height: 65px;
@@ -452,20 +472,20 @@
     text-align: center;
 }
 
-.history_ul>li{
+.history_ul>li {
     width: 171px;
     text-align: center;
     display: inline-block;
 }
 
-.materials_ul>li>div{
+.materials_ul>li>div {
     float: left;
     width: 400px;
     text-align: center;
 }
 
 .record_ul>li:first-of-type,
-.materials_ul>li:first-of-type{
+.materials_ul>li:first-of-type {
     height: 50px;
     background: #eee;
     line-height: 50px;
@@ -479,7 +499,7 @@
 }
 
 .message_ul>li>div,
-.carMessage_ul>li>div{
+.carMessage_ul>li>div {
     float: left;
     width: 200px;
 }
@@ -527,12 +547,14 @@
     padding: 50px 0;
 }
 
+
 /* 借款人信息 */
-.basicPerson_message{
+
+.basicPerson_message {
     margin-top: 45px;
 }
 
-.brrow_message>li>div{
+.brrow_message>li>div {
     float: left;
     width: 150px;
     height: 65px;
@@ -543,13 +565,15 @@
     text-overflow: ellipsis;
 }
 
+
 /* 车贷 */
-.car_ul{
+
+.car_ul {
     padding: 0;
 }
 
 .materials_ul>li>div>a,
-.materials_ul>li>div>a:hover{
+.materials_ul>li>div>a:hover {
     color: #ff9900;
 }
 
