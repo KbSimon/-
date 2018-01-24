@@ -372,7 +372,7 @@
                 </div>
             </div>
             <!-- 项目材料 -->
-            <div class="xlmaterials" >
+            <div class="xlmaterials">
                 <div class="xlmaterials_content">
                     <ul class="materials_ul">
                         <li>
@@ -462,6 +462,21 @@
                         <div class="close"></div>
                         <div class="swiper-container" style="display:block">
                             <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-zoom-container">
+                                        <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/img_01.png">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-zoom-container">
+                                        <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/img_02.png">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-zoom-container">
+                                        <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/img_03.png">
+                                    </div>
+                                </div>
                                 <div class="swiper-slide">
                                     <div class="swiper-zoom-container">
                                         <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/item/img_01.png">
@@ -579,19 +594,25 @@
 
     $(".title").text(title)
 
-    window.onload = function(){ 
+    window.onload = function () {
         $(".xlmaterials").addClass("close_ul");
         $(".xlrecord").addClass("close_ul");
     }
 
     // 切换项目详情和投资列表
-    $(".xlitem_ul>li>span").click(function() {
-        $(".xldetails>div").eq($(this).parent("li").index()).css({"opacity":"1","display":"block"}).siblings("div").css({"opacity":"1","display":"none"});
+    $(".xlitem_ul>li>span").click(function () {
+        $(".xldetails>div").eq($(this).parent("li").index()).css({
+            "opacity": "1",
+            "display": "block"
+        }).siblings("div").css({
+            "opacity": "1",
+            "display": "none"
+        });
         $(this).addClass("antherborder").parent().siblings().find("span").removeClass("antherborder");
     })
 
     // 分页
-    layui.use(['laypage', 'layer'], function() {
+    layui.use(['laypage', 'layer'], function () {
         var laypage = layui.laypage,
             layer = layui.layer;
         laypage.render({
@@ -615,17 +636,17 @@
 
     // 查看借款协议
 
-    $(".lookPact").click(function() {
+    $(".lookPact").click(function () {
         $(".dialog").addClass("color");
     })
-    $(".close").click(function() {
+    $(".close").click(function () {
         $(".dialog").removeClass("color");
     })
-    $(".materials_ul>li>div>a").click(function() {
+    $(".materials_ul>li>div>a").click(function () {
         // alert(1)
         $(".dialog").addClass("color");
     })
-    $(".close").click(function() {
+    $(".close").click(function () {
         $(".dialog").removeClass("color");
     })
 </script>

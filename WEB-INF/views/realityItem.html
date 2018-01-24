@@ -263,7 +263,8 @@
                             <p>Q：
                                 <span class="title"></span>的风控流程是怎样的？</p>
                             <br>
-                            <p>A：鑫路金融有严谨的风控体系，借款人信息将进入风控模型，引入芝麻信用、同盾数据对借款人进行有效筛选；通过风控模型后， 借款人还需进行线下面审，对借款人银行流水、还款能力、借款用途等进行全面评估。结合线上大数据风控与线下实地面审，有效 降低项目整体风险。
+                            <p>A：鑫路金融有严谨的风控体系，借款人信息将进入风控模型，引入芝麻信用、同盾数据对借款人进行有效筛选；通过风控模型后， 借款人还需进行线下面审，对借款人银行流水、还款能力、借款用途等进行全面评估。结合线上大数据风控与线下实地面审，有效
+                                降低项目整体风险。
                             </p>
                         </div>
                         <div class="question clearfloat">
@@ -337,7 +338,7 @@
                                 <div>籍贯</div>
                                 <div>河北</div>
                                 <div>手机号</div>
-                                <div>15488415873</div> 
+                                <div>15488415873</div>
                                 <div>职业</div>
                                 <div>公务员</div>
                             </li>
@@ -501,25 +502,26 @@
 
     $(".title").text(title)
 
+
     // 切换项目详情和投资列表
-    $(".xlitem_ul>li>span").click(function() {
+    $(".xlitem_ul>li>span").click(function () {
         $(".xldetails>div").eq($(this).parent("li").index()).show().siblings("div").hide()
         $(this).addClass("antherborder").parent().siblings().find("span").removeClass("antherborder");
     })
 
     // 资金流向说明
-    $(".flow_ul>li").hover(function() {
+    $(".flow_ul>li").hover(function () {
         $(this).find("div").stop().animate({
             opacity: "1"
         }, 300);
-    }, function() {
+    }, function () {
         $(this).find("div").stop().animate({
             opacity: "0"
         }, 300);
     })
 
     // 分页
-    layui.use(['laypage', 'layer'], function() {
+    layui.use(['laypage', 'layer'], function () {
         var laypage = layui.laypage,
             layer = layui.layer;
         laypage.render({
@@ -541,10 +543,10 @@
     });
 
     // 查看借款协议
-    $(".lookPact").click(function() {
+    $(".lookPact").click(function () {
         $(".dialog").addClass("color");
     })
-    $(".close").click(function() {
+    $(".close").click(function () {
         $(".dialog").removeClass("color");
     })
 </script>
