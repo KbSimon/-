@@ -1,0 +1,222 @@
+.xlAboutUs {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.xlAboutUs_left {
+    float: left;
+    width: 300px;
+    height: 860px;
+    text-align: center;
+    background: #ff9900;
+}
+
+.xlAboutUs_right {
+    float: right;
+    width: 900px;
+    padding: 30px;
+    background: #fff;
+}
+
+.xlAboutUs_lful {
+    cursor: pointer;
+    margin-top: 90px;
+}
+
+.xlAboutUs_lful>li {
+    width: 300px;
+    /* height: 70px; */
+    color: #fff;
+    font-size: 18px;
+    line-height: 70px;
+    position: relative;
+}
+
+.xlAboutUs_lful>li>a{
+    color: #fff;
+    display: block;
+}
+
+.xlActive {
+    background: #fff;
+    color: #ff9900 !important;
+}
+
+.add_01,
+.add_02,
+.add_03 {
+    top: 25px;
+    left: 195px;
+    width: 16px;
+    height: 16px;
+    line-height: 15px;
+    text-align: center;
+    position: absolute;
+    
+}
+
+.add_01{
+    border: 1px solid #fff;
+}
+
+.add_02,
+.add_03{
+    color: #ff9900;
+    border: 1px solid #ff9900;
+}
+
+
+
+.xlCompany_title{
+    width: 100%;    
+    height: 110px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.profile_title{
+    font-size: 30px;
+    color: #ff9900;
+}
+
+.profile_01{
+    color: #666;
+    font-size: 18px;
+}
+
+.profile_02{
+    float: left;
+    color: #ff9900;
+    font-size: 16px;
+}
+
+.profile_03{
+    margin-top: 20px;
+    color: #999999;
+    text-align: right;
+}
+
+.xlUs_textItem,
+.xlCompany_textItem{
+    height: 20px;
+    margin-top: 35px;
+    line-height: 20px;
+}
+
+.icon{
+    float: left;
+    width: 4px;
+    height: 18px;
+    margin-right: 10px;
+    background: #ff9900;
+}
+
+.xlOur_text>p,
+.xlOur_text_left>p,
+.xlOur_text_right>p,
+.xlCompany_textContent>p,
+.xlCompany_textBottom_left>p{
+    color: #666;
+    line-height: 1.8;  
+    margin-top: 15px;  
+    text-align: justify;
+}
+
+.xlCompany_textBottom_left{
+    float: left;
+    width: 335px;
+}
+
+b{
+    color: #333;
+    font-weight: normal;
+}
+
+
+.xlCompany_textBottom_right{
+    float: left;
+    height: 364px;
+    width: 500px;
+    background: url("../../images/aboutUs/company.png") center no-repeat;
+}
+
+.xlOur_text_left{
+    width: 50%;
+    float: left;
+}
+
+.xlOur_text_right{
+    width: 50%;
+    float: right;
+}
+
+.xlOur_text_left>p,
+.xlOur_text_right>p{
+    margin-left: 15px;
+}
+
+.channel{
+    width: 295px;
+}
+
+.koji{
+    width: 295px;
+    margin-top: 65px;
+}
+
+.xlOur_qq,
+.xlOur_down,
+.xlOur_weixin01,
+.xlOur_weixin02{
+    text-align: center;
+    margin: 15px 0 0 15px;;
+}
+
+.xlOur_qq>img,
+.xlOur_down>img,
+.xlOur_weixin01>img,
+.xlOur_weixin02>img{
+    margin-bottom: 10px;
+    border: 1px solid #e3e3e3;
+}
+
+.xlOur_qq>p,
+.xlOur_down>p,
+.xlOur_weixin01>p,
+.xlOur_weixin02>p{
+    color: #666;
+}
+
+.xlOur_qq,
+.xlOur_weixin01{
+    float: left;
+}
+
+.xlOur_down,
+.xlOur_weixin02{
+    float: right;
+}
+
+#container{
+    width: 800px;
+    height: 300px;
+    margin-top: 10px;
+}
+
+
+.news_ul{
+    width: 100%;
+    height: 150px;
+    /* display: none;     */
+    background: #fff;
+}
+
+
+.news_ul>li{
+    float: left;
+    width: 100%;
+    height: 50px;
+    color: #999;
+    font-size: 16px;
+    line-height: 30px;
+    text-indent: 35px;
+}
