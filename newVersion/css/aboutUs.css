@@ -43,29 +43,24 @@
 }
 
 .add_01,
-.add_02,
-.add_03 {
+.add_02{
     top: 25px;
     left: 195px;
     width: 16px;
     height: 16px;
     line-height: 15px;
     text-align: center;
-    position: absolute;
-    
+    position: absolute;   
 }
 
 .add_01{
     border: 1px solid #fff;
 }
 
-.add_02,
-.add_03{
+.add_02{
     color: #ff9900;
     border: 1px solid #ff9900;
 }
-
-
 
 .xlCompany_title{
     width: 100%;    
@@ -90,12 +85,13 @@
 }
 
 .profile_03{
-    margin-top: 20px;
+    margin-top: 10px;
     color: #999999;
     text-align: right;
 }
 
 .xlUs_textItem,
+.xlNews_textItem,
 .xlCompany_textItem{
     height: 20px;
     margin-top: 35px;
@@ -113,12 +109,14 @@
 .xlOur_text>p,
 .xlOur_text_left>p,
 .xlOur_text_right>p,
+.xlNews_text_left>p,
+.xlNews_floor_content>p,
 .xlCompany_textContent>p,
 .xlCompany_textBottom_left>p{
     color: #666;
     line-height: 1.8;  
-    margin-top: 15px;  
     text-align: justify;
+    margin: 15px 0 0 15px;
 }
 
 .xlCompany_textBottom_left{
@@ -139,6 +137,11 @@ b{
     background: url("../../images/aboutUs/company.png") center no-repeat;
 }
 
+/* 关于我们 */
+.xlOur{
+    display: none;
+}
+
 .xlOur_text_left{
     width: 50%;
     float: left;
@@ -147,11 +150,6 @@ b{
 .xlOur_text_right{
     width: 50%;
     float: right;
-}
-
-.xlOur_text_left>p,
-.xlOur_text_right>p{
-    margin-left: 15px;
 }
 
 .channel{
@@ -202,14 +200,12 @@ b{
     margin-top: 10px;
 }
 
-
+/* 新闻中心 */
 .news_ul{
     width: 100%;
     height: 150px;
-    /* display: none;     */
     background: #fff;
 }
-
 
 .news_ul>li{
     float: left;
@@ -219,4 +215,70 @@ b{
     font-size: 16px;
     line-height: 30px;
     text-indent: 35px;
+}
+
+.xlNews_text_left{
+    float: left;
+    width: 580px;
+    overflow: hidden;
+    padding-right: 50px;
+    text-align: justify;
+}
+
+.xlNews_text_right{
+    float: right;
+    width: 260px;
+    margin-top: 40px;
+}
+
+.xlNews_textItem>p{
+    width: 515px;
+    float: left;
+    height: 20px;
+    overflow: hidden;
+    line-height: 20px;
+}
+
+.xlNews_text_left>p,
+.xlNews_floor_content>p{
+    overflow: hidden;
+    display: -webkit-box;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+.xlNews_text_left>p{
+    width: 530px;
+    -webkit-line-clamp:3;
+}
+
+.xlNews_floor_content>p{
+    width: 840px;
+    padding-right: 15px;
+    -webkit-line-clamp:2;
+}
+
+.xlNews_text_left>span{
+    float: right;
+    color: #999;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.xlNews_textItem>span{
+    color: #999;
+    float: right;
+}
+
+.xlNews_media,
+.xlNews_floor{
+    display: none;
+}
+
+#laypages,
+#laypages_01,
+#laypages_02{
+    text-align: center;
+    margin-top: 20px;
 }
