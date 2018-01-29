@@ -1,0 +1,46 @@
+.head{
+    height: 600px;    
+    background: url("../../images/newbie/img_01.png") center no-repeat;
+}
+
+.head,
+.part1,
+.part2,
+.part3{
+    margin: 0 auto;
+    min-width: 1200px;
+    max-width: 1920px;
+}
+
+.part1{
+    height: 802px;
+    background: url("../../images/newbie/img_02.png") center no-repeat;
+}
+
+.part2{
+    height: 796px;
+    background: url("../../images/newbie/img_03.png") center no-repeat;
+}
+
+.part3{
+    height: 802px;
+    background: url("../../images/newbie/img_04.png") center no-repeat;
+}
+
+.toRegister{
+    margin: 0 auto;
+    width: 1200px;
+    height: 802px;
+    position: relative;
+}
+
+.btn{
+    top: 430px;
+    left: 670px;
+    width: 303px;
+    height: 84px;
+    display: block;
+    position: absolute;
+    background: url("../../images/newbie/img_05.png") center no-repeat;
+}
+

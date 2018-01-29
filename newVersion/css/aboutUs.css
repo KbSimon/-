@@ -33,6 +33,8 @@
 }
 
 .xlAboutUs_lful>li>a{
+    border: none;
+    outline: none;    
     color: #fff;
     display: block;
 }
@@ -109,14 +111,19 @@
 .xlOur_text>p,
 .xlOur_text_left>p,
 .xlOur_text_right>p,
-.xlNews_text_left>p,
-.xlNews_floor_content>p,
+.xlNews_text_left>a,
+.xlNews_floor_content>a,
 .xlCompany_textContent>p,
 .xlCompany_textBottom_left>p{
     color: #666;
     line-height: 1.8;  
     text-align: justify;
     margin: 15px 0 0 15px;
+}
+
+.xlNews_text_left>a:hover,
+.xlNews_floor_content>a:hover{
+    color: #666;
 }
 
 .xlCompany_textBottom_left{
@@ -231,6 +238,7 @@ b{
     margin-top: 40px;
 }
 
+.xlNews_textItem>a,
 .xlNews_textItem>p{
     width: 515px;
     float: left;
@@ -239,8 +247,12 @@ b{
     line-height: 20px;
 }
 
-.xlNews_text_left>p,
-.xlNews_floor_content>p{
+.xlNews_textItem>a:hover{
+    color: #ff9900;
+}
+
+.xlNews_text_left>a,
+.xlNews_floor_content>a{
     overflow: hidden;
     display: -webkit-box;
     word-break: break-all;
@@ -248,12 +260,12 @@ b{
     -webkit-box-orient: vertical;
 }
 
-.xlNews_text_left>p{
+.xlNews_text_left>a{
     width: 530px;
     -webkit-line-clamp:3;
 }
 
-.xlNews_floor_content>p{
+.xlNews_floor_content>a{
     width: 840px;
     padding-right: 15px;
     -webkit-line-clamp:2;
