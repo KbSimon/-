@@ -22,18 +22,19 @@
         <div class="xlAboutUs_left">
             <ul class="xlAboutUs_lful">
                 <li>
-                    <a href="javascript:;" class="xlActive">公司简介</a>
+                    <a href="javascript:;" class="xlActive" id="1">公司简介</a>
                 </li>
                 <li>
                     <a href="newsCenter.html">新闻中心</a>
                     <div class="add_01" onclick="window.location.href='newsCenter.html'">+</div>
                 </li>
                 <li>
-                    <a href="javascript:;">关于我们</a>
+                    <a href="javascript:;" id="2">关于我们</a>
                 </li>
             </ul>
         </div>
         <div class="xlAboutUs_right">
+            <!-- 公司简介 -->
             <div class="xlCompany">
                 <div class="xlCompany_title">
                     <p class="profile_title">INTRODUCTION</p>
@@ -81,6 +82,7 @@
                 </div>
             </div>
             <div></div>
+            <!-- 关于我们 -->
             <div class="xlOur">
                 <div class="xlCompany_title">
                     <p class="profile_title">ABOUT US</p>
@@ -171,10 +173,38 @@
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/newVersion/js/base.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/newVersion/js/common.js"></script>
 <script>
+    // 左侧切换
     $(".xlAboutUs_lful>li>a").click(function () {
         $(this).addClass("xlActive").parent().siblings().children("a").removeClass("xlActive");
         $(".xlAboutUs_right>div").eq($(this).parent().index()).show().siblings().hide();
-    })
+    });
+    var url = window.location;
+    function getUrlParam(url, name) {
+        var pattern = new RegExp("[?&amp;]" + name + "\=([^&amp;]+)", "g");
+        var matcher = pattern.exec(url);
+        var items = null;
+        if (matcher != null) {
+            try {
+                items = decodeURIComponent(decodeURIComponent(matcher[1]));
+            } catch (e) {
+                try {
+                    items = decodeURIComponent(matcher[1]);
+                } catch (e) {
+                    items = matcher[1];
+                }
+            }
+        }
+        return items;
+    }
+    var shuzi = window.getUrlParam(url, "shuzi");
+    if (shuzi == 1) {
+        $("#1").addClass("xlActive").parent().siblings().children("a").removeClass("xlActive");
+    }
+    if (shuzi == 2) {
+        $("#2").addClass("xlActive").parent().siblings().children("a").removeClass("xlActive");
+
+    }
+
 
     // 高德地图
     var map = new AMap.Map('container', {
