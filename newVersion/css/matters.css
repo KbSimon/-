@@ -26,7 +26,6 @@
 .navbar_div{
     height: 260px;
     margin: 0 auto;
-    /* border: 1px solid #e3e3e3; */
 }
 
 .navbar_ul{
@@ -65,13 +64,9 @@
 
 .xlmatters_content{
     width: 1200px;
-    height: 1220px;
     margin: 0 auto;
 }
 
-.xlmatters_mark{
-    height: 1150px;
-}
 
 /* 标的 */
 .xllist_item{
@@ -197,5 +192,6 @@
 
 #laypages,
 #laypages_02{
+    margin: 30px 0;
     text-align: center;
 }

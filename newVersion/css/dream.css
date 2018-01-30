@@ -1,0 +1,104 @@
+.head,
+.part1,
+.part2,
+.part3,
+.part4,
+.part5 {
+    margin: 0 auto;
+    min-width: 1200px;
+    max-width: 1920px;
+}
+
+.head {
+    height: 592px;
+    background: url("../../images/dream/img_01.png") center no-repeat;
+}
+
+.part1 {
+    height: 668px;
+    z-index: 2;
+    background: url("../../images/dream/img_02.png") center no-repeat;
+}
+
+.part2 {
+    height: 774px;
+    background: url("../../images/dream/img_03.png") center no-repeat;
+}
+
+.part3 {
+    height: 717px;
+    background: url("../../images/dream/img_04.png") center no-repeat;
+}
+
+.part4 {
+    height: 532px;
+    background: url("../../images/dream/img_06.png") center no-repeat;
+}
+
+.part5 {
+    height: 325px;
+    background: #fff;
+    padding-top: 140px;
+}
+
+.part1_content {
+    width: 1200px;
+    margin: 0 auto;
+    height: 774px;
+    position: relative;
+}
+
+.part1_bg1,
+.part1_bg2 {
+    width: 450px;
+    height: 714px;
+    left: 40px;
+    top: 15px;
+    position: absolute;
+}
+
+.part1_bg1 {
+    background: url("../../images/dream/img_13.png") center no-repeat;
+}
+
+.toDown,
+.downApp {
+    width: 334px;
+    height: 84px;
+}
+
+.downApp {
+    top: 400px;
+    left: 720px;
+    cursor: pointer;
+    position: absolute;
+    background: url("../../images/dream/img_09.png") center no-repeat;
+}
+
+.downApp:hover,
+.part5>a:hover {
+    width: 347px;
+    height: 143px;
+}
+
+.downApp:hover {
+    background: url("../../images/dream/img_10.png") center no-repeat;
+}
+
+.part1_bg2 {
+    background: url("../../images/dream/img_14.png") center no-repeat;
+}
+
+.toDown,
+.part5>a:hover {
+    display: block;
+    margin: 0 auto;
+}
+
+.toDown {
+    background: url("../../images/dream/img_11.png") center no-repeat;
+}
+
+.part5>a:hover {
+    background: url("../../images/dream/img_12.png") center no-repeat;
+}
