@@ -1,0 +1,260 @@
+.xlSafe_head,
+.xlSafe_part1,
+.xlSafe_part2,
+.xlSafe_part3,
+.xlSafe_part4,
+.xlSafe_part5 {
+    margin: 0 auto;
+    min-width: 1200px;
+    max-width: 1920px;
+    background-color: #fff;
+}
+
+.xlSafe_head {
+    height: 780px;
+    background: url("../../images/safe/img_1.png") center no-repeat;
+}
+
+.xlSafe_part1 {
+    height: 530px;
+}
+
+.xlSafe_title1 {
+    width: 177px;
+    height: 88px;
+    margin: 0 auto;
+    background: url("../../images/safe/img_2.png") center no-repeat;
+}
+
+.xlSafe_text1 {
+    width: 885px;
+    margin: 0 auto;
+    line-height: 2;
+    text-align: center;
+    padding: 35px 0 110px 0;
+}
+
+.xlSafe_part1_ul>li {
+    width: 400px;
+    float: left;
+    text-align: center;
+}
+
+.account>li,
+.same_card>p,
+.law_ul>li>p,
+.guarantee>li,
+.xlSafe_text1,
+.xlSafe_title2,
+.honesty_ul>li,
+.aptitude>li>p,
+.xlSafe_title5,
+.operate_bottom,
+.honesty_ul_top>p,
+.operate_top>p>span,
+.guarantee>li>p:nth-of-type(1),
+.honesty_ul_top>div:nth-of-type(2) {
+    color: #666;
+}
+
+.same_card>p,
+.xlSafe_text1,
+.aptitude>li>p,
+.operate_bottom,
+.honesty_ul_top>p,
+.guarantee>li>p:nth-of-type(2),
+.honesty_ul>li>div:nth-of-type(2){
+    font-size: 16px;
+}
+
+.operate_top {
+    margin-bottom: 35px;
+}
+
+.operate_top>p {
+    color: #ff6f20;
+    font-size: 40px;
+}
+
+.operate_top>p>span {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.xlSafe_part2 {
+    height: 1270px;
+    background: url("../../images/safe/img_8.png") center no-repeat;
+}
+
+.xlSafe_part1_content,
+.xlSafe_part2_content,
+.xlSafe_part3_content,
+.xlSafe_part4_content,
+.xlSafe_part5_content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.xlSafe_title5,
+.xlSafe_title2 {
+    font-size: 24px;
+}
+
+.xlSafe_text2,
+.xlSafe_title2 {
+    text-align: center;
+}
+
+.xlSafe_text2,
+.xlSafe_text5 {
+    color: #ccc;
+    font-size: 7px;
+    margin-top: 10px;
+}
+
+.aptitude>li {
+    width: 240px;
+    float: left;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.aptitude>li>img {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
+
+.aptitude>li>p {
+    margin-top: 35px;
+}
+
+.xlSafe_honesty {
+    width: 610px;
+    margin-top: 165px;
+    padding-left: 155px;
+}
+
+.honesty_ul>li {
+    margin-top: 65px;
+}
+
+.xlSafe_ring {
+    width: 9px;
+    height: 26px;
+    float: left;
+    margin-right: 10px;
+    background: url("../../images/safe/img_19.png") center no-repeat;
+}
+
+.law_ul>li>p:nth-of-type(1),
+.guarantee>li>p:nth-of-type(1),
+.honesty_ul_top>div:nth-of-type(2) {
+    font-size: 18px;
+}
+
+.honesty_ul>li>div:nth-of-type(2) {
+    padding-left: 20px;
+}
+
+.xlSafe_part3 {
+    height: 750px;
+}
+
+.xlSafe_title3 {
+    width: 174px;
+    height: 110px;
+    margin: 0 auto;
+    background: url("../../images/safe/img_9.png") center no-repeat;
+}
+
+.guarantee>li {
+    width: 300px;
+    float: left;
+    padding: 120px 45px;
+    text-align: center;
+}
+
+.guarantee>li>p:nth-of-type(1) {
+    margin: 60px 0 10px 0;
+}
+
+.guarantee>li>p:nth-of-type(2) {
+    text-align: justify;
+}
+
+.xlSafe_part4 {
+    height: 550px;
+}
+
+.xlSafe_title4 {
+    width: 170px;
+    height: 90px;
+    margin: 0 auto 35px auto;
+    background: url("../../images/safe/img_14.png") center no-repeat;
+}
+
+.xlSafe_text5,
+.xlSafe_title5 {
+    padding-left: 45px;
+}
+
+.account_ul>li {
+    width: 600px;
+    float: left;
+    margin-top: 50px;
+    padding-left: 200px;
+}
+
+.account_ul_top {
+    padding: 0 100px;
+}
+
+.account_ul>li>.honesty_ul_top {
+    margin: 50px 0 0px 0;
+}
+
+.honesty_ul_top>p:nth-of-type(1) {
+    margin-top: 10px;
+    width: 330px;
+}
+
+.xlSafe_part5{
+    height: 1300px;
+    background: #fff url("../../images/safe/img_17.png") center no-repeat;
+}
+
+.same_card{
+    width: 580px;
+    height: 200px;
+    float: right;
+    margin-top: 135px;
+}
+
+.same_card>p{
+    width: 260px;
+    text-align: justify;
+    margin: 40px 0 0 160px;
+}
+
+.law_ul>li{
+    width: 400px;
+    float: left;
+    padding: 110px 50px 0 50px;
+}
+
+.xlSafe_title6{
+    width: 171px;
+    height: 94px;
+    margin: 0 auto;
+    margin-top: 350px;
+    background: url("../../images/safe/img_18.png") center no-repeat;
+}
+
+.law_ul>li>p:nth-of-type(1){
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.law_ul>li>p:nth-of-type(2){
+    text-align: justify;
+    line-height: 1.8;
+}
