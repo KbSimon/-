@@ -1,0 +1,51 @@
+.xlTangyuan_01,
+.xlTangyuan_02{
+    margin: 0 auto;
+    min-width: 1200px;
+    max-width: 1920px;
+}
+
+.xlTangyuan_01{
+    height: 600px;
+    background: url("../images/tangyuan/img_01.png") center no-repeat;
+}
+
+.xlTangyuan_02{
+    height: 480px;
+    background: url("../images/tangyuan/img_02.png") center no-repeat;
+}
+
+.xlTangyuan_02_content{
+    width: 1200px;  
+    margin: 0 auto;
+}
+
+.btn{
+    padding-top: 130px;
+}
+
+.touzi{
+    width: 433px;
+    height: 139px;
+    margin: 0 auto;
+    display: block;
+    font-size: 34px;
+    color: #ad1b1b;
+    font-weight: bold;
+    text-align: center;
+    line-height: 139px;
+    background: url("../images/tangyuan/img_03.png") center no-repeat;
+}
+
+.xlTangyuan_02_content>p{
+    color: #cb8e3e;
+    font-size: 24px;
+    text-align: center;
+}
+
+.explain{
+    padding-top: 80px;
+    color: #cb8e3e;
+    font-size: 18px;
+    text-align: center;
+}

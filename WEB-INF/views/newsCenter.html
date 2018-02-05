@@ -25,7 +25,7 @@
                     <a href="aboutUsNew.html">公司简介</a>
                 </li>
                 <li>
-                    <a href="javascript:;" class="xlActive">新闻中心</a>
+                    <a href="javascript:;">新闻中心</a>
                     <div class="add_02">-</div>
                     <ul class="news_ul">
                         <li class="xlActive" id="3">公司动态</li>
@@ -294,8 +294,12 @@
         $(".news_ul").slideToggle();
         if (number % 2 == 0) {
             $(this).text("+");
+            $(this).siblings("a").addClass("xlActive");
+            $(".add_02").removeClass("add_02").addClass("add_03");
         } else {
             $(this).text("-");
+            $(this).siblings("a").removeClass("xlActive");
+            $(".add_03").removeClass("add_03").addClass("add_02");
         }
         number++;
     });
@@ -308,6 +312,7 @@
 
 
     var url = window.location;
+
     function getUrlParam(url, name) {
         var pattern = new RegExp("[?&amp;]" + name + "\=([^&amp;]+)", "g");
         var matcher = pattern.exec(url);
@@ -339,7 +344,7 @@
     if (shuzi == 4) {
         $("#4").addClass("xlActive").siblings().removeClass("xlActive");
     }
-    if(shuzi == 5){
+    if (shuzi == 5) {
         $("#5").addClass("xlActive").siblings().removeClass("xlActive");
     }
 
