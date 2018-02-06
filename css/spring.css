@@ -1,0 +1,52 @@
+.part,
+.banner{
+    margin: 0 auto;
+    min-width: 1200px;
+    max-width: 1920px;
+}
+
+.banner{
+    height: 599px;
+    background: url("../images/spring/img_01.png") center no-repeat;
+}
+
+.part{
+    height: 481px;
+    background: url("../images/spring/img_02.png") center no-repeat;
+}
+
+.part_content{
+    width: 1200px;
+    height: 481px;
+    margin: 0 auto;
+    padding: 100px 0 0 90px;
+}
+
+.part_content>p{
+    width: 740px;
+    font-size: 18px;
+    color: #a65418; 
+    text-align: justify;   
+}
+
+.part_content>p:nth-of-type(2){
+    padding-top: 25px;
+}
+
+.btn{
+    width: 640px;
+    height: 138px;
+    color: #ffe8cf;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 120px;
+    margin: 30px auto 20px auto;    
+    background: url("../images/spring/img_03.png") center no-repeat;
+}
+
+.explain{
+    color: #9c1915;
+    font-size: 14px;
+    margin-left: 400px;
+}
