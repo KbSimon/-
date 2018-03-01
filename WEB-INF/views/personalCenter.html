@@ -312,7 +312,9 @@
                                 <td>回款时间</td>
                             </tr>
                             <tr>
-                                <td class="jiaxi">鑫手XX期<div class="jiaxi_mask"></div></td>
+                                <td class="jiaxi">鑫手XX期
+                                    <div class="jiaxi_mask"></div>
+                                </td>
                                 <td>1000元</td>
                                 <td>13%</td>
                                 <td>33.3元</td>
@@ -1201,7 +1203,7 @@
                 <span class="close_btn">×</span>
             </div>
             <form action="">
-                <p class="PIN_p1">充值到账户</p>
+                <p class="PIN_p1">提现到账户</p>
                 <p></p>
                 <ul class="trader_password_ul">
                     <li class="clearfloat">
@@ -1219,16 +1221,6 @@
                 <a>忘记交易密码</a>
             </div>
         </div>
-        <div class="pay_mask">
-            <div class="pay_mask_top  clearfloat">
-                <p>完成充值</p>
-                <span class="close_btn">×</span>
-            </div>
-            <div class="pay_mask_bottom">
-                <p>充值成功！</p>
-            </div>
-            <div class="pay_mask_btn">查看账户</div>
-        </div>
         <div class="refere_mask">
             <div class="refere_mask_top  clearfloat">
                 <p>完成提现</p>
@@ -1239,6 +1231,28 @@
                 <p>双休日、法定假日则顺延</p>
             </div>
             <div class="refere_mask_btn">查看账户</div>
+        </div>
+        <!-- 实名认证 -->
+        <div class="approve_mask">
+            <div class="approve_mask_top  clearfloat">
+                <p>实名认证消息</p>
+                <span class="close_btn">×</span>
+            </div>
+            <p>您还未实名认证！</p>
+            <a>用户需认证绑定银行卡后才可投资</a>
+            <button>立即认证</button>
+        </div>
+        <!-- 认证成功 -->
+        <div class="approve_success">
+            <div class="approve_mask_top  clearfloat">
+                <p>登录注册</p>
+                <span class="close_btn">×</span>
+            </div>
+            <p>认证成功！</p>
+            <span style="width:200px;margin:0 auto;display:block;">红包已经放入您的
+                <a href="" style="color:#20acec;">个人用户中心</a>
+            </span>
+            <button>立即使用红包</button>
         </div>
     </div>
 </body>
@@ -1366,26 +1380,6 @@
         $(".withdraw_page").hide();
     })
 
-    // 充值输入密码
-    $(".to_pay").click(function () {
-        $(".mask").show();
-        $(".trader_password").show();
-    });
-    $(".trader_password_bottom").click(function () {
-        $(".pay_mask").show();
-        $(".trader_password").hide();
-    })
-
-    $(".to_refere").click(function () {
-        $(".mask").show();
-        $(".PIN_p1").text("提现到银行卡")
-        $(".trader_password").show();
-    })
-    $("#trader_password_bottom").click(function () {
-        $(".refere_mask").show();
-        $(".trader_password").hide();
-    })
-
     $(".close_btn").click(function () {
         $(".mask").hide();
         $(".trader_password").hide();
@@ -1444,7 +1438,7 @@
             $(this).addClass("active_03").siblings().removeClass("active_03");
             $(this).parent().siblings("div").eq($(this).index()).show().siblings("div").hide();
         })
-       
+
         // 我的资料
         $(".change_01").click(function () {
             if ($(this).parent().next().css("display") == "none") {
@@ -1463,6 +1457,53 @@
         $(".slide_form>ul>li").click(function () {
             $(this).attr("id", "active").siblings("li").removeAttr("id", "active");
         })
+
+        // 提现输入密码弹窗
+        function tixian() {
+            $(".mask").show();
+            $(".trader_password").show();
+        }
+
+        // 提现成功弹窗
+        function txsuccess() {
+            $(".mask").show();
+            $(".refere_mask").show();
+            $(".trader_password").hide();
+        }
+
+        // 提现输入交易密码错误
+        function txerror() {
+            $(".mask").show();
+            $(".refere_mask").show();
+            $(".trader_password").hide();
+            $(".refere_mask_btn").hide();
+            $(".refere_mask_top>p").html("密码错误");
+            $(".refere_mask_bottom>p").eq(1).html("");
+            $(".refere_mask_bottom>p").eq(0).html("密码有误，如有问题请联系鑫路客服");
+        }
+
+        // 实名认证
+        function approve() {
+            $(".mask").show();
+            $(".approve_mask").show();
+        }
+
+        // 认证成功
+        function rzsuccess() {
+            $(".mask").show();
+            $(".approve_success").show();
+        }
+
+        // 密码修改成功
+        function mmupdate() {
+            $(".mask").show();
+            $(".approve_mask").show();
+            $(".approve_mask>a").hide();
+            $(".approve_mask>span").hide();
+            $(".approve_mask>p").html("修改成功");
+            $(".approve_mask_top>p").html("修改成功");
+            $(".approve_mask>button").html("确认返回");
+        }
 
     })
 </script>

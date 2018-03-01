@@ -9,7 +9,7 @@
 
 .xlOpinion_content {
     width: 1200px;
-    height: 770px;
+    height: 780px;
     padding: 25px;
     margin: 0 auto;
     border: 1px solid #e3e3e3;
@@ -31,6 +31,29 @@
 
 .xlOpinion_phone{
     margin: 30px 0px; 
+}
+
+.xlOpinion_phone>label{
+    margin-top: 5px;
+}
+
+.error_01,
+.error_02,
+.xlOpinion_phone>label,
+.xlOpinion_phone>input{
+    float: left;
+}
+
+.error_01,
+.error_02{
+    color: red;
+    margin: 5px 0 0 20px;
+}
+
+.error_03{
+    height: 20px;
+    color: red;
+    margin: 3px 0;
 }
 
 input::-webkit-outer-spin-button,
@@ -76,7 +99,8 @@ input[type="checkbox"] {
 
 .deal{
     float: left;
-    margin-right: 50px;
+    margin: 5px 50px 0 0;
+    
 }
 
 .deal>input:checked+label {
@@ -115,8 +139,8 @@ textarea{
     color: #999;
     width: 1150px;
     height: 240px;
-    margin: 25px 0;
     padding: 15px;
+    margin: 25px 0 5px 0;
     text-align: justify;
     border: 1px solid #e3e3e3;
     font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;

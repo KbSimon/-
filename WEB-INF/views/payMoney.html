@@ -103,29 +103,34 @@
                         <input type="password" name="password" class="paypwd" placeholder="请输入交易密码" minlength="6" maxlength="20">
                     </li>
                     <div class="pay_hint" style="margin-right:40px;text-align:right;color:red;">
-                            <p></p>
-                        </div>
+                        <p></p>
+                    </div>
                 </ul>
             </form>
             <div class="error_01">
                 <p></p>
             </div>
             <div class="trader_password_bottom">
-                <input type="button" value="确定"><br>
+                <input type="button" value="确定">
+                <br>
                 <a>忘记交易密码</a>
             </div>
         </div>
-        <div class="complete" >
+        <div class="complete">
             <div class="complete_top  clearfloat">
                 <p>交易密码</p>
                 <span class="close_btn">×</span>
             </div>
             <div class="complete_bottom">
                 <h2>投资成功</h2>
-                <div class="pay_btn01"><a href="javascript:;">继续投资</a></div>
-                <div class="pay_btn02"><a href="javascript:;">查看记录</a></div>
+                <div class="pay_btn01">
+                    <a href="javascript:;">继续投资</a>
+                </div>
+                <div class="pay_btn02">
+                    <a href="javascript:;">查看记录</a>
+                </div>
             </div>
-        </div> 
+        </div>
     </div>
 </body>
 
@@ -135,20 +140,32 @@
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/common.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/base.js"></script>
 <script>
-    $(".pay_btn").click(function(){
-        $(".mask").show();
-        $(".trader_password").show();
-    })
-
-    $(".close_btn").click(function(){
+    $(".close_btn").click(function () {
         $(".mask").hide();
         $(".trader_password").hide();
     })
 
-    $(".trader_password_bottom").click(function(){
+    // 输入支付密码
+    function paymm() {
+        $(".mask").show();
+        $(".trader_password").show();
+    }
+
+    // 支付成功
+    function paysuccess() {
+        $(".mask").show();
         $(".complete").show();
         $(".trader_password").hide();
-    })
+    }
+
+    // 支付密码错误
+    function payerror() {
+        $(".mask").show();
+        $(".trader_password").hide();
+        $(".complete_bottom>div").hide();
+        $(".complete").show().css("height", "260");
+        $(".complete_bottom>h2").html("密码有误，如有问题请联系鑫路客服")
+    }
 
     // 未同意注册协议
     $("#deal_input").click(function () {
@@ -156,7 +173,10 @@
         if (ii === true) {
             $(".pay_btn").css("background-color", "#fe9c1c").removeAttr("disabled");
         } else if (ii === false) {
-            $(".pay_btn").css({"background-color":"#ccc","border":"none"}).attr("disabled", "disabled");
+            $(".pay_btn").css({
+                "background-color": "#ccc",
+                "border": "none"
+            }).attr("disabled", "disabled");
         };
     });
 </script>

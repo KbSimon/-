@@ -130,4 +130,4 @@ $(".to_protlcol").click(function () {
 $(".close_protlcol").click(function () {
     $(".protocol").hide();
     $(".registerMask").hide();
-})
+});

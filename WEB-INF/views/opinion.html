@@ -11,8 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>意见反馈-鑫路金融官网</title>
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/base.css">
-    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/common.css">
-    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/opinion.css">
+    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/newVersion/css/common.css">
+    <link rel="stylesheet" href="../../css/opinion.css">
     <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/xinlu-icon.ico">
 </head>
 
@@ -24,38 +24,42 @@
                     <span>意见反馈</span>&#x3000;尊敬的用户：为了给您更好的服务，请详细描述您的问题或建议，我们将及时跟进解决，不断优化产品！</p>
             </div>
             <div class="xlOpinion_middle">
-                <div class="xlOpinion_phone">
+                <div class="xlOpinion_phone clearfloat">
                     <label>请输入您的手机号：</label>
                     <input type="number" minlength="11" maxlength="11">
+                    <div class="error_01">
+                        <p></p>
+                    </div>
                 </div>
                 <div class="xlOpinion_type clearfloat">
                     <label>请选择反馈类型：</label>
                     <div class="deal">
-                        <input type="checkbox" id="refer" checked>
-                        <label for="refer"></label>
+                        <input type="radio" id="refer" name="type">
                         <span>咨询</span>
                     </div>
                     <div class="deal">
-                        <input type="checkbox" id="proposal">
-                        <label for="proposal"></label>
+                        <input type="radio" name="type" id="proposal">
                         <span>建议</span>
                     </div>
                     <div class="deal">
-                        <input type="checkbox" id="complaint">
-                        <label for="complaint"></label>
+                        <input type="radio" name="type" id="complaint">
                         <span>投诉</span>
                     </div>
                     <div class="deal">
-                        <input type="checkbox" id="else">
-                        <label for="else"></label>
+                        <input type="radio" name="type" id="else">
                         <span>其他</span>
                     </div>
-
+                    <div class="error_02">
+                        <p></p>
+                    </div>
                 </div>
                 <div class="xlOpinion_details">
                     <textarea name="details" id="details" cols="100" rows="10" maxlength="500" placeholder="请输入您的反馈内容"></textarea>
                     <p class="words">
                         <span>0</span>/500</p>
+                    <div class="error_03">
+                        <p></p>
+                    </div>
                 </div>
             </div>
             <div class="xlOpinion_bottom">
@@ -69,7 +73,7 @@
                 </div>
                 <div class="tickling">
                     <label for="">请选择回复方式:</label>
-                    <input type="radio" name="reply">
+                    <input type="radio" name="reply" checked>
                     <span>电话回复&#x3000;</span>
                     <input type="radio" name="reply">
                     <span>不要回复</span>
@@ -77,6 +81,17 @@
                 <button type="submit" value="提交">提交</button>
             </div>
         </form>
+        <!-- 遮罩层 -->
+        <div class="mask"></div>
+        <!-- 登录弹窗 -->
+        <div class="login_mask">
+            <div class="login_mask_top  clearfloat">
+                <p>意见反馈</p>
+                <span class="close_btn">×</span>
+            </div>
+            <p>客服正在处理您的意见反馈</p>
+            <button>返回首页</button>
+        </div>
     </div>
 </body>
 
@@ -158,23 +173,45 @@
         })
     }
 
+    $(".xlOpinion_phone>input").focus(function () {
+        $(".error_01>p").html("");
+    });
+
+    $(".deal>input").change(function () {
+        $(".error_02>p").html("");
+    });
+
+    $("textarea").focus(function () {
+        $(".error_03>p").html("");
+    });
+
     $("form").submit(function () {
         if ($(".xlOpinion_phone>input").val() == "") {
-            alert("请输入您的手机号码");
+            $(".error_01>p").html("请输入您的手机号码");
             return false;
         } else if ($(".xlOpinion_phone>input").val().length < 11) {
-            alert("请输入11位手机号码");
+            $(".error_01>p").html("请输入11位手机号码");
             return false;
-        } else if ($(":checkbox").is(':checked') == false) {
-            alert("请选择反馈类型");
+        } else if ($(".deal>input").is(':checked') == false) {
+            $(".error_02>p").html("请选择反馈类型");
             return false;
-        } else if ($("textrea").val() == "") {
-            alert("请输入您的反馈类型");
-        } else if ($(":checkbox").is(':checked') == false) {
-            alert("请选择回复方式");
+        } else if ($("textarea").val() == "") {
+            $(".error_03>p").html("请输入您的反馈内容");
             return false;
         } else {
             return true;
         }
     })
+
+    // 关闭弹窗
+    $(".close_btn").click(function () {
+        $(".mask").hide();
+        $(".login_mask").hide();
+    });
+
+    // 意见反馈弹窗
+    function idea(){
+        $(".mask").show();
+        $(".login_mask").show();
+    }
 </script>

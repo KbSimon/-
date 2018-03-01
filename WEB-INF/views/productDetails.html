@@ -33,15 +33,18 @@
                     <img src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/content_top.png" class="series_mark">
                     <div class="series_middle">
                         <div>
-                            <p class="series_middle_p1"><span>13.00</span>%</p>
+                            <p class="series_middle_p1">
+                                <span>13.00</span>%</p>
                             <p class="series_middle_p4">年化率</p>
                         </div>
                         <div style="margin:0 90px 0 95px;">
-                            <p class="series_middle_p2"><span>0</span>天</p>
+                            <p class="series_middle_p2">
+                                <span>0</span>天</p>
                             <p class="series_middle_p4">投资期限</p>
                         </div>
                         <div>
-                            <p class="series_middle_p3"><span>1000</span>元</p>
+                            <p class="series_middle_p3">
+                                <span>1000</span>元</p>
                             <p class="series_middle_p4">年化率</p>
                         </div>
                     </div>
@@ -75,7 +78,7 @@
                     <div>
                         <span>起投金额：</span>
                         <span style="color:#ff9b0c;">100</span>
-                    </div>   
+                    </div>
                 </div>
                 <div class="content_top_right_div_01">
                     <span>账户余额：</span>
@@ -220,9 +223,9 @@
     <footer></footer>
 
     <!-- 遮罩层 -->
-    <div class="mask"  style="display:block"></div>
+    <div class="mask" style="display:block"></div>
     <!-- 登录弹窗 -->
-    <div class="login_mask"  style="display:block">
+    <div class="login_mask" style="display:block">
         <div class="login_mask_top  clearfloat">
             <p>登录注册</p>
             <span class="close_btn">×</span>
@@ -251,9 +254,11 @@
 <script>
     // 鑫火稳健
     $('.content_top_left').hover(function () {
-        $(".series_mark").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/content_top_01.png");
+        $(".series_mark").attr("src",
+            "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/content_top_01.png");
     }, function () {
-        $(".series_mark").attr("src", "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/content_top.png");
+        $(".series_mark").attr("src",
+            "http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/content_top.png");
     });
 
     $(".close_btn").click(function () {
@@ -281,4 +286,14 @@
             theme: "#ffa21a",
         });
     });
+
+    // 去实名认证
+    $(".approve_mask>button").click(function () {
+        window.location.href = "register_02.html";
+    })
+
+    function approve() {
+        $(".mask").show();
+        $(".approve_mask").show();
+    }
 </script>

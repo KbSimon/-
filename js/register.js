@@ -15,3 +15,8 @@ $("#deal_input").click(function () {
         $(".next").css("background-color", "#ccc").attr("disabled", "disabled");
     };
 })
+
+$(".close_btn").click(function () {
+    $(".mask").hide();
+    $(".approve_mask").hide();
+});

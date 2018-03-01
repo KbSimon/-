@@ -12,7 +12,8 @@
     <title>用户注册-鑫路金融官网</title>
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/base.css">
     <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/common.css">
-    <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/register.css">
+    <!-- <link rel="stylesheet" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/css/register.css"> -->
+    <link rel="stylesheet" href="../../css/register.css">
     <link rel="shortcut icon" type="image/x-icon" href="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/xinlu-icon.ico">
 </head>
 
@@ -47,13 +48,13 @@
                                 onafterpaste="this.value=this.value.replace(/\D/g,'')">
                         </li>
                         <div class="error_03">
-                            <p>1</p>
+                            <p></p>
                         </div>
                         <select name="brankId" class="chooseBank">
                             <option selected="selected">选择所属银行</option>
                         </select>
                         <div class="error_07">
-                            <p>开户</p>
+                            <p></p>
                         </div>
                         <select class="province">
                             <option selected="selected">请选择开户地区</option>
@@ -62,20 +63,34 @@
                             <option selected="selected">请选择开户地区</option>
                         </select>
                         <div class="error_06">
-                            <p>1</p>
+                            <p></p>
                         </div>
                         <li>
                             <div class="code"></div>
                             <input type="text" class="auchcode" name="sms_code" placeholder="请输入验证码" onkeyup="this.value=this.value.replace(/\D/g,'')"
                                 onafterpaste="this.value=this.value.replace(/\D/g,'')">
                         </li>
-                        <div class="code_div02">获取验证码</div>
+                        <button class="code_div02">获取验证码</button>
                         <div class="error_05">
-                            <p>1</p>
+                            <p></p>
+                        </div>
+                        <li>
+                            <div class="pwd"></div>
+                            <input type="password" name="password" class="login_pwd" placeholder="请设置您的交易密码" minlength="6" maxlength="20">
+                        </li>
+                        <div class="error_08">
+                            <p></p>
+                        </div>
+                        <li>
+                            <div class="pwd_again"></div>
+                            <input type="password" name="User_confirmpass" class="login_pwd02" placeholder="请再次输入您的交易密码" minlength="6" maxlength="20">
+                        </li>
+                        <div class="error_09">
+                            <p></p>
                         </div>
                     </ul>
                     <div class="register_end">
-                        <input type="button" class="gift_btn" value="完成领取红包 ">
+                        <input type="submit" class="gift_btn" value="完成领取红包 ">
                     </div>
                 </form>
             </div>
@@ -90,7 +105,7 @@
                 <span class="close_btn">×</span>
             </div>
             <p>认证成功！</p>
-            <span style="width:196px;margin:0 auto;display:block;">红包已经放入您的
+            <span style="width:200px;margin:0 auto;display:block;">红包已经放入您的
                 <a href="" style="color:#20acec;">个人用户中心</a>
             </span>
             <button>立即使用红包</button>
@@ -104,67 +119,59 @@
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/base.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/register.js"></script>
 <script>
-    $(".gift_btn").click(function () {
+    $("form").submit(function () {
         // 真实姓名验证
         if ($(".real_name").val() < 2) {
             $(".error_01>p").show().text("请输入真实姓名");
+            return false;
         } else if (/[\u4E00-\u9FA5]/.test($(".real_name").val()) != true) {
             $(".error_01>p").show().text("真实姓名必须包含中文");
+            return false;
         };
         // 身份证验证
         if ($(".idCard").val().length < 15) {
             $(".error_02>p").show().text("请输入身份证号码");
-        // } else if ($(".idCard").val() !=
-        //     /^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/) {
-        //     $(".error_02>p").show().text("身份证号码格式不正确");
-        // };
-        // 银行卡验证
+            return false;
+        }
+        // 银行卡号
         if ($(".bankid").val() < 18) {
             $(".error_03>p").show().text("请输入银行卡号");
+            return false;
         }
         // 验证码
-        if ($(".authcode").val() == 0) {
+        if ($(".auchcode").val().length == 0) {
             $(".error_05>p").show().text("请输入验证码");
+            return false;
         }
-        $(".register_ul02>li>input").focus(function () {
-            $(this).parent().siblings().find("p").hide();
-        });
+        // 交易密码
+        if ($(".login_pwd").val().length == 0) {
+            $(".error_08>p").show().text("请输入交易密码");
+            return false;
+        }
+        // 再次输入交易密码
+        if ($(".login_pwd02").val().length == 0) {
+            $(".error_09>p").show().text("请再次输入交易密码");
+            return false;
+        }
+        // 两次密码不一致
+        if ($(".login_pwd").val() != $(".login_pwd02").val()) {
+            $(".error_09>p").show().text("两次交易密码不一致");
+            return false;
+        }
     })
-    // 验证码点击
-    $(".code_div02").click(function () {
-        $.ajax({
-            type: "psot",
-            url: "118.31.20.195:8083/uheart/sendFuYouSmsForBindH",
-            data: {
-                acc_no: $(".bankid").val(),
-            },
-            success: function (data) {
-                if (data.code == 0) {
-                    downTime();
-                } else {
-                    down = Time();
-                }
-            }
-        });
-    });
 
-    var flag = true;
-    var at;
+    $(".register_ul02>li>input").focus(function () {
+        $(this).parent().siblings().find("p").html("");
+    })
 
-    function downTime() {
-        if (flag) {
-            flag = false;
-            at = 30;
-            var MyTime = setInterval(function () {
-                if (at > 0) {
-                    at--;
-                    $(".code_div02").html("重新发送(" + at + ")").attr("disabled", "disabled");
-                } else if (at == 0) {
-                    $(".code_div02").html("获取验证码").removeAttr("disabled");
-                    clearInterval(MyTime);
-                    flag = true;
-                }
-            }, 1000);
-        }
+    function approve(){
+        $(".mask").show();
+        $(".approve_mask").show();
     }
+
+    $(".gift_btn").click(function(){
+        approve();
+    })
+
+
 </script>

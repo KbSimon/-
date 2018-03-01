@@ -96,9 +96,15 @@ input[type="password"] {
     top: 97px;
 }
 
-.code_div02 {
-    bottom: 30px;
+.code_div01,
+.code_div02{
+    outline: none;
+    border: none;
 }
+
+/* .code_div02 {
+    bottom: 30px;
+} */
 
 .get {
     margin-top: 290px;
@@ -148,14 +154,8 @@ input[type="checkbox"] {
     background: url("../images/register/packet.png") center no-repeat;
 }
 
-
-/* .register_part02,
 .register_part03 {
-    display: none;
-} */
-
-.register_part03 {
-    height: 500px;
+    height: 620px;
 }
 
 select {
@@ -179,7 +179,9 @@ select {
 .error_04,
 .error_05,
 .error_06,
-.error_07 {
+.error_07,
+.error_08,
+.error_09 {
     width: 320px;
     height: 20px;
     color: red;
@@ -193,7 +195,9 @@ select {
 .error_04>p,
 .error_05>p,
 .error_06>p,
-.error_07>p {
+.error_07>p,
+.error_08>p,
+.error_09>p{
     width: 320px;
     height: 0px;
     text-align: right;
@@ -214,4 +218,20 @@ select {
 
 .error_05>p {
     margin-top: 45px;
+}
+
+.error_08>p{
+    margin-top: 90px;
+}
+
+.error_09>p{
+    margin-top: 135px;
+}
+
+.register_ul02>li:nth-of-type(4){
+    margin-bottom: 20px;
+}
+
+.register_ul02>li:last-of-type{
+    margin-bottom: 0;
 }

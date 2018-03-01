@@ -192,7 +192,7 @@
     height: 50px;
     background: #fff;
     padding-left: 15px;
-    margin: 25px 0 20px 0;
+    margin: 15px 0;
     border: 1px solid #e3e3e3;
 }
 
@@ -207,7 +207,7 @@
 
 .invest_btn {
     color: #fff;
-    margin-top: 35px;
+    margin-top: 15px;
     text-align: center;
     background: #ff9900;
 }

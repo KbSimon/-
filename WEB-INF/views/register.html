@@ -28,7 +28,7 @@
                 <!-- 注册第一步 -->
                 <form class="register_part01">
                     <ul class="register_ul01 clearfloat">
-                        <li class="active">
+                        <li class="">
                             <div class="phone"></div>
                             <input type="text" name="mobile" class="mibbleNum" placeholder="请输入手机号码" maxlength="11" onkeyup="this.value=this.value.replace(/\D/g,'')"
                                 onafterpaste="this.value=this.value.replace(/\D/g,'')">
@@ -41,7 +41,7 @@
                             <input type="text" name="mobileCode" placeholder="请输入验证码" class="authCode" onkeyup="this.value=this.value.replace(/\D/g,'')"
                                 onafterpaste="this.value=this.value.replace(/\D/g,'')">
                         </li>
-                        <div class="code_div01">获取验证码</div>
+                        <button class="code_div01">获取验证码</button>
                         <div class="error_02">
                             <p></p>
                         </div>
@@ -156,7 +156,8 @@
                 <p>7、若您使用第三方网站账号注册本网站用户账户，则您应对您本网站用户账户所对应的第三方网站账号拥有合法的使用权，如您因故对该第三方网站账号丧失使用权的，则本网站可停止为您的该用户账户提供服务。但如该用户账户尚存有余额的，本网站将会为您妥善保管。此时，如您欲取回其原有余额，本网站将提供更换本网站账户名的服务，即您可把您原本网站账户下余额转移到您另外合法注册的本网站账户中；如因故无法自助完成更换账户名，您可以向本网站提出以银行账户接受原有资金的请求，经核验属实后，本网站可配合您将原有资金转移到以您真实姓名登记的银行账户下。</p>
                 <p>九、 通知</p>
                 <p>本协议项下的通知如以公示方式作出，一经在本网站公示即视为已经送达。除此之外，其他向您个人发布的具有专属性的通知将由本网站向您在注册时提供的电子邮箱，或本网站在您的个人账户中为您设置的站内消息系统栏，或您在注册后在本网站绑定的手机发送，一经发送即视为已经送达。请您密切关注您的电子邮箱
-                    、站内消息系统栏中的邮件、信息及手机中的短信信息。您同意本网站出于向您提供服务之目的，可以向您的电子邮箱、站内消息系统栏和手机发送有关通知或提醒；若您不愿意接收，请在本网站相应系统板块进行设置。但您同时同意并确认，若您设置了不接收有关通知或提醒，则您有可能收不到该等通知信息，您不得以您未收到或未阅读该等通知信息为由，单方面理解为相关通知未送达于您。</p>
+                    、站内消息系统栏中的邮件、信息及手机中的短信信息。您同意本网站出于向您提供服务之目的，可以向您的电子邮箱、站内消息系统栏和手机发送有关通知或提醒；若您不愿意接收，请在本网站相应系统板块进行设置。但您同时同意并确认，若您设置了不接收有关通知或提醒，则您有可能收不到该等通知信息，您不得以您未收到或未阅读该等通知信息为由，单方面理解为相关通知未送达于您。
+                </p>
                 <p>十、 适用法律和管辖</p>
                 <p>因本网站所提供服务而产生的争议均适用中华人民共和国法律，并由本网站住所地的人民法院管辖。</p>
                 <p>十一、其他</p>
@@ -167,6 +168,18 @@
             </div>
         </div>
     </div>
+    <!-- 注册成功弹窗 -->
+    <div class="mask">
+        <div class="approve_mask">
+            <div class="approve_mask_top  clearfloat">
+                <p>登录注册</p>
+                <span class="close_btn">×</span>
+            </div>
+            <p>红包领取成功！</p>
+            <a>立即实名认证使用红包</a>
+            <button>去认证</button>
+        </div>
+    </div>
 
 </body>
 
@@ -175,3 +188,18 @@
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/common.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/base.js"></script>
 <script src="http://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/js/register.js"></script>
+<script>
+    function success(){
+        $(".mask").show();
+        $(".approve_mask").show();
+    }
+
+    // 去实名认证
+    $(".approve_mask>button").click(function(){
+        window.location.href = "register_02.html";
+    })
+
+    $(".next").click(function(){
+        success()
+    })
+</script>
