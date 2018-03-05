@@ -24,15 +24,9 @@ form {
     box-shadow: 0px 10px 20px #f7f3ec;
 }
 
-.forget_part01 {
+.forget_part01,
+.forget_part02{
     width: 400px;
-    height: 230px;
-}
-
-.forget_part02 {
-    width: 400px;
-    height: 295px;
-    /* display: none; */
 }
 
 .forget_ul01,
@@ -52,6 +46,19 @@ form {
     border: 1px solid #e4e4e4;
 }
 
+.forget_ul01>li:not(:last-of-type){
+    margin-bottom: 20px;
+}
+
+.forget_ul01>li:last-of-type{
+    width: 180px;
+    margin-bottom: 0;
+}
+
+.forget_ul01>li:last-of-type>input{
+    width: 100px;
+}
+
 input[type="text"],
 input[type="password"] {
     width: 250px;
@@ -61,20 +68,58 @@ input[type="password"] {
     outline: none;
 }
 
+.reg_code{
+    width: 120px;
+    height: 45px;
+    float: right;
+    background: #ccc;
+}
+
+.reg_success{
+    padding-top: 30px;
+}
+
+.reg_success>img{
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.reg_success>p{
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    padding: 30px 0 40px 0;
+}
+
 .code_div01 {
-    top: 90px;
+    top: 155px;
 }
 
 .forget_btn {
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .pwd {
-    background: url("../images/register/password_01.png") no-repeat;
+    background: url("https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/register/password_01.png") no-repeat;
 }
 
 .pwd_again {
-    background: url("../images/register/password_02.png") no-repeat;
+    background: url("https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/register/password_02.png") no-repeat;
+}
+
+.email{
+    background: url("https://xlstyle.oss-cn-hangzhou.aliyuncs.com/xinlu-pc/images/forget/email.png") 0% no-repeat;
+}
+
+.email{
+    width: 30px;
+    height: 25px;
+    float: left;
+    margin: 10px 15px;
+    border-right: 1px solid #e4e4e4;
 }
 
 .to_index {
@@ -92,7 +137,8 @@ input[type="password"] {
 }
 
 .error_01,
-.error_02{
+.error_02,
+.error_03{
     width: 320px;
     height: 20px;
     color: red;
@@ -100,7 +146,8 @@ input[type="password"] {
 }
 
 .error_01>p,
-.error_02>p{
+.error_02>p,
+.error_03>p{
     width: 320px;
     height: 0px;
     text-align: right;
@@ -113,4 +160,19 @@ input[type="password"] {
 
 .error_02{
     padding-top: 45px;
+}
+
+.error_03{
+    margin-top: 45px;
+}
+
+form>p{
+    color: #999;
+    padding: 0 30px;
+}
+
+form>span{
+    display: block;
+    padding: 0 30px 10px 30px;
+    color:#ff9900;
 }
