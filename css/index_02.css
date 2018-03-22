@@ -312,9 +312,11 @@
 
 .xlmark_content {
     height: 150px;
+    overflow: hidden;
     padding-top: 50px;
     padding-bottom: 45px;
 }
+
 
 .xlmark_content>span {
     width: 70px;

@@ -95,6 +95,8 @@ input[type="password"] {
 
 .code_div01 {
     top: 155px;
+    outline: none;
+    border: none;
 }
 
 .forget_btn {
