@@ -1,0 +1,198 @@
+@charset "utf-8";
+.dial_active {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.dial_all {
+    width: 722px;
+    height: 722px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.dial_deng {
+    width: 100%;
+    height: 100%;
+    background: url("../images/fallDay/deng.gif") no-repeat center;
+    position: relative;
+}
+
+.dial_pan {
+    text-align: center;
+}
+
+.dial_pan>img {
+    margin-top: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dial_zhen {
+    width: 722px;
+    height: 722px;
+    background: url("../images/fallDay/yuan.png") no-repeat center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 102;
+}
+
+.dial_btn {
+    width: 161px;
+    height: 161px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -35px;
+    margin-top: -80.5px;
+    cursor: pointer;
+}
+
+.dial_btn>img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 75px;
+}
+
+.dials_ctall {
+    position: absolute;
+    left: 50%;
+    top: -70px;
+    margin-left: -385px;
+}
+
+.part_01,
+.part_02,
+.part_03 {
+    margin: 0 auto;
+    max-width: 1920px;
+    min-width: 1200px;
+    position: relative;
+}
+
+.part_01 {
+    height: 330px;
+    background: url("../images/fallDay/img_01.png") center no-repeat;
+}
+
+.part_02 {
+    height: 777px;
+    background: url("../images/fallDay/img_02.png") center no-repeat;
+}
+
+.part_03 {
+    height: 322px;
+    background: url("../images/fallDay/img_03.png") center no-repeat;
+}
+
+.title {
+    width: 1200px;
+    height: 330px;
+    margin: 0 auto;
+    z-index: 100;
+    position: relative;
+    background: url("../images/fallDay/title.png") center no-repeat;
+}
+
+.content {
+    width: 1200px;
+    height: 777px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 139px;
+}
+
+.bg_01 {
+    left: 0;
+    z-index: 99;
+    width: 597px;
+    height: 666px;
+    position: absolute;
+    background: url("../images/fallDay/bg_01.png") center no-repeat;
+}
+
+.bg_02 {
+    right: 0;
+    z-index: 99;
+    width: 603px;
+    height: 666px;
+    position: absolute;
+    background: url("../images/fallDay/bg_02.png") center no-repeat;
+}
+
+.rules{
+    width: 970px;
+    margin: 0 auto;
+}
+
+.rules_01{
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 10px 0;
+    text-align: center;
+}
+
+.rules_02{
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 0 75px 0 40px;
+}
+
+.rules_02>span{
+    color: #f8fb04;  
+}
+
+.boom{
+    height: 1498px;
+    z-index: 1001;
+    display: none;
+    min-width: 1200px;
+    max-width: 1920px;
+    background: url("../images/fallDay/boom.gif") center no-repeat;
+}
+
+#bad{
+    width: 693px;
+    height: 631px;
+    margin-top: 40px;
+    background: url("../images/fallDay/bad.png") center no-repeat;
+}
+
+.shade{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;    
+    position: fixed;
+    opacity: 1.08;
+    display: none;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.alert{
+    top: 40%;    
+    left: 50%;
+    width: 478px;
+    padding: 17px;
+    font-size: 24px;
+    position: fixed;
+    background: #fff;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: -256px;
+}
+
+.to_invest{
+    color: #fff;
+    cursor: pointer;
+    background: #ff680e;
+    padding: 15px 40px;
+    margin: 26px 5px 0 5px;
+}
